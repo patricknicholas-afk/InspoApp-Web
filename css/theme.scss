@@ -1,0 +1,158 @@
+// ============================================================
+// DrawingApp Design Tokens — SCSS
+// Translated from AppTheme.swift
+// ============================================================
+
+// -- Colors --------------------------------------------------
+$color-background: #ffffff;
+$color-card-background: rgb(153, 158, 176);   // 0.6, 0.62, 0.69
+$color-light-card: rgb(209, 212, 219);         // 0.82, 0.83, 0.86
+$color-surface-background: rgb(245, 245, 245); // 0.96, 0.96, 0.96
+$color-divider: rgb(224, 224, 224);             // 0.88, 0.88, 0.88
+$color-primary-text: #000000;
+$color-secondary-text: #6c6c70;                // system secondaryLabel
+$color-button-background: #000000;
+$color-button-foreground: #ffffff;
+$color-video-background: rgb(194, 199, 209);   // 0.76, 0.78, 0.82
+$color-overlay-text-secondary: rgba(255, 255, 255, 0.7);
+$color-overlay-icon: rgba(255, 255, 255, 0.8);
+
+// Chip Colors
+$color-chip-background: #f2f2f7;               // systemGray6
+$color-chip-selected-background: #000000;
+$color-chip-foreground: #000000;
+$color-chip-selected-foreground: #ffffff;
+$color-chip-border: #c7c7cc;                   // systemGray4
+
+// -- Spacing -------------------------------------------------
+$spacing-2: 2px;
+$spacing-xs: 4px;
+$spacing-6: 6px;
+$spacing-sm: 8px;
+$spacing-10: 10px;
+$spacing-md: 12px;
+$spacing-14: 14px;
+$spacing-lg: 16px;
+$spacing-18: 18px;
+$spacing-20: 20px;
+$spacing-xl: 24px;
+$spacing-28: 28px;
+$spacing-xxl: 32px;
+
+// -- Corner Radius -------------------------------------------
+$radius-small: 4px;
+$radius-medium: 8px;
+$radius-large: 12px;
+$radius-chip: 16px;
+
+// -- Grid System ---------------------------------------------
+$grid-columns: 12;
+$grid-gutter: 16px;
+$grid-margin: 20px;
+$grid-margin-tablet: 32px;
+$grid-margin-desktop: 40px;
+$content-max-width: 1200px;
+$content-narrow-width: 720px;
+
+// -- Breakpoints ---------------------------------------------
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1025px;
+
+// -- Layout --------------------------------------------------
+$hero-banner-height: 380px;
+$hero-image-height: 300px;
+$image-placeholder-height: 200px;
+$category-card-width: 160px;
+$category-card-height: 100px;
+$thumbnail-size: 80px;
+$steps-max-height: 260px;
+
+// -- Shadows -------------------------------------------------
+$shadow-light: rgba(0, 0, 0, 0.08);
+$shadow-radius: 8px;
+$shadow-offset-y: -2px;
+
+// -- Border & Letter Spacing ---------------------------------
+$border-width-thin: 1px;
+$letter-spacing-wide: 1.2px;
+
+// -- Animation -----------------------------------------------
+$press-scale: 0.97;
+$press-duration: 0.1s;
+$spring-transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+// -- Typography (font stacks) --------------------------------
+$font-serif: 'Georgia', 'Times New Roman', serif;
+$font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-mono: 'SF Mono', 'Menlo', 'Courier New', monospace;
+
+// ============================================================
+// CSS Custom Properties (exposed on :root)
+// ============================================================
+:root {
+  // Colors
+  --color-bg: #{$color-background};
+  --color-card-bg: #{$color-card-background};
+  --color-light-card: #{$color-light-card};
+  --color-surface-bg: #{$color-surface-background};
+  --color-divider: #{$color-divider};
+  --color-primary: #{$color-primary-text};
+  --color-secondary: #{$color-secondary-text};
+  --color-btn-bg: #{$color-button-background};
+  --color-btn-fg: #{$color-button-foreground};
+  --color-video-bg: #{$color-video-background};
+  --color-overlay-secondary: #{$color-overlay-text-secondary};
+  --color-overlay-icon: #{$color-overlay-icon};
+  --color-chip-bg: #{$color-chip-background};
+  --color-chip-selected-bg: #{$color-chip-selected-background};
+  --color-chip-fg: #{$color-chip-foreground};
+  --color-chip-selected-fg: #{$color-chip-selected-foreground};
+  --color-chip-border: #{$color-chip-border};
+
+  // Spacing
+  --sp-2: #{$spacing-2};
+  --sp-xs: #{$spacing-xs};
+  --sp-6: #{$spacing-6};
+  --sp-sm: #{$spacing-sm};
+  --sp-10: #{$spacing-10};
+  --sp-md: #{$spacing-md};
+  --sp-14: #{$spacing-14};
+  --sp-lg: #{$spacing-lg};
+  --sp-18: #{$spacing-18};
+  --sp-20: #{$spacing-20};
+  --sp-xl: #{$spacing-xl};
+  --sp-28: #{$spacing-28};
+  --sp-xxl: #{$spacing-xxl};
+
+  // Radius
+  --r-sm: #{$radius-small};
+  --r-md: #{$radius-medium};
+  --r-lg: #{$radius-large};
+  --r-chip: #{$radius-chip};
+
+  // Grid
+  --grid-columns: #{$grid-columns};
+  --grid-gutter: #{$grid-gutter};
+  --grid-margin: #{$grid-margin};
+  --content-max: #{$content-max-width};
+  --content-narrow: #{$content-narrow-width};
+
+  // Layout
+  --hero-banner-h: #{$hero-banner-height};
+  --hero-image-h: #{$hero-image-height};
+  --img-placeholder-h: #{$image-placeholder-height};
+  --cat-card-w: #{$category-card-width};
+  --cat-card-h: #{$category-card-height};
+  --thumb-size: #{$thumbnail-size};
+  --steps-max-h: #{$steps-max-height};
+
+  // Shadow
+  --shadow-light: #{$shadow-light};
+  --shadow-r: #{$shadow-radius};
+  --shadow-y: #{$shadow-offset-y};
+
+  // Fonts
+  --font-serif: #{$font-serif};
+  --font-system: #{$font-system};
+  --font-mono: #{$font-mono};
+}

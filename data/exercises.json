@@ -1,0 +1,918 @@
+{
+  "categories": [
+    {
+      "id": "A0000001-0000-0000-0000-000000000001",
+      "title": "LINE CONTROL",
+      "totalTime": "15 MINS",
+      "exercises": [
+        {
+          "id": "B0000001-0001-0000-0000-000000000001",
+          "number": 1,
+          "title": "Straight Lines & Curves",
+          "description": "Short detailed description of the exercise.",
+          "duration": "3 min",
+          "category": "Line Control",
+          "categoryTag": "FOUNDATIONS",
+          "steps": [
+            "Draw a straight horizontal line from left to right without lifting your pen.",
+            "Now try diagonal lines at 45 degrees. Repeat 10 times.",
+            "Finally, draw smooth curved lines varying pressure."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "beginner",
+            "techniqueFamilies": [
+              "line-work"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "paper-only"
+            ],
+            "durationBucket": "quick",
+            "learningGoals": [
+              "muscle-memory",
+              "technique"
+            ],
+            "searchKeywords": [
+              "straight lines",
+              "curved lines",
+              "diagonal",
+              "pressure control",
+              "warm-up",
+              "freehand"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0001-0000-0000-000000000002",
+          "number": 2,
+          "title": "Parallel Lines & Speed",
+          "description": "Short detailed description of the exercise.",
+          "duration": "3 min",
+          "category": "Line Control",
+          "categoryTag": "FOUNDATIONS",
+          "steps": [
+            "Focus on consistent pressure throughout each stroke.",
+            "Draw parallel lines spaced evenly apart.",
+            "Gradually increase your speed while maintaining control."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "beginner",
+            "techniqueFamilies": [
+              "line-work"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "paper-only"
+            ],
+            "durationBucket": "quick",
+            "learningGoals": [
+              "muscle-memory",
+              "technique"
+            ],
+            "searchKeywords": [
+              "parallel lines",
+              "spacing",
+              "speed control",
+              "consistency"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0001-0000-0000-000000000003",
+          "number": 3,
+          "title": "Boxes & Line Weight",
+          "description": "Short detailed description of the exercise.",
+          "duration": "3 min",
+          "category": "Line Control",
+          "categoryTag": "FOUNDATIONS",
+          "steps": [
+            "Draw boxes using only straight lines.",
+            "Add cross-hatching to create shading.",
+            "Vary line weight from light to dark."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "intermediate",
+            "techniqueFamilies": [
+              "line-work",
+              "shading"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "paper-only"
+            ],
+            "durationBucket": "quick",
+            "learningGoals": [
+              "muscle-memory",
+              "technique"
+            ],
+            "searchKeywords": [
+              "boxes",
+              "cross-hatching",
+              "line weight",
+              "shading"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "A0000001-0000-0000-0000-000000000002",
+      "title": "2-POINT PERSPECTIVE",
+      "totalTime": "10 MINS",
+      "exercises": [
+        {
+          "id": "B0000001-0002-0000-0000-000000000001",
+          "number": 1,
+          "title": "Horizon Lines & Vanishing Points",
+          "description": "Short detailed description of the exercise.",
+          "duration": "5 min",
+          "category": "2-Point Perspective",
+          "categoryTag": "PRECISION BY EYE",
+          "steps": [
+            "Believable on 2 dimensional surfaces requires patience, but these simple exercises will quickly get you the fundamentals.",
+            "Place two vanishing points on your horizon line, one on each side of the page.",
+            "Draw vertical lines between the two sets of converging lines to create box edges."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "intermediate",
+            "techniqueFamilies": [
+              "perspective",
+              "composition"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "ruler",
+              "paper-only"
+            ],
+            "durationBucket": "medium",
+            "learningGoals": [
+              "spatial-reasoning",
+              "technique"
+            ],
+            "searchKeywords": [
+              "horizon line",
+              "vanishing point",
+              "perspective",
+              "depth",
+              "spatial"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0002-0000-0000-000000000002",
+          "number": 2,
+          "title": "Building Exteriors",
+          "description": "Short detailed description of the exercise.",
+          "duration": "5 min",
+          "category": "2-Point Perspective",
+          "categoryTag": "PRECISION BY EYE",
+          "steps": [
+            "Draw a horizontal horizon line across your page.",
+            "Mark two vanishing points near the edges.",
+            "Sketch a vertical line for the leading edge of your building."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "intermediate",
+            "techniqueFamilies": [
+              "perspective",
+              "composition",
+              "observational"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "ruler",
+              "paper-only"
+            ],
+            "durationBucket": "medium",
+            "learningGoals": [
+              "spatial-reasoning",
+              "observation"
+            ],
+            "searchKeywords": [
+              "building",
+              "exterior",
+              "architecture",
+              "two-point",
+              "perspective"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0002-0000-0000-000000000003",
+          "number": 3,
+          "title": "Interior Spaces",
+          "description": "Short detailed description of the exercise.",
+          "duration": "5 min",
+          "category": "2-Point Perspective",
+          "categoryTag": "PRECISION BY EYE",
+          "steps": [
+            "Start with your horizon line at eye level.",
+            "Draw all horizontal lines converging to your vanishing points.",
+            "Add details like windows and doors using the same perspective rules."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "intermediate",
+            "techniqueFamilies": [
+              "perspective",
+              "composition",
+              "observational"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "ruler",
+              "paper-only"
+            ],
+            "durationBucket": "medium",
+            "learningGoals": [
+              "spatial-reasoning",
+              "observation"
+            ],
+            "searchKeywords": [
+              "interior",
+              "room",
+              "windows",
+              "doors",
+              "indoor",
+              "perspective"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "A0000001-0000-0000-0000-000000000003",
+      "title": "HATCHING & CROSS-HATCHING",
+      "totalTime": "10 MINS",
+      "exercises": [
+        {
+          "id": "B0000001-0003-0000-0000-000000000001",
+          "number": 1,
+          "title": "Basic Hatching",
+          "description": "Short detailed description of the exercise.",
+          "duration": "3 min",
+          "category": "Hatching",
+          "categoryTag": "TEXTURE & TONE",
+          "steps": [
+            "Draw parallel diagonal lines close together.",
+            "The closer the lines, the darker the area appears.",
+            "Practice making your lines consistent in spacing."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "beginner",
+            "techniqueFamilies": [
+              "shading",
+              "line-work"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "paper-only"
+            ],
+            "durationBucket": "quick",
+            "learningGoals": [
+              "muscle-memory",
+              "technique"
+            ],
+            "searchKeywords": [
+              "hatching",
+              "parallel lines",
+              "shading",
+              "tone",
+              "value"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0003-0000-0000-000000000002",
+          "number": 2,
+          "title": "Cross-Hatching Tone",
+          "description": "Short detailed description of the exercise.",
+          "duration": "3 min",
+          "category": "Hatching",
+          "categoryTag": "TEXTURE & TONE",
+          "steps": [
+            "Layer a second set of lines perpendicular to the first.",
+            "Add a third layer at 45 degrees for deeper shadows.",
+            "Vary the density to create gradual tonal shifts."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "intermediate",
+            "techniqueFamilies": [
+              "shading",
+              "line-work"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "paper-only"
+            ],
+            "durationBucket": "quick",
+            "learningGoals": [
+              "technique"
+            ],
+            "searchKeywords": [
+              "cross-hatching",
+              "tonal",
+              "shadows",
+              "layering",
+              "density"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0003-0000-0000-000000000003",
+          "number": 3,
+          "title": "Contour Hatching",
+          "description": "Short detailed description of the exercise.",
+          "duration": "3 min",
+          "category": "Hatching",
+          "categoryTag": "TEXTURE & TONE",
+          "steps": [
+            "Follow the form's surface with your lines.",
+            "This technique adds volume and three-dimensionality.",
+            "Practice on a simple sphere first."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "intermediate",
+            "techniqueFamilies": [
+              "shading",
+              "form"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "paper-only"
+            ],
+            "durationBucket": "quick",
+            "learningGoals": [
+              "technique",
+              "observation"
+            ],
+            "searchKeywords": [
+              "contour",
+              "form",
+              "volume",
+              "sphere",
+              "three-dimensional"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0003-0000-0000-000000000004",
+          "number": 4,
+          "title": "Stippling",
+          "description": "Short detailed description of the exercise.",
+          "duration": "3 min",
+          "category": "Hatching",
+          "categoryTag": "TEXTURE & TONE",
+          "steps": [
+            "Use dots instead of lines to build tone.",
+            "More dots = darker areas.",
+            "Vary dot size for texture variation."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "beginner",
+            "techniqueFamilies": [
+              "shading",
+              "texture"
+            ],
+            "toolsRequired": [
+              "pen",
+              "paper-only"
+            ],
+            "durationBucket": "quick",
+            "learningGoals": [
+              "technique",
+              "muscle-memory"
+            ],
+            "searchKeywords": [
+              "stippling",
+              "dots",
+              "pointillism",
+              "texture",
+              "tone"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "A0000001-0000-0000-0000-000000000004",
+      "title": "3-POINT PERSPECTIVE",
+      "totalTime": "15 MINS",
+      "exercises": [
+        {
+          "id": "B0000001-0004-0000-0000-000000000001",
+          "number": 1,
+          "title": "Worm's Eye View",
+          "description": "Short detailed description of the exercise.",
+          "duration": "5 min",
+          "category": "3-Point Perspective",
+          "categoryTag": "ADVANCED DEPTH",
+          "steps": [
+            "Place two vanishing points on the horizon line.",
+            "Add a third vanishing point below the page.",
+            "All vertical lines now converge to this lower point."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "advanced",
+            "techniqueFamilies": [
+              "perspective",
+              "composition"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "ruler",
+              "paper-only"
+            ],
+            "durationBucket": "medium",
+            "learningGoals": [
+              "spatial-reasoning",
+              "technique"
+            ],
+            "searchKeywords": [
+              "worm's eye",
+              "looking up",
+              "three-point",
+              "dramatic",
+              "foreshortening"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0004-0000-0000-000000000002",
+          "number": 2,
+          "title": "Bird's Eye View",
+          "description": "Short detailed description of the exercise.",
+          "duration": "5 min",
+          "category": "3-Point Perspective",
+          "categoryTag": "ADVANCED DEPTH",
+          "steps": [
+            "Two vanishing points on the horizon as before.",
+            "Third vanishing point goes above the page.",
+            "Vertical lines converge upward to create a looking-down effect."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "advanced",
+            "techniqueFamilies": [
+              "perspective",
+              "composition"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "ruler",
+              "paper-only"
+            ],
+            "durationBucket": "medium",
+            "learningGoals": [
+              "spatial-reasoning",
+              "technique"
+            ],
+            "searchKeywords": [
+              "bird's eye",
+              "looking down",
+              "aerial",
+              "three-point",
+              "overhead"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0004-0000-0000-000000000003",
+          "number": 3,
+          "title": "Dramatic Architecture",
+          "description": "Short detailed description of the exercise.",
+          "duration": "5 min",
+          "category": "3-Point Perspective",
+          "categoryTag": "ADVANCED DEPTH",
+          "steps": [
+            "Combine all three vanishing points for maximum drama.",
+            "Skyscrapers work great for this technique.",
+            "Exaggerate the convergence for a dynamic composition."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "advanced",
+            "techniqueFamilies": [
+              "perspective",
+              "composition"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "ruler",
+              "paper-only"
+            ],
+            "durationBucket": "medium",
+            "learningGoals": [
+              "spatial-reasoning",
+              "expression"
+            ],
+            "searchKeywords": [
+              "skyscraper",
+              "dramatic",
+              "architecture",
+              "convergence",
+              "dynamic"
+            ]
+          }
+        },
+        {
+          "id": "B0000001-0004-0000-0000-000000000004",
+          "number": 4,
+          "title": "Urban Sketching",
+          "description": "Short detailed description of the exercise.",
+          "duration": "5 min",
+          "category": "3-Point Perspective",
+          "categoryTag": "ADVANCED DEPTH",
+          "steps": [
+            "Take 3-point perspective into a real scene.",
+            "Choose a corner of a building to start.",
+            "Lightly sketch the perspective grid before adding detail."
+          ],
+          "isBookmarked": false,
+          "imageUrl": null,
+          "videoUrl": null,
+          "tags": {
+            "skillLevel": "advanced",
+            "techniqueFamilies": [
+              "perspective",
+              "observational",
+              "composition"
+            ],
+            "toolsRequired": [
+              "pencil",
+              "ruler",
+              "paper-only"
+            ],
+            "durationBucket": "medium",
+            "learningGoals": [
+              "observation",
+              "technique"
+            ],
+            "searchKeywords": [
+              "urban",
+              "sketching",
+              "plein air",
+              "real scene",
+              "cityscape"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exploreSections": [
+    {
+      "id": "explore-category",
+      "title": "Category",
+      "subtitle": "Browse by art discipline",
+      "items": [
+        {
+          "id": "cat-2d-digital",
+          "label": "2D Digital Art",
+          "icon": "brush",
+          "filterKey": "category",
+          "filterValue": "2d-digital"
+        },
+        {
+          "id": "cat-3d-digital",
+          "label": "3D Digital Art",
+          "icon": "cube",
+          "filterKey": "category",
+          "filterValue": "3d-digital"
+        },
+        {
+          "id": "cat-traditional",
+          "label": "Traditional Drawing",
+          "icon": "pencil",
+          "filterKey": "category",
+          "filterValue": "traditional"
+        },
+        {
+          "id": "cat-mixed-media",
+          "label": "Mixed Media",
+          "icon": "layers",
+          "filterKey": "category",
+          "filterValue": "mixed-media"
+        }
+      ]
+    },
+    {
+      "id": "explore-technique",
+      "title": "Technique",
+      "subtitle": "Master specific skills",
+      "items": [
+        {
+          "id": "tech-line-work",
+          "label": "Line Work",
+          "icon": "line",
+          "filterKey": "technique",
+          "filterValue": "line-work"
+        },
+        {
+          "id": "tech-shading",
+          "label": "Shading",
+          "icon": "gradient",
+          "filterKey": "technique",
+          "filterValue": "shading"
+        },
+        {
+          "id": "tech-perspective",
+          "label": "Perspective",
+          "icon": "grid",
+          "filterKey": "technique",
+          "filterValue": "perspective"
+        },
+        {
+          "id": "tech-composition",
+          "label": "Composition",
+          "icon": "frame",
+          "filterKey": "technique",
+          "filterValue": "composition"
+        },
+        {
+          "id": "tech-form",
+          "label": "Form & Volume",
+          "icon": "sphere",
+          "filterKey": "technique",
+          "filterValue": "form"
+        },
+        {
+          "id": "tech-texture",
+          "label": "Texture",
+          "icon": "texture",
+          "filterKey": "technique",
+          "filterValue": "texture"
+        },
+        {
+          "id": "tech-observational",
+          "label": "Observational",
+          "icon": "eye",
+          "filterKey": "technique",
+          "filterValue": "observational"
+        }
+      ]
+    },
+    {
+      "id": "explore-style",
+      "title": "Art Style",
+      "subtitle": "Find your aesthetic",
+      "items": [
+        {
+          "id": "style-concept",
+          "label": "Concept Art",
+          "icon": "idea",
+          "filterKey": "style",
+          "filterValue": "concept-art"
+        },
+        {
+          "id": "style-illustration",
+          "label": "Illustration",
+          "icon": "illustration",
+          "filterKey": "style",
+          "filterValue": "illustration"
+        },
+        {
+          "id": "style-realism",
+          "label": "Realism",
+          "icon": "photo",
+          "filterKey": "style",
+          "filterValue": "realism"
+        },
+        {
+          "id": "style-abstract",
+          "label": "Abstract",
+          "icon": "shapes",
+          "filterKey": "style",
+          "filterValue": "abstract"
+        }
+      ]
+    },
+    {
+      "id": "explore-decade",
+      "title": "Art Decade",
+      "subtitle": "Explore eras of creativity",
+      "items": [
+        {
+          "id": "dec-renaissance",
+          "label": "Renaissance",
+          "icon": "classic",
+          "filterKey": "decade",
+          "filterValue": "renaissance"
+        },
+        {
+          "id": "dec-impressionism",
+          "label": "Impressionism",
+          "icon": "palette",
+          "filterKey": "decade",
+          "filterValue": "impressionism"
+        },
+        {
+          "id": "dec-modernism",
+          "label": "Modernism",
+          "icon": "abstract",
+          "filterKey": "decade",
+          "filterValue": "modernism"
+        },
+        {
+          "id": "dec-contemporary",
+          "label": "Contemporary",
+          "icon": "now",
+          "filterKey": "decade",
+          "filterValue": "contemporary"
+        }
+      ]
+    },
+    {
+      "id": "explore-career",
+      "title": "Creative Career",
+      "subtitle": "Skills for your path",
+      "items": [
+        {
+          "id": "career-animator",
+          "label": "Animator",
+          "icon": "film",
+          "filterKey": "career",
+          "filterValue": "animator"
+        },
+        {
+          "id": "career-illustrator",
+          "label": "Illustrator",
+          "icon": "pen-nib",
+          "filterKey": "career",
+          "filterValue": "illustrator"
+        },
+        {
+          "id": "career-game-artist",
+          "label": "Game Artist",
+          "icon": "gamepad",
+          "filterKey": "career",
+          "filterValue": "game-artist"
+        },
+        {
+          "id": "career-architect",
+          "label": "Architect",
+          "icon": "building",
+          "filterKey": "career",
+          "filterValue": "architect"
+        },
+        {
+          "id": "career-ux-designer",
+          "label": "UX Designer",
+          "icon": "layout",
+          "filterKey": "career",
+          "filterValue": "ux-designer"
+        }
+      ]
+    },
+    {
+      "id": "explore-theme",
+      "title": "Theme",
+      "subtitle": "Explore by subject",
+      "items": [
+        {
+          "id": "theme-portraits",
+          "label": "Portraits",
+          "icon": "user",
+          "filterKey": "theme",
+          "filterValue": "portraits"
+        },
+        {
+          "id": "theme-landscapes",
+          "label": "Landscapes",
+          "icon": "mountain",
+          "filterKey": "theme",
+          "filterValue": "landscapes"
+        },
+        {
+          "id": "theme-architecture",
+          "label": "Architecture",
+          "icon": "building",
+          "filterKey": "theme",
+          "filterValue": "architecture"
+        },
+        {
+          "id": "theme-still-life",
+          "label": "Still Life",
+          "icon": "vase",
+          "filterKey": "theme",
+          "filterValue": "still-life"
+        },
+        {
+          "id": "theme-figure",
+          "label": "Figure Drawing",
+          "icon": "figure",
+          "filterKey": "theme",
+          "filterValue": "figure"
+        },
+        {
+          "id": "theme-nature",
+          "label": "Nature & Botanical",
+          "icon": "leaf",
+          "filterKey": "theme",
+          "filterValue": "nature"
+        }
+      ]
+    },
+    {
+      "id": "explore-skill",
+      "title": "Skill Level",
+      "subtitle": "Match your experience",
+      "items": [
+        {
+          "id": "skill-beginner",
+          "label": "Beginner",
+          "icon": "seedling",
+          "filterKey": "skill",
+          "filterValue": "beginner"
+        },
+        {
+          "id": "skill-intermediate",
+          "label": "Intermediate",
+          "icon": "grow",
+          "filterKey": "skill",
+          "filterValue": "intermediate"
+        },
+        {
+          "id": "skill-advanced",
+          "label": "Advanced",
+          "icon": "star",
+          "filterKey": "skill",
+          "filterValue": "advanced"
+        }
+      ]
+    }
+  ],
+  "article": {
+    "id": "E0000001-0000-0000-0000-000000000001",
+    "title": "Building A Routine",
+    "subtitle": "Subtitle banner describing item (optional)",
+    "sections": [
+      {
+        "id": "F0000001-0000-0000-0000-000000000001",
+        "title": "Creating Habits",
+        "readTime": null,
+        "content": null
+      },
+      {
+        "id": "F0000001-0000-0000-0000-000000000002",
+        "title": "Best Practices",
+        "readTime": "2-min read",
+        "content": "Drawing exercises to stay inspired.\n\nDrawing exercises to stay inspired. Consistent practice is the cornerstone of improvement in any artistic discipline. Whether you're a beginner or a seasoned artist, dedicating even just a few minutes each day can yield remarkable results over time."
+      },
+      {
+        "id": "F0000001-0000-0000-0000-000000000003",
+        "title": "Finding Creativity",
+        "readTime": null,
+        "content": null
+      },
+      {
+        "id": "F0000001-0000-0000-0000-000000000004",
+        "title": "Starting Simple",
+        "readTime": null,
+        "content": null
+      },
+      {
+        "id": "F0000001-0000-0000-0000-000000000005",
+        "title": "Your Environment",
+        "readTime": null,
+        "content": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,1809 @@
+{
+  "contentType": "inspiration",
+  "description": "Inspiration images for the For You feed, Browse, and Saved pages. Each item is tagged with industry category, medium taxonomy, color palette, subject matter, and visible technique.",
+  "sections": [
+    {
+      "id": "C0000001-0000-0000-0000-000000000001",
+      "title": "Color Schema",
+      "items": [
+        {
+          "id": "D0000001-0001-0000-0000-000000000001",
+          "title": "Fauvist Colors",
+          "subtitle": "Bold expressive palettes",
+          "imageUrl": "assets/img/tumblr_nd3o27REhj1ra91zio1_1280.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["vibrant", "warm", "complementary"],
+            "subjectMatter": ["character", "creature"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "D0000001-0001-0000-0000-000000000002",
+          "title": "Cool Color Dominance",
+          "subtitle": "Blue and green tones",
+          "imageUrl": "assets/img/10572045_832768963409491_6802551560604276290_o.jpg",
+          "metadata": {
+            "industry": ["Portraits", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "muted", "high-contrast"],
+            "subjectMatter": ["portrait", "figure"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "D0000001-0001-0000-0000-000000000003",
+          "title": "Warm Contrast",
+          "subtitle": "Red and orange interplay",
+          "imageUrl": "assets/img/10974246_950385621638961_5407060400643747288_o.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art"],
+            "colorPalette": ["neutral", "warm"],
+            "subjectMatter": ["mechanical", "vehicle"],
+            "techniqueVisible": ["detailed", "linework-heavy"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "C0000001-0000-0000-0000-000000000002",
+      "title": "Art Style",
+      "items": [
+        {
+          "id": "D0000001-0002-0000-0000-000000000001",
+          "title": "Concept Art",
+          "subtitle": "Imaginative visual design",
+          "imageUrl": "assets/img/mark_kent_01.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art"],
+            "colorPalette": ["neutral", "warm"],
+            "subjectMatter": ["mechanical", "character"],
+            "techniqueVisible": ["detailed", "linework-heavy"]
+          }
+        },
+        {
+          "id": "D0000001-0002-0000-0000-000000000002",
+          "title": "Illustration",
+          "subtitle": "Narrative artwork",
+          "imageUrl": "assets/img/AssassinC.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "muted"],
+            "subjectMatter": ["character", "figure"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "D0000001-0002-0000-0000-000000000003",
+          "title": "Realism",
+          "subtitle": "True-to-life rendering",
+          "imageUrl": "assets/img/1614152_10203543292536207_6489644832389594662_o.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Character Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Illustration"],
+            "colorPalette": ["neutral", "high-contrast"],
+            "subjectMatter": ["character", "figure"],
+            "techniqueVisible": ["linework-heavy", "detailed"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "C0000001-0000-0000-0000-000000000003",
+      "title": "Subject Matter",
+      "items": [
+        {
+          "id": "D0000001-0003-0000-0000-000000000001",
+          "title": "Sports Car Studies",
+          "subtitle": "Automotive design sketches",
+          "imageUrl": "assets/img/10710223_809415889115246_6808983344493792334_o.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "D0000001-0003-0000-0000-000000000002",
+          "title": "Sunset Overdrive Props",
+          "subtitle": "Game environment concept art",
+          "imageUrl": "assets/img/10355510_10204597464632148_5833762416026191611_o.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Game Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art"],
+            "colorPalette": ["cool", "neutral"],
+            "subjectMatter": ["environment", "architecture"],
+            "techniqueVisible": ["linework-heavy", "detailed"]
+          }
+        },
+        {
+          "id": "D0000001-0003-0000-0000-000000000003",
+          "title": "Sky Ship",
+          "subtitle": "Fantasy airship in the clouds",
+          "imageUrl": "assets/img/240061_833109710078805_3199452003204821838_o.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Illustration", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "cool", "vibrant"],
+            "subjectMatter": ["environment", "vehicle"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "E0000001-0000-0000-0000-000000000001",
+      "title": "Discover \u2014 Set 1",
+      "items": [
+        {
+          "id": "50ce0eb6-2ede-521c-984e-bf59ebb9b18a",
+          "title": "Fox in the Grass",
+          "subtitle": "Stylized character in nature",
+          "imageUrl": "assets/img/10006587_10152340544269598_6360961671514319645_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Illustration", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "vibrant", "analogous"],
+            "subjectMatter": ["character", "nature"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "9535fb0b-b278-5f94-99a9-7c28f186e03f",
+          "title": "Sea Beast",
+          "subtitle": "Massive creature holding a shark",
+          "imageUrl": "assets/img/10007465_10203476185811314_1612164018_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Character Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "muted", "warm"],
+            "subjectMatter": ["creature", "figure"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "a8b09587-51a0-5080-a932-3c19b1ccb01a",
+          "title": "Mechanical Study",
+          "subtitle": "Hard-surface pencil sketch",
+          "imageUrl": "assets/img/1011048_10202727277816458_1739757768_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["mechanical", "vehicle"],
+            "techniqueVisible": ["linework-heavy", "detailed"]
+          }
+        },
+        {
+          "id": "212fc0bb-2cb3-5f94-bd08-6d339039b054",
+          "title": "Aquatic Creature",
+          "subtitle": "Underwater creature line drawing",
+          "imageUrl": "assets/img/1011683_675471755843691_1757241484_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["cool", "muted"],
+            "subjectMatter": ["creature", "figure"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "be4a0813-834b-5ff5-82e7-2ad4b1faad3b",
+          "title": "Futuristic Porsche",
+          "subtitle": "Sci-fi racing vehicle concept",
+          "imageUrl": "assets/img/10152631_245231682339433_1702590967_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "high-contrast"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "bf022cbd-b153-5821-9588-c3593b776466",
+          "title": "Demon-Bot",
+          "subtitle": "Sci-fi robotic character",
+          "imageUrl": "assets/img/10153905_639201582817982_5387194442002297120_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Character Design", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral", "high-contrast"],
+            "subjectMatter": ["character", "mechanical"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "6cdaeb77-2659-56ed-9f93-953fc1de411f",
+          "title": "Mustang Sketch",
+          "subtitle": "Automotive design rendering",
+          "imageUrl": "assets/img/10154450_436455893158593_7372434783716236837_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "loose"]
+          }
+        },
+        {
+          "id": "43e5c8cf-0db9-5005-bbea-65bab81d0463",
+          "title": "Alien Patrol",
+          "subtitle": "Sci-fi soldiers in neon-lit scene",
+          "imageUrl": "assets/img/10156126_10202782085624871_4462967713635072234_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Game Design", "Environment Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "vibrant", "high-contrast"],
+            "subjectMatter": ["character", "environment"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "d0c63284-0534-5ad5-84b0-ea307596fc29",
+          "title": "Dark Knight",
+          "subtitle": "Armored warrior with glowing blade",
+          "imageUrl": "assets/img/10157357_721586174546275_5725115339343964770_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "high-contrast"],
+            "subjectMatter": ["character", "figure"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "f730233c-2b54-5c06-9c67-9f1a52bbc142",
+          "title": "Ascension VI",
+          "subtitle": "Cyberpunk warrior with cat companion",
+          "imageUrl": "assets/img/10169421_234467346757141_819045559_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Illustration", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "muted", "earthy"],
+            "subjectMatter": ["character", "creature"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "7bfaadf8-ff01-55d7-943f-111eb33d00e7",
+          "title": "VW Concept",
+          "subtitle": "Futuristic Volkswagen render",
+          "imageUrl": "assets/img/10170953_10152300371381001_3379562856305884562_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "30611c38-db93-5a8e-b643-bc91ed38a48e",
+          "title": "Tron Lightcycle",
+          "subtitle": "Daniel Simon concept for Disney",
+          "imageUrl": "assets/img/10176250_862790917070305_5514160016639730224_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["linework-heavy", "detailed"]
+          }
+        },
+        {
+          "id": "6ae99145-7525-5307-8c97-4c328def7d79",
+          "title": "Dashboard Sketches",
+          "subtitle": "Car interior design studies",
+          "imageUrl": "assets/img/10177956_724606474262855_4502650781362058352_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "884b2eb0-7f89-542d-a38b-d5c9b63c5372",
+          "title": "Luxury Interior",
+          "subtitle": "Car cabin concept render",
+          "imageUrl": "assets/img/10250120_265186387010629_5499613451583754056_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "97a58684-ab85-5b7c-a145-e6bdff211841",
+          "title": "Sports Car Studies",
+          "subtitle": "Four-view exterior pencil sketches",
+          "imageUrl": "assets/img/10251931_717183591671810_3841486577560608768_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "d59e08c1-23ae-54e7-9a5c-28f2b47ad3c0",
+          "title": "Sci-Fi Vehicle Blueprint",
+          "subtitle": "Daniel Simon technical drawing for Disney",
+          "imageUrl": "assets/img/10251994_727436567313179_1364667870605046210_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["linework-heavy", "detailed"]
+          }
+        },
+        {
+          "id": "91a06c71-03db-5674-913a-c88b91603a07",
+          "title": "Mech Rhino",
+          "subtitle": "Weta Workshop armored beast concept",
+          "imageUrl": "assets/img/10252017_10202865232244474_9063107673485750183_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Game Design", "Character Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral"],
+            "subjectMatter": ["creature", "mechanical"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "e24008f5-d28c-5422-80b9-490e3a6f058c",
+          "title": "Opel Concept Duo",
+          "subtitle": "Two futuristic Opel renders",
+          "imageUrl": "assets/img/10258607_715233991866770_3165060825799184643_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "warm"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "32ebceed-a1ca-5126-82a8-85ea0aa302f7",
+          "title": "Open-Wheel Racer",
+          "subtitle": "Futuristic single-seater concept",
+          "imageUrl": "assets/img/10259342_726895097367326_5569990362966308188_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "figure"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "d2657adf-bddc-5cca-8c20-bc23283f8e68",
+          "title": "The Sun King",
+          "subtitle": "Heroic figure in golden light",
+          "imageUrl": "assets/img/10265356_754588401229388_3323116414214843154_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Digital Painting", "Figure Drawing"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "monochromatic"],
+            "subjectMatter": ["figure", "character"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "be0ed8b5-fa1c-5dab-afab-acccb884df10",
+          "title": "Crusader Knight",
+          "subtitle": "Luminous helmet with red cross tabard",
+          "imageUrl": "assets/img/10271335_10152277310514333_7037868349811293620_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "high-contrast"],
+            "subjectMatter": ["character", "figure"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "903e9b3d-27fc-5616-9f07-6d9ca81e0bdc",
+          "title": "Armored Swordsman",
+          "subtitle": "Sci-fi warrior with dual blades",
+          "imageUrl": "assets/img/10285703_10152839393312846_4330347189890957020_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["muted", "cool"],
+            "subjectMatter": ["character", "figure", "mechanical"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "b1b0fd71-9307-5ff6-abe1-b2b06040cd76",
+          "title": "Lioness Studies",
+          "subtitle": "Dynamic big cat motion poses",
+          "imageUrl": "assets/img/10292213_10152161907116902_6777191148508146579_n-1.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Figure Drawing"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "monochromatic"],
+            "subjectMatter": ["creature", "nature"],
+            "techniqueVisible": ["loose", "gestural"]
+          }
+        },
+        {
+          "id": "92abe9fa-0d8d-5572-8ec3-4369b0cb276b",
+          "title": "Photoshop Proof Setup",
+          "subtitle": "Color management tutorial screenshot",
+          "imageUrl": "assets/img/10295760_659246037464512_8143830249758567329_n.jpg",
+          "metadata": {
+            "industry": ["Digital Painting"],
+            "mediumTags": ["2D Digital Art / Software & Tools / Photoshop"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["tutorial", "software"],
+            "techniqueVisible": ["screenshot"]
+          }
+        },
+        {
+          "id": "3b6a4f6f-d56d-5301-851b-5aaf14cd25a8",
+          "title": "Bronze Knight Shader",
+          "subtitle": "3D material breakdown for armored character",
+          "imageUrl": "assets/img/10308060_759298654100821_2066549450897789857_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Digital Painting"],
+            "mediumTags": ["3D Art / Texturing & Shading / Material Breakdown"],
+            "colorPalette": ["warm", "neutral"],
+            "subjectMatter": ["character", "mechanical"],
+            "techniqueVisible": ["detailed", "3D"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "E0000001-0000-0000-0000-000000000002",
+      "title": "Discover \u2014 Set 2",
+      "items": [
+        {
+          "id": "6593873c-fbad-53e6-976c-6fe22f8f4713",
+          "title": "Porsche Sci-Fi Top-Down",
+          "subtitle": "Dual futuristic Porsche concepts from above",
+          "imageUrl": "assets/img/10312847_727889387267897_624360740925036797_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral", "high-contrast"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "18c4414b-8a41-5ddd-831e-af0a69c051eb",
+          "title": "Sport Bike Render",
+          "subtitle": "Red and black motorcycle concept",
+          "imageUrl": "assets/img/10313998_744451365611699_4905606297148286350_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "high-contrast"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "2a97c1b2-fe56-528e-97ff-db2696672f47",
+          "title": "Cloak & Drape Studies",
+          "subtitle": "Hooded figure fabric flow annotations",
+          "imageUrl": "assets/img/10325344_672006502854702_6095742543199033916_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Illustration", "Figure Drawing"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "muted"],
+            "subjectMatter": ["character", "figure"],
+            "techniqueVisible": ["painterly", "gestural"]
+          }
+        },
+        {
+          "id": "7bc208d0-71eb-5b44-a8ed-c025d72905f0",
+          "title": "Mazda Katar Concept",
+          "subtitle": "Full portfolio board with interior and exterior",
+          "imageUrl": "assets/img/10334429_725171994206303_7996889198774217560_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "24dfd955-c1dd-592d-8e7d-383499327a5e",
+          "title": "Neon Sports Car",
+          "subtitle": "Vibrant magenta and cyan sketch",
+          "imageUrl": "assets/img/10355853_261139400748661_7415860224405363624_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["vibrant", "cool", "high-contrast"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["loose", "painterly"]
+          }
+        },
+        {
+          "id": "4f0c7227-44ba-571e-ae69-1f8a6d49f715",
+          "title": "Mushroom Forest Village",
+          "subtitle": "Colorful fantasy treehouse environment",
+          "imageUrl": "assets/img/10357236_10203218593920976_2194784682070355476_n.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Illustration", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["vibrant", "warm", "analogous"],
+            "subjectMatter": ["environment", "nature"],
+            "techniqueVisible": ["painterly", "stylized"]
+          }
+        },
+        {
+          "id": "16cd7685-4c27-51f5-b0bb-2823fbd34e32",
+          "title": "Porsche Typ 712",
+          "subtitle": "Technical cutaway and finished render",
+          "imageUrl": "assets/img/10363664_733883636668472_3803566216874843771_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["linework-heavy", "detailed"]
+          }
+        },
+        {
+          "id": "57e8aba8-24f3-5b6f-9322-e406b4071e65",
+          "title": "Cadillac Interior",
+          "subtitle": "Luxury dashboard concept with wood trim",
+          "imageUrl": "assets/img/10376318_740533316003504_372284407627940839_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "b5989836-d023-53d8-a345-152f1fcfe59c",
+          "title": "BMW SUV Concept",
+          "subtitle": "Front and rear three-quarter renders",
+          "imageUrl": "assets/img/10376836_265766096952658_3980482446532724879_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "40b5c2c4-faf7-5e61-a036-d496b08f8e2f",
+          "title": "Racing Seat Concepts",
+          "subtitle": "Sport interior with red harness details",
+          "imageUrl": "assets/img/10382223_261763057352962_522990559054685022_o.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "warm"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "ace050fb-a897-56d3-a045-0657416fa94b",
+          "title": "Formula Racer Front",
+          "subtitle": "Futuristic race car head-on sketch",
+          "imageUrl": "assets/img/10413336_263141123881822_7141503702679857770_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["detailed", "linework-heavy"]
+          }
+        },
+        {
+          "id": "02e60ffa-ebfd-5840-b6bf-86992ee90855",
+          "title": "IED PassoCorto",
+          "subtitle": "Orange sports car concept three-view",
+          "imageUrl": "assets/img/1044002_418282811642568_427476116_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "vibrant"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "576495df-b0aa-597a-9dbf-7a535fb79312",
+          "title": "Guardian Deity",
+          "subtitle": "Buddhist figure on lion with golden halo",
+          "imageUrl": "assets/img/10459080_10203114611898219_200615436648285682_o.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Character Design", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "high-contrast"],
+            "subjectMatter": ["character", "creature", "figure"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "a70891c1-a08e-5f48-ae8c-06a2d49c0b95",
+          "title": "Surreal Meditation",
+          "subtitle": "Seated figure with skeletal headpiece",
+          "imageUrl": "assets/img/10460831_10153416061408539_2539631562096580281_o.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Digital Painting", "Figure Drawing"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "monochromatic"],
+            "subjectMatter": ["figure", "character"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "661354ca-1344-5964-86bb-906e512a27ce",
+          "title": "Low-Poly Portrait",
+          "subtitle": "Geometric triangle portrait of woman",
+          "imageUrl": "assets/img/1276851_377068109100973_8007950433590376410_o.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Portraits", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Vector Art"],
+            "colorPalette": ["warm", "muted"],
+            "subjectMatter": ["portrait", "figure"],
+            "techniqueVisible": ["stylized", "geometric"]
+          }
+        },
+        {
+          "id": "a27bbc6a-fe72-520b-9aba-e4926865e102",
+          "title": "Moonlit Boat Creature",
+          "subtitle": "Whimsical hippo-boat in misty night scene",
+          "imageUrl": "assets/img/135428_684234874975327_1804148836877122782_o.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Game Design", "Character Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "muted"],
+            "subjectMatter": ["creature", "environment"],
+            "techniqueVisible": ["painterly", "stylized"]
+          }
+        },
+        {
+          "id": "fee29182-fa34-5ebf-a59a-22ccf977309e",
+          "title": "Spirit Cat",
+          "subtitle": "Girl with glowing magical cat spirit",
+          "imageUrl": "assets/img/1382160_10203795120583615_2070442408_n.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Character Design", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "high-contrast"],
+            "subjectMatter": ["character", "creature"],
+            "techniqueVisible": ["stylized", "painterly"]
+          }
+        },
+        {
+          "id": "9433853d-9d89-59fe-9ae1-f470797d51cd",
+          "title": "Audi Wheel Detail",
+          "subtitle": "Close-up rear quarter and wheel render",
+          "imageUrl": "assets/img/138959438310070image.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "f450bbd4-08cb-5878-b9ec-9728c196b1fa",
+          "title": "Skoda Workman",
+          "subtitle": "Micro delivery vehicle concept board",
+          "imageUrl": "assets/img/138981291188157image.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["clean", "detailed"]
+          }
+        },
+        {
+          "id": "c500d97a-2fa8-5e70-8ec9-cbc6af873694",
+          "title": "BMW Interior Sketch",
+          "subtitle": "Concept dashboard with annotations",
+          "imageUrl": "assets/img/138989771028368image.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["loose", "painterly"]
+          }
+        },
+        {
+          "id": "8f6fe216-2d2e-5d9d-8d25-aeacceed5966",
+          "title": "Sci-Fi ATV Sketches",
+          "subtitle": "Futuristic buggy pencil explorations",
+          "imageUrl": "assets/img/139004528207210image.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["vehicle", "mechanical"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "468a45b0-7c4f-573a-9591-1330cb061bb4",
+          "title": "Adidas Boot Render",
+          "subtitle": "Vibrant football cleat concept",
+          "imageUrl": "assets/img/139263929406281image.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["vibrant", "cool"],
+            "subjectMatter": ["product"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "6f33e9df-1bb5-5505-834a-71e89935dd8f",
+          "title": "Sports Car Top-Down",
+          "subtitle": "Quick pencil overhead sketch",
+          "imageUrl": "assets/img/1472733_10152327002989241_1584024859_n.png",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "cf5897fe-e252-5de8-82ba-71726d5dffc5",
+          "title": "BMW Vision Luxury",
+          "subtitle": "Rear three-quarter concept render",
+          "imageUrl": "assets/img/1486642_10152362883814241_7850187152290006927_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "warm"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "3332b589-1a8c-5790-acf5-c05131c1f7b2",
+          "title": "Buick Refinement Board",
+          "subtitle": "Exterior sketch evolution with annotations",
+          "imageUrl": "assets/img/1499581_705759802814189_961315815_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "linework-heavy"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "E0000001-0000-0000-0000-000000000003",
+      "title": "Discover \u2014 Set 3",
+      "items": [
+        {
+          "id": "ea660532-8448-5bdb-8d09-3987c2e8c28d",
+          "title": "Gothic Cathedral",
+          "subtitle": "Detailed line drawing of mountain fortress",
+          "imageUrl": "assets/img/1533853_10202745752543822_516923506_n.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral"],
+            "subjectMatter": ["environment", "architecture"],
+            "techniqueVisible": ["linework-heavy", "detailed"]
+          }
+        },
+        {
+          "id": "f5c7d80f-152d-5649-9c0d-434a5d0fbe36",
+          "title": "Arbiter Scout Helmet",
+          "subtitle": "Steampunk gas mask prop concept",
+          "imageUrl": "assets/img/1556414_10152144059922954_1266447379_o.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Character Design", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "muted"],
+            "subjectMatter": ["mechanical", "character"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "883f864c-e24f-54b5-b497-b4080cef2277",
+          "title": "Ice Dragon",
+          "subtitle": "Epic frost dragon with tiny warrior",
+          "imageUrl": "assets/img/1604893_701543169885221_917343916_n.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Character Design", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "high-contrast"],
+            "subjectMatter": ["creature", "character"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "1ce315bf-0bbb-5a36-bc8a-eaf55aee1d51",
+          "title": "Slither Eel",
+          "subtitle": "Fantasy lizard creature on a leaf",
+          "imageUrl": "assets/img/1606839_670973069625804_204241150_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "vibrant"],
+            "subjectMatter": ["creature", "nature"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "bbc4db3c-2f4b-5f43-80e5-6ede483dfb2d",
+          "title": "BMW Vision Triptych",
+          "subtitle": "Three luxury concept car views",
+          "imageUrl": "assets/img/1609833_252315114964423_5714729244685222111_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "cool"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "1c440c47-df39-5177-aec1-0cedb12082fb",
+          "title": "Skeleton Warriors",
+          "subtitle": "Undead soldier and armored beast sketches",
+          "imageUrl": "assets/img/1614143_705993256106879_993853426_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "muted"],
+            "subjectMatter": ["character", "creature"],
+            "techniqueVisible": ["loose", "painterly"]
+          }
+        },
+        {
+          "id": "eaf2a3fa-16a7-5dcc-8b0e-46b89e403114",
+          "title": "Ski Helmet & Goggles",
+          "subtitle": "Product design sketches and renders",
+          "imageUrl": "assets/img/1614311_235681486627786_777283179_o.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "warm"],
+            "subjectMatter": ["product"],
+            "techniqueVisible": ["detailed", "linework-heavy"]
+          }
+        },
+        {
+          "id": "c166b48d-54d6-5dd7-9954-9f21791bb429",
+          "title": "Sci-Fi Sketchbook",
+          "subtitle": "Character lineup and mechanical details",
+          "imageUrl": "assets/img/1614609_674542959269904_1729635880_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["neutral", "warm"],
+            "subjectMatter": ["character", "mechanical"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "fafb011a-d008-5703-8672-18cfb0b0f3eb",
+          "title": "Le Mans Racer",
+          "subtitle": "Race car concept with livery",
+          "imageUrl": "assets/img/1618508_10151925418042055_1372280324_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["painterly", "loose"]
+          }
+        },
+        {
+          "id": "8ebaca2a-0f84-5342-a40c-eb1224535fe9",
+          "title": "Copper Sports Car",
+          "subtitle": "Warm-toned concept car render",
+          "imageUrl": "assets/img/1622361_10152206018704241_111343196_o.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "vibrant"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["detailed", "painterly"]
+          }
+        },
+        {
+          "id": "e190217e-0b6e-5aa4-8cad-5e6b2029476e",
+          "title": "Sgt. Fly Mango",
+          "subtitle": "Bird soldier and rhino trooper characters",
+          "imageUrl": "assets/img/1658671_674984759225724_640106536_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["cool", "muted"],
+            "subjectMatter": ["character", "creature"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "bc60666a-544a-5cf5-adac-8cf184a22b4d",
+          "title": "Dark Supercar Rear",
+          "subtitle": "Moody rear-view concept in fog",
+          "imageUrl": "assets/img/1781109_10152469421294241_4671021576933752823_o.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool", "high-contrast"],
+            "subjectMatter": ["vehicle"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "7f2003f8-6fc4-59ff-a236-4509e2b8c424",
+          "title": "Colossus Battle",
+          "subtitle": "Warrior facing massive mech in wasteland",
+          "imageUrl": "assets/img/1796040_714294421946313_5285971398353321833_o.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Game Design", "Environment Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "muted"],
+            "subjectMatter": ["character", "mechanical", "environment"],
+            "techniqueVisible": ["painterly", "detailed"]
+          }
+        },
+        {
+          "id": "659596fa-d8bf-5953-a782-01d616ccb37d",
+          "title": "Chrome Quadruped",
+          "subtitle": "Sleek robotic four-legged creature",
+          "imageUrl": "assets/img/1796097_10151940033626500_1196833364_o.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Game Design", "Character Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["creature", "mechanical"],
+            "techniqueVisible": ["detailed", "clean"]
+          }
+        },
+        {
+          "id": "f81bbc65-2a66-5215-a1de-983ada07182e",
+          "title": "Alien Explorer Page",
+          "subtitle": "Creature and astronaut sketchbook studies",
+          "imageUrl": "assets/img/1798362_672406686150198_1549939716_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+            "colorPalette": ["cool", "muted"],
+            "subjectMatter": ["creature", "character"],
+            "techniqueVisible": ["linework-heavy", "loose"]
+          }
+        },
+        {
+          "id": "3c27dfa4-7acf-5c71-88b7-603fdae639a9",
+          "title": "Sci-Fi Creature Sketchbook",
+          "subtitle": "Gorilla banana scene and alien creature sketches on a single page",
+          "imageUrl": "assets/img/1799012_674023025988564_1524259365_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design"],
+            "mediumTags": ["2D Traditional Art / Drawing / Ink & Pen"],
+            "colorPalette": ["monochrome"],
+            "subjectMatter": ["creature", "character", "animal"],
+            "techniqueVisible": ["sketchy", "loose", "ink"]
+          }
+        },
+        {
+          "id": "779e0d6c-e398-5e11-9019-2caf4317f0b0",
+          "title": "Alien Portrait — White Armor",
+          "subtitle": "Sci-fi alien character in sleek white futuristic suit, close-up portrait",
+          "imageUrl": "assets/img/1890326_10151852368180951_462072228_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "muted"],
+            "subjectMatter": ["character", "alien", "portrait"],
+            "techniqueVisible": ["detailed", "realistic", "polished"]
+          }
+        },
+        {
+          "id": "d0a7288e-d512-520f-931c-3d2a1283d3ca",
+          "title": "Alien Creature Studies",
+          "subtitle": "Multiple alien creature sketches on a sketchbook page, loose exploratory drawings",
+          "imageUrl": "assets/img/1891249_671743576216509_1772988722_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Concept Art"],
+            "mediumTags": ["2D Traditional Art / Drawing / Ink & Pen"],
+            "colorPalette": ["monochrome"],
+            "subjectMatter": ["creature", "alien", "character"],
+            "techniqueVisible": ["sketchy", "loose", "exploratory"]
+          }
+        },
+        {
+          "id": "0af6f03e-786f-5687-a753-2772e4c8b6de",
+          "title": "Lamborghini Concept — Dual View",
+          "subtitle": "SIMKOM Lamborghini-style concept car in silver, side and rear three-quarter views",
+          "imageUrl": "assets/img/1891356_238408243021777_1942287808_o.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "car", "supercar"],
+            "techniqueVisible": ["polished", "realistic", "render"]
+          }
+        },
+        {
+          "id": "b6358051-51b7-5e34-98ce-876138b84d66",
+          "title": "Purple Magical Forest",
+          "subtitle": "Enchanted forest environment painting with purple lighting and magical atmosphere",
+          "imageUrl": "assets/img/1897736_699056540150790_7648738178222885997_n.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "vibrant", "dark"],
+            "subjectMatter": ["environment", "forest", "fantasy"],
+            "techniqueVisible": ["painterly", "atmospheric", "glowing"]
+          }
+        },
+        {
+          "id": "1cf9733a-0ad1-558f-8a90-27b7ee81d064",
+          "title": "Sci-Fi Character & Mech Sketches",
+          "subtitle": "Astronaut, alien creature, spider mech, and small droid concept sketches",
+          "imageUrl": "assets/img/1900092_673472802710253_940014245_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "muted"],
+            "subjectMatter": ["character", "robot", "creature", "mech"],
+            "techniqueVisible": ["sketchy", "loose", "linework"]
+          }
+        },
+        {
+          "id": "de52feea-3c55-5fb7-8350-d531d995d752",
+          "title": "Cinematography & Lighting Study",
+          "subtitle": "Film set layout with camera positions, lighting equipment diagrams, and key/fill/back light setup",
+          "imageUrl": "assets/img/1900536_10152090223249865_1558497832_o.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Concept Art"],
+            "mediumTags": ["2D Traditional Art / Drawing / Ink & Pen"],
+            "colorPalette": ["monochrome", "neutral"],
+            "subjectMatter": ["diagram", "equipment", "film"],
+            "techniqueVisible": ["sketchy", "diagrammatic", "annotated"]
+          }
+        },
+        {
+          "id": "c82fc508-7bd4-5873-93a1-a072f7bd1193",
+          "title": "Chastity — Ethereal Figure",
+          "subtitle": "Floating female figure with flowing drapery and organic wing forms, East Asian fantasy style",
+          "imageUrl": "assets/img/1907773_710610218960219_1455055493_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "muted", "desaturated"],
+            "subjectMatter": ["character", "figure", "fantasy"],
+            "techniqueVisible": ["painterly", "detailed", "ethereal"]
+          }
+        },
+        {
+          "id": "aa1a0355-aeec-50db-b8e2-c8039f168536",
+          "title": "The Sun King — Moon and Crow",
+          "subtitle": "Golden muscular figure with dramatic chiaroscuro lighting by James Zapata",
+          "imageUrl": "assets/img/1909179_10152904373177846_2896039783610705306_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Digital Painting", "Figure Drawing"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "dark", "golden"],
+            "subjectMatter": ["character", "figure", "mythology"],
+            "techniqueVisible": ["painterly", "dramatic lighting", "realistic"]
+          }
+        },
+        {
+          "id": "7501e21b-ca6f-5c39-98b2-d98bc7f74df6",
+          "title": "Dragon Serpent Close-Up",
+          "subtitle": "Detailed dragon head with open maw, visible scales and red flesh, aggressive pose",
+          "imageUrl": "assets/img/1912140_10152057907664125_1879180836_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "dark", "red"],
+            "subjectMatter": ["creature", "dragon", "fantasy"],
+            "techniqueVisible": ["detailed", "realistic", "textured"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "E0000001-0000-0000-0000-000000000004",
+      "title": "Discover \u2014 Set 4",
+      "items": [
+        {
+          "id": "bc5ffa45-b07f-5fdd-a348-38b55115f7d5",
+          "title": "Surreal Digital Portrait — Blue",
+          "subtitle": "Blue-toned male portrait with abstract flowing lines emanating from the head",
+          "imageUrl": "assets/img/1912505_10152038772733721_1383846898_n.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Portraits", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "pastel", "vibrant"],
+            "subjectMatter": ["portrait", "figure", "abstract"],
+            "techniqueVisible": ["flat color", "linework", "surreal"]
+          }
+        },
+        {
+          "id": "6d09417d-4d05-5352-b55b-3a47141b4fce",
+          "title": "T-Rex in a Suit",
+          "subtitle": "Stylized cartoon dinosaur wearing a brown suit and smoking, whimsical character design",
+          "imageUrl": "assets/img/1913485_10203179898514529_1480323935809528481_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "neutral", "earthy"],
+            "subjectMatter": ["character", "animal", "cartoon"],
+            "techniqueVisible": ["painterly", "stylized", "whimsical"]
+          }
+        },
+        {
+          "id": "4da385ad-e0d8-5ffd-8693-75e7787cdf8d",
+          "title": "Silver Sedan Rear View",
+          "subtitle": "Sleek silver sedan concept sketch in rear three-quarter view with bold wheel design",
+          "imageUrl": "assets/img/1925332_540875446025553_695126903_n.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "cool", "monochrome"],
+            "subjectMatter": ["vehicle", "car", "sedan"],
+            "techniqueVisible": ["marker-style", "polished", "dynamic"]
+          }
+        },
+        {
+          "id": "b6ec8319-e3b8-5f4e-87fb-0ef0962ea12b",
+          "title": "Alfa Romeo Concept Board",
+          "subtitle": "Red Alfa Romeo sports car renders with sketches and Martini race livery variant",
+          "imageUrl": "assets/img/1932539_737456419644527_2112353963993276622_o.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "red", "neutral"],
+            "subjectMatter": ["vehicle", "car", "sports car"],
+            "techniqueVisible": ["polished", "render", "presentation board"]
+          }
+        },
+        {
+          "id": "90c96949-ffc7-5739-af79-fa609ed8180a",
+          "title": "Mercedes CS-AMG Concept",
+          "subtitle": "Red and white Mercedes race concept front three-quarter by NjegosLakic",
+          "imageUrl": "assets/img/1932586_687241414631982_45591904_o.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "red", "warm"],
+            "subjectMatter": ["vehicle", "car", "race car"],
+            "techniqueVisible": ["marker-style", "dynamic", "polished"]
+          }
+        },
+        {
+          "id": "fa511412-82d6-5f44-b95e-d883409ccdfe",
+          "title": "BMW Compact Hatchback Sketch",
+          "subtitle": "BMW compact hatchback front three-quarter pencil sketch by deBono, BMW Design",
+          "imageUrl": "assets/img/1941616_10152221693339241_517683782_o.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Traditional Art / Drawing / Pencil & Graphite"],
+            "colorPalette": ["monochrome", "cool"],
+            "subjectMatter": ["vehicle", "car", "hatchback"],
+            "techniqueVisible": ["sketchy", "cross-hatching", "dynamic"]
+          }
+        },
+        {
+          "id": "e14230d9-c8f4-55b9-92da-245d2c37b516",
+          "title": "Young Warrior Woman — Ink Sketch",
+          "subtitle": "Female warrior holding a sword, ink line drawing with purple-pink wash",
+          "imageUrl": "assets/img/1957933_706171999422338_1518901560_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Illustration", "Figure Drawing"],
+            "mediumTags": ["2D Traditional Art / Drawing / Ink & Pen"],
+            "colorPalette": ["cool", "muted", "monochrome"],
+            "subjectMatter": ["character", "figure", "warrior", "fantasy"],
+            "techniqueVisible": ["linework", "ink wash", "loose"]
+          }
+        },
+        {
+          "id": "cb9de8fa-16eb-5deb-bcb9-2ad051b315e3",
+          "title": "Nissan IDx Rally Concept",
+          "subtitle": "SIMKOM Nissan IDx concept with red, white, and carbon fiber rally livery",
+          "imageUrl": "assets/img/1972436_251010895094845_6234926801725175292_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "red", "dark"],
+            "subjectMatter": ["vehicle", "car", "rally"],
+            "techniqueVisible": ["polished", "render", "dynamic"]
+          }
+        },
+        {
+          "id": "aeff81cd-707b-59d3-8a98-51fb4fa5fdb3",
+          "title": "Sports Car Line Sketches",
+          "subtitle": "Two futuristic sports car concept sketches in loose line work, side profile views",
+          "imageUrl": "assets/img/1979862_702579353132234_2012254472_n.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Traditional Art / Drawing / Pencil & Graphite"],
+            "colorPalette": ["monochrome"],
+            "subjectMatter": ["vehicle", "car", "sports car"],
+            "techniqueVisible": ["sketchy", "loose", "linework"]
+          }
+        },
+        {
+          "id": "f46cd5a5-405e-5252-8019-21df099df224",
+          "title": "Shark Warrior — Axe Bearer",
+          "subtitle": "Anthropomorphic shark warrior in medieval armor wielding a bloody axe",
+          "imageUrl": "assets/img/296923_246394295418108_1641792694_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "earthy", "muted"],
+            "subjectMatter": ["character", "creature", "warrior", "fantasy"],
+            "techniqueVisible": ["detailed", "linework", "painterly"]
+          }
+        },
+        {
+          "id": "da63ebc1-4dc5-5fcb-abf8-8e941408efaa",
+          "title": "RoboJack — Engineer Bot",
+          "subtitle": "Mech concept sheet with wrench arms, blueprint annotations, and human scale reference",
+          "imageUrl": "assets/img/378889_279934075397463_1093300929_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral", "warm accents"],
+            "subjectMatter": ["robot", "mech", "character"],
+            "techniqueVisible": ["detailed", "annotated", "concept sheet"]
+          }
+        },
+        {
+          "id": "1ad8c70e-df51-5d88-95d7-f69d925c632a",
+          "title": "Heavy Armor Helmet Busts",
+          "subtitle": "Three sci-fi soldier head concepts in heavy armor with orange accent details",
+          "imageUrl": "assets/img/398_max.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["dark", "neutral", "orange accents"],
+            "subjectMatter": ["character", "helmet", "armor", "soldier"],
+            "techniqueVisible": ["sketchy", "detailed", "linework"]
+          }
+        },
+        {
+          "id": "d41b54dd-b245-5a59-8dd5-18592a2d69b0",
+          "title": "Perched Dragon — Red Crest",
+          "subtitle": "Green winged wyvern with red feathered crest perched on a rock, by Alex Konstad",
+          "imageUrl": "assets/img/532236_10203596458738062_593957787_n.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "cool", "vibrant"],
+            "subjectMatter": ["creature", "dragon", "fantasy"],
+            "techniqueVisible": ["painterly", "atmospheric", "loose"]
+          }
+        },
+        {
+          "id": "1bd18f18-bd9a-5166-9c50-6a0a75097c2b",
+          "title": "Sci-Fi Soldier Concept Sheet",
+          "subtitle": "Armored soldier concepts with helmet variants, backpack gear, and red markings",
+          "imageUrl": "assets/img/550_max.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "muted", "red accents"],
+            "subjectMatter": ["character", "soldier", "armor", "sci-fi"],
+            "techniqueVisible": ["sketchy", "linework", "concept sheet"]
+          }
+        },
+        {
+          "id": "06b5d463-451a-5e96-b46a-d5aa7c06ca19",
+          "title": "Creature Anatomy Studies",
+          "subtitle": "Reptile and turtle head studies with horned beast sketches and anatomical annotations",
+          "imageUrl": "assets/img/616472_668215029900516_5637727360482002411_o.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Illustration", "Figure Drawing"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "warm", "earthy"],
+            "subjectMatter": ["creature", "animal", "anatomy"],
+            "techniqueVisible": ["sketchy", "annotated", "study"]
+          }
+        },
+        {
+          "id": "7f1d76de-32e0-561e-a9ac-96cdb78d24f5",
+          "title": "Alien Bio-Ship",
+          "subtitle": "Dark organic spacecraft with teal energy accents, shown in multiple orthographic views",
+          "imageUrl": "assets/img/872_max.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["dark", "cool", "teal accents"],
+            "subjectMatter": ["vehicle", "spacecraft", "alien", "sci-fi"],
+            "techniqueVisible": ["polished", "render", "concept sheet"]
+          }
+        },
+        {
+          "id": "baceb0a8-1e07-5e38-85f6-db2bc9e2f2f0",
+          "title": "Aerial City Perspective",
+          "subtitle": "Dense futuristic cityscape drawn from a bird's-eye view in fine ink linework",
+          "imageUrl": "assets/img/Boc-_WAIAAIpE_s.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Illustration"],
+            "mediumTags": ["2D Traditional Art / Drawing / Ink & Pen"],
+            "colorPalette": ["monochrome", "cool"],
+            "subjectMatter": ["environment", "city", "architecture"],
+            "techniqueVisible": ["linework", "detailed", "perspective"]
+          }
+        },
+        {
+          "id": "11f048f2-19ef-5ca2-8ecd-b408df825845",
+          "title": "Golden Beast — Lynx Warrior",
+          "subtitle": "Anthropomorphic lynx warrior with spear and ornate cape striding through grasslands",
+          "imageUrl": "assets/img/GoldenBeast_1_final.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "earthy", "golden"],
+            "subjectMatter": ["character", "creature", "warrior", "fantasy"],
+            "techniqueVisible": ["painterly", "detailed", "realistic"]
+          }
+        },
+        {
+          "id": "965a29d0-a5cb-50dd-89a4-8da380c4dd71",
+          "title": "Golden Beast — Battle Charge",
+          "subtitle": "Antlered beast warrior roaring with ornate staff in a battle charge scene",
+          "imageUrl": "assets/img/GoldenBeast_2_final.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "dark", "earthy"],
+            "subjectMatter": ["character", "creature", "warrior", "fantasy"],
+            "techniqueVisible": ["painterly", "detailed", "dramatic lighting"]
+          }
+        },
+        {
+          "id": "5e03dd7a-e9bf-5db4-b9a9-93f5273fd3aa",
+          "title": "AH-64D Apache Longbow Cutaway",
+          "subtitle": "Detailed Boeing technical cutaway diagram showing internal systems and components",
+          "imageUrl": "assets/img/ah-64d_apache_longbow.jpg",
+          "metadata": {
+            "industry": ["Illustration", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "warm", "yellow accents"],
+            "subjectMatter": ["vehicle", "helicopter", "military", "diagram"],
+            "techniqueVisible": ["detailed", "technical", "cutaway"]
+          }
+        },
+        {
+          "id": "c1cf01de-86ca-52e0-80cd-0d451bab8080",
+          "title": "Alpine Concept — Side Profile A",
+          "subtitle": "Sleek silver sports car concept in side profile with dramatic proportions",
+          "imageUrl": "assets/img/alpineF.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "monochrome"],
+            "subjectMatter": ["vehicle", "car", "sports car"],
+            "techniqueVisible": ["marker-style", "polished", "dynamic"]
+          }
+        },
+        {
+          "id": "36811df1-17b2-53dd-8d9f-ea4df65d5b1b",
+          "title": "Alpine Concept — Side Profile B",
+          "subtitle": "Dark silver sports car concept in side profile, low-slung mid-engine proportions",
+          "imageUrl": "assets/img/alpineG.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "dark", "monochrome"],
+            "subjectMatter": ["vehicle", "car", "sports car"],
+            "techniqueVisible": ["marker-style", "polished", "dynamic"]
+          }
+        },
+        {
+          "id": "b8c7ccc9-5e23-51d8-9c1d-e045d909c618",
+          "title": "Female Anatomy Study — Slim",
+          "subtitle": "Multiple female figure poses and proportion studies with character design variations",
+          "imageUrl": "assets/img/anatomy_study_5_14_by_garretaj-d7h5ixa.jpg",
+          "metadata": {
+            "industry": ["Figure Drawing", "Character Design", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "pastel", "monochrome"],
+            "subjectMatter": ["figure", "anatomy", "character"],
+            "techniqueVisible": ["linework", "study", "clean"]
+          }
+        },
+        {
+          "id": "263774e9-41cf-5b6e-90d7-8b6cf6572a77",
+          "title": "De Tomaso Concept — Rear View",
+          "subtitle": "Blue-silver sports car concept in rear three-quarter view with aggressive stance",
+          "imageUrl": "assets/img/detomaso.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "neutral", "blue accents"],
+            "subjectMatter": ["vehicle", "car", "sports car"],
+            "techniqueVisible": ["marker-style", "polished", "dynamic"]
+          }
+        },
+        {
+          "id": "c6e8fd3d-4b67-5f23-a78e-080a5b477b7d",
+          "title": "De Tomaso Concept — Front Sketch",
+          "subtitle": "Pencil sketch of a De Tomaso supercar in front three-quarter with yellow accent lights",
+          "imageUrl": "assets/img/detomaso6.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Traditional Art / Drawing / Pencil & Graphite"],
+            "colorPalette": ["monochrome", "yellow accents"],
+            "subjectMatter": ["vehicle", "car", "supercar"],
+            "techniqueVisible": ["sketchy", "cross-hatching", "dynamic"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "E0000001-0000-0000-0000-000000000005",
+      "title": "Discover \u2014 Set 5",
+      "items": [
+        {
+          "id": "071df280-50f1-5c47-98af-18d1a4552f5a",
+          "title": "Dark Supercar — Front View",
+          "subtitle": "Aggressive dark supercar concept with teal LED accents, front-on perspective",
+          "imageUrl": "assets/img/faceavant.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["dark", "cool", "teal accents"],
+            "subjectMatter": ["vehicle", "car", "supercar"],
+            "techniqueVisible": ["polished", "render", "dramatic lighting"]
+          }
+        },
+        {
+          "id": "34de8d58-b040-5495-bcaf-7889a5182229",
+          "title": "Forest Dragon — Cherry Blossoms",
+          "subtitle": "Green lizard creature with cherry blossom trees growing from its back, by Alex Konstad",
+          "imageUrl": "assets/img/forestdragon.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "vibrant", "warm accents"],
+            "subjectMatter": ["creature", "dragon", "nature", "fantasy"],
+            "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+          }
+        },
+        {
+          "id": "cffaaeba-5e02-5306-9ac5-222bc32d449b",
+          "title": "Back Store Interior — Isometric Cutaway",
+          "subtitle": "FZD multi-level building cutaway with industrial rooms, dock, and factory floor",
+          "imageUrl": "assets/img/fzd_viscom2_wk12_03.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "neutral", "earthy"],
+            "subjectMatter": ["environment", "interior", "architecture", "industrial"],
+            "techniqueVisible": ["detailed", "isometric", "annotated"]
+          }
+        },
+        {
+          "id": "4443b871-6d28-5922-b579-e88e54668f09",
+          "title": "Cyberpunk Interior — Cross-Section",
+          "subtitle": "FZD isometric cross-section of cyberpunk living spaces with multiple rooms and details",
+          "imageUrl": "assets/img/fzd_viscom2_wk12_18.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "cool", "vibrant"],
+            "subjectMatter": ["environment", "interior", "cyberpunk", "architecture"],
+            "techniqueVisible": ["detailed", "isometric", "linework"]
+          }
+        },
+        {
+          "id": "517bb178-41bf-59b3-9ada-e2d6b7e7c85b",
+          "title": "Cyberpunk Apartment — Cutaway",
+          "subtitle": "FZD close-up isometric cutaway of a cyberpunk apartment with lab equipment and living area",
+          "imageUrl": "assets/img/fzd_viscom2_wk12_20.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Concept Art", "Game Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "cool", "purple accents"],
+            "subjectMatter": ["environment", "interior", "cyberpunk", "apartment"],
+            "techniqueVisible": ["detailed", "isometric", "linework"]
+          }
+        },
+        {
+          "id": "b21a2729-fe42-5a42-992d-57459ea8ce20",
+          "title": "Cat Warriors — Greek Armor",
+          "subtitle": "Three anthropomorphic feline warriors in Greco-Roman armor with weapons and shields",
+          "imageUrl": "assets/img/gallery_student_production_sketching_pg4_40.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "earthy", "muted"],
+            "subjectMatter": ["character", "creature", "warrior", "fantasy"],
+            "techniqueVisible": ["detailed", "linework", "painterly"]
+          }
+        },
+        {
+          "id": "c4aef083-44b9-51b1-960b-a4db52d0c647",
+          "title": "Exotic Warrior Trio — Bird & Serpent",
+          "subtitle": "Three exotic humanoid warriors: bird knight, serpent priestess, and Egyptian sorcerer",
+          "imageUrl": "assets/img/gallery_student_production_sketching_pg4_42.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "monochrome"],
+            "subjectMatter": ["character", "creature", "warrior", "fantasy"],
+            "techniqueVisible": ["detailed", "linework", "grayscale"]
+          }
+        },
+        {
+          "id": "1371e605-c526-5893-b61d-6a624815b940",
+          "title": "Heavy Beast Warriors — Rhino, Elephant, Panda",
+          "subtitle": "Three armored anthropomorphic beasts: rhino swordsman, elephant archer, panda fighter",
+          "imageUrl": "assets/img/gallery_student_production_sketching_pg4_45.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Game Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "monochrome"],
+            "subjectMatter": ["character", "creature", "warrior", "animal"],
+            "techniqueVisible": ["detailed", "linework", "grayscale"]
+          }
+        },
+        {
+          "id": "26dc1935-ffc2-5e85-81ce-99b081e49c46",
+          "title": "Futuristic Hover Racer — Orange",
+          "subtitle": "Sleek orange and silver sci-fi hover vehicle by Giorgio Grecu, studio lighting",
+          "imageUrl": "assets/img/giorgio_grecu_01.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "orange", "neutral"],
+            "subjectMatter": ["vehicle", "spacecraft", "sci-fi", "racer"],
+            "techniqueVisible": ["polished", "render", "3D-like"]
+          }
+        },
+        {
+          "id": "f5eb06d6-5577-5f44-8f66-8a68308d8b95",
+          "title": "Hover Racer — Rear Angle",
+          "subtitle": "Orange and silver futuristic hover vehicle from rear three-quarter by Giorgio Grecu",
+          "imageUrl": "assets/img/giorgio_grecu_02.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "orange", "neutral"],
+            "subjectMatter": ["vehicle", "spacecraft", "sci-fi", "racer"],
+            "techniqueVisible": ["polished", "render", "3D-like"]
+          }
+        },
+        {
+          "id": "e40d3cf0-e7ec-53cc-ae17-75c66326c07c",
+          "title": "Hover Racer — Top-Down",
+          "subtitle": "Orange and silver futuristic hover vehicle from above by Giorgio Grecu",
+          "imageUrl": "assets/img/giorgio_grecu_03.jpg",
+          "metadata": {
+            "industry": ["Concept Art", "Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "orange", "neutral"],
+            "subjectMatter": ["vehicle", "spacecraft", "sci-fi", "racer"],
+            "techniqueVisible": ["polished", "render", "3D-like"]
+          }
+        },
+        {
+          "id": "64a46c43-7c4d-5d7a-8602-5d00b5f88197",
+          "title": "Audi Airomorph — Scale Model",
+          "subtitle": "Futuristic Audi Ultra race car concept scale model, Art Center student project",
+          "imageUrl": "assets/img/kim_audi-airomorph_artcenter-2014_13-570x379.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["3D / Physical Model / Scale Model"],
+            "colorPalette": ["neutral", "cool"],
+            "subjectMatter": ["vehicle", "car", "race car", "model"],
+            "techniqueVisible": ["polished", "industrial design", "prototype"]
+          }
+        },
+        {
+          "id": "451b5b9e-aaaa-5e4a-8a94-d770a461545a",
+          "title": "Alien Astronaut — Cyborg",
+          "subtitle": "Sci-fi alien cyborg with mechanical tubes and mission patches in green atmospheric haze",
+          "imageUrl": "assets/img/kug0n4cqsjmtqw5lxjq4.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Concept Art", "Digital Painting"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "green", "muted"],
+            "subjectMatter": ["character", "alien", "cyborg", "sci-fi"],
+            "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+          }
+        },
+        {
+          "id": "16591683-09ba-5d1d-a5de-49399852b7fd",
+          "title": "Lamborghini Concept — Side Profile",
+          "subtitle": "White Lamborghini concept with orange accents and Italian flag stripe, dynamic side view",
+          "imageUrl": "assets/img/lambo sketch-4.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["neutral", "warm", "orange accents"],
+            "subjectMatter": ["vehicle", "car", "supercar"],
+            "techniqueVisible": ["marker-style", "dynamic", "polished"]
+          }
+        },
+        {
+          "id": "ab8ed6be-3c78-57b3-bd07-de001d8b2e41",
+          "title": "Sci-Fi Racer — Tron Style",
+          "subtitle": "Blue and teal futuristic vehicle with glowing wheels by Maxim Revin, Tron-inspired",
+          "imageUrl": "assets/img/maxim_revin_02.jpg",
+          "metadata": {
+            "industry": ["Car Design", "Concept Art"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["cool", "dark", "teal", "blue"],
+            "subjectMatter": ["vehicle", "car", "sci-fi", "racer"],
+            "techniqueVisible": ["polished", "render", "glowing"]
+          }
+        },
+        {
+          "id": "f563addf-3d3c-51a3-bb05-827fefe5684b",
+          "title": "Mercedes Interior — Dashboard Sketch",
+          "subtitle": "Two Mercedes interior concept sketches showing dashboard and steering wheel on dark background",
+          "imageUrl": "assets/img/mercedes1.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["dark", "monochrome"],
+            "subjectMatter": ["vehicle", "interior", "dashboard", "steering wheel"],
+            "techniqueVisible": ["sketchy", "linework", "dramatic lighting"]
+          }
+        },
+        {
+          "id": "b2c1723f-defd-57e7-b63b-7f1c05d7da2e",
+          "title": "Mercedes Interior — Steering Wheel",
+          "subtitle": "Mercedes steering wheel and dashboard close-up concept sketch with gold accent details",
+          "imageUrl": "assets/img/mercedes2.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["dark", "monochrome", "gold accents"],
+            "subjectMatter": ["vehicle", "interior", "steering wheel"],
+            "techniqueVisible": ["sketchy", "detailed", "dramatic lighting"]
+          }
+        },
+        {
+          "id": "763f7ce8-20e7-53cc-a189-636c6e2d367f",
+          "title": "Mercedes Interior — Console Detail",
+          "subtitle": "Mercedes steering wheel and console concept with annotations and lower clock diagrams",
+          "imageUrl": "assets/img/merco10.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["dark", "monochrome", "gold accents"],
+            "subjectMatter": ["vehicle", "interior", "steering wheel", "console"],
+            "techniqueVisible": ["sketchy", "detailed", "annotated"]
+          }
+        },
+        {
+          "id": "7870e15e-ea9c-5b88-8510-184ffa66d816",
+          "title": "Mercedes Interior Ergonomics Study",
+          "subtitle": "Two-view interior sketch showing driving position and movement annotations",
+          "imageUrl": "assets/img/merco11.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Traditional Art / Drawing / Marker Rendering"],
+            "colorPalette": ["neutral", "monochrome"],
+            "subjectMatter": ["vehicle", "interior", "ergonomics"],
+            "techniqueVisible": ["line work", "annotated", "technical"]
+          }
+        },
+        {
+          "id": "0290c18e-5872-53d4-9c36-ccf064ccb763",
+          "title": "Mercedes-Benz Interior Ideation Sheet",
+          "subtitle": "Full interior and steering wheel concepts with orange accent details and variant diagrams",
+          "imageUrl": "assets/img/merco12.jpg",
+          "metadata": {
+            "industry": ["Car Design"],
+            "mediumTags": ["2D Traditional Art / Drawing / Marker Rendering"],
+            "colorPalette": ["neutral", "warm"],
+            "subjectMatter": ["vehicle", "interior", "steering wheel", "ideation"],
+            "techniqueVisible": ["line work", "marker rendering", "detailed"]
+          }
+        },
+        {
+          "id": "245de6d5-e9de-51fe-8c5b-9ab86a517c25",
+          "title": "Russian Folk Costume — Gold Kokoshnik",
+          "subtitle": "Traditional Russian costume on mannequin with gold kokoshnik headdress and blue/gold dress",
+          "imageUrl": "assets/img/tumblr_n0kckjeBm71qcddvlo1_500.jpg",
+          "metadata": {
+            "industry": ["Illustration"],
+            "mediumTags": ["Photography / Reference"],
+            "colorPalette": ["cool", "gold"],
+            "subjectMatter": ["costume", "folk art", "headpiece", "textile"],
+            "techniqueVisible": ["reference photo", "ornamental"]
+          }
+        },
+        {
+          "id": "b0384464-1008-5ef0-bbb8-97ad9d09d1df",
+          "title": "Kokoshnik Headpiece — Side Profile",
+          "subtitle": "Blue and gold kokoshnik headpiece on mannequin, side view showing ornate beadwork",
+          "imageUrl": "assets/img/tumblr_n0kcmrkPxU1qcddvlo2_500.jpg",
+          "metadata": {
+            "industry": ["Illustration"],
+            "mediumTags": ["Photography / Reference"],
+            "colorPalette": ["cool", "gold"],
+            "subjectMatter": ["headpiece", "folk art", "costume", "beadwork"],
+            "techniqueVisible": ["reference photo", "ornamental"]
+          }
+        },
+        {
+          "id": "0c256a02-8cd2-56bf-acb4-79a0b9dbf362",
+          "title": "Striped Textile Shawl Study",
+          "subtitle": "Traditional striped fabric shawl draped on mannequin in brown, red, and gold tones",
+          "imageUrl": "assets/img/tumblr_n0kcxrX2di1qcddvlo1_500.jpg",
+          "metadata": {
+            "industry": ["Illustration"],
+            "mediumTags": ["Photography / Reference"],
+            "colorPalette": ["warm", "earth tones"],
+            "subjectMatter": ["textile", "fabric", "costume", "pattern"],
+            "techniqueVisible": ["reference photo", "draped"]
+          }
+        },
+        {
+          "id": "93fa122e-f5cc-519e-bcf1-331b20f8a33a",
+          "title": "Ornate Gold Kokoshnik — Front View",
+          "subtitle": "Elaborate gold kokoshnik headdress with intricate beadwork and gemstones, front-facing",
+          "imageUrl": "assets/img/tumblr_n0kd0frCn21qcddvlo1_500.jpg",
+          "metadata": {
+            "industry": ["Illustration"],
+            "mediumTags": ["Photography / Reference"],
+            "colorPalette": ["gold", "warm"],
+            "subjectMatter": ["headpiece", "folk art", "jewelry", "ornament"],
+            "techniqueVisible": ["reference photo", "ornamental", "detailed"]
+          }
+        },
+        {
+          "id": "46d1d1f2-c23e-5aef-bb99-027a78b98793",
+          "title": "Set Design Workshop — Robert Kondo",
+          "subtitle": "Pixar artist workshop poster featuring cathedral dome architectural cutaway illustration",
+          "imageUrl": "assets/img/unnamed.jpg",
+          "metadata": {
+            "industry": ["Environment Design", "Illustration"],
+            "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+            "colorPalette": ["warm", "muted"],
+            "subjectMatter": ["architecture", "cathedral", "cutaway", "environment"],
+            "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+          }
+        },
+        {
+          "id": "1b4812c1-2128-577f-b492-e485db04d655",
+          "title": "Fantasy Bird Creature Sculpture",
+          "subtitle": "Iridescent fantasy bird with long legs and elaborate plumage by Enrique Gomez DeAlba",
+          "imageUrl": "assets/img/w5mZZQE.jpg",
+          "metadata": {
+            "industry": ["Character Design", "Illustration"],
+            "mediumTags": ["3D Art / Sculpture"],
+            "colorPalette": ["vibrant", "iridescent"],
+            "subjectMatter": ["creature", "bird", "fantasy", "sculpture"],
+            "techniqueVisible": ["sculptural", "detailed", "organic"]
+          }
+        }
+      ]
+    }
+  ]
+}
