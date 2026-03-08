@@ -6,7 +6,7 @@
 let APP_DATA = null;
 let INSPO_DATA = null;
 const NAV_STACK = [];
-let bookmarks = new Set();
+let bookmarks = new Set(); // hydrated from localStorage below
 let navBack = false; // true when navigating backward (triggers reverse slide animation)
 let currentUser = null; // { name, email, photoInitials, photoColor }
 let currentSavedTab = 'inspiration'; // persists active tab across re-renders of the saved page
@@ -32,6 +32,36 @@ const ICONS = {
 // -- Title Case Helper -----------------------------------------
 function toTitleCase(str) {
   return str.replace(/\b\w+/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase());
+}
+
+// -- Safe Data Loader ------------------------------------------
+/** Fetch exercise + inspiration JSON with error handling. Returns true on success. */
+async function loadAppData() {
+  if (APP_DATA && INSPO_DATA) return true;
+  try {
+    const [exResp, inspoResp] = await Promise.all([
+      fetch('data/exercises.json?v=4'),
+      fetch('data/inspiration.json?v=1'),
+    ]);
+    if (!exResp.ok || !inspoResp.ok) throw new Error(`HTTP ${exResp.status}/${inspoResp.status}`);
+    APP_DATA = await exResp.json();
+    INSPO_DATA = await inspoResp.json();
+    return true;
+  } catch (err) {
+    console.error('Failed to load app data:', err);
+    // Show user-facing error on whatever page is active
+    const activePage = document.querySelector('.page.active');
+    if (activePage) {
+      activePage.innerHTML = `
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:60vh;text-align:center;padding:24px;">
+          <div style="font-size:32px;margin-bottom:12px;">⚠</div>
+          <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Unable to load content</div>
+          <div style="font-size:14px;color:#666;margin-bottom:20px;">Check your connection and try again.</div>
+          <button class="pressable" style="padding:10px 24px;border-radius:8px;background:#1a1a1a;color:#fff;border:none;font-size:14px;font-weight:600;cursor:pointer;" onclick="location.reload()">Retry</button>
+        </div>`;
+    }
+    return false;
+  }
 }
 
 // -- Media URL Resolver ----------------------------------------
@@ -164,7 +194,8 @@ function renderAuth() {
         <div class="auth-divider">or</div>
 
         <div style="display:flex;flex-direction:column;gap:10px">
-          <input class="auth-email-input" type="email" id="auth-email" placeholder="Email address" autocomplete="email"/>
+          <label for="auth-email" class="sr-only">Email address</label>
+          <input class="auth-email-input" type="email" id="auth-email" placeholder="Email address" autocomplete="email" aria-label="Email address"/>
           <button class="auth-continue-btn pressable" onclick="signInWithEmail()">Continue</button>
           <div class="auth-magic-link-row">Forgot your password? <button class="auth-magic-link pressable" onclick="openMagicLinkModal()">Use a magic link</button></div>
         </div>
@@ -297,15 +328,8 @@ async function bootAuthenticatedApp() {
   window.scrollTo(0, 0);
 
   // Fetch data (first load) and render home
-  if (!APP_DATA) {
-    const [exResp, inspoResp] = await Promise.all([
-      fetch('data/exercises.json?v=4'),
-      fetch('data/inspiration.json?v=1'),
-    ]);
-    APP_DATA = await exResp.json();
-    INSPO_DATA = await inspoResp.json();
-  }
-  requestAnimationFrame(() => renderHome());
+  const ok = await loadAppData();
+  if (ok) requestAnimationFrame(() => renderHome());
 }
 
 async function signOut() {
@@ -319,7 +343,8 @@ async function signOut() {
   const pill = document.getElementById('global-user-pill');
   if (pill) { pill.innerHTML = ''; pill.classList.remove('visible'); }
 
-  // Stop any active media / timers
+  // Stop any active media / timers and clean up global state
+  cleanupPageState();
   if (typeof stopVideo === 'function') stopVideo();
   if (typeof clearForYouTimers === 'function') clearForYouTimers();
   NAV_STACK.length = 0;
@@ -408,12 +433,8 @@ async function loadData() {
   homeEl.classList.add('active');
   updateBottomNavActive('page-home');
 
-  const [exResp2, inspoResp2] = await Promise.all([
-    fetch('data/exercises.json?v=4'),
-    fetch('data/inspiration.json?v=1'),
-  ]);
-  APP_DATA = await exResp2.json();
-  INSPO_DATA = await inspoResp2.json();
+  const ok = await loadAppData();
+  if (!ok) return;
 
   // Populate the global avatar pill if the user is already authenticated
   if (currentUser) renderGlobalAvatar();
@@ -423,7 +444,28 @@ async function loadData() {
 }
 
 // -- Navigation -----------------------------------------------
+/** Release heavyweight global state from the page we're leaving. */
+function cleanupPageState() {
+  // Coach image data (can be multi-MB base64)
+  window._coachImageBase64 = null;
+  window._coachImagePreview = null;
+  // Generated plan
+  window._generatedPlan = null;
+  // Search/browse results stored for modals
+  window._inspoResults = null;
+  window._exerciseResults = null;
+  window._exerciseCatLookup = null;
+  // Modal helpers
+  window._inspoModalCurrent = null;
+  window._inspoModalRender = null;
+  // Close any open modals
+  closeGenPlanModal();
+  closeInspoModal();
+}
+
 function navigateTo(pageId, renderFn, data) {
+  // Clean up heavyweight state from previous page
+  cleanupPageState();
   // Stop carousel auto-scroll when leaving home
   if (heroCarouselState) { heroCarouselState.stop(); heroCarouselState = null; }
   closeUserMenu();
@@ -455,6 +497,7 @@ function navigateTo(pageId, renderFn, data) {
 }
 
 function goBack() {
+  cleanupPageState();
   NAV_STACK.pop();
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
 
@@ -772,10 +815,9 @@ function updateBottomNavActive(pageId) {
   if (pill) pill.classList.toggle('visible', !!currentUser && !noAvatarPages.has(pageId));
 }
 
-function updateBottomNavVisibility(pageId) {
-  // Bottom nav is always visible — the CSS sibling selector
-  // hides it on desktop video page only
-}
+// updateBottomNavVisibility is a no-op — CSS handles nav visibility via sibling selectors.
+// Kept as a named stub so callsites don't need to be removed.
+function updateBottomNavVisibility(_pageId) {}
 
 // -- For You Auto-Scroll --------------------------------------
 let forYouState = { timer: null, settleTimer: null, currentIndex: 0 };
@@ -829,6 +871,13 @@ function getLikedItems()       { try { return JSON.parse(localStorage.getItem(LI
 function getSavedInspo()       { try { return JSON.parse(localStorage.getItem(SAVED_INSPO_KEY)  || '[]'); } catch { return []; } }
 function getSavedAssignments() { try { return JSON.parse(localStorage.getItem(SAVED_ASSIGN_KEY) || '[]'); } catch { return []; } }
 
+// Cached ID sets — avoids re-parsing localStorage on every For You scroll render
+let _cachedSavedInspoIds  = null;
+let _cachedSavedAssignIds = null;
+function getCachedInspoIds()  { if (!_cachedSavedInspoIds)  _cachedSavedInspoIds  = new Set(getSavedInspo().map(s => s.id));  return _cachedSavedInspoIds; }
+function getCachedAssignIds() { if (!_cachedSavedAssignIds) _cachedSavedAssignIds = new Set(getSavedAssignments().map(s => s.id)); return _cachedSavedAssignIds; }
+function invalidateSavedCaches() { _cachedSavedInspoIds = null; _cachedSavedAssignIds = null; }
+
 function toggleForYouLike(exId, exTitle, catTitle, categoryTag) {
   const liked = getLikedItems();
   const btn = document.getElementById('fy-like-' + exId);
@@ -863,6 +912,7 @@ function toggleForYouBookmark(exId, exTitle, catTitle, catId, duration, type) {
   }
 
   localStorage.setItem(storageKey, JSON.stringify(saved));
+  invalidateSavedCaches();
 
   // Live-refresh the saved page if it's currently open
   if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
@@ -976,10 +1026,8 @@ function renderForYou() {
 
   const isAuthed       = !!currentUser;
   const liked          = getLikedItems();
-  const savedInspo     = getSavedInspo();
-  const savedAssign    = getSavedAssignments();
-  const savedInspoIds  = new Set(savedInspo.map(s => s.id));   // inspiration card bookmark state
-  const savedAssignIds = new Set(savedAssign.map(s => s.id));  // assignment card bookmark state
+  const savedInspoIds  = getCachedInspoIds();
+  const savedAssignIds = getCachedAssignIds();
 
   el.innerHTML = `
     <div class="foryou-feed">
@@ -1797,6 +1845,9 @@ function openGenPlanModal(plan, minutes, totalMin) {
   const modal = document.createElement('div');
   modal.id = 'gen-plan-modal';
   modal.className = 'gen-plan-modal';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-labelledby', 'gen-plan-modal-title');
   modal.addEventListener('click', function(e) {
     if (e.target === modal) closeGenPlanModal();
   });
@@ -1804,7 +1855,7 @@ function openGenPlanModal(plan, minutes, totalMin) {
   modal.innerHTML = `
     <div class="gen-plan-modal__container">
       <div class="gen-plan-modal__header">
-        <span class="gen-plan-modal__title">Your Plan</span>
+        <span class="gen-plan-modal__title" id="gen-plan-modal-title">Your Plan</span>
         <button class="gen-plan-modal__close pressable" onclick="closeGenPlanModal()">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/>
@@ -1834,11 +1885,21 @@ function openGenPlanModal(plan, minutes, totalMin) {
 
   document.body.appendChild(modal);
 
-  // Escape key support
+  // Keyboard support: Escape to close + focus trap
   window._genPlanModalKeyHandler = function(e) {
-    if (e.key === 'Escape') closeGenPlanModal();
+    if (e.key === 'Escape') { closeGenPlanModal(); return; }
+    if (e.key === 'Tab') {
+      const focusable = modal.querySelectorAll('button:not([disabled]), [href], input, [tabindex]:not([tabindex="-1"])');
+      if (!focusable.length) return;
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   };
   document.addEventListener('keydown', window._genPlanModalKeyHandler);
+  // Move focus into modal
+  const closeBtn = modal.querySelector('.gen-plan-modal__close');
+  if (closeBtn) closeBtn.focus();
 }
 
 function closeGenPlanModal() {
@@ -2195,6 +2256,7 @@ function exerciseRowHTML(ex, cat) {
 }
 
 function toggleBookmark(exId) {
+  // Toggle in-memory Set
   if (bookmarks.has(exId)) {
     bookmarks.delete(exId);
   } else {
@@ -2202,22 +2264,39 @@ function toggleBookmark(exId) {
   }
   const isNowBookmarked = bookmarks.has(exId);
 
-  // If we're on the video page, update the bookmark icon in-place
-  // to avoid resetting video progress/timer with a full re-render
-  const videoBookmarkBtn = document.getElementById('video-bookmark-btn');
-  if (videoBookmarkBtn) {
-    videoBookmarkBtn.innerHTML = isNowBookmarked ? ICONS.bookmarkFill : ICONS.bookmark;
-    // Also update any exercise row bookmark icons visible on the page
-    document.querySelectorAll(`.exercise-row__bookmark[data-id="${exId}"]`).forEach(btn => {
-      btn.innerHTML = isNowBookmarked ? ICONS.bookmarkFill : ICONS.bookmark;
-    });
-    return;
+  // Sync to localStorage (da_saved_assignments) so bookmarks persist across sessions
+  const saved = getSavedAssignments();
+  const idx = saved.findIndex(s => s.id === exId);
+  if (isNowBookmarked && idx === -1) {
+    // Find the exercise in APP_DATA to get full metadata
+    let exData = null, catData = null;
+    if (APP_DATA && APP_DATA.categories) {
+      for (const cat of APP_DATA.categories) {
+        const found = cat.exercises.find(e => e.id === exId);
+        if (found) { exData = found; catData = cat; break; }
+      }
+    }
+    if (exData) {
+      saved.unshift({ id: exId, title: exData.title, category: catData.title, catId: catData.id, duration: exData.duration, type: 'assignment', savedAt: Date.now() });
+    }
+  } else if (!isNowBookmarked && idx > -1) {
+    saved.splice(idx, 1);
   }
+  localStorage.setItem(SAVED_ASSIGN_KEY, JSON.stringify(saved));
+  invalidateSavedCaches();
 
-  // On all other pages, do a full re-render so rows update
-  const current = NAV_STACK[NAV_STACK.length - 1];
-  if (current && current.renderFn) current.renderFn(current.data);
-  // Also refresh bookmarks page if it's active
+  // Targeted DOM update: update all visible bookmark icons for this exercise
+  const newIcon = isNowBookmarked ? ICONS.bookmarkFill : ICONS.bookmark;
+  const videoBookmarkBtn = document.getElementById('video-bookmark-btn');
+  if (videoBookmarkBtn) videoBookmarkBtn.innerHTML = newIcon;
+  document.querySelectorAll(`.exercise-row__bookmark[data-id="${exId}"]`).forEach(btn => {
+    btn.innerHTML = newIcon;
+  });
+  document.querySelectorAll(`#fy-bm-${exId}`).forEach(btn => {
+    btn.classList.toggle('fy-action--saved', isNowBookmarked);
+  });
+
+  // Refresh bookmarks page if active
   if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
     renderBookmarks();
   }
@@ -2286,22 +2365,8 @@ function renderBookmarks() {
   }
 
   // ── Section B: Saved Assignments ─────────────────────────────────────────
-  // Primary source: da_saved_assignments — exercise cards bookmarked from For You
-  const savedAssign = getSavedAssignments();
-  const savedAssignIdSet = new Set(savedAssign.map(s => s.id));
-
-  // Secondary source: in-memory `bookmarks` Set (exercise detail / list pages)
-  // Merge in any bookmarked exercises not already in da_saved_assignments
-  const mergedAssign = [...savedAssign];
-  if (APP_DATA && APP_DATA.categories) {
-    APP_DATA.categories.forEach(cat => {
-      cat.exercises.forEach(ex => {
-        if (bookmarks.has(ex.id) && !savedAssignIdSet.has(ex.id)) {
-          mergedAssign.push({ id: ex.id, title: ex.title, category: cat.title, catId: cat.id, duration: ex.duration, type: 'assignment', _fromBookmarksSet: true });
-        }
-      });
-    });
-  }
+  // Single source of truth: da_saved_assignments (synced by both toggleBookmark and toggleForYouBookmark)
+  const mergedAssign = getSavedAssignments();
 
   // ── Section C: Saved Plans ──────────────────────────────────────────────
   const savedPlans = getSavedPlans();
@@ -2349,6 +2414,16 @@ function renderBookmarks() {
   }
 
   // ── Saved Inspiration section — mosaic tile grid ─────────────────────────
+  // Build a results array so the inspo modal can navigate through saved items
+  const savedInspoItems = savedInspo.map(item => ({
+    id: item.id,
+    title: item.title || '',
+    subtitle: item.subtitle || '',
+    imageUrl: tagCardImgLookup[item.id] || item.imageUrl || null,
+    _sectionTitle: item.category || '',
+  }));
+  window._inspoResults = savedInspoItems;
+
   const inspoPlaceholders = ['#c9cdd4','#b8bfc9','#d4cec9','#c4cfc4','#cdc4c4','#c4c9cd','#cdc9c4','#c4cdc9'];
   const inspoSection = hasInspo ? `
     <div class="saved-section">
@@ -2357,11 +2432,13 @@ function renderBookmarks() {
         ${savedInspo.map((item, idx) => {
           const imgUrl = tagCardImgLookup[item.id] || item.imageUrl || null;
           const tileStyle = imgUrl ? '' : `background:${inspoPlaceholders[idx % inspoPlaceholders.length]};`;
-          const removeCall = `toggleForYouBookmark('${item.id}','${(item.title||'').replace(/'/g,"\\'")}','${(item.category||'').replace(/'/g,"\\'")}','${item.catId||''}','${item.duration||''}','inspiration')`;
           return `
-          <div class="inspo-mosaic__tile pressable" style="${tileStyle}" ${imgUrl ? `onclick="openInspoModal('${imgUrl}')"` : ''}>
+          <div class="inspo-mosaic__tile pressable" style="${tileStyle}"
+               data-action="open-inspo" data-index="${idx}">
             ${imgUrl ? `<img src="${imgUrl}" alt="" loading="lazy" draggable="false" />` : ''}
-            <button class="inspo-mosaic__remove pressable" onclick="event.stopPropagation(); ${removeCall}" aria-label="Remove from saved">
+            <button class="inspo-mosaic__remove pressable"
+              data-action="remove-inspo" data-id="${item.id}"
+              aria-label="Remove from saved">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 4h14v17l-7-4-7 4V4z"/>
               </svg>
@@ -2382,15 +2459,9 @@ function renderBookmarks() {
     <div class="saved-section">
       <div class="saved-section__count-row"><span class="saved-section__count">${mergedAssign.length}</span></div>
       <div class="saved-list">
-        ${mergedAssign.map(item => {
-          const removeHandler = item._fromBookmarksSet
-            ? `toggleBookmark('${item.id}')`
-            : `toggleForYouBookmark('${item.id}', '${(item.title || '').replace(/'/g, "\\'")}', '${(item.category || '').replace(/'/g, "\\'")}', '${item.catId || ''}', '${item.duration || ''}', 'assignment')`;
-          const navTarget = item.catId
-            ? `navigateTo('page-video', renderVideoPlayer, { exerciseId: '${item.id}', categoryId: '${item.catId}' })`
-            : `handleBottomNav('assignments')`;
-          return `
-          <div class="saved-item pressable" onclick="${navTarget}">
+        ${mergedAssign.map(item => `
+          <div class="saved-item pressable"
+               data-action="open-exercise" data-exercise-id="${item.id}" data-category-id="${item.catId || ''}">
             <div class="saved-item__thumb saved-item__thumb--assignment">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
             </div>
@@ -2402,12 +2473,11 @@ function renderBookmarks() {
               </div>
             </div>
             <button class="saved-item__remove pressable"
-              onclick="event.stopPropagation(); ${removeHandler}"
+              data-action="remove-exercise" data-id="${item.id}"
               aria-label="Remove">
               <svg width="18" height="18" viewBox="0 0 16 20" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M2 2h12v16l-6-4-6 4V2z"/></svg>
             </button>
-          </div>`;
-        }).join('')}
+          </div>`).join('')}
       </div>
     </div>` : `
     <div class="saved-section">
@@ -2476,6 +2546,44 @@ function renderBookmarks() {
 
   // Restore (or set) active tab — runs after innerHTML is written
   switchSavedTab(currentSavedTab);
+
+  // Event delegation for saved page actions (avoids inline onclick with interpolated strings)
+  el.addEventListener('click', function _savedDelegate(e) {
+    const removeInspo = e.target.closest('[data-action="remove-inspo"]');
+    if (removeInspo) {
+      e.stopPropagation();
+      const id = removeInspo.dataset.id;
+      const saved = getSavedInspo().filter(s => s.id !== id);
+      localStorage.setItem(SAVED_INSPO_KEY, JSON.stringify(saved));
+      renderBookmarks();
+      return;
+    }
+
+    const openInspo = e.target.closest('[data-action="open-inspo"]');
+    if (openInspo && openInspo.dataset.index !== undefined) {
+      openInspoModal(parseInt(openInspo.dataset.index, 10));
+      return;
+    }
+
+    const removeEx = e.target.closest('[data-action="remove-exercise"]');
+    if (removeEx) {
+      e.stopPropagation();
+      toggleBookmark(removeEx.dataset.id);
+      renderBookmarks();
+      return;
+    }
+
+    const openEx = e.target.closest('[data-action="open-exercise"]');
+    if (openEx && !e.target.closest('[data-action="remove-exercise"]')) {
+      const exId = openEx.dataset.exerciseId;
+      const catId = openEx.dataset.categoryId;
+      if (catId) {
+        navigateTo('page-video', renderVideoPlayer, { exerciseId: exId, categoryId: catId });
+      } else {
+        handleBottomNav('assignments');
+      }
+    }
+  });
 }
 
 function toggleSavedPlanExpand(headerEl) {
@@ -3191,6 +3299,166 @@ function buildKeywordIndex(allExercises, exploreSections) {
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
+/* ── Synonym / Related Terms Map ─────────────────────────────── */
+
+const SYNONYM_GROUPS = [
+  ['character design', 'character', 'creature', 'creature design'],
+  ['portrait', 'portraits', 'figure', 'figure drawing'],
+  ['concept art', 'concept', 'visual development', 'vis dev'],
+  ['illustration', 'narrative artwork', 'editorial illustration'],
+  ['anatomy', 'anatomy fundamentals', 'figure', 'gesture'],
+  ['perspective', 'perspective drills', 'spatial reasoning', 'depth'],
+  ['line work', 'line control', 'linework heavy', 'contour'],
+  ['painterly', 'loose', 'expressive', 'brushwork'],
+  ['detailed', 'refined', 'polished', 'tight rendering'],
+  ['warm', 'warm colors', 'warm palette'],
+  ['cool', 'cool colors', 'cool palette'],
+  ['vibrant', 'saturated', 'bold colors', 'high contrast'],
+  ['muted', 'desaturated', 'subtle', 'pastel'],
+  ['digital painting', 'digital art', '2d digital art'],
+  ['pencil', 'graphite', 'traditional', 'paper only'],
+  ['shading', 'value', 'tonal', 'light and shadow'],
+  ['composition', 'layout', 'framing', 'visual hierarchy'],
+  ['gesture', 'gesture drawing', 'quick sketch', 'warm up'],
+  ['freelance illustrator', 'freelance', 'illustration career'],
+  ['concept artist', 'concept art career', 'entertainment design'],
+  ['game design', 'game art', 'game artist'],
+  ['anime', 'manga', 'japanese illustration'],
+  ['sci fi art', 'science fiction', 'futuristic', 'mech'],
+  ['environment', 'landscape', 'environment design', 'background art'],
+  ['color theory', 'color', 'color palette', 'complementary'],
+  ['observation', 'observational', 'still life', 'study'],
+  ['ink', 'inking', 'pen and ink', 'crosshatch'],
+  ['watercolor', 'watercolour', 'wash', 'wet media'],
+  ['storytelling', 'narrative', 'sequential art', 'storyboard'],
+];
+
+const _synonymLookup = new Map();
+SYNONYM_GROUPS.forEach(group => {
+  group.forEach(term => {
+    const key = term.toLowerCase().replace(/-/g, ' ').trim();
+    if (!_synonymLookup.has(key)) _synonymLookup.set(key, new Set());
+    group.forEach(related => {
+      const rKey = related.toLowerCase().replace(/-/g, ' ').trim();
+      if (rKey !== key) _synonymLookup.get(key).add(rKey);
+    });
+  });
+});
+
+function getSynonyms(term) {
+  return [...(_synonymLookup.get(term) || [])];
+}
+
+/* ── Recommendation Engine ───────────────────────────────────── */
+
+/**
+ * Score and rank keywords from keywordIndex based on user signals.
+ * @param {Set<string>} excludeIds – chip IDs to exclude from results
+ * @param {number} limit – max topics to return (default 8)
+ * @returns {Array<{id: string, display: string, score: number}>}
+ */
+function getRecommendedTopics(excludeIds = new Set(), limit = 8) {
+  if (!keywordIndex.length) return [];
+
+  const scores = new Map(); // kw.id -> { score, channels, _counts }
+
+  function addScore(rawTerm, points, channel) {
+    const kwId = (rawTerm || '').toLowerCase().replace(/-/g, ' ').trim();
+    if (!kwId) return;
+    if (!scores.has(kwId)) scores.set(kwId, { score: 0, channels: new Set(), _counts: {} });
+    const entry = scores.get(kwId);
+    const occ = entry._counts[channel] || 0;
+    if (occ >= 3) return; // cap per-channel occurrences
+    entry.score += points;
+    entry.channels.add(channel);
+    entry._counts[channel] = occ + 1;
+  }
+
+  // ── Channel 1: Preference match (weight 5) + synonym expansion (weight 3)
+  const prefTerms = [
+    ...(PREFS.artStyles || []),
+    ...(PREFS.careerGoals || []),
+    ...(PREFS.tailoredExercises  ? ['tailored exercises'] : []),
+    ...(PREFS.anatomyFundamentals ? ['anatomy', 'anatomy fundamentals'] : []),
+    ...(PREFS.perspectiveDrills  ? ['perspective', 'perspective drills'] : []),
+  ];
+  prefTerms.forEach(term => {
+    addScore(term, 5, 'pref');
+    getSynonyms(term.toLowerCase().replace(/-/g, ' ').trim()).forEach(s => addScore(s, 3, 'pref-syn'));
+  });
+
+  // ── Channel 2: Liked items (weight 4)
+  const liked = getLikedItems();
+  const allExercises = APP_DATA?.categories?.flatMap(c => c.exercises) || [];
+  const exById = new Map(allExercises.map(e => [e.id, e]));
+
+  Object.values(liked).forEach(likedItem => {
+    const ex = exById.get(likedItem.id);
+    if (ex?.tags) {
+      [...(ex.tags.searchKeywords || []),
+       ...(ex.tags.techniqueFamilies || []),
+       ...(ex.tags.learningGoals || []),
+      ].forEach(t => addScore(t, 4, 'liked'));
+      addScore(ex.category, 4, 'liked');
+      addScore(ex.categoryTag, 4, 'liked');
+    }
+  });
+
+  // ── Channel 3: Saved inspiration patterns (weight 3)
+  const savedInspo = getSavedInspo();
+  const inspoById = new Map();
+  (INSPO_DATA?.sections || []).forEach(s =>
+    s.items.forEach(item => inspoById.set(item.id, item))
+  );
+  savedInspo.forEach(saved => {
+    const item = inspoById.get(saved.id);
+    const m = item?.metadata;
+    if (!m) return;
+    [...(m.industry || []),
+     ...(m.colorPalette || []),
+     ...(m.subjectMatter || []),
+     ...(m.techniqueVisible || []),
+     ...(m.mediumTags || []).flatMap(t => t.split('/').map(p => p.trim())),
+    ].forEach(t => addScore(t, 3, 'saved-inspo'));
+  });
+
+  // ── Channel 4: Saved + completed exercises (weight 3)
+  const savedAssign = getSavedAssignments();
+  const completed = getCompletedExercises();
+  [...savedAssign, ...completed].forEach(item => {
+    const ex = item.id ? exById.get(item.id) : null;
+    if (ex?.tags) {
+      [...(ex.tags.searchKeywords || []),
+       ...(ex.tags.techniqueFamilies || []),
+       ...(ex.tags.learningGoals || []),
+      ].forEach(t => addScore(t, 3, 'saved-ex'));
+      addScore(ex.category, 3, 'saved-ex');
+    }
+    if (item.category) addScore(item.category, 3, 'saved-ex');
+  });
+
+  // ── Channel 5: Synonym propagation (weight 2) from strong signals
+  for (const [kwId, data] of scores) {
+    if (data.score >= 5) {
+      getSynonyms(kwId).forEach(s => addScore(s, 2, 'synonym'));
+    }
+  }
+
+  // ── Validate against keywordIndex & rank
+  const validIds = new Set(keywordIndex.map(kw => kw.id));
+  const kwLookup = new Map(keywordIndex.map(kw => [kw.id, kw.display]));
+
+  return [...scores.entries()]
+    .filter(([id]) => validIds.has(id) && !excludeIds.has(id))
+    .map(([id, data]) => ({
+      id,
+      display: kwLookup.get(id),
+      score: data.score + (data.channels.size * 0.5),
+    }))
+    .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id))
+    .slice(0, limit);
+}
+
 function renderSearch() {
   const el = document.getElementById('page-search');
   exploreFilters = new Map();
@@ -3439,6 +3707,20 @@ function renderSearchResults(data) {
 
   const totalResults = exerciseResults.length + inspoResults.length;
 
+  // ── "Topics you may enjoy" — personalized recommendations ──
+  const recommendedTopics = getRecommendedTopics(chipIds, 8);
+  const topicsHtml = recommendedTopics.length > 0 ? `
+    <div class="search-results__topics">
+      <div class="search-results__topics-title">Topics you may enjoy</div>
+      <div class="search-results__topics-scroll">
+        ${recommendedTopics.map(t =>
+          `<button class="search-results__topic-pill pressable"
+             onclick="addRecommendedTopic('${t.id.replace(/'/g, "\\'")}', '${t.display.replace(/'/g, "\\'")}')"
+           >${t.display}</button>`
+        ).join('')}
+      </div>
+    </div>` : '';
+
   const emptyHtml = totalResults === 0 ? `
     <div class="explore-empty">
       <div class="explore-empty__icon">\uD83D\uDD0D</div>
@@ -3456,7 +3738,10 @@ function renderSearchResults(data) {
 
   const inspoHtml = inspoResults.length > 0 ? `
     <div class="search-results__section">
-      <div class="search-results__section-title">Inspiration (${inspoResults.length})</div>
+      <div class="search-results__section-header">
+        <div class="search-results__section-title">Inspiration (${inspoResults.length})</div>
+        <div class="search-results__result-count">${totalResults} result${totalResults !== 1 ? 's' : ''}</div>
+      </div>
       <div class="search-results__grid">
         ${inspoResults.map((item, idx) => {
           const isSaved = savedInspoIds.has(item.id);
@@ -3473,18 +3758,18 @@ function renderSearchResults(data) {
           </div>`;
         }).join('')}
       </div>
-      ${inspoResults.length > 8 ? `<button class="search-results__view-all pressable" onclick="navigateTo('page-inspo-all', renderAllInspo)">View all ${inspoResults.length} inspiration</button>` : ''}
     </div>` : '';
 
   // Store exercise results globally for drill-down
   window._exerciseResults = exerciseResults;
   window._exerciseCatLookup = cat_lookup;
 
+  const exercisePreview = exerciseResults.slice(0, 8); // Show max 8 inline
   const exercisesHtml = exerciseResults.length > 0 ? `
     <div class="search-results__section search-results__section--exercises">
       <div class="search-results__section-title">Exercises (${exerciseResults.length})</div>
       <div class="search-results__exercise-list">
-        ${exerciseResults.map(ex => {
+        ${exercisePreview.map(ex => {
           const cat = cat_lookup[ex.id];
           return `
             <div class="exercise-row pressable" onclick="navigateTo('page-video', renderVideoPlayer, { exerciseId: '${ex.id}', categoryId: '${cat.id}' })">
@@ -3515,7 +3800,7 @@ function renderSearchResults(data) {
     </div>
     <div class="grid-container" style="padding-bottom:100px">
       <div class="search-results__chips">${chipTagsHtml}</div>
-      <div class="search-results__summary">${totalResults} result${totalResults !== 1 ? 's' : ''}</div>
+      ${topicsHtml}
       ${emptyHtml}
       ${inspoHtml}
       ${exercisesHtml}
@@ -3543,6 +3828,7 @@ function toggleInspoSave(id, title, subtitle, sectionTitle, btnEl, imageUrl) {
   }
 
   localStorage.setItem(SAVED_INSPO_KEY, JSON.stringify(saved));
+  invalidateSavedCaches();
 
   if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
     renderBookmarks();
@@ -3570,6 +3856,9 @@ function openInspoModal(index) {
       modal = document.createElement('div');
       modal.id = 'inspo-modal';
       modal.className = 'inspo-modal';
+      modal.setAttribute('role', 'dialog');
+      modal.setAttribute('aria-modal', 'true');
+      modal.setAttribute('aria-label', 'Inspiration viewer');
       // Click backdrop (outside container) to close
       modal.addEventListener('click', function(e) {
         if (e.target === modal) {
@@ -3623,6 +3912,7 @@ function openInspoModal(index) {
       saved.unshift({ id: item.id, title: item.title, subtitle: item.subtitle, category: item._sectionTitle || '', type: 'inspiration', imageUrl: item.imageUrl || null, savedAt: Date.now() });
     }
     localStorage.setItem(SAVED_INSPO_KEY, JSON.stringify(saved));
+    invalidateSavedCaches();
     render();
     // Also update the card bookmark button behind the modal
     const cardBtn = document.querySelector(`.search-results__inspo-bookmark[data-inspo-id="${item.id}"]`);
@@ -3646,11 +3936,20 @@ function openInspoModal(index) {
     render();
   };
 
-  // Close on Escape key
+  // Keyboard: Escape to close, arrows to navigate, Tab focus trap
   window._inspoModalKeyHandler = function(e) {
-    if (e.key === 'Escape') closeInspoModal();
-    if (e.key === 'ArrowLeft') window.navigateInspoModal(-1);
-    if (e.key === 'ArrowRight') window.navigateInspoModal(1);
+    if (e.key === 'Escape') { closeInspoModal(); return; }
+    if (e.key === 'ArrowLeft') { window.navigateInspoModal(-1); return; }
+    if (e.key === 'ArrowRight') { window.navigateInspoModal(1); return; }
+    if (e.key === 'Tab') {
+      const m = document.getElementById('inspo-modal');
+      if (!m) return;
+      const focusable = m.querySelectorAll('button:not([disabled]), [href], input, [tabindex]:not([tabindex="-1"])');
+      if (!focusable.length) return;
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   };
   document.addEventListener('keydown', window._inspoModalKeyHandler);
 
@@ -3754,6 +4053,29 @@ function removeResultsChip(chipId) {
   }
 
   // Re-render the search results page with updated chips
+  renderSearchResults(current.data);
+}
+
+/**
+ * Add a recommended topic pill as a search chip and re-run search.
+ * Called when user taps a pill in "Topics you may enjoy".
+ */
+function addRecommendedTopic(kwId, kwDisplay) {
+  const current = NAV_STACK[NAV_STACK.length - 1];
+  if (!current || !current.data?.chips) return;
+
+  // Don't add duplicates
+  if (current.data.chips.some(c => c.id === kwId)) return;
+
+  // Add to search results chips
+  current.data.chips.push({ id: kwId, display: kwDisplay });
+
+  // Also sync to Browse page searchChips for back-nav consistency
+  if (!searchChips.some(c => c.id === kwId)) {
+    searchChips.push({ id: kwId, display: kwDisplay });
+  }
+
+  // Re-render search results with updated chips
   renderSearchResults(current.data);
 }
 
@@ -4194,6 +4516,9 @@ function capitalize(str) {
 let _authBootDone = false; // prevents double-boot on rapid state changes
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Hydrate in-memory bookmark Set from localStorage so detail/list pages stay in sync
+  getSavedAssignments().forEach(s => bookmarks.add(s.id));
+
   // Firebase resolves the persisted session on first call, then fires on every
   // sign-in / sign-out. We use a single persistent listener for the full session.
   fbAuth.onAuthStateChanged(async (fbUser) => {
@@ -4215,14 +4540,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Cold load with no session — load data then show unauthenticated home
       _authBootDone = true;
       // Fetch exercise + inspiration data so For You feed works for guests
-      if (!APP_DATA) {
-        const [exResp, inspoResp] = await Promise.all([
-          fetch('data/exercises.json?v=4'),
-          fetch('data/inspiration.json?v=1'),
-        ]);
-        APP_DATA = await exResp.json();
-        INSPO_DATA = await inspoResp.json();
-      }
+      await loadAppData();
       renderAuth();
       const authPage = document.getElementById('page-auth');
       if (authPage) { authPage.classList.add('active'); }
