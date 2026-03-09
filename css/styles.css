@@ -527,7 +527,10 @@ button {
   opacity: 0.85;
 }
 
-/* Hamburger nav visible at all viewport sizes for unauthenticated users */
+/* Hide hamburger nav at desktop — sidebar nav takes over at 768px+ */
+@media (min-width: 768px) {
+  .hamburger-nav { display: none !important; }
+}
 
 /* ============================================================
    12-COLUMN GRID SYSTEM
