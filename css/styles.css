@@ -307,7 +307,7 @@ button {
   height: 56px;
   padding: 0 var(--sp-lg);
   padding-top: env(safe-area-inset-top, 0px);
-  background: transparent;
+  background: #1a1a1a;
   pointer-events: none;
 }
 .hamburger-nav__bar > * {
@@ -318,11 +318,15 @@ button {
   font-family: var(--font-system);
   font-size: 15px;
   font-weight: 600;
-  color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.9);
   background: none;
   border: none;
   cursor: pointer;
   padding: var(--sp-sm) var(--sp-md);
+  transition: color 0.15s ease;
+}
+.hamburger-nav__login:hover {
+  color: #ffffff;
 }
 
 .hamburger-nav__toggle {
@@ -333,7 +337,7 @@ button {
   height: 44px;
   background: none;
   border: none;
-  color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
 .hamburger-nav__toggle svg {
@@ -342,12 +346,7 @@ button {
 }
 
 /* -- Dark variant (For You page) ------------------------------ */
-.hamburger-nav--dark .hamburger-nav__login {
-  color: rgba(255, 255, 255, 0.9);
-}
-.hamburger-nav--dark .hamburger-nav__toggle {
-  color: rgba(255, 255, 255, 0.9);
-}
+/* No overrides needed — base styles already use off-white on dark bar */
 
 /* -- Overlay -------------------------------------------------- */
 .hamburger-nav__overlay {
@@ -364,25 +363,31 @@ button {
   pointer-events: auto;
 }
 
-/* -- Drawer --------------------------------------------------- */
+/* -- Drawer (floating full-width menu) ------------------------ */
 .hamburger-nav__drawer {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
   z-index: 230;
-  width: 280px;
-  max-width: 85vw;
-  background: var(--color-bg);
+  width: auto;
+  max-width: none;
+  background: #1a1a1a;
+  border-radius: var(--r-lg, 16px);
   display: flex;
   flex-direction: column;
-  transform: translateX(100%);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
+  pointer-events: none;
 }
 .hamburger-nav__drawer--open {
-  transform: translateX(0);
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .hamburger-nav__drawer-header {
@@ -401,7 +406,7 @@ button {
   height: 44px;
   background: none;
   border: none;
-  color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
 .hamburger-nav__close svg {
@@ -425,7 +430,7 @@ button {
   font-family: var(--font-system);
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-secondary);
+  color: rgba(255, 255, 255, 0.7);
   background: none;
   border: none;
   cursor: pointer;
@@ -439,9 +444,10 @@ button {
   flex-shrink: 0;
 }
 .hamburger-nav__item.active {
-  color: var(--color-primary);
+  color: #ffffff;
   font-weight: 600;
-  background: var(--color-surface-bg);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--r-md);
 }
 
 /* -- Footer CTA ----------------------------------------------- */
@@ -456,8 +462,8 @@ button {
   font-family: var(--font-system);
   font-size: 15px;
   font-weight: 600;
-  color: var(--color-btn-fg);
-  background: var(--color-btn-bg);
+  color: #1a1a1a;
+  background: #ffffff;
   border: none;
   border-radius: var(--r-md);
   cursor: pointer;
