@@ -915,8 +915,9 @@ function updateHamburgerNav(pageId) {
   };
   renderHamburgerNavItems(mapping[pageId] || '');
 
-  // Dark variant for For You page
-  nav.classList.toggle('hamburger-nav--dark', pageId === 'page-foryou');
+  // Dark variant for pages with dark hero backgrounds
+  const darkPages = new Set(['page-foryou', 'page-home']);
+  nav.classList.toggle('hamburger-nav--dark', darkPages.has(pageId));
 }
 
 // Close hamburger on Escape key

@@ -1090,9 +1090,12 @@ button {
   left: var(--grid-margin);
   right: var(--grid-margin);
   z-index: 10;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .hero-top-nav { display: flex; }
 }
 .hero-top-nav__center {
   display: flex;
