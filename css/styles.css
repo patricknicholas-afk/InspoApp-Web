@@ -3629,7 +3629,6 @@ button {
   font-size: 21px;
   font-weight: var(--fw-heavy);
   color: var(--color-primary);
-  letter-spacing: 0.01em;
   text-transform: capitalize;
 }
 .explore-section__subtitle {
