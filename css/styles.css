@@ -288,6 +288,192 @@ button {
 }
 
 /* ============================================================
+   HAMBURGER NAV — Unauthenticated mobile (<768px)
+   Top bar with Login + hamburger icon, plus slide-out drawer.
+   Hidden at tablet+ where the foryou-sidebar takes over.
+   ============================================================ */
+
+/* -- Top Bar -------------------------------------------------- */
+.hamburger-nav__bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 210;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--sp-xs);
+  height: 56px;
+  padding: 0 var(--sp-lg);
+  padding-top: env(safe-area-inset-top, 0px);
+  background: transparent;
+  pointer-events: none;
+}
+.hamburger-nav__bar > * {
+  pointer-events: auto;
+}
+
+.hamburger-nav__login {
+  font-family: var(--font-system);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--sp-sm) var(--sp-md);
+}
+
+.hamburger-nav__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.hamburger-nav__toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* -- Dark variant (For You page) ------------------------------ */
+.hamburger-nav--dark .hamburger-nav__login {
+  color: rgba(255, 255, 255, 0.9);
+}
+.hamburger-nav--dark .hamburger-nav__toggle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* -- Overlay -------------------------------------------------- */
+.hamburger-nav__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.hamburger-nav__overlay--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* -- Drawer --------------------------------------------------- */
+.hamburger-nav__drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 230;
+  width: 280px;
+  max-width: 85vw;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.hamburger-nav__drawer--open {
+  transform: translateX(0);
+}
+
+.hamburger-nav__drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 56px;
+  padding: 0 var(--sp-lg);
+}
+
+.hamburger-nav__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.hamburger-nav__close svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* -- Nav Items ------------------------------------------------ */
+.hamburger-nav__items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-sm) 0;
+}
+
+.hamburger-nav__item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-md);
+  padding: var(--sp-md) var(--sp-xl);
+  font-family: var(--font-system);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.hamburger-nav__item svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.hamburger-nav__item.active {
+  color: var(--color-primary);
+  font-weight: 600;
+  background: var(--color-surface-bg);
+}
+
+/* -- Footer CTA ----------------------------------------------- */
+.hamburger-nav__footer {
+  padding: var(--sp-lg) var(--sp-xl) var(--sp-xl);
+}
+
+.hamburger-nav__cta {
+  display: block;
+  width: 100%;
+  padding: var(--sp-md) var(--sp-lg);
+  font-family: var(--font-system);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-btn-fg);
+  background: var(--color-btn-bg);
+  border: none;
+  border-radius: var(--r-md);
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.15s ease;
+}
+.hamburger-nav__cta:active {
+  opacity: 0.85;
+}
+
+/* -- Hide at tablet+ (sidebar takes over) --------------------- */
+@media (min-width: 768px) {
+  .hamburger-nav { display: none !important; }
+}
+
+/* ============================================================
    12-COLUMN GRID SYSTEM
    From tokens.json: 12 columns, 16px gutter, 20px margin
    ============================================================ */

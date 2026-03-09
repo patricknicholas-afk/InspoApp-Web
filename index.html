@@ -76,6 +76,28 @@
     </button>
   </nav>
 
+  <!-- Hamburger Nav — unauthenticated mobile only (<768px) -->
+  <div id="hamburger-nav" class="hamburger-nav" style="display:none;">
+    <div class="hamburger-nav__bar">
+      <button class="hamburger-nav__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+      <button class="hamburger-nav__toggle pressable" onclick="toggleHamburgerMenu()" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="hamburger-nav__overlay" onclick="closeHamburgerMenu()"></div>
+    <div class="hamburger-nav__drawer">
+      <div class="hamburger-nav__drawer-header">
+        <button class="hamburger-nav__close pressable" onclick="closeHamburgerMenu()" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <nav class="hamburger-nav__items" id="hamburger-nav-items"></nav>
+      <div class="hamburger-nav__footer">
+        <button class="hamburger-nav__cta pressable" onclick="closeHamburgerMenu(); navigateTo('page-auth', renderAuth)">Create Account</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Global floating user avatar (authenticated pages only) -->
   <div id="global-user-pill"></div>
 

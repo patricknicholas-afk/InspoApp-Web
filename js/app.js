@@ -465,6 +465,7 @@ function cleanupPageState() {
   // Close any open modals
   closeGenPlanModal();
   closeInspoModal();
+  closeHamburgerMenu();
   // Remove For You overlay elements (sidebar + CTA) appended to body
   document.querySelectorAll('.foryou-sidebar, .foryou-create-account').forEach(n => n.remove());
 }
@@ -811,8 +812,9 @@ function updateBottomNavActive(pageId) {
   nav.querySelectorAll('.bottom-nav__item').forEach(item => {
     item.classList.toggle('active', activeTab !== '' && item.dataset.page === activeTab);
   });
-  // Hide bottom nav: unauth home always, unauth foryou at tablet+
-  const hideNav = !currentUser && (pageId === 'page-home' || (pageId === 'page-foryou' && window.innerWidth >= 768));
+  // Hide bottom nav: unauth mobile (hamburger replaces it), unauth home always, unauth foryou at tablet+
+  const isMobileUnauth = !currentUser && window.innerWidth < 768;
+  const hideNav = isMobileUnauth || (!currentUser && (pageId === 'page-home' || (pageId === 'page-foryou' && window.innerWidth >= 768)));
   nav.style.display = hideNav ? 'none' : '';
 
   // Dark nav only for unauthenticated users on foryou — authenticated always uses light nav
@@ -825,11 +827,106 @@ function updateBottomNavActive(pageId) {
   const noAvatarPages = new Set(['page-auth', 'page-home']);
   const pill = document.getElementById('global-user-pill');
   if (pill) pill.classList.toggle('visible', !!currentUser && !noAvatarPages.has(pageId));
+
+  // Sync hamburger nav state (unauthenticated mobile)
+  updateHamburgerNav(pageId);
 }
 
 // updateBottomNavVisibility is a no-op — CSS handles nav visibility via sibling selectors.
 // Kept as a named stub so callsites don't need to be removed.
 function updateBottomNavVisibility(_pageId) {}
+
+// -- Hamburger Menu (Unauthenticated Mobile) ------------------
+let hamburgerMenuOpen = false;
+
+function renderHamburgerNavItems(activeTab) {
+  const container = document.getElementById('hamburger-nav-items');
+  if (!container) return;
+  const items = [
+    { tab: 'foryou',     icon: ICONS.rocketLaunch, label: 'For You' },
+    { tab: 'home',        icon: ICONS.home,         label: 'Home' },
+    { tab: 'search',      icon: ICONS.search,       label: 'Browse' },
+    { tab: 'bookmarks',   icon: ICONS.bookmark,     label: 'Saved' },
+    { tab: 'assignments', icon: ICONS.book,          label: 'Assignments' },
+  ];
+  container.innerHTML = items.map(it => `
+    <button class="hamburger-nav__item pressable${it.tab === activeTab ? ' active' : ''}"
+            data-tab="${it.tab}"
+            onclick="handleHamburgerNav('${it.tab}')">
+      ${it.icon}
+      <span>${it.label}</span>
+    </button>
+  `).join('');
+}
+
+function toggleHamburgerMenu() {
+  if (hamburgerMenuOpen) closeHamburgerMenu();
+  else openHamburgerMenu();
+}
+
+function openHamburgerMenu() {
+  hamburgerMenuOpen = true;
+  const nav = document.getElementById('hamburger-nav');
+  if (!nav) return;
+  nav.querySelector('.hamburger-nav__overlay').classList.add('hamburger-nav__overlay--visible');
+  nav.querySelector('.hamburger-nav__drawer').classList.add('hamburger-nav__drawer--open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeHamburgerMenu() {
+  hamburgerMenuOpen = false;
+  const nav = document.getElementById('hamburger-nav');
+  if (!nav) return;
+  nav.querySelector('.hamburger-nav__overlay').classList.remove('hamburger-nav__overlay--visible');
+  nav.querySelector('.hamburger-nav__drawer').classList.remove('hamburger-nav__drawer--open');
+  document.body.style.overflow = '';
+}
+
+function handleHamburgerNav(tab) {
+  closeHamburgerMenu();
+  handleBottomNav(tab);
+}
+
+function updateHamburgerNav(pageId) {
+  const nav = document.getElementById('hamburger-nav');
+  if (!nav) return;
+
+  // Only show for unauthenticated mobile users
+  const shouldShow = !currentUser && window.innerWidth < 768;
+  // Hide on auth, account, preferences pages
+  const hiddenPages = new Set(['page-auth', 'page-account', 'page-preferences']);
+  if (!shouldShow || hiddenPages.has(pageId)) {
+    nav.style.display = 'none';
+    return;
+  }
+  nav.style.display = '';
+
+  // Map pageId to active tab
+  const mapping = {
+    'page-foryou': 'foryou', 'page-home': 'home',
+    'page-exercises': 'assignments', 'page-search': 'search',
+    'page-search-results': 'search', 'page-inspo-all': 'search',
+    'page-exercises-all': 'search', 'page-bookmarks': 'bookmarks',
+    'page-detail': 'assignments', 'page-video': 'assignments',
+  };
+  renderHamburgerNavItems(mapping[pageId] || '');
+
+  // Dark variant for For You page
+  nav.classList.toggle('hamburger-nav--dark', pageId === 'page-foryou');
+}
+
+// Close hamburger on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && hamburgerMenuOpen) closeHamburgerMenu();
+});
+
+// Re-evaluate nav on resize (mobile ↔ tablet)
+window.addEventListener('resize', () => {
+  const activePage = document.querySelector('.page.active');
+  if (activePage) {
+    updateBottomNavActive(activePage.id);
+  }
+});
 
 // -- For You Auto-Scroll --------------------------------------
 let forYouState = { timer: null, settleTimer: null, currentIndex: 0 };
