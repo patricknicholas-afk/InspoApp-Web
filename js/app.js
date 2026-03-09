@@ -11,23 +11,27 @@ let navBack = false; // true when navigating backward (triggers reverse slide an
 let currentUser = null; // { name, email, photoInitials, photoColor }
 let currentSavedTab = 'inspiration'; // persists active tab across re-renders of the saved page
 
-// -- SVG Icons ------------------------------------------------
+// -- SVG Icons (Heroicons) ------------------------------------
 const ICONS = {
-  chevronLeft: '<svg viewBox="0 0 12 20"><polyline points="10,2 2,10 10,18"/></svg>',
-  chevronRight: '<svg width="14" height="14" viewBox="0 0 14 14"><polyline points="5,3 10,7 5,11" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>',
-  clock: '<svg viewBox="0 0 14 14"><circle cx="7" cy="7" r="6"/><polyline points="7,3.5 7,7 9.5,8.5"/></svg>',
-  search: '<svg viewBox="0 0 18 18"><circle cx="7.5" cy="7.5" r="5.5"/><line x1="11.5" y1="11.5" x2="16" y2="16"/></svg>',
-  bookmark: '<svg width="16" height="16" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 2h12v16l-6-4-6 4V2z"/></svg>',
-  bookmarkFill: '<svg width="16" height="16" viewBox="0 0 16 20" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M2 2h12v16l-6-4-6 4V2z"/></svg>',
-  play: '\u25B6',
-  pause: '\u23F8',
+  chevronLeft: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.71967 12.5303C7.42678 12.2374 7.42678 11.7626 7.71967 11.4697L15.2197 3.96967C15.5126 3.67678 15.9874 3.67678 16.2803 3.96967C16.5732 4.26256 16.5732 4.73744 16.2803 5.03033L9.31066 12L16.2803 18.9697C16.5732 19.2626 16.5732 19.7374 16.2803 20.0303C15.9874 20.3232 15.5126 20.3232 15.2197 20.0303L7.71967 12.5303Z" fill="currentColor"/></svg>',
+  chevronRight: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.2803 11.4697C16.5732 11.7626 16.5732 12.2374 16.2803 12.5303L8.78033 20.0303C8.48744 20.3232 8.01256 20.3232 7.71967 20.0303C7.42678 19.7374 7.42678 19.2626 7.71967 18.9697L14.6893 12L7.71967 5.03033C7.42678 4.73744 7.42678 4.26256 7.71967 3.96967C8.01256 3.67678 8.48744 3.67678 8.78033 3.96967L16.2803 11.4697Z" fill="currentColor"/></svg>',
+  clock: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 6C12.75 5.58579 12.4142 5.25 12 5.25C11.5858 5.25 11.25 5.58579 11.25 6V12C11.25 12.4142 11.5858 12.75 12 12.75H16.5C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25H12.75V6Z" fill="currentColor"/></svg>',
+  search: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 3.75C6.77208 3.75 3.75 6.77208 3.75 10.5C3.75 14.2279 6.77208 17.25 10.5 17.25C12.3642 17.25 14.0506 16.4953 15.273 15.273C16.4953 14.0506 17.25 12.3642 17.25 10.5C17.25 6.77208 14.2279 3.75 10.5 3.75ZM2.25 10.5C2.25 5.94365 5.94365 2.25 10.5 2.25C15.0563 2.25 18.75 5.94365 18.75 10.5C18.75 12.5078 18.032 14.3491 16.8399 15.7793L21.5303 20.4697C21.8232 20.7626 21.8232 21.2374 21.5303 21.5303C21.2374 21.8232 20.7626 21.8232 20.4697 21.5303L15.7793 16.8399C14.3491 18.032 12.5078 18.75 10.5 18.75C5.94365 18.75 2.25 15.0563 2.25 10.5Z" fill="currentColor"/></svg>',
+  bookmark: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.75C10.137 3.75 8.29938 3.85779 6.49314 4.06741C5.78933 4.14909 5.25 4.76078 5.25 5.50699V19.7865L11.6646 16.5792C11.8757 16.4736 12.1243 16.4736 12.3354 16.5792L18.75 19.7865V5.50699C18.75 4.76078 18.2107 4.14909 17.5069 4.06741C15.7006 3.85779 13.863 3.75 12 3.75ZM6.32022 2.57741C8.18374 2.36114 10.079 2.25 12 2.25C13.921 2.25 15.8163 2.36114 17.6798 2.57741C19.1772 2.75119 20.25 4.03722 20.25 5.50699V21C20.25 21.2599 20.1154 21.5013 19.8943 21.638C19.6732 21.7746 19.3971 21.7871 19.1646 21.6708L12 18.0885L4.83541 21.6708C4.60292 21.7871 4.32681 21.7746 4.1057 21.638C3.88459 21.5013 3.75 21.2599 3.75 21V5.50699C3.75 4.03722 4.82283 2.75119 6.32022 2.57741Z" fill="currentColor"/></svg>',
+  bookmarkFill: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.32022 2.57741C8.18374 2.36114 10.079 2.25 12 2.25C13.921 2.25 15.8163 2.36114 17.6798 2.57741C19.1772 2.75119 20.25 4.03722 20.25 5.50699V21C20.25 21.2599 20.1154 21.5013 19.8943 21.638C19.6732 21.7746 19.3971 21.7871 19.1646 21.6708L12 18.0885L4.83541 21.6708C4.60292 21.7871 4.32681 21.7746 4.1057 21.638C3.88459 21.5013 3.75 21.2599 3.75 21V5.50699C3.75 4.03722 4.82283 2.75119 6.32022 2.57741Z" fill="currentColor"/></svg>',
+  play: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 5.6527C4.5 4.22656 6.029 3.32251 7.2786 4.00979L18.8192 10.3571C20.1144 11.0695 20.1144 12.9306 18.8192 13.6429L7.2786 19.9902C6.029 20.6775 4.5 19.7735 4.5 18.3473V5.6527Z" fill="currentColor"/></svg>',
+  pause: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.61522 6.61522 2.25 12 2.25C17.3848 2.25 21.75 6.61522 21.75 12C21.75 17.3848 17.3848 21.75 12 21.75C6.61522 21.75 2.25 17.3848 2.25 12ZM9 8.25C8.58579 8.25 8.25 8.58579 8.25 9V15C8.25 15.4142 8.58579 15.75 9 15.75H9.75C10.1642 15.75 10.5 15.4142 10.5 15V9C10.5 8.58579 10.1642 8.25 9.75 8.25H9ZM14.25 8.25C13.8358 8.25 13.5 8.58579 13.5 9V15C13.5 15.4142 13.8358 15.75 14.25 15.75H15C15.4142 15.75 15.75 15.4142 15.75 15V9C15.75 8.58579 15.4142 8.25 15 8.25H14.25Z" fill="currentColor"/></svg>',
   replay: '\u21BA',
-  gear: '\u2699',
-  speaker: '\uD83D\uDD0A',
-  book: '<svg width="13" height="13" viewBox="0 0 14 14"><path d="M2 2h4v10H2zM8 2h4v10H8z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>',
-  trophy: '\uD83C\uDFC6',
-  arrowRight: '\u2192'
+  gear: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.078 2.25C10.1614 2.25 9.37921 2.91265 9.22853 3.81675L9.04987 4.88873C9.02971 5.00964 8.93554 5.1498 8.75323 5.23747C8.40917 5.40292 8.07979 5.5938 7.76752 5.8076C7.60103 5.92159 7.43271 5.9332 7.31781 5.89015L6.29863 5.50833C5.44031 5.18678 4.47533 5.53289 4.01704 6.32666L3.09506 7.92358C2.63677 8.71736 2.81953 9.72611 3.52716 10.3087L4.36768 11.0006C4.46231 11.0785 4.53642 11.2298 4.52132 11.4307C4.50718 11.6188 4.5 11.8086 4.5 12C4.5 12.1915 4.50719 12.3814 4.52133 12.5695C4.53644 12.7704 4.46233 12.9217 4.3677 12.9996L3.52716 13.6916C2.81952 14.2741 2.63677 15.2829 3.09506 16.0767L4.01704 17.6736C4.47532 18.4674 5.44031 18.8135 6.29863 18.4919L7.31804 18.11C7.43293 18.067 7.60125 18.0786 7.76773 18.1925C8.07994 18.4063 8.40925 18.5971 8.75323 18.7625C8.93554 18.8502 9.02971 18.9904 9.04987 19.1113L9.22853 20.1832C9.37921 21.0874 10.1614 21.75 11.078 21.75H12.922C13.8386 21.75 14.6208 21.0874 14.7715 20.1832L14.9501 19.1113C14.9703 18.9904 15.0645 18.8502 15.2468 18.7625C15.5908 18.5971 15.9202 18.4062 16.2325 18.1924C16.399 18.0784 16.5673 18.0668 16.6822 18.1098L17.7014 18.4917C18.5597 18.8132 19.5247 18.4671 19.983 17.6733L20.9049 16.0764C21.3632 15.2826 21.1805 14.2739 20.4728 13.6913L19.6323 12.9994C19.5377 12.9215 19.4636 12.7702 19.4787 12.5693C19.4928 12.3812 19.5 12.1914 19.5 12C19.5 11.8085 19.4928 11.6186 19.4787 11.4305C19.4636 11.2296 19.5377 11.0783 19.6323 11.0004L20.4728 10.3084C21.1805 9.72587 21.3632 8.71711 20.9049 7.92334L19.983 6.32642C19.5247 5.53264 18.5597 5.18654 17.7014 5.50809L16.682 5.89C16.5671 5.93304 16.3987 5.92144 16.2323 5.80746C15.9201 5.59371 15.5907 5.40289 15.2468 5.23747C15.0645 5.1498 14.9703 5.00964 14.9501 4.88873L14.7715 3.81675C14.6208 2.91265 13.8386 2.25 12.922 2.25H11.078ZM12.0001 15.75C14.0712 15.75 15.7501 14.0711 15.7501 12C15.7501 9.92893 14.0712 8.25 12.0001 8.25C9.92905 8.25 8.25012 9.92893 8.25012 12C8.25012 14.0711 9.92905 15.75 12.0001 15.75Z" fill="currentColor"/></svg>',
+  speaker: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13.5 4.06063C13.5 2.72427 11.8843 2.05501 10.9393 2.99996L6.43934 7.49997H4.50905C3.36772 7.49997 2.19106 8.16441 1.8493 9.40502C1.62147 10.2321 1.5 11.1024 1.5 12C1.5 12.8975 1.62147 13.7678 1.8493 14.5949C2.19106 15.8355 3.36772 16.5 4.50905 16.5H6.43934L10.9393 21C11.8843 21.9449 13.5 21.2757 13.5 19.9393V4.06063Z" fill="currentColor"/><path d="M18.5837 5.10561C18.8766 4.81272 19.3514 4.81272 19.6443 5.10561C23.452 8.91322 23.452 15.0866 19.6443 18.8942C19.3514 19.1871 18.8766 19.1871 18.5837 18.8942C18.2908 18.6013 18.2908 18.1264 18.5837 17.8335C21.8055 14.6117 21.8055 9.38809 18.5837 6.16627C18.2908 5.87338 18.2908 5.3985 18.5837 5.10561Z" fill="currentColor"/><path d="M15.9323 7.75734C16.2252 7.46445 16.7001 7.46445 16.993 7.75734C19.3361 10.1005 19.3361 13.8995 16.993 16.2426C16.7001 16.5355 16.2252 16.5355 15.9323 16.2426C15.6394 15.9497 15.6394 15.4749 15.9323 15.182C17.6897 13.4246 17.6897 10.5754 15.9323 8.818C15.6394 8.52511 15.6394 8.05024 15.9323 7.75734Z" fill="currentColor"/></svg>',
+  book: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 7C12 5.93913 11.5786 4.92172 10.8284 4.17157C10.0783 3.42143 9.06087 3 8 3H2V18H9C9.79565 18 10.5587 18.3161 11.1213 18.8787C11.6839 19.4413 12 20.2044 12 21M12 7V21M12 7C12 5.93913 12.4214 4.92172 13.1716 4.17157C13.9217 3.42143 14.9391 3 16 3H22V18H15C14.2044 18 13.4413 18.3161 12.8787 18.8787C12.3161 19.4413 12 20.2044 12 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  home: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.2652 3.57578C12.1187 3.42933 11.8813 3.42933 11.7348 3.57578L5.25 10.0606V19.875C5.25 20.0821 5.41789 20.25 5.625 20.25H9V16.125C9 15.0894 9.83947 14.25 10.875 14.25H13.125C14.1605 14.25 15 15.0894 15 16.125V20.25H18.375C18.5821 20.25 18.75 20.0821 18.75 19.875V10.0606L12.2652 3.57578ZM20.25 11.5606L21.2197 12.5303C21.5126 12.8232 21.9874 12.8232 22.2803 12.5303C22.5732 12.2374 22.5732 11.7625 22.2803 11.4696L13.3258 2.51512C12.5936 1.78288 11.4064 1.78288 10.6742 2.51512L1.71967 11.4696C1.42678 11.7625 1.42678 12.2374 1.71967 12.5303C2.01256 12.8232 2.48744 12.8232 2.78033 12.5303L3.75 11.5606V19.875C3.75 20.9105 4.58947 21.75 5.625 21.75H18.375C19.4105 21.75 20.25 20.9105 20.25 19.875V11.5606ZM13.5 20.25H10.5V16.125C10.5 15.9178 10.6679 15.75 10.875 15.75H13.125C13.3321 15.75 13.5 15.9178 13.5 16.125V20.25Z" fill="currentColor"/></svg>',
+  homeFill: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M11.4697 3.84101C11.7626 3.54811 12.2374 3.54811 12.5303 3.84101L21.2197 12.5303C21.5126 12.8232 21.9874 12.8232 22.2803 12.5303C22.5732 12.2375 22.5732 11.7626 22.2803 11.4697L13.591 2.78035C12.7123 1.90167 11.2877 1.90167 10.409 2.78035L1.71967 11.4697C1.42678 11.7626 1.42678 12.2375 1.71967 12.5303C2.01256 12.8232 2.48744 12.8232 2.78033 12.5303L11.4697 3.84101Z" fill="currentColor"/><path d="M12 5.432L20.159 13.591C20.1887 13.6207 20.2191 13.6494 20.25 13.6772V19.875C20.25 20.9105 19.4105 21.75 18.375 21.75H15C14.5858 21.75 14.25 21.4142 14.25 21V16.5C14.25 16.0858 13.9142 15.75 13.5 15.75H10.5C10.0858 15.75 9.75 16.0858 9.75 16.5V21C9.75 21.4142 9.41421 21.75 9 21.75H5.625C4.58947 21.75 3.75 20.9106 3.75 19.875V13.6772C3.78093 13.6494 3.81127 13.6207 3.84099 13.591L12 5.432Z" fill="currentColor"/></svg>',
+  rocketLaunch: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.315 7.58365C12.1956 3.88296 16.6946 1.50021 21.75 1.5C21.9489 1.49999 22.1397 1.57901 22.2803 1.71966C22.421 1.86031 22.5 2.05108 22.5 2.25C22.5 7.30564 20.1173 11.805 16.4165 14.6859C16.4715 15.0329 16.5 15.3883 16.5 15.75C16.5 19.4779 13.4779 22.5 9.75 22.5C9.33579 22.5 9 22.1642 9 21.75V17.6185C8.99075 17.6118 8.98163 17.6049 8.97264 17.5978C8.02063 16.8429 7.15799 15.9803 6.40312 15.0282C6.39577 15.019 6.38866 15.0096 6.38179 15H2.25C1.83579 15 1.5 14.6642 1.5 14.25C1.5 10.5221 4.52208 7.5 8.25 7.5C8.61198 7.5 8.96772 7.52856 9.315 7.58365ZM8.33141 9.00062C8.30433 9.00021 8.27719 9 8.25 9C5.60515 9 3.41709 10.9558 3.05317 13.5H6.45002C6.84367 11.8885 7.48512 10.3745 8.33141 9.00062ZM7.79354 14.361C8.35145 15.0312 8.96969 15.6494 9.63988 16.2073C11.6657 15.7902 13.5349 14.9427 15.1479 13.764C18.503 11.3124 20.7445 7.43269 20.9795 3.0205C16.5676 3.2557 12.6882 5.49727 10.2368 8.85223C9.05806 10.4654 8.21064 12.3349 7.79354 14.361ZM10.5 17.551V20.9468C13.0442 20.5829 15 18.3949 15 15.75C15 15.7231 14.9998 15.6963 14.9994 15.6696C13.6255 16.5159 12.1115 17.1574 10.5 17.551ZM15 8.25C14.5858 8.25 14.25 8.58579 14.25 9C14.25 9.41421 14.5858 9.75 15 9.75C15.4142 9.75 15.75 9.41421 15.75 9C15.75 8.58579 15.4142 8.25 15 8.25ZM12.75 9C12.75 7.75736 13.7574 6.75 15 6.75C16.2426 6.75 17.25 7.75736 17.25 9C17.25 10.2426 16.2426 11.25 15 11.25C13.7574 11.25 12.75 10.2426 12.75 9ZM5.41306 16.1923C5.66074 16.5243 5.59237 16.9942 5.26036 17.2419C4.34218 17.9269 3.75 19.0192 3.75 20.25C4.98081 20.25 6.07313 19.6578 6.75809 18.7396C7.00576 18.4076 7.47569 18.3393 7.8077 18.5869C8.13971 18.8346 8.20808 19.3045 7.9604 19.6365C7.00452 20.9179 5.47434 21.75 3.75 21.75C3.47445 21.75 3.20336 21.7287 2.93842 21.6875C2.61574 21.6374 2.36259 21.3843 2.31246 21.0616C2.27129 20.7966 2.25 20.5256 2.25 20.25C2.25 18.5257 3.08209 16.9955 4.36345 16.0396C4.69546 15.7919 5.16539 15.8603 5.41306 16.1923Z" fill="currentColor"/></svg>',
+  rocketLaunchFill: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.315 7.58365C12.1956 3.88296 16.6946 1.50021 21.75 1.5C21.9489 1.49999 22.1397 1.57901 22.2803 1.71966C22.421 1.86031 22.5 2.05108 22.5 2.25C22.5 7.30564 20.1173 11.805 16.4165 14.6858C16.4715 15.0329 16.5 15.3883 16.5 15.75C16.5 19.4779 13.4779 22.5 9.75 22.5C9.33579 22.5 9 22.1642 9 21.75V17.6185C8.99075 17.6118 8.98163 17.6049 8.97264 17.5978C8.02063 16.8429 7.15799 15.9803 6.40312 15.0282C6.39577 15.019 6.38866 15.0096 6.38179 15H2.25C1.83579 15 1.5 14.6642 1.5 14.25C1.5 10.5221 4.52208 7.5 8.25 7.5C8.61198 7.5 8.96772 7.52856 9.315 7.58365ZM15 6.75C13.7574 6.75 12.75 7.75736 12.75 9C12.75 10.2426 13.7574 11.25 15 11.25C16.2426 11.25 17.25 10.2426 17.25 9C17.25 7.75736 16.2426 6.75 15 6.75Z" fill="currentColor"/><path d="M5.26036 17.2418C5.59237 16.9942 5.66074 16.5242 5.41306 16.1922C5.16539 15.8602 4.69546 15.7918 4.36345 16.0395C3.08209 16.9954 2.25 18.5256 2.25 20.2499C2.25 20.5255 2.27129 20.7966 2.31246 21.0615C2.36259 21.3842 2.61574 21.6373 2.93842 21.6875C3.20336 21.7286 3.47445 21.7499 3.75 21.7499C5.47434 21.7499 7.00452 20.9178 7.9604 19.6365C8.20808 19.3045 8.13971 18.8345 7.8077 18.5869C7.47569 18.3392 7.00577 18.4075 6.75809 18.7396C6.07313 19.6577 4.98081 20.2499 3.75 20.2499C3.75 19.0191 4.34218 17.9268 5.26036 17.2418Z" fill="currentColor"/></svg>',
+  arrowRight: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.2803 11.4697C16.5732 11.7626 16.5732 12.2374 16.2803 12.5303L8.78033 20.0303C8.48744 20.3232 8.01256 20.3232 7.71967 20.0303C7.42678 19.7374 7.42678 19.2626 7.71967 18.9697L14.6893 12L7.71967 5.03033C7.42678 4.73744 7.42678 4.26256 7.71967 3.96967C8.01256 3.67678 8.48744 3.67678 8.78033 3.96967L16.2803 11.4697Z" fill="currentColor"/></svg>'
 };
+ICONS.trophy = ICONS.rocketLaunchFill;
 
 // -- Title Case Helper -----------------------------------------
 function toTitleCase(str) {
@@ -461,6 +465,8 @@ function cleanupPageState() {
   // Close any open modals
   closeGenPlanModal();
   closeInspoModal();
+  // Remove For You overlay elements (sidebar + CTA) appended to body
+  document.querySelectorAll('.foryou-sidebar, .foryou-create-account').forEach(n => n.remove());
 }
 
 function navigateTo(pageId, renderFn, data) {
@@ -742,6 +748,8 @@ function handleBottomNav(tab) {
   closeUserMenu();
   stopVideo();
   clearForYouTimers();
+  // Remove For You overlay elements when switching tabs
+  document.querySelectorAll('.foryou-sidebar, .foryou-create-account').forEach(n => n.remove());
   NAV_STACK.length = 0;
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
 
@@ -803,8 +811,12 @@ function updateBottomNavActive(pageId) {
   nav.querySelectorAll('.bottom-nav__item').forEach(item => {
     item.classList.toggle('active', activeTab !== '' && item.dataset.page === activeTab);
   });
-  // Dark nav only for unauthenticated users on home/foryou — authenticated always uses light nav
-  const isDarkNav = !currentUser && (pageId === 'page-home' || pageId === 'page-foryou');
+  // Hide bottom nav: unauth home always, unauth foryou at tablet+
+  const hideNav = !currentUser && (pageId === 'page-home' || (pageId === 'page-foryou' && window.innerWidth >= 768));
+  nav.style.display = hideNav ? 'none' : '';
+
+  // Dark nav only for unauthenticated users on foryou — authenticated always uses light nav
+  const isDarkNav = !currentUser && pageId === 'page-foryou';
   nav.classList.toggle('bottom-nav--dark', isDarkNav);
 
   // Show global avatar on all pages when authenticated, except:
@@ -1028,6 +1040,46 @@ function renderForYou() {
   const liked          = getLikedItems();
   const savedInspoIds  = getCachedInspoIds();
   const savedAssignIds = getCachedAssignIds();
+
+  // Sidebar nav for unauthenticated users (visible at tablet+ via CSS)
+  const sidebarHtml = !currentUser ? `
+    <nav class="foryou-sidebar">
+      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('foryou')">
+        ${ICONS.rocketLaunch}
+        <span>For You</span>
+      </button>
+      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('home')">
+        ${ICONS.home}
+        <span>Home</span>
+      </button>
+      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('search')">
+        ${ICONS.search}
+        <span>Browse</span>
+      </button>
+      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('bookmarks')">
+        ${ICONS.bookmark}
+        <span>Saved</span>
+      </button>
+      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('assignments')">
+        ${ICONS.book}
+        <span>Exercises</span>
+      </button>
+      <button class="foryou-sidebar__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+    </nav>` : '';
+
+  // Remove any previous For You overlay elements (sidebar + CTA)
+  document.querySelectorAll('.foryou-sidebar, .foryou-create-account').forEach(n => n.remove());
+
+  // Append sidebar and CTA to body (outside scroll container) so position:fixed works
+  if (!currentUser) {
+    const sidebarEl = document.createElement('div');
+    sidebarEl.innerHTML = sidebarHtml;
+    if (sidebarEl.firstElementChild) document.body.appendChild(sidebarEl.firstElementChild);
+
+    const ctaEl = document.createElement('div');
+    ctaEl.innerHTML = `<button class="foryou-create-account pressable" onclick="navigateTo('page-auth', renderAuth)">Create Account</button>`;
+    if (ctaEl.firstElementChild) document.body.appendChild(ctaEl.firstElementChild);
+  }
 
   el.innerHTML = `
     <div class="foryou-feed">
@@ -1398,49 +1450,56 @@ function renderHome() {
     <div id="home-panels" class="home-panels">
       <div id="home-panels-track" class="home-panels__track">
 
-        <!-- Panel 0: Full-screen hero carousel -->
+        <!-- Panel 0: Full-screen hero banner (single slide) -->
         <div class="home-panel home-panel--hero">
           <div class="home-hero-carousel">
-            <div class="home-hero-carousel__track-wrap" id="hero-track-wrap">
-              <div class="home-hero-carousel__track" id="hero-track">
-                ${HERO_SLIDES.map((slide, i) => {
-                  const heroMedia = resolveMedia(slide.imageUrl || null);
-                  const hasImage = heroMedia && heroMedia.type === 'image';
-                  const hasVideo = !!slide.videoUrl;
-                  const heroStyle = hasImage
-                    ? `background-image: url('${heroMedia.src}'); background-size: cover; background-position: center; background-color: #111;`
-                    : hasVideo
-                      ? `background: #000;`
-                      : `background: ${slide.bg};`;
-                  return `
-                  <div class="hero-slide${hasVideo ? ' hero-slide--video' : ''}" style="${heroStyle}" data-index="${i}">
-                    ${hasVideo ? `
-                    <div class="hero-slide__video-bg">
-                      <iframe class="hero-slide__video-iframe"
-                              src="${slide.videoUrl}"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                              referrerpolicy="strict-origin-when-cross-origin"
-                              allowfullscreen></iframe>
-                    </div>` : ''}
-                    <div class="hero-slide__content">
-                      <div class="hero-slide__title">${slide.title}</div>
-                      <div class="hero-slide__subtitle">${slide.subtitle}</div>
-                      ${i === 0 ? `
-                      <div class="hero-slide__email-row">
-                        <input type="email" class="hero-slide__email-input" placeholder="enter email address" />
-                        <button class="hero-slide__email-cta pressable" onclick="handleHeroEmailSignup()">Create Account</button>
-                      </div>` : `<button class="hero-slide__cta pressable" onclick="${slide.action}">${slide.cta}</button>`}
-                    </div>
-                  </div>`;
-                }).join('')}
+            ${(() => {
+              const slide = HERO_SLIDES[0];
+              const heroMedia = resolveMedia(slide.imageUrl || null);
+              const hasImage = heroMedia && heroMedia.type === 'image';
+              const heroStyle = hasImage
+                ? `background-image: url('${heroMedia.src}'); background-size: cover; background-position: center; background-color: #111;`
+                : `background: ${slide.bg};`;
+              return `
+              <div class="hero-slide" style="${heroStyle}">
+                <div class="hero-slide__content">
+                  <div class="hero-slide__title">${slide.title}</div>
+                  <div class="hero-slide__subtitle">${slide.subtitle}</div>
+                  <div class="hero-slide__email-row">
+                    <input type="email" class="hero-slide__email-input" placeholder="enter email address" />
+                    <button class="hero-slide__email-cta pressable" onclick="handleHeroEmailSignup()">Create Account</button>
+                  </div>
+                </div>
+              </div>`;
+            })()}
+            <nav class="hero-top-nav">
+              <div class="hero-top-nav__center">
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('foryou')">For You</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('home')">Home</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('search')">Browse</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('bookmarks')">Saved</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('assignments')">Exercises</button>
               </div>
-            </div>
-            <button class="hero-login-btn pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
-            <div class="hero-dots" id="hero-dots">
-              ${HERO_SLIDES.map((_, i) => `
-                <button class="hero-dot${i === 0 ? ' hero-dot--active' : ''}" data-index="${i}" aria-label="Slide ${i + 1}"></button>
-              `).join('')}
+              <button class="hero-top-nav__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+            </nav>
+          </div>
+          <div class="panel-scroll-hint" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Scroll</span>
+          </div>
+        </div>
+
+        <!-- Panel 1: Niche Catalogue -->
+        <div class="home-panel home-panel--catalogue">
+          <div class="selfdriven-topbar">
+            <p class="selfdriven-topbar__text">Everything you need to keep inspired. <strong>All for free.</strong></p>
+            <button class="selfdriven-topbar__cta pressable" onclick="navigateTo('page-auth', renderAuth)">Get Started</button>
+          </div>
+          <div class="catalogue-block">
+            <div class="catalogue-block__content">
+              <h2 class="catalogue-block__title">NICHE, HANDPICKED INSPIRATION CATALOGUE.</h2>
+              <p class="catalogue-block__body">In a world filled with noise, genAI, distractions, you can be sure this creative catalogue of inspiration has been saved and curated since 2008. Websites that hosted some of this art no longer exist.</p>
+              <button class="catalogue-block__cta pressable" onclick="handleBottomNav('search')">Learn More</button>
             </div>
           </div>
           <div class="panel-scroll-hint" aria-hidden="true">
@@ -1449,13 +1508,43 @@ function renderHome() {
           </div>
         </div>
 
-        <!-- Panel 1: Lighting — full-screen featured block -->
-        <div class="home-panel home-panel--lighting">
-          <div class="featured-block">
-            <div class="featured-block__content">
-              <div class="featured-block__title">Lighting: Setting a mood and a story</div>
-              <div class="featured-block__subtitle">Explore work that showcases light as the storyteller</div>
-              <button class="featured-block__cta pressable">Explore</button>
+        <!-- Panel 2: Self-Driven manifesto -->
+        <div class="home-panel home-panel--selfdriven">
+          <div class="selfdriven-block">
+            <div class="selfdriven-block__content">
+              <h2 class="selfdriven-block__title">SELF-<span class="selfdriven-rotator"><span class="selfdriven-rotator__word selfdriven-rotator__word--active">DRIVEN</span></span></h2>
+              <p class="selfdriven-block__body">Art communities, online art groups, and mentorships don't always provide the structure for the independent artist to stay inspired or accountable for their creative journey. This is for you.</p>
+              <p class="selfdriven-cards__subtitle">What makes it different?</p>
+              <div class="selfdriven-cards">
+                <div class="selfdriven-cards__item">
+                  <h3 class="selfdriven-cards__title">Simple Tactics for Complex Subjects</h3>
+                  <p class="selfdriven-cards__body">Complex subjects broken into focused, bite-sized exercises.</p>
+                  <ul class="selfdriven-cards__bullets">
+                    <li>Step-by-step breakdowns</li>
+                    <li>Timed warm-up drills</li>
+                    <li>Layered difficulty levels</li>
+                  </ul>
+                </div>
+                <div class="selfdriven-cards__item">
+                  <h3 class="selfdriven-cards__title">Plans Built for You</h3>
+                  <p class="selfdriven-cards__body">Personalized assignment plans tailored to your goals, skill level, and preferred subject.</p>
+                  <ul class="selfdriven-cards__bullets">
+                    <li>Goal-based curriculums</li>
+                    <li>Adaptive skill paths</li>
+                    <li>Weekly assignment schedules</li>
+                  </ul>
+                </div>
+                <div class="selfdriven-cards__item">
+                  <h3 class="selfdriven-cards__title">Build Creative Habits</h3>
+                  <p class="selfdriven-cards__body">Daily routines designed to keep you consistent, motivated, and improving.</p>
+                  <ul class="selfdriven-cards__bullets">
+                    <li>Streak tracking & reminders</li>
+                    <li>Micro-sessions (15 min or less)</li>
+                    <li>Progress milestones</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="selfdriven-block__cta pressable" onclick="handleBottomNav('assignments')">Learn More</button>
             </div>
           </div>
           <div class="panel-scroll-hint" aria-hidden="true">
@@ -1464,7 +1553,7 @@ function renderHome() {
           </div>
         </div>
 
-        <!-- Panel 2: Discover Your Passion -->
+        <!-- Panel 3: Discover Your Passion -->
         <div class="home-panel home-panel--passion">
           <div class="passion-block">
             <div class="passion-block__content">
@@ -1482,34 +1571,48 @@ function renderHome() {
       </div>
     </div>
 
-    <!-- Below-fold: normal scroll content revealed after all 3 panels -->
-    <div class="home-below-fold">
-      <div class="inspiration">
-        <div class="grid-container">
-          <div class="inspiration__header">
-            <span class="inspiration__title">Inspiration by category</span>
-            <button class="inspiration__view-all pressable">View All</button>
-          </div>
-          ${(INSPO_DATA && INSPO_DATA.sections || []).map(section => `
-            <div class="inspiration-section">
-              <div class="inspiration-section__title">${section.title}</div>
-              <div class="inspiration-section__scroll">
-                ${section.items.map(item => `
-                  <div class="category-card pressable">
-                    <div class="category-card__title">${item.title}</div>
-                    <div class="category-card__subtitle">${item.subtitle}</div>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    </div>
   `;
 
-  initHeroCarousel();
   initHomePanels();
+  initSelfDrivenRotator();
+}
+
+// -- Self-Driven word rotator ------------------------------------
+let _selfDrivenTimer = null;
+function initSelfDrivenRotator() {
+  if (_selfDrivenTimer) { clearInterval(_selfDrivenTimer); _selfDrivenTimer = null; }
+  const container = document.querySelector('.selfdriven-rotator');
+  if (!container) return;
+
+  const words = ['DRIVEN', 'INITIATED', 'GUIDED', 'TAUGHT', 'STRUCTURED'];
+  let idx = 0;
+
+  _selfDrivenTimer = setInterval(() => {
+    const current = container.querySelector('.selfdriven-rotator__word--active');
+    if (!current) return;
+
+    // Start exit animation on current word
+    current.classList.remove('selfdriven-rotator__word--active');
+    current.classList.add('selfdriven-rotator__word--exit');
+
+    // Create next word
+    idx = (idx + 1) % words.length;
+    const next = document.createElement('span');
+    next.className = 'selfdriven-rotator__word selfdriven-rotator__word--enter';
+    next.textContent = words[idx];
+    container.appendChild(next);
+
+    // Trigger enter animation on next frame
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        next.classList.remove('selfdriven-rotator__word--enter');
+        next.classList.add('selfdriven-rotator__word--active');
+      });
+    });
+
+    // Remove exited word after animation completes
+    setTimeout(() => { if (current.parentNode) current.remove(); }, 250);
+  }, 2500);
 }
 
 // -- Hero Carousel Logic ---------------------------------------
@@ -1614,7 +1717,7 @@ function initHomePanels() {
   const pageEl = document.getElementById('page-home');
   if (!container || !track || !pageEl) return;
 
-  const TOTAL = 3;
+  const TOTAL = track.querySelectorAll('.home-panel').length;
   let current = 0;
   let isTransitioning = false;
   let released = false;
@@ -1686,7 +1789,6 @@ function initHomePanels() {
     if (isTransitioning) return;
     if (e.deltaY > 15) {
       if (current < TOTAL - 1) goToPanel(current + 1);
-      else release();
     } else if (e.deltaY < -15 && current > 0) {
       goToPanel(current - 1);
     }
@@ -1700,7 +1802,6 @@ function initHomePanels() {
     if (Math.abs(dy) < 50) return;
     if (dy > 0) {
       if (current < TOTAL - 1) goToPanel(current + 1);
-      else release();
     } else if (current > 0) {
       goToPanel(current - 1);
     }
@@ -2752,29 +2853,23 @@ function renderVideoPlayer(data) {
   const navBarIcons = `
     <div class="video-nav-bar__icons">
       <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('foryou')">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2.5C8.5 6.5 8 11 8 15h8c0-4-.5-8.5-4-12.5z"/>
-          <path d="M8 15v3l4 3.5 4-3.5v-3"/>
-          <path d="M8 15c-2.5 0-4 1.5-4 4h4"/>
-          <path d="M16 15c2.5 0 4 1.5 4 4h-4"/>
-          <circle cx="12" cy="10" r="1.5" fill="currentColor" stroke="none"/>
-        </svg>
+        ${ICONS.rocketLaunch}
         <span>For You</span>
       </div>
       <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('home')">
-        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 12l9-9 9 9M5 10v10h14V10" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        ${ICONS.home}
         <span>Home</span>
       </div>
       <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('search')">
-        <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="15" y1="15" x2="21" y2="21" stroke="currentColor" stroke-width="1.5"/></svg>
+        ${ICONS.search}
         <span>Browse</span>
       </div>
       <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('bookmarks')">
-        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 4h14v17l-7-4-7 4V4z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        ${ICONS.bookmark}
         <span>Saved</span>
       </div>
       <div class="video-nav-bar__item active pressable" onclick="stopVideo(); handleBottomNav('assignments')">
-        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 6h7v12H4zM13 6h7v12h-7z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        ${ICONS.book}
         <span>Assignments</span>
       </div>
     </div>
@@ -4541,10 +4636,7 @@ document.addEventListener('DOMContentLoaded', () => {
       _authBootDone = true;
       // Fetch exercise + inspiration data so For You feed works for guests
       await loadAppData();
-      renderAuth();
-      const authPage = document.getElementById('page-auth');
-      if (authPage) { authPage.classList.add('active'); }
-      updateBottomNavActive('page-auth');
+      handleBottomNav('home');
     }
   });
 });
