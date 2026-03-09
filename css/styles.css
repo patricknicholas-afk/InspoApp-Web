@@ -130,7 +130,7 @@
   --r-sm: 4px;
   --r-md: 8px;
   --r-lg: 12px;
-  --r-chip: 2px;
+  --r-chip: 4px;
   --r-cta: 4px;
   --r-card: 8px;
   --r-pill: 999px;
@@ -3542,12 +3542,12 @@ button {
 .suggestion-chip {
   flex-shrink: 0;
   padding: 4px 12px;
-  border-radius: 2px;
+  border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
-  background: var(--color-surface-bg);
+  background: var(--color-chip-bg);
   color: var(--color-primary);
   border: none;
   cursor: pointer;
@@ -3572,10 +3572,10 @@ button {
   padding: 4px 10px 4px 12px;
   background: var(--color-btn-bg);
   color: var(--color-btn-fg);
-  border-radius: 2px;
+  border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   white-space: nowrap;
   flex-shrink: 0;
@@ -3697,12 +3697,12 @@ button {
 }
 .explore-chip {
   padding: 4px 12px;
-  border-radius: 2px;
+  border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
   font-weight: var(--fw-medium);
   text-transform: uppercase;
-  background: var(--color-surface-bg);
+  background: var(--color-chip-bg);
   color: var(--color-primary);
   border: none;
   cursor: pointer;
@@ -3766,10 +3766,10 @@ button {
   padding: 4px 12px;
   background: var(--color-btn-bg);
   color: var(--color-btn-fg);
-  border-radius: var(--r-pill);
+  border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-demi);
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   cursor: pointer;
   border: none;
@@ -3834,10 +3834,10 @@ button {
   background: var(--color-btn-bg);
   color: var(--color-btn-fg);
   border: none;
-  border-radius: 2px;
+  border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
@@ -3882,10 +3882,10 @@ button {
 .search-results__topic-pill {
   flex-shrink: 0;
   padding: 4px 12px;
-  border-radius: 2px;
+  border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   background: var(--color-chip-bg);
   color: var(--color-chip-fg);
@@ -4398,7 +4398,7 @@ button {
 .foryou-card__tag {
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   letter-spacing: -0.11px;
   color: var(--color-btn-fg);
   background: rgba(26, 26, 26, 0.25);
@@ -5744,21 +5744,19 @@ button {
   font-weight: var(--fw-medium);
   background: var(--color-surface-bg);
   color: var(--color-primary);
-  border: 1.5px solid var(--color-divider);
+  border: none;
   cursor: pointer;
-  transition: border-color 0.12s, background 0.12s, color 0.12s;
+  transition: background 0.12s, color 0.12s;
   font-family: var(--font-system);
 }
 
 .pref-tag.selected {
-  border-color: var(--color-primary);
   background: var(--color-primary);
   color: var(--color-btn-fg);
 }
 
 .pref-tag.more {
   color: var(--color-secondary);
-  border-style: dashed;
 }
 
 /* Radio options */
