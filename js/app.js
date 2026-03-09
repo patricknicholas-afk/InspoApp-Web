@@ -856,7 +856,11 @@ function renderHamburgerNavItems(activeTab) {
       ${it.icon}
       <span>${it.label}</span>
     </button>
-  `).join('');
+  `).join('') + `
+    <button class="hamburger-nav__cta-inline pressable"
+            onclick="closeHamburgerMenu(); navigateTo('page-auth', renderAuth)">
+      Create Account
+    </button>`;
 }
 
 function toggleHamburgerMenu() {

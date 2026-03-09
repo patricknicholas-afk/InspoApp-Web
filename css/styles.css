@@ -307,7 +307,7 @@ button {
   height: 56px;
   padding: 0 var(--sp-lg);
   padding-top: env(safe-area-inset-top, 0px);
-  background: #1a1a1a;
+  background: transparent;
   pointer-events: none;
 }
 .hamburger-nav__bar > * {
@@ -318,15 +318,12 @@ button {
   font-family: var(--font-system);
   font-size: 15px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
   background: none;
   border: none;
   cursor: pointer;
   padding: var(--sp-sm) var(--sp-md);
   transition: color 0.15s ease;
-}
-.hamburger-nav__login:hover {
-  color: #ffffff;
 }
 
 .hamburger-nav__toggle {
@@ -337,7 +334,7 @@ button {
   height: 44px;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
   cursor: pointer;
 }
 .hamburger-nav__toggle svg {
@@ -346,7 +343,12 @@ button {
 }
 
 /* -- Dark variant (For You page) ------------------------------ */
-/* No overrides needed — base styles already use off-white on dark bar */
+.hamburger-nav--dark .hamburger-nav__login {
+  color: rgba(255, 255, 255, 0.9);
+}
+.hamburger-nav--dark .hamburger-nav__toggle {
+  color: rgba(255, 255, 255, 0.9);
+}
 
 /* -- Overlay -------------------------------------------------- */
 .hamburger-nav__overlay {
@@ -429,7 +431,7 @@ button {
   padding: var(--sp-md) var(--sp-xl);
   font-family: var(--font-system);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
   background: none;
   border: none;
@@ -445,19 +447,19 @@ button {
 }
 .hamburger-nav__item.active {
   color: #ffffff;
-  font-weight: 600;
   background: rgba(255, 255, 255, 0.1);
   border-radius: var(--r-md);
 }
 
-/* -- Footer CTA ----------------------------------------------- */
+/* -- Footer (hidden — CTA now inline in nav items) ------------ */
 .hamburger-nav__footer {
-  padding: var(--sp-lg) var(--sp-xl) var(--sp-xl);
+  display: none;
 }
 
-.hamburger-nav__cta {
+/* -- Inline CTA (inside nav items list) ----------------------- */
+.hamburger-nav__cta-inline {
   display: block;
-  width: 100%;
+  margin: var(--sp-md) var(--sp-xl) 0;
   padding: var(--sp-md) var(--sp-lg);
   font-family: var(--font-system);
   font-size: 15px;
@@ -470,7 +472,7 @@ button {
   text-align: center;
   transition: opacity 0.15s ease;
 }
-.hamburger-nav__cta:active {
+.hamburger-nav__cta-inline:active {
   opacity: 0.85;
 }
 
