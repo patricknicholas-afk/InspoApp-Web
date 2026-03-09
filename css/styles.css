@@ -431,7 +431,7 @@ button {
   padding: var(--sp-md) var(--sp-xl);
   font-family: var(--font-system);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
   background: none;
   border: none;
@@ -1107,7 +1107,7 @@ button {
   border: none;
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--font-system);
   letter-spacing: 0.1px;
   cursor: pointer;
@@ -4381,7 +4381,7 @@ button {
   border: none;
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--font-system);
   cursor: pointer;
   padding: 6px 0;
