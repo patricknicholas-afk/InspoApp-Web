@@ -1037,7 +1037,7 @@ button {
 .hero-slide__title {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   font-size: 36px;
   line-height: 1.115;
   color: var(--color-btn-fg);
