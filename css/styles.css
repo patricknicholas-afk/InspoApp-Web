@@ -1058,8 +1058,8 @@ button {
   border: none;
   color: var(--color-btn-fg);
   font-family: var(--font-system);
-  font-size: 13px;
-  font-weight: var(--fw-medium);
+  font-size: 14px;
+  font-weight: var(--fw-bold);
   letter-spacing: 0.6px;
   border-radius: var(--r-cta);
   text-transform: uppercase;
@@ -1497,7 +1497,7 @@ button {
   padding: 12px 28px;
   font-family: var(--font-system);
   font-size: 14px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
