@@ -146,6 +146,13 @@
   --font-slab: 'Roboto Slab', 'Georgia', serif;
   --font-mono: 'SF Mono', 'Menlo', 'Courier New', monospace;
 
+  /* Font Weights — Avenir Next LT Pro */
+  --fw-regular: 400;   /* AvenirNextLTPro-Regular — body copy, subtitles */
+  --fw-medium: 500;    /* AvenirNextLTPro-Medium  — CTAs, chips, metadata, nav labels */
+  --fw-demi: 600;      /* AvenirNextLTPro-Demi    — login buttons, emphasis */
+  --fw-bold: 700;      /* AvenirNextLTPro-Bold    — nav items, headings, titles */
+  --fw-heavy: 800;     /* AvenirNextLTPro-Heavy   — display, hero headings */
+
   /* Content width constraints */
   --content-max: 1200px;
   --content-narrow: 720px;
@@ -464,7 +471,7 @@ button {
   padding: var(--sp-md) var(--sp-xl);
   font-family: var(--font-system);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   color: rgba(255, 255, 255, 0.7);
   background: none;
   border: none;
@@ -496,7 +503,7 @@ button {
   padding: var(--sp-md) var(--sp-lg);
   font-family: var(--font-system);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: var(--fw-medium);
   color: #1a1a1a;
   background: #ffffff;
   border: none;
@@ -881,7 +888,7 @@ button {
   padding: 12px 28px;
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   letter-spacing: 0.6px;
   text-transform: uppercase;
   border-radius: var(--r-cta);
@@ -1041,7 +1048,7 @@ button {
   color: #fff;
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   letter-spacing: 0.6px;
   border-radius: var(--r-cta);
   text-transform: uppercase;
@@ -1140,7 +1147,7 @@ button {
   border: none;
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   font-family: var(--font-system);
   letter-spacing: 0.1px;
   cursor: pointer;
@@ -1278,7 +1285,7 @@ button {
   border: none;
   color: #fff;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   letter-spacing: 0.6px;
   border-radius: var(--r-sm);
   text-transform: uppercase;
@@ -1345,7 +1352,7 @@ button {
   padding: 8px 18px;
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.2s ease;
@@ -1479,7 +1486,7 @@ button {
   padding: 12px 28px;
   font-family: var(--font-system);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -1539,7 +1546,7 @@ button {
   padding: 12px 28px;
   font-family: var(--font-system);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -2135,11 +2142,13 @@ button {
 }
 .exercise-row__title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: var(--fw-demi);
   color: var(--color-primary);
 }
 .exercise-row__desc {
+  font-family: var(--font-slab);
   font-size: 14px;
+  font-weight: var(--fw-medium);
   color: var(--color-secondary);
   margin-top: var(--sp-2);
   display: -webkit-box;
@@ -3418,7 +3427,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   background: var(--color-chip-bg);
   color: var(--color-chip-fg);
@@ -3604,16 +3613,16 @@ button {
 .explore-section__title {
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: var(--color-secondary);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 .explore-section__subtitle {
-  font-family: var(--font-system);
+  font-family: var(--font-slab);
   font-size: 13px;
   color: var(--color-secondary);
-  font-weight: 400;
+  font-weight: var(--fw-medium);
 }
 
 /* Explore grid — horizontal scroll on mobile, wrapped grid on desktop */
@@ -3680,7 +3689,7 @@ button {
   border-radius: 2px;
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   background: var(--color-surface-bg);
   color: var(--color-primary);
@@ -3840,9 +3849,9 @@ button {
   margin-bottom: var(--sp-lg);
 }
 .search-results__topics-title {
-  font-family: var(--font-system);
+  font-family: var(--font-slab);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   color: var(--color-secondary);
   margin-bottom: var(--sp-sm);
   text-transform: uppercase;
@@ -3968,7 +3977,7 @@ button {
 .search-results__inspo-title {
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
@@ -4361,7 +4370,7 @@ button {
 .foryou-card__inspo-title {
   font-family: var(--font-system);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: var(--fw-medium);
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   text-align: left;
@@ -4414,7 +4423,7 @@ button {
   border: none;
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   font-family: var(--font-system);
   cursor: pointer;
   padding: 6px 0;
@@ -4602,7 +4611,7 @@ button {
   gap: 4px;
   font-family: var(--font-system);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: var(--fw-medium);
   color: #ffffff;
   background: rgba(255,255,255,0.18);
   border-radius: 8px;
@@ -4714,7 +4723,7 @@ button {
 .dash-empty__cta {
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--fw-medium);
   color: var(--color-primary);
   background: none;
   border: 1px solid var(--color-divider);
@@ -4920,7 +4929,7 @@ button {
   border: none;
   border-radius: var(--r-cta);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: var(--fw-medium);
   letter-spacing: 0.3px;
   cursor: pointer;
   margin-bottom: 12px;
@@ -5985,7 +5994,7 @@ button {
 }
 .saved-plan__exercise-title {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--fw-demi);
   color: var(--color-primary);
 }
 .saved-plan__exercise-meta {
