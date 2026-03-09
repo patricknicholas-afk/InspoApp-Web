@@ -888,7 +888,7 @@ button {
   padding: 12px 28px;
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   letter-spacing: 0.6px;
   text-transform: uppercase;
   border-radius: var(--r-cta);
@@ -1111,7 +1111,7 @@ button {
   color: #fff;
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   letter-spacing: 0.5px;
   text-transform: uppercase;
   border-radius: 0 var(--r-sm) var(--r-sm) 0;
@@ -1352,7 +1352,7 @@ button {
   padding: 8px 18px;
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.2s ease;
@@ -1546,7 +1546,7 @@ button {
   padding: 12px 28px;
   font-family: var(--font-system);
   font-size: 14px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -3611,15 +3611,15 @@ button {
   margin-bottom: var(--sp-md);
 }
 .explore-section__title {
-  font-family: var(--font-system);
-  font-size: 13px;
+  font-family: var(--font-slab);
+  font-size: 21px;
   font-weight: var(--fw-bold);
   color: var(--color-secondary);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 .explore-section__subtitle {
-  font-family: var(--font-slab);
+  font-family: var(--font-system);
   font-size: 13px;
   color: var(--color-secondary);
   font-weight: var(--fw-medium);
