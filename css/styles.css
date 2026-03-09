@@ -5626,7 +5626,7 @@ button {
 
 .settings-group__label {
   font-size: 11px;
-  font-weight: var(--fw-demi);
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 0.01em;
   color: var(--color-secondary);
@@ -5720,7 +5720,7 @@ button {
 
 .pref-section__title {
   font-size: 11px;
-  font-weight: var(--fw-demi);
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 0.01em;
   color: var(--color-secondary);
