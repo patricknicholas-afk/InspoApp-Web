@@ -714,7 +714,7 @@ button {
 }
 .nav-bar__title {
   font-family: var(--font-system);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: var(--fw-demi);
   color: var(--color-primary);
 }
@@ -2666,7 +2666,7 @@ button {
   height: 100%;
 }
 .saved-nav__title {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: var(--fw-demi);
   color: var(--color-primary);
 }
