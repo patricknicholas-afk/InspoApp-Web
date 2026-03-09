@@ -1654,7 +1654,7 @@ button {
 }
 .category-card__title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: var(--fw-demi);
   color: var(--color-btn-fg);
 }
 .category-card__subtitle {
@@ -1684,11 +1684,12 @@ button {
 }
 .exercise-list__heading h1 {
   font-size: 40px;
-  font-weight: 900;
+  font-weight: var(--fw-heavy);
   line-height: 1.05;
   color: var(--color-primary);
 }
 .exercise-list__heading .subtitle-italic {
+  font-family: var(--font-serif);
   font-size: 15px;
   font-style: italic;
   color: var(--color-secondary);
@@ -1943,14 +1944,14 @@ button {
 .coach-cat__name {
   font-family: var(--font-system);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: var(--fw-demi);
   color: var(--color-primary);
 }
 .coach-cat__right { display: flex; align-items: center; gap: 8px; }
 .coach-cat__score {
   font-family: var(--font-system);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: var(--color-secondary);
 }
 .coach-cat__chevron {
@@ -2061,8 +2062,10 @@ button {
 }
 .cat-section__name {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .cat-section__time {
   display: flex;
@@ -2164,15 +2167,15 @@ button {
 }
 .exercise-row__duration {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--fw-demi);
   color: var(--color-secondary);
 }
 .exercise-row__watch-btn {
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: 700;
-  color: #ffffff;
-  background: #000000;
+  font-weight: var(--fw-bold);
+  color: var(--color-btn-fg);
+  background: var(--color-btn-bg);
   border-radius: 999px;
   padding: 5px 14px;
   letter-spacing: 0.2px;

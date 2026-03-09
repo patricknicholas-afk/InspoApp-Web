@@ -2445,7 +2445,7 @@ function exerciseRowHTML(ex, cat) {
             <div class="exercise-row__title">${ex.title}</div>
             <div class="exercise-row__desc">${ex.description}</div>
           </div>
-          <button class="exercise-row__bookmark pressable" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
+          <button class="exercise-row__bookmark pressable" data-id="${ex.id}" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
             ${isBookmarked ? ICONS.bookmarkFill : ICONS.bookmark}
           </button>
         </div>
@@ -3977,7 +3977,7 @@ function renderSearchResults(data) {
                     <div class="exercise-row__title">${ex.title}</div>
                     <div class="exercise-row__desc">${ex.category} \u00B7 ${ex.duration}</div>
                   </div>
-                  <button class="exercise-row__bookmark pressable" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
+                  <button class="exercise-row__bookmark pressable" data-id="${ex.id}" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
                     ${bookmarks.has(ex.id) ? ICONS.bookmarkFill : ICONS.bookmark}
                   </button>
                 </div>
@@ -4221,7 +4221,7 @@ function renderAllExercises() {
                   <div class="exercise-row__title">${ex.title}</div>
                   <div class="exercise-row__desc">${ex.category} \u00B7 ${ex.duration}</div>
                 </div>
-                <button class="exercise-row__bookmark pressable" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
+                <button class="exercise-row__bookmark pressable" data-id="${ex.id}" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
                   ${bookmarks.has(ex.id) ? ICONS.bookmarkFill : ICONS.bookmark}
                 </button>
               </div>
@@ -4456,7 +4456,7 @@ function updateExploreResults() {
                   <div class="exercise-row__title">${ex.title}</div>
                   <div class="exercise-row__desc">${ex.category} \u00B7 ${ex.duration}</div>
                 </div>
-                <button class="exercise-row__bookmark pressable" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
+                <button class="exercise-row__bookmark pressable" data-id="${ex.id}" onclick="event.stopPropagation(); toggleBookmark('${ex.id}')">
                   ${bookmarks.has(ex.id) ? ICONS.bookmarkFill : ICONS.bookmark}
                 </button>
               </div>
