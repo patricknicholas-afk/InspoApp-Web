@@ -3628,15 +3628,16 @@ button {
   font-family: var(--font-system);
   font-size: 21px;
   font-weight: var(--fw-heavy);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   letter-spacing: 0.01em;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .explore-section__subtitle {
   font-family: var(--font-slab);
   font-size: 13px;
   color: var(--color-secondary);
   font-weight: var(--fw-demi);
+  text-transform: uppercase;
 }
 
 /* Explore grid — horizontal scroll on mobile, wrapped grid on desktop */
