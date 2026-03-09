@@ -895,8 +895,8 @@ function updateHamburgerNav(pageId) {
   const nav = document.getElementById('hamburger-nav');
   if (!nav) return;
 
-  // Only show for unauthenticated mobile users
-  const shouldShow = !currentUser && window.innerWidth < 768;
+  // Only show for unauthenticated users
+  const shouldShow = !currentUser;
   // Hide on auth, account, preferences pages
   const hiddenPages = new Set(['page-auth', 'page-account', 'page-preferences']);
   if (!shouldShow || hiddenPages.has(pageId)) {
@@ -904,6 +904,12 @@ function updateHamburgerNav(pageId) {
     return;
   }
   nav.style.display = '';
+
+  // Login button only visible on homepage
+  const loginBtn = nav.querySelector('.hamburger-nav__login');
+  if (loginBtn) {
+    loginBtn.style.display = pageId === 'page-home' ? '' : 'none';
+  }
 
   // Map pageId to active tab
   const mapping = {

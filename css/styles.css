@@ -527,10 +527,7 @@ button {
   opacity: 0.85;
 }
 
-/* -- Hide at tablet+ (sidebar takes over) --------------------- */
-@media (min-width: 768px) {
-  .hamburger-nav { display: none !important; }
-}
+/* Hamburger nav visible at all viewport sizes for unauthenticated users */
 
 /* ============================================================
    12-COLUMN GRID SYSTEM
