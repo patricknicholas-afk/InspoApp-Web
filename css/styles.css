@@ -3603,12 +3603,12 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
 }
 .selected-chip__x svg {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   stroke: #ffffff;
   stroke-width: 2px;
   stroke-linecap: round;
@@ -3793,12 +3793,12 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
 }
 .explore-filter-tag__x svg {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   stroke: #ffffff;
   stroke-width: 2px;
   stroke-linecap: round;
