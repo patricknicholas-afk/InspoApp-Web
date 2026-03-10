@@ -3458,8 +3458,6 @@ function buildKeywordIndex(allExercises, exploreSections) {
       // "2D Digital Art / Illustration & Painting / Digital Painting"
       tag.split('/').map(p => p.trim()).forEach(add);
     });
-    add(item.title);
-    add(item.subtitle);
   });
 
   // -- Additional Swift-only InspirationMetadata values --
