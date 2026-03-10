@@ -3781,10 +3781,7 @@ function renderChipsRow(query) {
        ${c.display} ${xSvg}
      </button>`
   ).join('');
-  const clearAllHtml = searchChips.length > 0
-    ? '<button class="clear-all-chips pressable" onclick="clearChipSearch()">Clear all</button>'
-    : '';
-  const selectedHtml = chipsHtml + clearAllHtml;
+  const selectedHtml = chipsHtml;
 
   // Build suggestion chips (only if 2+ chars typed and under limit)
   let suggestionsHtml = '';
@@ -3801,6 +3798,18 @@ function renderChipsRow(query) {
 
   row.innerHTML = selectedHtml;
   if (suggestionsRow) suggestionsRow.innerHTML = suggestionsHtml;
+
+  // Clear all button inline with search bar
+  const searchBar = document.querySelector('.explore-search-bar');
+  const existingClear = searchBar?.querySelector('.clear-all-chips');
+  if (existingClear) existingClear.remove();
+  if (searchBar && searchChips.length > 0) {
+    const clearBtn = document.createElement('button');
+    clearBtn.className = 'clear-all-chips pressable';
+    clearBtn.textContent = 'Clear all';
+    clearBtn.onclick = clearChipSearch;
+    searchBar.appendChild(clearBtn);
+  }
 
   // Hint below the row
   if (hintContainer) {

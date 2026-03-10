@@ -3463,8 +3463,13 @@ button {
 
 /* Search bar */
 .explore-search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
   padding: var(--sp-sm) 0 var(--sp-md);
   max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Search bar inner container (input + arrow) */
@@ -3544,13 +3549,14 @@ button {
   font-weight: var(--fw-demi);
   color: var(--color-secondary);
   text-decoration: underline;
+  text-transform: uppercase;
   background: none;
   border: none;
   cursor: pointer;
   padding: var(--sp-6) 0;
-  margin-left: auto;
   white-space: nowrap;
   line-height: 1;
+  flex-shrink: 0;
 }
 .clear-all-chips:hover {
   color: var(--color-primary);
