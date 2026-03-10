@@ -870,7 +870,7 @@ button {
 .passion-block__title {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   font-size: 42px;
   line-height: 1.115;
   color: var(--color-btn-fg);
@@ -1275,6 +1275,7 @@ button {
 .featured-block__title {
   font-family: var(--font-serif);
   font-style: italic;
+  font-weight: var(--fw-medium);
   font-size: 36px;
   line-height: 1.115;
   color: var(--color-btn-fg);
@@ -1703,6 +1704,7 @@ button {
   font-family: var(--font-serif);
   font-size: 15px;
   font-style: italic;
+  font-weight: var(--fw-medium);
   color: var(--color-secondary);
   margin-top: var(--sp-6);
 }
@@ -2239,7 +2241,7 @@ button {
 .detail-title-block h1 {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   font-size: 32px;
   color: var(--color-primary);
   line-height: 1.2;
@@ -2969,7 +2971,7 @@ button {
 .video-title-section__name {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: var(--fw-demi);
+  font-weight: var(--fw-medium);
   font-size: 16px;
   color: var(--color-primary);
 }
@@ -3018,7 +3020,7 @@ button {
 .drawer-detail__title {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-medium);
   font-size: 24px;
   line-height: 30px;
   color: var(--color-primary);
@@ -3437,6 +3439,8 @@ button {
  *   padding: 4px 10px 4px 12px  (reduced right padding for X icon)
  */
 .chip {
+  display: inline-flex;
+  align-items: center;
   padding: var(--sp-6) var(--sp-md);
   border-radius: var(--r-chip);
   font-family: var(--font-system);
@@ -3544,6 +3548,8 @@ button {
 .chip-search-hint-container:empty { display: none; }
 
 .suggestion-chip {
+  display: inline-flex;
+  align-items: center;
   flex-shrink: 0;
   padding: var(--sp-6) var(--sp-md);
   border-radius: var(--r-chip);
@@ -3702,6 +3708,8 @@ button {
   flex-wrap: wrap;
 }
 .explore-chip {
+  display: inline-flex;
+  align-items: center;
   padding: var(--sp-6) var(--sp-md);
   border-radius: var(--r-chip);
   font-family: var(--font-system);
@@ -3889,6 +3897,8 @@ button {
   display: none;
 }
 .search-results__topic-pill {
+  display: inline-flex;
+  align-items: center;
   flex-shrink: 0;
   padding: var(--sp-6) var(--sp-md);
   border-radius: var(--r-chip);
