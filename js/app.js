@@ -1209,7 +1209,7 @@ function renderForYou() {
               <div class="foryou-card__media"
                    style="background-image:url('${card.imageUrl}');background-size:cover;background-position:center top;"></div>
               <div class="foryou-card__tag-overlay">
-                ${card.title ? `<div class="foryou-card__inspo-title">${card.title}</div>` : '<div></div>'}
+                <div></div>
                 <div class="foryou-card__tags">
                   ${tags.map(t => `<span class="foryou-card__tag">${toTitleCase(t)}</span>`).join('')}
                 </div>
