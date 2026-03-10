@@ -5,6 +5,7 @@
 
 let APP_DATA = null;
 let INSPO_DATA = null;
+let INSPO_BY_ID = new Map(); // id → item, built after load
 const NAV_STACK = [];
 let bookmarks = new Set(); // hydrated from localStorage below
 let navBack = false; // true when navigating backward (triggers reverse slide animation)
@@ -16,6 +17,7 @@ const ICONS = {
   chevronLeft: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.71967 12.5303C7.42678 12.2374 7.42678 11.7626 7.71967 11.4697L15.2197 3.96967C15.5126 3.67678 15.9874 3.67678 16.2803 3.96967C16.5732 4.26256 16.5732 4.73744 16.2803 5.03033L9.31066 12L16.2803 18.9697C16.5732 19.2626 16.5732 19.7374 16.2803 20.0303C15.9874 20.3232 15.5126 20.3232 15.2197 20.0303L7.71967 12.5303Z" fill="currentColor"/></svg>',
   chevronRight: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.2803 11.4697C16.5732 11.7626 16.5732 12.2374 16.2803 12.5303L8.78033 20.0303C8.48744 20.3232 8.01256 20.3232 7.71967 20.0303C7.42678 19.7374 7.42678 19.2626 7.71967 18.9697L14.6893 12L7.71967 5.03033C7.42678 4.73744 7.42678 4.26256 7.71967 3.96967C8.01256 3.67678 8.48744 3.67678 8.78033 3.96967L16.2803 11.4697Z" fill="currentColor"/></svg>',
   clock: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 6C12.75 5.58579 12.4142 5.25 12 5.25C11.5858 5.25 11.25 5.58579 11.25 6V12C11.25 12.4142 11.5858 12.75 12 12.75H16.5C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25H12.75V6Z" fill="currentColor"/></svg>',
+  clockOutline: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.75"/><path d="M12 6.75V12h4.5"/></svg>',
   search: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 3.75C6.77208 3.75 3.75 6.77208 3.75 10.5C3.75 14.2279 6.77208 17.25 10.5 17.25C12.3642 17.25 14.0506 16.4953 15.273 15.273C16.4953 14.0506 17.25 12.3642 17.25 10.5C17.25 6.77208 14.2279 3.75 10.5 3.75ZM2.25 10.5C2.25 5.94365 5.94365 2.25 10.5 2.25C15.0563 2.25 18.75 5.94365 18.75 10.5C18.75 12.5078 18.032 14.3491 16.8399 15.7793L21.5303 20.4697C21.8232 20.7626 21.8232 21.2374 21.5303 21.5303C21.2374 21.8232 20.7626 21.8232 20.4697 21.5303L15.7793 16.8399C14.3491 18.032 12.5078 18.75 10.5 18.75C5.94365 18.75 2.25 15.0563 2.25 10.5Z" fill="currentColor"/></svg>',
   bookmark: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.75C10.137 3.75 8.29938 3.85779 6.49314 4.06741C5.78933 4.14909 5.25 4.76078 5.25 5.50699V19.7865L11.6646 16.5792C11.8757 16.4736 12.1243 16.4736 12.3354 16.5792L18.75 19.7865V5.50699C18.75 4.76078 18.2107 4.14909 17.5069 4.06741C15.7006 3.85779 13.863 3.75 12 3.75ZM6.32022 2.57741C8.18374 2.36114 10.079 2.25 12 2.25C13.921 2.25 15.8163 2.36114 17.6798 2.57741C19.1772 2.75119 20.25 4.03722 20.25 5.50699V21C20.25 21.2599 20.1154 21.5013 19.8943 21.638C19.6732 21.7746 19.3971 21.7871 19.1646 21.6708L12 18.0885L4.83541 21.6708C4.60292 21.7871 4.32681 21.7746 4.1057 21.638C3.88459 21.5013 3.75 21.2599 3.75 21V5.50699C3.75 4.03722 4.82283 2.75119 6.32022 2.57741Z" fill="currentColor"/></svg>',
   bookmarkFill: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.32022 2.57741C8.18374 2.36114 10.079 2.25 12 2.25C13.921 2.25 15.8163 2.36114 17.6798 2.57741C19.1772 2.75119 20.25 4.03722 20.25 5.50699V21C20.25 21.2599 20.1154 21.5013 19.8943 21.638C19.6732 21.7746 19.3971 21.7871 19.1646 21.6708L12 18.0885L4.83541 21.6708C4.60292 21.7871 4.32681 21.7746 4.1057 21.638C3.88459 21.5013 3.75 21.2599 3.75 21V5.50699C3.75 4.03722 4.82283 2.75119 6.32022 2.57741Z" fill="currentColor"/></svg>',
@@ -38,6 +40,22 @@ function toTitleCase(str) {
   return str.replace(/\b\w+/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase());
 }
 
+// -- Medium Tag Taxonomy Parser --------------------------------
+/** Parse mediumTags strings into L0/L1/L2 levels for filtering and indexing. */
+function parseMediumLevels(mediumTags) {
+  const L0 = new Set(), L1 = new Set(), L2 = new Set();
+  (mediumTags || []).forEach(tag => {
+    const parts = tag.split('/').map(p => p.trim());
+    if (parts[0]) L0.add(parts[0]);
+    if (parts[1]) L1.add(parts[1]);
+    if (parts[2]) L2.add(parts[2]);
+  });
+  return {
+    L0: [...L0], L1: [...L1], L2: [...L2],
+    all: [...L0, ...L1, ...L2],
+  };
+}
+
 // -- Safe Data Loader ------------------------------------------
 /** Fetch exercise + inspiration JSON with error handling. Returns true on success. */
 async function loadAppData() {
@@ -45,11 +63,25 @@ async function loadAppData() {
   try {
     const [exResp, inspoResp] = await Promise.all([
       fetch('data/exercises.json?v=4'),
-      fetch('data/inspiration.json?v=1'),
+      fetch('data/inspiration.json?v=4'),
     ]);
     if (!exResp.ok || !inspoResp.ok) throw new Error(`HTTP ${exResp.status}/${inspoResp.status}`);
     APP_DATA = await exResp.json();
     INSPO_DATA = await inspoResp.json();
+
+    // Backward-compat: if old nested format, flatten to array
+    if (INSPO_DATA && !Array.isArray(INSPO_DATA) && INSPO_DATA.sections) {
+      INSPO_DATA = INSPO_DATA.sections.flatMap(s => s.items);
+    }
+
+    // Build lookup map and pre-parse medium taxonomy levels
+    INSPO_BY_ID = new Map();
+    if (Array.isArray(INSPO_DATA)) {
+      INSPO_DATA.forEach(item => {
+        item._mediumParsed = parseMediumLevels(item.metadata?.mediumTags);
+        INSPO_BY_ID.set(item.id, item);
+      });
+    }
     return true;
   } catch (err) {
     console.error('Failed to load app data:', err);
@@ -66,6 +98,26 @@ async function loadAppData() {
     }
     return false;
   }
+}
+
+// -- Safe Image URL ----------------------------------------
+/**
+ * Encodes problematic characters in local image file paths so browsers
+ * fetch the correct file. Handles three real failure cases found in the data:
+ *   1. Literal '%' in filenames (e.g. Hewll%27s...) — browser decodes %XX → 404.
+ *      Fix: escape % first so browser sees the literal character.
+ *   2. '#' in filenames (e.g. martian 8-16#2 copy.jpg) — browser treats as
+ *      fragment delimiter and truncates the URL → 404.
+ *   3. Spaces in filenames — unreliable in CSS background-image url().
+ * Does NOT touch http:// URLs (CDN/remote assets handle their own encoding).
+ */
+function safeImgUrl(url) {
+  if (!url) return '';
+  if (url.startsWith('http')) return url; // remote URLs left as-is
+  return url
+    .replace(/%/g, '%25')  // must be first — preserve literal % in filenames
+    .replace(/ /g, '%20')  // spaces → %20 (safe in both CSS and HTML)
+    .replace(/#/g, '%23'); // # → %23 (prevents fragment truncation)
 }
 
 // -- Media URL Resolver ----------------------------------------
@@ -948,7 +1000,7 @@ function startForYouAutoScroll() {
   const page = document.getElementById('page-foryou');
   if (!page) return;
   page.addEventListener('scroll', onForYouScroll, { passive: true });
-  forYouState.timer = setTimeout(advanceForYou, 10000);
+  forYouState.timer = setTimeout(advanceForYou, 5000);
 }
 
 function onForYouScroll() {
@@ -959,7 +1011,7 @@ function onForYouScroll() {
     const page = document.getElementById('page-foryou');
     if (!page || !page.classList.contains('active')) return;
     forYouState.currentIndex = Math.round(page.scrollTop / page.clientHeight);
-    forYouState.timer = setTimeout(advanceForYou, 10000);
+    forYouState.timer = setTimeout(advanceForYou, 5000);
   }, 400);
 }
 
@@ -971,7 +1023,7 @@ function advanceForYou() {
   if (next >= total) return; // stop at last card
   forYouState.currentIndex = next;
   page.scrollTo({ top: next * page.clientHeight, behavior: 'smooth' });
-  forYouState.timer = setTimeout(advanceForYou, 10000);
+  forYouState.timer = setTimeout(advanceForYou, 5000);
 }
 
 function clearForYouTimers() {
@@ -1027,7 +1079,11 @@ function toggleForYouBookmark(exId, exTitle, catTitle, catId, duration, type) {
     saved.splice(idx, 1);
     if (btn) btn.classList.remove('fy-action--saved');
   } else {
-    saved.unshift({ id: exId, title: exTitle, category: catTitle, catId, duration, type, savedAt: Date.now() });
+    // Resolve imageUrl from INSPO_BY_ID so saved items always carry their image
+    // (renderBookmarks falls back to this when FY_TAG_CARDS hasn't been rebuilt yet)
+    const inspoRef = (!isAssignment && INSPO_BY_ID) ? INSPO_BY_ID.get(exId) : null;
+    const imageUrl = inspoRef?.imageUrl || null;
+    saved.unshift({ id: exId, title: exTitle, category: catTitle, catId, duration, type, imageUrl, savedAt: Date.now() });
     if (btn) btn.classList.add('fy-action--saved');
   }
 
@@ -1044,51 +1100,44 @@ function toggleForYouBookmark(exId, exTitle, catTitle, catId, duration, type) {
 // -- For You: Tag-Variant Card Data ---------------------------
 
 /**
+ * Fisher-Yates in-place shuffle — true random, O(n).
+ */
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/**
  * Build FY_TAG_CARDS from the enriched inspirationSections data.
  * Each inspiration item becomes a tag-variant card with real metadata tags.
  * Bonus cards use remaining images not assigned to inspiration items.
  */
 function buildInspirationCards() {
   const cards = [];
-  if (INSPO_DATA && INSPO_DATA.sections) {
-    INSPO_DATA.sections.forEach(section => {
-      section.items.forEach(item => {
-        const m = item.metadata || {};
-        const tags = [
-          ...(m.industry || []),
-          ...(m.subjectMatter || []),
-          ...(m.techniqueVisible || []).slice(0, 1),
-          ...(m.colorPalette || []).slice(0, 1),
-        ];
-        cards.push({
-          id: item.id,
-          imageUrl: item.imageUrl || '',
-          title: item.title,
-          subtitle: item.subtitle,
-          section: section.title,
-          tags: [...new Set(tags)].slice(0, 5),
-        });
+  if (Array.isArray(INSPO_DATA)) {
+    INSPO_DATA.forEach(item => {
+      const m = item.metadata || {};
+      const parsed = item._mediumParsed || parseMediumLevels(m.mediumTags);
+      const tags = [
+        ...(m.industry || []).slice(0, 1),
+        ...parsed.L2.slice(0, 1),
+        ...(m.subjectMatter || []).slice(0, 1),
+        ...(m.techniqueVisible || []).slice(0, 1),
+        ...(m.colorPalette || []).slice(0, 1),
+      ];
+      cards.push({
+        id: item.id,
+        imageUrl: item.imageUrl || '',
+        title: item.title,
+        subtitle: item.subtitle,
+        section: parsed.L1[0] || parsed.L0[0] || 'Inspiration',
+        tags: [...new Set(tags)].slice(0, 5),
       });
     });
   }
-  // Bonus cards from remaining artwork not mapped to inspiration items
-  const usedImages = new Set(cards.map(c => c.imageUrl));
-  const bonusImages = [
-    { url: 'assets/img/MANTIS.jpg', tags: ['sci-fi', 'creature design', 'dramatic', 'detailed', 'cool'] },
-    { url: 'assets/img/1458428_833001802629_1722916089_n.jpg', tags: ['figure drawing', 'anatomy', 'gesture', 'warm', 'loose'] },
-  ];
-  bonusImages.forEach((bonus, i) => {
-    if (!usedImages.has(bonus.url)) {
-      cards.push({
-        id: `fy-bonus-${i + 1}`,
-        imageUrl: bonus.url,
-        title: '',
-        subtitle: '',
-        section: 'Discover',
-        tags: bonus.tags,
-      });
-    }
-  });
   return cards;
 }
 
@@ -1116,7 +1165,11 @@ function renderForYou() {
   }
 
   // Build inspiration cards from data (rebuild each render to ensure APP_DATA is loaded)
-  FY_TAG_CARDS = buildInspirationCards();
+  // Shuffle a copy so the source array stays intact for other uses (bookmarks, etc.)
+  FY_TAG_CARDS = shuffleArray(buildInspirationCards());
+
+  // Shuffle exercises too so the same cards don't always lead the feed
+  shuffleArray(allItems);
 
   // Interleave tag-variant (inspiration) cards: insert one after every 2nd exercise card
   const combined = [];
@@ -1132,11 +1185,27 @@ function renderForYou() {
     combined.push({ type: 'tag', card: FY_TAG_CARDS[tagIdx++] });
   }
 
-  // Shuffle feed order (Fisher-Yates) so every load feels fresh
-  for (let i = combined.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [combined[i], combined[j]] = [combined[j], combined[i]];
-  }
+  // Preference-weighted sort: score inspo cards against user prefs
+  const prefTerms = new Set([
+    ...(PREFS.artStyles || []).map(s => s.toLowerCase()),
+    ...(PREFS.careerGoals || []).map(s => s.toLowerCase()),
+  ]);
+  combined.forEach(item => {
+    if (item.type !== 'tag' || !prefTerms.size) { item._ps = 0; return; }
+    let score = 0;
+    (item.card.tags || []).forEach(t => {
+      const tl = t.toLowerCase();
+      for (const pref of prefTerms) {
+        if (tl === pref) score += 3;
+        else if (tl.includes(pref) || pref.includes(tl)) score += 1;
+      }
+    });
+    item._ps = score;
+  });
+  // Assign a stable random key once per item so the tiebreaker is consistent
+  // (calling Math.random() inside a comparator produces biased sorts)
+  combined.forEach(item => { item._r = Math.random(); });
+  combined.sort((a, b) => (b._ps - a._ps) || (a._r - b._r));
 
   // Placeholder background colours cycling through a warm palette
   const palettes = [
@@ -1207,7 +1276,7 @@ function renderForYou() {
                onclick="openInspoModal('${card.imageUrl}')">
             <div class="foryou-card__container">
               <div class="foryou-card__media"
-                   style="background-image:url('${card.imageUrl}');background-size:cover;background-position:center top;"></div>
+                   style="background-image:url('${safeImgUrl(card.imageUrl)}');background-size:cover;background-position:center top;"></div>
               <div class="foryou-card__tag-overlay">
                 <div></div>
                 <div class="foryou-card__tags">
@@ -2398,7 +2467,7 @@ function renderCategories(expandedState) {
         <div class="cat-section__info">
           <div class="cat-section__name">${cat.title}</div>
           <div class="cat-section__time">
-            ${ICONS.clock}
+            ${ICONS.clockOutline}
             <span>TOTAL TIME: ${cat.totalTime}</span>
           </div>
         </div>
@@ -2456,8 +2525,8 @@ function exerciseRowHTML(ex, cat) {
           </button>
         </div>
         <div class="exercise-row__meta">
-          <span class="exercise-row__duration">${ex.duration}</span>
-          <button class="exercise-row__watch-btn pressable">Watch Video</button>
+          <span class="exercise-row__duration">${ICONS.clockOutline}${ex.duration}</span>
+          <button class="exercise-row__watch-btn pressable">${ICONS.play} Watch Video</button>
         </div>
       </div>
     </div>
@@ -2567,10 +2636,8 @@ function renderBookmarks() {
   const tagCardImgLookup = {};
   FY_TAG_CARDS.forEach(c => { tagCardImgLookup[c.id] = c.imageUrl; });
   // Also include INSPO_DATA items (saved from Browse/Search)
-  if (INSPO_DATA && INSPO_DATA.sections) {
-    INSPO_DATA.sections.forEach(s => {
-      s.items.forEach(item => { if (item.imageUrl) tagCardImgLookup[item.id] = item.imageUrl; });
-    });
+  if (Array.isArray(INSPO_DATA)) {
+    INSPO_DATA.forEach(item => { if (item.imageUrl) tagCardImgLookup[item.id] = item.imageUrl; });
   }
 
   // ── Section B: Saved Assignments ─────────────────────────────────────────
@@ -2644,7 +2711,7 @@ function renderBookmarks() {
           return `
           <div class="inspo-mosaic__tile pressable" style="${tileStyle}"
                data-action="open-inspo" data-index="${idx}">
-            ${imgUrl ? `<img src="${imgUrl}" alt="" loading="lazy" draggable="false" />` : ''}
+            ${imgUrl ? `<img src="${safeImgUrl(imgUrl)}" alt="" loading="lazy" draggable="false" />` : ''}
             <button class="inspo-mosaic__remove pressable"
               data-action="remove-inspo" data-id="${item.id}"
               aria-label="Remove from saved">
@@ -3403,6 +3470,8 @@ let exploreFilters = new Map(); // key: filterValue, value: { key, label, sectio
 let searchChips = [];            // [{id, display}] — max 5 selected autocomplete chips
 let chipSearchExecuted = false;  // true after user taps the search arrow
 let keywordIndex = [];           // [{id, display}] — built once per renderSearch()
+let chipMode = 'free';           // 'free' | 'guided'
+let guidedStack = [];            // [{id, display, level}]  level: 'L1'|'L2'|'mood'
 
 /**
  * Build a deduplicated, sorted keyword index from all exercise metadata,
@@ -3438,35 +3507,27 @@ function buildKeywordIndex(allExercises, exploreSections) {
     add(item.filterValue);
   });
 
-  // -- ArtCategory enum (Swift-side, hardcoded here for full taxonomy) --
-  ['2D Digital Art', '3D Digital Art', 'Hybrid 2D/3D', 'AI-Assisted Art',
-   'Motion & Video Art', 'VFX', 'Graphic Design', 'Technical/Procedural Art'
-  ].forEach(add);
-
   // -- DurationBucket (extended / session not in sample data but in Swift enum) --
   ['quick', 'medium', 'extended', 'session'].forEach(add);
 
-  // -- Inspiration metadata dimensions --
-  (INSPO_DATA?.sections || []).flatMap(s => s.items).forEach(item => {
+  // -- Taxonomy terms that are defined in the design system but may not yet
+  //    appear as standalone values in all tagged data --
+  ['manga', 'anime', 'comic art', 'sequential art'].forEach(add);
+
+  // -- Inspiration metadata dimensions (from flat 776-item array) --
+  (Array.isArray(INSPO_DATA) ? INSPO_DATA : []).forEach(item => {
     const m = item.metadata;
     if (!m) return;
     (m.industry || []).forEach(add);
     (m.colorPalette || []).forEach(add);
     (m.subjectMatter || []).forEach(add);
     (m.techniqueVisible || []).forEach(add);
-    (m.mediumTags || []).forEach(tag => {
-      // "2D Digital Art / Illustration & Painting / Digital Painting"
-      tag.split('/').map(p => p.trim()).forEach(add);
-    });
+    // Index all 3 taxonomy levels individually
+    const parsed = item._mediumParsed || parseMediumLevels(m.mediumTags);
+    parsed.L0.forEach(add);
+    parsed.L1.forEach(add);
+    parsed.L2.forEach(add);
   });
-
-  // -- Additional Swift-only InspirationMetadata values --
-  ['vibrant', 'warm', 'complementary', 'cool', 'analogous', 'muted',
-   'high-contrast', 'neutral', 'landscape', 'portrait', 'abstract',
-   'architecture', 'figure', 'still-life', 'energetic', 'playful',
-   'serene', 'melancholic', 'dramatic', 'mysterious', 'painterly',
-   'loose', 'detailed', 'linework-heavy'
-  ].forEach(add);
 
   // -- Deduplicate singular/plural and adjective/noun forms --
   // Prefer the shorter (singular/noun) form when both exist.
@@ -3500,38 +3561,194 @@ function buildKeywordIndex(allExercises, exploreSections) {
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
+/* ── Guided Search Utilities ──────────────────────────────────── */
+
+/**
+ * Derive the top L1 taxonomy chips from INSPO_DATA, sorted by frequency.
+ * @param {number} limit
+ * @returns {Array<{id:string, display:string, count:number}>}
+ */
+function getL1Chips(limit = 6) {
+  const counts = new Map();
+  (Array.isArray(INSPO_DATA) ? INSPO_DATA : []).forEach(item => {
+    const parsed = item._mediumParsed || parseMediumLevels(item.metadata?.mediumTags);
+    parsed.L1.forEach(val => {
+      const id = val.toLowerCase().trim();
+      if (!counts.has(id)) counts.set(id, { display: val, count: 0 });
+      counts.get(id).count++;
+    });
+  });
+  return [...counts.entries()]
+    .map(([id, { display, count }]) => ({ id, display, count }))
+    .sort((a, b) => b.count - a.count || a.id.localeCompare(b.id))
+    .slice(0, limit);
+}
+
+/**
+ * Given the current guidedStack, filter INSPO_DATA to matching items
+ * and return the next level of option chips.
+ * @param {Array<{id, display, level}>} stack
+ * @returns {{ l2: Array, mood: Array }}
+ */
+function getGuidedOptions(stack) {
+  if (!stack.length) return { l2: [], mood: [] };
+
+  const l1Entry = stack.find(s => s.level === 'L1');
+  const l2Entry = stack.find(s => s.level === 'L2');
+
+  // Filter items matching ALL locked selections
+  const filtered = (Array.isArray(INSPO_DATA) ? INSPO_DATA : []).filter(item => {
+    const parsed = item._mediumParsed || parseMediumLevels(item.metadata?.mediumTags);
+    const allVals = new Set(parsed.all.map(v => v.toLowerCase().trim()));
+    const m = item.metadata || {};
+    ['colorPalette', 'subjectMatter', 'techniqueVisible'].forEach(f => {
+      (m[f] || []).forEach(v => allVals.add(v.toLowerCase().trim()));
+    });
+    return stack.every(s => allVals.has(s.id));
+  });
+
+  const result = { l2: [], mood: [] };
+  const lockedIds = new Set(stack.map(s => s.id));
+
+  if (l1Entry && !l2Entry) {
+    const l2Counts = new Map();
+    filtered.forEach(item => {
+      const parsed = item._mediumParsed || parseMediumLevels(item.metadata?.mediumTags);
+      parsed.L2.forEach(val => {
+        const id = val.toLowerCase().trim();
+        if (lockedIds.has(id)) return; // skip already selected
+        if (!l2Counts.has(id)) l2Counts.set(id, { display: val, count: 0 });
+        l2Counts.get(id).count++;
+      });
+    });
+    result.l2 = [...l2Counts.entries()]
+      .map(([id, { display, count }]) => ({ id, display, count }))
+      .sort((a, b) => b.count - a.count || a.id.localeCompare(b.id));
+  }
+
+  if (l1Entry && l2Entry) {
+    const fieldLabels = { colorPalette: 'Style', subjectMatter: 'Subject', techniqueVisible: 'Technique' };
+    const moodCounts = { colorPalette: new Map(), subjectMatter: new Map(), techniqueVisible: new Map() };
+    filtered.forEach(item => {
+      const m = item.metadata || {};
+      Object.keys(moodCounts).forEach(field => {
+        (m[field] || []).forEach(val => {
+          const id = val.toLowerCase().trim();
+          if (lockedIds.has(id)) return; // skip already selected
+          if (!moodCounts[field].has(id)) moodCounts[field].set(id, { display: val, count: 0 });
+          moodCounts[field].get(id).count++;
+        });
+      });
+    });
+    Object.entries(moodCounts).forEach(([field, map]) => {
+      [...map.entries()]
+        .sort((a, b) => b[1].count - a[1].count)
+        .slice(0, 8) // up to 8 per field so there's plenty across 10 slots
+        .forEach(([id, { display, count }]) => {
+          result.mood.push({ id, display, count, field, label: fieldLabels[field] });
+        });
+    });
+  }
+
+  return result;
+}
+
+/**
+ * Write content into #suggestions-row based on current mode and chip state.
+ * @param {string} typedQuery — raw value of the search input
+ */
+function renderSuggestedSearches(typedQuery) {
+  return; // TODO: re-enable preference suggestions in a future release
+  const suggestionsRow = document.getElementById('suggestions-row');
+  if (!suggestionsRow) return;
+
+  const q = (typedQuery || '').toLowerCase().trim();
+
+  // Free mode only — show preference suggestions below autocomplete when chips are selected
+  if (chipMode !== 'free' || searchChips.length === 0) return;
+
+  const excludeIds = new Set(searchChips.map(c => c.id));
+  const prefTopics = getRecommendedTopics(excludeIds, 6);
+  if (!prefTopics.length) return;
+
+  const prefHtml = `
+    <div class="guided-search-container">
+      <div class="suggestions-section-label">Based on your preferences</div>
+      <div class="guided-options-row">
+        ${prefTopics.map(t =>
+          `<button class="pref-suggestion-chip pressable"
+             onclick="addSearchChip('${t.id.replace(/'/g,"\\'")}','${t.display.replace(/'/g,"\\'")}')">
+             ${t.display}
+           </button>`
+        ).join('')}
+      </div>
+    </div>`;
+  const autoRow = suggestionsRow.querySelector('.autocomplete-chips-row');
+  if (autoRow) {
+    autoRow.insertAdjacentHTML('afterend', prefHtml);
+  } else {
+    suggestionsRow.innerHTML = prefHtml;
+  }
+}
+
 /* ── Synonym / Related Terms Map ─────────────────────────────── */
 
 const SYNONYM_GROUPS = [
-  ['character design', 'character', 'creature', 'creature design'],
+  // -- Subject / Design Disciplines --
+  ['character design', 'character', 'character art'],
+  ['creature design', 'creature', 'monster', 'beast'],
   ['portrait', 'portraits', 'figure', 'figure drawing'],
-  ['concept art', 'concept', 'visual development', 'vis dev'],
+  ['vehicle design', 'vehicle', 'automotive', 'car design', 'mechanical'],
+  ['environment design', 'environment', 'landscape', 'background art', 'scene'],
+  ['prop design', 'prop', 'object design', 'asset'],
+  ['concept art', 'concept', 'concept design', 'visual development', 'vis dev'],
   ['illustration', 'narrative artwork', 'editorial illustration'],
+  // -- Techniques & Fundamentals --
   ['anatomy', 'anatomy fundamentals', 'figure', 'gesture'],
   ['perspective', 'perspective drills', 'spatial reasoning', 'depth'],
-  ['line work', 'line control', 'linework heavy', 'contour'],
+  ['line work', 'line control', 'linework heavy', 'contour', 'line art'],
   ['painterly', 'loose', 'expressive', 'brushwork'],
   ['detailed', 'refined', 'polished', 'tight rendering'],
+  ['graphic', 'stylized', 'flat design'],
+  // -- Color --
   ['warm', 'warm colors', 'warm palette'],
   ['cool', 'cool colors', 'cool palette'],
   ['vibrant', 'saturated', 'bold colors', 'high contrast'],
   ['muted', 'desaturated', 'subtle', 'pastel'],
-  ['digital painting', 'digital art', '2d digital art'],
+  ['color theory', 'color', 'color palette', 'complementary'],
+  // -- Media --
+  ['digital painting', 'digital art', 'digital 2d'],
+  ['comic art', 'comics', 'sequential art', 'western comics', 'graphic novel'],
+  ['manga', 'anime', 'japanese illustration', 'manhwa'],
+  ['matte painting', 'matte', 'background painting'],
+  ['vector art', 'vector', 'vector illustration'],
+  ['speedpainting', 'speed painting', 'quick paint'],
+  ['photobashing', 'photo manipulation', 'composite'],
+  ['technical illustration', 'technical drawing', 'diagram'],
   ['pencil', 'graphite', 'traditional', 'paper only'],
+  ['ink', 'inking', 'pen and ink', 'crosshatch'],
+  ['watercolor', 'watercolour', 'wash', 'wet media'],
+  // -- 3D --
+  ['3d digital art', '3d art', '3d', 'cg'],
+  ['rendering', 'render', 'photorealistic rendering', 'cel shading'],
+  ['modeling & sculpting', 'modeling', 'sculpting', '3d sculpting'],
+  ['texturing & surfacing', 'texturing', 'surfacing', 'materials'],
+  ['animation & rigging', 'animation', 'rigging', 'motion'],
+  // -- Industry --
+  ['game art', 'game design', 'game artist'],
+  ['film & vfx', 'film', 'vfx', 'visual effects'],
+  ['industrial design', 'product design'],
+  ['automotive design', 'car design', 'vehicle design'],
+  ['tv & broadcast', 'tv', 'broadcast', 'television'],
+  // -- Career & Learning --
   ['shading', 'value', 'tonal', 'light and shadow'],
   ['composition', 'layout', 'framing', 'visual hierarchy'],
   ['gesture', 'gesture drawing', 'quick sketch', 'warm up'],
   ['freelance illustrator', 'freelance', 'illustration career'],
   ['concept artist', 'concept art career', 'entertainment design'],
-  ['game design', 'game art', 'game artist'],
-  ['anime', 'manga', 'japanese illustration'],
-  ['sci fi art', 'science fiction', 'futuristic', 'mech'],
-  ['environment', 'landscape', 'environment design', 'background art'],
-  ['color theory', 'color', 'color palette', 'complementary'],
+  ['sci fi art', 'science fiction', 'futuristic', 'sci fi'],
+  ['storytelling', 'narrative', 'storyboard'],
   ['observation', 'observational', 'still life', 'study'],
-  ['ink', 'inking', 'pen and ink', 'crosshatch'],
-  ['watercolor', 'watercolour', 'wash', 'wet media'],
-  ['storytelling', 'narrative', 'sequential art', 'storyboard'],
 ];
 
 const _synonymLookup = new Map();
@@ -3607,19 +3824,16 @@ function getRecommendedTopics(excludeIds = new Set(), limit = 8) {
 
   // ── Channel 3: Saved inspiration patterns (weight 3)
   const savedInspo = getSavedInspo();
-  const inspoById = new Map();
-  (INSPO_DATA?.sections || []).forEach(s =>
-    s.items.forEach(item => inspoById.set(item.id, item))
-  );
   savedInspo.forEach(saved => {
-    const item = inspoById.get(saved.id);
+    const item = INSPO_BY_ID.get(saved.id);
     const m = item?.metadata;
     if (!m) return;
+    const parsed = item._mediumParsed || parseMediumLevels(m.mediumTags);
     [...(m.industry || []),
      ...(m.colorPalette || []),
      ...(m.subjectMatter || []),
      ...(m.techniqueVisible || []),
-     ...(m.mediumTags || []).flatMap(t => t.split('/').map(p => p.trim())),
+     ...parsed.all,
     ].forEach(t => addScore(t, 3, 'saved-inspo'));
   });
 
@@ -3697,21 +3911,29 @@ function renderSearch() {
           .map(section => renderExploreSection(section)).join('')}
       </div>
       <div id="explore-results"></div>
+      <div class="guided-search-bottom">
+        <div id="guided-section-row"></div>
+      </div>
     </div>
   `;
 
   // Re-render chips if returning from search results page (state preserved)
-  if (searchChips.length > 0) {
+  if (searchChips.length > 0 || (chipMode === 'guided' && guidedStack.length > 0)) {
     renderChipsRow();
     updateSearchArrow();
     toggleExploreSections();
+  } else {
+    renderChipsRow();
   }
+  renderGuidedSection();
 }
 
 // -- Autocomplete chip search functions --------------------------
 
 function onExploreAutocomplete(val) {
-  // Update arrow active state on every keystroke
+  // Exit guided mode if user starts typing
+  if (chipMode === 'guided' && (val || '').length > 0) exitGuidedMode();
+
   updateSearchArrow();
   toggleExploreSections();
 
@@ -3746,7 +3968,18 @@ function removeSearchChip(id) {
 }
 
 function executeChipSearch() {
-  // If no chips but a full keyword is typed, auto-add it as a chip first
+  // Guided mode — merge guidedStack into searchChips and navigate
+  if (chipMode === 'guided') {
+    if (!guidedStack.length) return;
+    searchChips = guidedStack.map(s => ({ id: s.id, display: s.display }));
+    const query = document.getElementById('explore-search-input')?.value || '';
+    navigateTo('page-search-results', renderSearchResults, {
+      chips: [...searchChips],
+      query: query.trim()
+    });
+    return;
+  }
+  // Free mode — if no chips but a full keyword is typed, auto-add it first
   if (searchChips.length === 0) {
     const input = document.getElementById('explore-search-input');
     const q = (input?.value || '').toLowerCase().trim();
@@ -3757,7 +3990,6 @@ function executeChipSearch() {
       return;
     }
   }
-  // Navigate to dedicated search results page
   const query = document.getElementById('explore-search-input')?.value || '';
   navigateTo('page-search-results', renderSearchResults, {
     chips: [...searchChips],
@@ -3772,37 +4004,48 @@ function renderChipsRow(query) {
   if (!row) return;
 
   const q = (query || '').toLowerCase().trim();
-
-  // Build selected chips
   const xSvg = '<span class="selected-chip__x"><svg viewBox="0 0 10 10"><line x1="2" y1="2" x2="8" y2="8"/><line x1="8" y1="2" x2="2" y2="8"/></svg></span>';
-  const chipsHtml = searchChips.map(c =>
+  const searchBar = document.querySelector('.explore-search-bar');
+
+  // ── GUIDED MODE ──────────────────────────────────────────────────
+  if (chipMode === 'guided') {
+    // Chips and controls live in the bottom guided section — clear the top row
+    row.innerHTML = '';
+    searchBar?.querySelector('.clear-all-chips')?.remove();
+    if (hintContainer) hintContainer.innerHTML = '';
+    if (suggestionsRow) suggestionsRow.innerHTML = '';
+    return;
+  }
+
+  // ── FREE MODE ────────────────────────────────────────────────────
+  // Selected chips with individual X buttons
+  row.innerHTML = searchChips.map(c =>
     `<button class="selected-chip pressable"
        onclick="removeSearchChip('${c.id.replace(/'/g, "\\'")}')">
        ${c.display} ${xSvg}
      </button>`
   ).join('');
-  const selectedHtml = chipsHtml;
 
-  // Build suggestion chips (only if 2+ chars typed and under limit)
-  let suggestionsHtml = '';
-  if (q.length >= 2 && searchChips.length < 5) {
-    const selectedIds = new Set(searchChips.map(c => c.id));
-    const matches = keywordIndex
-      .filter(kw => kw.id.startsWith(q) && !selectedIds.has(kw.id))
-      .slice(0, 10);
-    suggestionsHtml = matches.map(kw =>
-      `<button class="chip suggestion-chip pressable"
-         onclick="addSearchChip('${kw.id.replace(/'/g, "\\'")}', '${kw.display.replace(/'/g, "\\'")}')">${kw.display}</button>`
-    ).join('');
+  // Autocomplete suggestions (2+ chars typed, under chip limit)
+  if (suggestionsRow) {
+    if (q.length >= 2 && searchChips.length < 5) {
+      const selectedIds = new Set(searchChips.map(c => c.id));
+      const matches = keywordIndex
+        .filter(kw => kw.id.startsWith(q) && !selectedIds.has(kw.id))
+        .slice(0, 10);
+      suggestionsRow.innerHTML = matches.length
+        ? `<div class="autocomplete-chips-row">${matches.map(kw =>
+            `<button class="chip suggestion-chip pressable"
+               onclick="addSearchChip('${kw.id.replace(/'/g, "\\'")}','${kw.display.replace(/'/g, "\\'")}')">${kw.display}</button>`
+          ).join('')}</div>`
+        : '';
+    } else {
+      suggestionsRow.innerHTML = '';
+    }
   }
 
-  row.innerHTML = selectedHtml;
-  if (suggestionsRow) suggestionsRow.innerHTML = suggestionsHtml;
-
-  // Clear all button inline with search bar
-  const searchBar = document.querySelector('.explore-search-bar');
-  const existingClear = searchBar?.querySelector('.clear-all-chips');
-  if (existingClear) existingClear.remove();
+  // Clear all button
+  searchBar?.querySelector('.clear-all-chips')?.remove();
   if (searchBar && searchChips.length > 0) {
     const clearBtn = document.createElement('button');
     clearBtn.className = 'clear-all-chips pressable';
@@ -3811,22 +4054,23 @@ function renderChipsRow(query) {
     searchBar.appendChild(clearBtn);
   }
 
-  // Hint below the row
+  // Hint
   if (hintContainer) {
-    if (searchChips.length > 0 && !chipSearchExecuted) {
-      hintContainer.innerHTML = '<div class="chip-search-hint">Select one or more chips and click search to get results</div>';
-    } else {
-      hintContainer.innerHTML = '';
-    }
+    hintContainer.innerHTML = (searchChips.length > 0 && !chipSearchExecuted)
+      ? '<div class="chip-search-hint">Select one or more chips and click search to get results</div>'
+      : '';
   }
+
+  // Preference suggestions or Suggested Searches below autocomplete
+  renderSuggestedSearches(q);
 }
 
 function isSearchArrowActive() {
+  if (chipMode === 'guided') return guidedStack.length >= 1;
   if (searchChips.length > 0) return true;
   const input = document.getElementById('explore-search-input');
   const q = (input?.value || '').toLowerCase().trim();
   if (!q) return false;
-  // Active if input matches a full keyword in the index
   return keywordIndex.some(kw => kw.id === q);
 }
 
@@ -3842,12 +4086,152 @@ function toggleExploreSections() {
 
 function clearChipSearch() {
   searchChips = [];
+  chipMode = 'free';
+  guidedStack = [];
   chipSearchExecuted = false;
   const input = document.getElementById('explore-search-input');
   if (input) input.value = '';
   renderChipsRow();
   updateSearchArrow();
   toggleExploreSections();
+}
+
+// ── Guided Section (bottom of browse page) ────────────────────────
+
+/** Renders the L1 chip picker or cascading L2/mood options into #guided-section-row. */
+function renderGuidedSection() {
+  const row = document.getElementById('guided-section-row');
+  if (!row) return;
+
+  if (chipMode === 'guided') {
+    const options = getGuidedOptions(guidedStack);
+    const canSearch = guidedStack.length >= 3;
+
+    // Selected chips + clear all — sit directly above the container
+    const chipsHeaderHtml = `
+      <div class="guided-chips-header">
+        <div class="guided-chips-header__chips">
+          ${guidedStack.map(s =>
+            `<span class="selected-chip selected-chip--guided">${s.display}</span>`
+          ).join('')}
+        </div>
+        <button class="guided-chips-header__clear pressable" onclick="resetGuidedMode()">Clear all</button>
+      </div>`;
+
+    const ctaHtml = `
+      <div class="guided-cta-row">
+        <button class="guided-cta-btn pressable${canSearch ? '' : ' guided-cta-btn--disabled'}"
+          ${canSearch ? 'onclick="executeChipSearch()"' : 'disabled'}>
+          View Results ${ICONS.arrowRight}
+        </button>
+      </div>`;
+
+    if (options.l2.length) {
+      row.innerHTML = `
+        ${chipsHeaderHtml}
+        <div class="guided-search-container">
+          <div class="suggestions-section-label">Choose a specialization</div>
+          <div class="guided-options-row">
+            ${options.l2.map(opt =>
+              `<button class="guided-option-chip pressable"
+                 onclick="addGuidedChip('${opt.id.replace(/'/g,"\\'")}','${opt.display.replace(/'/g,"\\'")}','L2')">
+                 ${opt.display}
+               </button>`
+            ).join('')}
+          </div>
+          ${ctaHtml}
+        </div>`;
+    } else if (options.mood.length) {
+      const groups = {};
+      options.mood.forEach(m => { if (!groups[m.label]) groups[m.label] = []; groups[m.label].push(m); });
+      row.innerHTML = `
+        ${chipsHeaderHtml}
+        <div class="guided-search-container">
+          <div class="suggestions-section-label">Refine further (optional)</div>
+          ${Object.entries(groups).map(([label, items]) => `
+            <div class="guided-mood-group">
+              <span class="guided-mood-group__label">${label}</span>
+              <div class="guided-options-row">
+                ${items.map(opt =>
+                  `<button class="guided-option-chip pressable"
+                     onclick="addGuidedChip('${opt.id.replace(/'/g,"\\'")}','${opt.display.replace(/'/g,"\\'")}','mood')">
+                     ${opt.display}
+                   </button>`
+                ).join('')}
+              </div>
+            </div>`).join('')}
+          ${ctaHtml}
+        </div>`;
+    } else {
+      row.innerHTML = `
+        ${chipsHeaderHtml}
+        <div class="guided-search-container">
+          ${ctaHtml}
+        </div>`;
+    }
+    return;
+  }
+
+  // Default: show L1 entry chips
+  const l1Chips = getL1Chips(6);
+  row.innerHTML = l1Chips.length ? `
+    <div class="guided-search-container">
+      <div class="suggestions-section-label">Guided Search</div>
+      <div class="guided-options-row">
+        ${l1Chips.map(chip =>
+          `<button class="guided-option-chip pressable"
+             onclick="enterGuidedMode('${chip.id.replace(/'/g,"\\'")}','${chip.display.replace(/'/g,"\\'")}')">
+             ${chip.display}
+           </button>`
+        ).join('')}
+      </div>
+    </div>` : '';
+}
+
+// ── Guided Mode Action Functions ──────────────────────────────────
+
+/** Enter guided mode when user taps an L1 chip from Guided Search. */
+function enterGuidedMode(id, display) {
+  chipMode = 'guided';
+  guidedStack = [{ id, display, level: 'L1' }];
+  searchChips = [];
+  chipSearchExecuted = false;
+  const input = document.getElementById('explore-search-input');
+  if (input) input.value = '';
+  renderChipsRow();
+  updateSearchArrow();
+  renderGuidedSection();
+}
+
+/** Add an L2 or mood chip in the guided flow. */
+function addGuidedChip(id, display, level) {
+  if (guidedStack.some(s => s.id === id)) return;
+  if (guidedStack.length >= 10) return;
+  guidedStack.push({ id, display, level });
+  chipSearchExecuted = false;
+  renderChipsRow();
+  updateSearchArrow();
+  renderGuidedSection();
+}
+
+/** Reset-all × — exits guided mode entirely. */
+function resetGuidedMode() {
+  chipMode = 'free';
+  guidedStack = [];
+  chipSearchExecuted = false;
+  const input = document.getElementById('explore-search-input');
+  if (input) input.value = '';
+  renderChipsRow();
+  updateSearchArrow();
+  renderGuidedSection();
+}
+
+/** Silent revert when user starts typing in guided mode. Does NOT clear input. */
+function exitGuidedMode() {
+  chipMode = 'free';
+  guidedStack = [];
+  chipSearchExecuted = false;
+  renderGuidedSection();
 }
 
 // ── Search Results Page (sub-page of Browse) ──────────────────────
@@ -3880,31 +4264,34 @@ function renderSearchResults(data) {
     return false;
   });
 
-  // ── Match inspiration items ──
+  // ── Match inspiration items (flat array with taxonomy levels) ──
   const inspoResults = [];
-  (INSPO_DATA?.sections || []).forEach(section => {
-    section.items.forEach(item => {
-      const m = item.metadata || {};
-      const fields = new Set();
-      (m.industry || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
-      (m.colorPalette || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
-      (m.subjectMatter || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
-      (m.techniqueVisible || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
-      (m.mediumTags || []).forEach(tag => {
-        tag.split('/').map(p => p.trim().toLowerCase()).forEach(v => fields.add(v));
-      });
-      fields.add((item.title || '').toLowerCase());
-      fields.add((item.subtitle || '').toLowerCase());
+  // Expand chips with synonyms for better recall
+  const expandedChipIds = new Set(chipIds);
+  for (const cid of chipIds) { getSynonyms(cid).forEach(s => expandedChipIds.add(s)); }
 
-      for (const chipId of chipIds) {
-        for (const f of fields) {
-          if (f.includes(chipId)) {
-            inspoResults.push({ ...item, _sectionTitle: section.title });
-            return;
-          }
+  (Array.isArray(INSPO_DATA) ? INSPO_DATA : []).forEach(item => {
+    const m = item.metadata || {};
+    const parsed = item._mediumParsed || parseMediumLevels(m.mediumTags);
+    const fields = new Set();
+    (m.industry || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
+    (m.colorPalette || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
+    (m.subjectMatter || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
+    (m.techniqueVisible || []).forEach(v => fields.add(v.toLowerCase().replace(/-/g, ' ')));
+    parsed.all.forEach(v => fields.add(v.toLowerCase()));
+    (m.mediumTags || []).forEach(tag => fields.add(tag.toLowerCase()));
+    fields.add((item.title || '').toLowerCase());
+    fields.add((item.subtitle || '').toLowerCase());
+
+    for (const chipId of expandedChipIds) {
+      for (const f of fields) {
+        if (f.includes(chipId)) {
+          const sectionTitle = parsed.L1[0] || parsed.L0[0] || 'Inspiration';
+          inspoResults.push({ ...item, _sectionTitle: sectionTitle });
+          return;
         }
       }
-    });
+    }
   });
 
   // ── Build HTML ──
@@ -3944,13 +4331,17 @@ function renderSearchResults(data) {
       <div class="explore-empty__subtitle">Try different search terms or chips</div>
     </div>` : '';
 
-  // Store results globally for the modal
+  // Store results globally for modal and lazy loading
   window._inspoResults = inspoResults;
+  window._inspoVisible = 15;
 
   const savedInspoIds = new Set(getSavedInspo().map(s => s.id));
 
   // Store chips JSON for drill-down pages
   const chipsJson = JSON.stringify(chips).replace(/'/g, "&#39;").replace(/"/g, '&quot;');
+
+  const firstBatch = inspoResults.slice(0, 15);
+  const inspoRemaining = inspoResults.length - 15;
 
   const inspoHtml = inspoResults.length > 0 ? `
     <div class="search-results__section">
@@ -3958,22 +4349,13 @@ function renderSearchResults(data) {
         <div class="search-results__section-title">Inspiration (${inspoResults.length})</div>
         <div class="search-results__result-count">${totalResults} result${totalResults !== 1 ? 's' : ''}</div>
       </div>
-      <div class="search-results__grid">
-        ${inspoResults.map((item, idx) => {
-          const isSaved = savedInspoIds.has(item.id);
-          return `
-          <div class="search-results__inspo-card pressable" onclick="openInspoModal(${idx})">
-            <button class="search-results__inspo-bookmark pressable${isSaved ? ' search-results__inspo-bookmark--saved' : ''}" data-inspo-id="${item.id}" onclick="event.stopPropagation(); toggleInspoSave('${item.id}', '${(item.title || '').replace(/'/g, "\\'")}', '${(item.subtitle || '').replace(/'/g, "\\'")}', '${(item._sectionTitle || '').replace(/'/g, "\\'")}', this, '${(item.imageUrl || '').replace(/'/g, "\\'")}' )">
-              ${isSaved ? ICONS.bookmarkFill : ICONS.bookmark}
-            </button>
-            ${item.imageUrl ? `<img src="${item.imageUrl}" alt="${item.title}" loading="lazy" class="search-results__inspo-img" />` : ''}
-            <div class="search-results__inspo-overlay">
-              <div class="search-results__inspo-title">${item.title}</div>
-              <div class="search-results__inspo-subtitle">${item.subtitle}</div>
-            </div>
-          </div>`;
-        }).join('')}
+      <div class="search-results__grid" id="inspo-grid">
+        ${firstBatch.map((item, idx) => renderInspoCard(item, idx, savedInspoIds)).join('')}
       </div>
+      ${inspoRemaining > 0 ? `
+        <button class="search-results__load-more pressable" onclick="loadMoreInspo()">
+          View More
+        </button>` : ''}
     </div>` : '';
 
   // Store exercise results globally for drill-down
@@ -4025,6 +4407,52 @@ function renderSearchResults(data) {
       ${exercisesHtml}
     </div>
   `;
+}
+
+// ── Inspo Card Helper ──────────────────────────────────────────
+function renderInspoCard(item, idx, savedInspoIds) {
+  const isSaved = savedInspoIds.has(item.id);
+  return `
+    <div class="search-results__inspo-card pressable" onclick="openInspoModal(${idx})">
+      <button class="search-results__inspo-bookmark pressable${isSaved ? ' search-results__inspo-bookmark--saved' : ''}"
+        data-inspo-id="${item.id}"
+        onclick="event.stopPropagation(); toggleInspoSave('${item.id}', '${(item.title || '').replace(/'/g, "\\'")}', '${(item.subtitle || '').replace(/'/g, "\\'")}', '${(item._sectionTitle || '').replace(/'/g, "\\'")}', this, '${(item.imageUrl || '').replace(/'/g, "\\'")}')">
+        ${isSaved ? ICONS.bookmarkFill : ICONS.bookmark}
+      </button>
+      ${item.imageUrl ? `<img src="${safeImgUrl(item.imageUrl)}" alt="${item.title}" loading="lazy" class="search-results__inspo-img" />` : ''}
+      <div class="search-results__inspo-overlay">
+        <div class="search-results__inspo-title">${item.title}</div>
+        <div class="search-results__inspo-subtitle">${item.subtitle}</div>
+      </div>
+    </div>`;
+}
+
+// ── Lazy-load next 15 inspo results ───────────────────────────
+function loadMoreInspo() {
+  const results = window._inspoResults || [];
+  const from = window._inspoVisible || 15;
+  const to = from + 15;
+  const nextBatch = results.slice(from, to);
+
+  window._inspoVisible = to;
+
+  const grid = document.getElementById('inspo-grid');
+  if (grid && nextBatch.length) {
+    const savedInspoIds = new Set(getSavedInspo().map(s => s.id));
+    grid.insertAdjacentHTML('beforeend',
+      nextBatch.map((item, i) => renderInspoCard(item, from + i, savedInspoIds)).join('')
+    );
+  }
+
+  const btn = document.querySelector('.search-results__load-more');
+  if (btn) {
+    const remaining = results.length - window._inspoVisible;
+    if (remaining <= 0) {
+      btn.remove();
+    } else {
+      btn.textContent = 'View More';
+    }
+  }
 }
 
 // ── Inspiration Bookmark Toggle ────────────────────────────────
@@ -4103,7 +4531,7 @@ function openInspoModal(index) {
             <button class="inspo-modal__bookmark pressable${saved ? ' inspo-modal__bookmark--saved' : ''}" onclick="event.stopPropagation(); toggleInspoModalBookmark()">
               ${saved ? ICONS.bookmarkFill : ICONS.bookmark}
             </button>
-            ${item.imageUrl ? `<img src="${item.imageUrl}" alt="${item.title}" class="inspo-modal__img" />` : ''}
+            ${item.imageUrl ? `<img src="${safeImgUrl(item.imageUrl)}" alt="${item.title}" class="inspo-modal__img" />` : ''}
             <div class="inspo-modal__info">
               <div class="inspo-modal__title">${item.title}</div>
               <div class="inspo-modal__subtitle">${item.subtitle}</div>
@@ -4206,7 +4634,7 @@ function renderAllInspo() {
             <button class="search-results__inspo-bookmark pressable${isSaved ? ' search-results__inspo-bookmark--saved' : ''}" data-inspo-id="${item.id}" onclick="event.stopPropagation(); toggleInspoSave('${item.id}', '${(item.title || '').replace(/'/g, "\\'")}', '${(item.subtitle || '').replace(/'/g, "\\'")}', '${(item._sectionTitle || '').replace(/'/g, "\\'")}', this, '${(item.imageUrl || '').replace(/'/g, "\\'")}' )">
               ${isSaved ? ICONS.bookmarkFill : ICONS.bookmark}
             </button>
-            ${item.imageUrl ? `<img src="${item.imageUrl}" alt="${item.title}" loading="lazy" class="search-results__inspo-img" />` : ''}
+            ${item.imageUrl ? `<img src="${safeImgUrl(item.imageUrl)}" alt="${item.title}" loading="lazy" class="search-results__inspo-img" />` : ''}
             <div class="search-results__inspo-overlay">
               <div class="search-results__inspo-title">${item.title}</div>
               <div class="search-results__inspo-subtitle">${item.subtitle}</div>
@@ -4630,8 +5058,8 @@ function renderPreferences() {
   const page = document.getElementById('page-preferences');
   if (!page) return;
 
-  const allArtStyles   = ['Character Design', 'Sci-Fi Art', 'Portrait', 'Concept Art', 'Anime'];
-  const allCareerGoals = ['Freelance Illustrator', 'Concept Artist', 'Animator', 'Game Artist', 'Fine Artist'];
+  const allArtStyles   = ['Character Design', 'Environment Design', 'Vehicle Design', 'Creature Design', 'Digital Painting', 'Concept Art', 'Comic Art', 'Portrait', 'Anime', 'Sci-Fi Art', '3D Art', 'Traditional'];
+  const allCareerGoals = ['Freelance Illustrator', 'Concept Artist', 'Animator', 'Game Artist', 'Fine Artist', 'Comic Artist', 'Automotive Designer', 'VFX Artist'];
   const skillLevels    = [
     { value: 'beginner', label: 'Just Starting'          },
     { value: 'learning', label: 'Learning Consistently'  },
