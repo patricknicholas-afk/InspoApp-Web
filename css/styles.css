@@ -3469,6 +3469,11 @@ button {
   padding: var(--sp-sm) 0 var(--sp-md);
   max-width: 60%;
 }
+@media (max-width: 767px) {
+  .explore-search-bar {
+    max-width: 100%;
+  }
+}
 
 /* Search bar inner container (input + arrow) */
 .search-bar-inner {
