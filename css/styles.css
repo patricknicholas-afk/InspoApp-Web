@@ -3608,9 +3608,9 @@ button {
   opacity: 0.7;
 }
 .selected-chip__x svg {
-  width: 10px;
-  height: 10px;
-  stroke: currentColor;
+  width: 12px;
+  height: 12px;
+  stroke: #ffffff;
   stroke-width: 2px;
   stroke-linecap: round;
   fill: none;
@@ -3799,9 +3799,9 @@ button {
   opacity: 0.7;
 }
 .explore-filter-tag__x svg {
-  width: 10px;
-  height: 10px;
-  stroke: currentColor;
+  width: 12px;
+  height: 12px;
+  stroke: #ffffff;
   stroke-width: 2px;
   stroke-linecap: round;
   fill: none;
@@ -3865,9 +3865,9 @@ button {
   align-items: center;
 }
 .search-results__chip .selected-chip__x svg {
-  width: 8px;
-  height: 8px;
-  stroke: var(--color-btn-fg);
+  width: 12px;
+  height: 12px;
+  stroke: #ffffff;
   stroke-width: 2;
 }
 
