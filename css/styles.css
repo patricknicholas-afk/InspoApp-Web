@@ -3464,6 +3464,7 @@ button {
 /* Search bar */
 .explore-search-bar {
   padding: var(--sp-sm) 0 var(--sp-md);
+  max-width: 70%;
 }
 
 /* Search bar inner container (input + arrow) */
@@ -3540,7 +3541,7 @@ button {
 .clear-all-chips {
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   color: var(--color-secondary);
   text-decoration: underline;
   background: none;
