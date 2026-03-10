@@ -3916,9 +3916,10 @@ function renderSearchResults(data) {
     `<button class="search-results__chip pressable" onclick="removeResultsChip('${c.id.replace(/'/g, "\\'")}')">
        ${c.display} ${xSvg}
      </button>`
-  ).join('') + (chips.length > 0
-    ? '<button class="clear-all-chips pressable" onclick="clearAllResultsChips()">Clear all</button>'
-    : '');
+  ).join('');
+  const clearAllHtml = chips.length > 0
+    ? '<button class="clear-all-chips pressable" onclick="clearAllResultsChips()">CLEAR ALL</button>'
+    : '';
 
   const totalResults = exerciseResults.length + inspoResults.length;
 
@@ -4014,7 +4015,10 @@ function renderSearchResults(data) {
       </div>
     </div>
     <div class="grid-container" style="padding-bottom:100px">
-      <div class="search-results__chips">${chipTagsHtml}</div>
+      <div class="search-results__header">
+        <div class="search-results__chips">${chipTagsHtml}</div>
+        ${clearAllHtml}
+      </div>
       ${topicsHtml}
       ${emptyHtml}
       ${inspoHtml}
