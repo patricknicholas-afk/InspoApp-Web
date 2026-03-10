@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0341",
+    "title": "Golden Armor Portrait",
+    "subtitle": "Dramatic digital painting of a gold-armored warrior portrait with metallic specular lighting on dark background",
+    "imageUrl": "assets/img/BodukkuInspo.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["warm", "high-contrast", "neutral"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0342",
+    "title": "Calvin and Hobbes — Relaxing",
+    "subtitle": "Classic Calvin and Hobbes strip art of the duo in a languid resting pose with warm muted tones",
+    "imageUrl": "assets/img/Calvin-Hobbes-relaxing.png",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "muted", "neutral"],
+      "subjectMatter": ["figure", "animal"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0343",
+    "title": "Ramusa Vehicle Concept Sketches",
+    "subtitle": "Professional automotive concept sketch sheet with thumbnail explorations and a tightly rendered hero view",
+    "imageUrl": "assets/img/Camal-Ramusa-Concept-Design-Sketches-01-720x405.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["linework-heavy", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0344",
+    "title": "Calvin — Expressive Character Pose",
+    "subtitle": "Isolated Calvin character with wide-open mouth and raised arms in maximum expressive energy",
+    "imageUrl": "assets/img/Cavintrans.webp",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "vibrant", "high-contrast"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0345",
+    "title": "Jamie Hewlett — Alien and Tank Girl",
+    "subtitle": "Hewlett's vibrant two-character illustration with punk aesthetic against vivid green background",
+    "imageUrl": "assets/img/EK31zpFXkAE_wet.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["vibrant", "complementary", "high-contrast"],
+      "subjectMatter": ["figure", "portrait"],
+      "techniqueVisible": ["linework-heavy", "painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0346",
+    "title": "Felix the Cat — Classic Pose",
+    "subtitle": "Pure black and white Felix the Cat character in iconic pointing pose with bold flat silhouette",
+    "imageUrl": "assets/img/Felix_the_Cat.jpg.webp",
+    "metadata": {
+      "industry": ["Animation", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["monochromatic", "high-contrast", "neutral"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0347",
+    "title": "Cartoon Shark — 3D Stylized Render",
+    "subtitle": "Stylized 3D render of a cartoon great white shark in teal underwater environment with playful expression",
+    "imageUrl": "assets/img/Final shark.jpg",
+    "metadata": {
+      "industry": ["Animation", "Game Art"],
+      "mediumTags": ["3D Digital Art / Rendering / Stylized Rendering", "3D Digital Art / Modeling & Sculpting / Creature Modeling"],
+      "colorPalette": ["cool", "muted", "analogous"],
+      "subjectMatter": ["animal", "creature"],
+      "techniqueVisible": ["detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0348",
+    "title": "Jamie Hewlett — Tank Girl 2013 Portrait",
+    "subtitle": "Dense crosshatched ink portrait of Tank Girl with muted red-brown palette on dark background",
+    "imageUrl": "assets/img/Hewlett-Tank-Girl-2013-810x755.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["warm", "muted", "high-contrast"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["linework-heavy", "detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0349",
+    "title": "Hewlett — Neo Punk Portrait",
+    "subtitle": "Vibrant Jamie Hewlett portrait with pink and teal complementary palette and geometric pattern overlays",
+    "imageUrl": "assets/img/Hewll%27s_Neo_Punk_Jappy_Style.webp",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["complementary", "vibrant", "high-contrast"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0350",
+    "title": "Jamie Hewlett — Gorillaz Character Portrait",
+    "subtitle": "Textured Gorillaz character portrait with leopard print hat and warm earth tones",
+    "imageUrl": "assets/img/Jamie-Hewlett-Gorilaz.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Music & Entertainment"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["warm", "analogous", "muted"],
+      "subjectMatter": ["portrait", "character"],
+      "techniqueVisible": ["linework-heavy", "painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0351",
+    "title": "Amazing World of Gumball — Interior Scene",
+    "subtitle": "Mixed-media Gumball production frame with flat 2D characters composited over 3D photorealistic interior",
+    "imageUrl": "assets/img/MV5BYmExNjA2NzUtOGNkMS00NDhmLWE0MzktNDBmODI3OGI4ZGZkXkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["warm", "vibrant", "analogous"],
+      "subjectMatter": ["figure", "architecture"],
+      "techniqueVisible": ["linework-heavy", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0352",
+    "title": "Rango — Chameleon Character Poster",
+    "subtitle": "ILM photorealistic CG character poster of Rango the chameleon with warm desert tones and expressive eyes",
+    "imageUrl": "assets/img/Rango Character 1.jpg",
+    "metadata": {
+      "industry": ["Animation", "Game Art"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Modeling & Sculpting / Character Modeling"],
+      "colorPalette": ["warm", "analogous", "high-contrast"],
+      "subjectMatter": ["portrait", "animal"],
+      "techniqueVisible": ["detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0353",
+    "title": "Rango — Horned Lizard Character Poster",
+    "subtitle": "Photorealistic CG poster of a stout horned lizard character with complex skin texture and spines",
+    "imageUrl": "assets/img/Rango Character 2.jpg",
+    "metadata": {
+      "industry": ["Animation", "Game Art"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Modeling & Sculpting / Character Modeling"],
+      "colorPalette": ["warm", "analogous", "vibrant"],
+      "subjectMatter": ["portrait", "animal"],
+      "techniqueVisible": ["detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0354",
+    "title": "Rango — Owl Musician Character Poster",
+    "subtitle": "ILM photorealistic CG owl mariachi character with detailed feather plumage and musical accessories",
+    "imageUrl": "assets/img/Rango Character 3.jpg",
+    "metadata": {
+      "industry": ["Animation", "Game Art"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Modeling & Sculpting / Character Modeling"],
+      "colorPalette": ["warm", "analogous", "vibrant"],
+      "subjectMatter": ["portrait", "animal"],
+      "techniqueVisible": ["detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0355",
+    "title": "Kuromukuro — Anime Action Frame A",
+    "subtitle": "Dramatic anime screen capture with extreme close-up of glowing-eyed character in rain",
+    "imageUrl": "assets/img/Screen Shot 2017-03-10 at 10.52.35 PM.png",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "high-contrast"],
+      "subjectMatter": ["portrait", "character"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0356",
+    "title": "Kuromukuro — Anime Action Frame B",
+    "subtitle": "Intense anime close-up of a near-expressionless face with predatory red glowing eyes on dark background",
+    "imageUrl": "assets/img/Screen Shot 2017-03-10 at 10.53.44 PM.png",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "neutral"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0357",
+    "title": "Creature Shark — Concept Art Render",
+    "subtitle": "Fantasy predator shark concept art with open jaws in vivid cobalt-blue underwater environment",
+    "imageUrl": "assets/img/Shark Flat copy.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["cool", "vibrant", "analogous", "high-contrast"],
+      "subjectMatter": ["animal", "creature"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0358",
+    "title": "Steven Universe — Character Design Sheet",
+    "subtitle": "Official-style Steven Universe character sheet with two action poses in bold flat primary colors",
+    "imageUrl": "assets/img/Steven_Universe.jpg",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["vibrant", "warm", "high-contrast", "complementary"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0359",
+    "title": "Sugilite — Steven Universe Fan Art",
+    "subtitle": "Dark-toned fan illustration of the Sugilite fusion in a menacing upward-reaching pose with purple palette",
+    "imageUrl": "assets/img/Sugilite.(Steven.Universe).full.2722774.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Animation"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "muted", "monochromatic"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0360",
+    "title": "21st Century Tank Girl — Digital Portrait",
+    "subtitle": "High-finish painterly portrait of Tank Girl with muted skin tones, teal-blue hair, and punk accessories",
+    "imageUrl": "assets/img/SuperTube1BC.jpg.webp",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "muted", "neutral", "high-contrast"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["painterly", "detailed", "linework-heavy"]
+    }
+  }
+]

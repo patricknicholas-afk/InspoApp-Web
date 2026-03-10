@@ -1,0 +1,457 @@
+[
+  {
+    "id": "ROBO-0036",
+    "title": "Red Mech with Pilot",
+    "subtitle": "Bulky red combat mech crouching with a female pilot seated in the cockpit",
+    "imageUrl": "assets/img/Robotic/579768_4617354395050_1092702177_n.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "vibrant", "high-contrast", "complementary"],
+      "subjectMatter": ["mechanical", "character", "figure", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0037",
+    "title": "Robot Drone Silhouette Sheet",
+    "subtitle": "Multi-pose concept sheet of small bipedal and quad-legged sci-fi drones on white",
+    "imageUrl": "assets/img/Robotic/58623b1479957316622cb956727c6d8e.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["muted", "neutral", "cool"],
+      "subjectMatter": ["mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0038",
+    "title": "Armored Sci-Fi Warrior — Blue Lightning",
+    "subtitle": "Female warrior in glowing blue sci-fi armor wielding massive energy weapons in a stormy sky",
+    "imageUrl": "assets/img/Robotic/604_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "dark", "neon", "high-contrast"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor", "weapon"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0039",
+    "title": "Desert Cyborg Soldier",
+    "subtitle": "Armored cyborg figure standing in a red desert canyon with blue energy accents",
+    "imageUrl": "assets/img/Robotic/608_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "earthy", "muted", "complementary"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor", "landscape"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "ROBO-0040",
+    "title": "Battle Commander Portrait",
+    "subtitle": "Dramatic close-up of a warrior commander in ornate helmet with a battlefield scene behind",
+    "imageUrl": "assets/img/Robotic/619_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration", "Portraits"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["warm", "vibrant", "high-contrast", "earthy"],
+      "subjectMatter": ["portrait", "character", "armor", "sci-fi", "landscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0041",
+    "title": "White Exosuit Astronaut",
+    "subtitle": "Agile female figure in white sci-fi exosuit with red scarf and a small companion robot",
+    "imageUrl": "assets/img/Robotic/620_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["muted", "neutral", "cool", "complementary"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor"],
+      "techniqueVisible": ["painterly", "loose", "stylized", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0042",
+    "title": "Foggy Sci-Fi Megacity",
+    "subtitle": "Aerial view of a dense futuristic industrial city shrouded in mist with towering cylindrical structures",
+    "imageUrl": "assets/img/Robotic/667_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Matte Painting", "2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["muted", "neutral", "cool", "dark"],
+      "subjectMatter": ["cityscape", "architecture", "sci-fi"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "ROBO-0043",
+    "title": "Alien Spacecraft Hangar",
+    "subtitle": "Massive organic-mechanical alien ship suspended inside a dark industrial hangar with glowing cyan rings",
+    "imageUrl": "assets/img/Robotic/711_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["dark", "cool", "muted", "high-contrast"],
+      "subjectMatter": ["mechanical", "vehicle", "interior", "sci-fi", "architecture"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0044",
+    "title": "Mech Cockpit Interior — 3D Render",
+    "subtitle": "Highly detailed 3D rendered interior of a mechanical mech cockpit with complex cables and visor",
+    "imageUrl": "assets/img/Robotic/723_large.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Industrial Design", "Game Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Hard Surface Modeling", "3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Texturing & Surfacing / PBR Texturing"],
+      "colorPalette": ["neutral", "muted", "monochromatic"],
+      "subjectMatter": ["mechanical", "interior", "sci-fi"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0045",
+    "title": "Undead Plasma Soldier",
+    "subtitle": "Hulking armored sci-fi warrior with a glowing blue plasma skull head wielding an energy axe",
+    "imageUrl": "assets/img/Robotic/728_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "cool", "neon", "high-contrast", "complementary"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor", "weapon"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0046",
+    "title": "Golden Samurai and Mech",
+    "subtitle": "Armored warrior in ornate gold and green exosuit standing before a towering mech in a hangar",
+    "imageUrl": "assets/img/Robotic/750_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "vibrant", "complementary", "earthy"],
+      "subjectMatter": ["character", "figure", "mechanical", "sci-fi", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0047",
+    "title": "Medivac Dropship",
+    "subtitle": "White and grey sci-fi medical dropship with red cross markings flying through overcast clouds",
+    "imageUrl": "assets/img/Robotic/768_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Industrial Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "muted", "cool", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0048",
+    "title": "Cyber Knight with Energy Sword",
+    "subtitle": "Tall silver-armored cyber knight with flowing hair gripping a large glowing energy sword",
+    "imageUrl": "assets/img/Robotic/783_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["muted", "neutral", "high-contrast", "complementary"],
+      "subjectMatter": ["character", "figure", "armor", "weapon", "sci-fi"],
+      "techniqueVisible": ["detailed", "stylized", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROBO-0049",
+    "title": "Spider Mech in Ruins",
+    "subtitle": "Large white and silver spider mech confronting a lone soldier in a foggy post-apocalyptic ruin",
+    "imageUrl": "assets/img/Robotic/803_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["muted", "cool", "neutral", "dark"],
+      "subjectMatter": ["mechanical", "landscape", "sci-fi", "character"],
+      "techniqueVisible": ["painterly", "atmospheric", "loose"]
+    }
+  },
+  {
+    "id": "ROBO-0050",
+    "title": "Mech and Weapon Concept Sheet",
+    "subtitle": "Annotated concept design sheet showing a time droid mech with scale figure and sci-fi hand cannon",
+    "imageUrl": "assets/img/Robotic/821_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["muted", "neutral", "dark"],
+      "subjectMatter": ["mechanical", "weapon", "sci-fi"],
+      "techniqueVisible": ["sketchy", "detailed", "graphic"]
+    }
+  },
+  {
+    "id": "ROBO-0051",
+    "title": "White Cyber Armor — 3D WIP",
+    "subtitle": "Close-up 3D model of a sleek white and grey robotic body suit with organic panel segmentation",
+    "imageUrl": "assets/img/Robotic/832_large.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Hard Surface Modeling", "3D Digital Art / Modeling & Sculpting / Character Modeling", "3D Digital Art / Rendering / Photorealistic Rendering"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["mechanical", "armor", "character", "sci-fi"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0052",
+    "title": "Dark Biomechanical Figure",
+    "subtitle": "Reflective dark purple biomechanical humanoid with spiked helmet and organic-mechanical body",
+    "imageUrl": "assets/img/Robotic/859114_547926308598836_35364359_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["dark", "cool", "muted", "monochromatic"],
+      "subjectMatter": ["character", "creature", "sci-fi", "armor", "figure"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0053",
+    "title": "Future City with Fighter Ships",
+    "subtitle": "Wide panoramic matte painting of futuristic skyscraper city with blue-thruster fighter craft",
+    "imageUrl": "assets/img/Robotic/859363_10200195582683914_1210225776_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Matte Painting", "2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "muted", "neutral", "high-contrast"],
+      "subjectMatter": ["cityscape", "architecture", "vehicle", "sci-fi", "landscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0054",
+    "title": "Spacecraft in Neon Blue Hangar",
+    "subtitle": "Top-down view of a sleek white spacecraft suspended in a glowing cyan hangar bay",
+    "imageUrl": "assets/img/Robotic/859_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["cool", "neon", "dark", "monochromatic"],
+      "subjectMatter": ["vehicle", "mechanical", "interior", "sci-fi", "architecture"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0055",
+    "title": "Monochrome Spacecraft Sketch",
+    "subtitle": "Greyscale digital sketch of a sleek sci-fi spacecraft with flowing aerodynamic lines",
+    "imageUrl": "assets/img/Robotic/861_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Industrial Design", "Car Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "loose", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0056",
+    "title": "Post-Apocalyptic Helmet Lineup",
+    "subtitle": "3D rendered lineup of worn and painted sci-fi helmet designs from the game RAGE",
+    "imageUrl": "assets/img/Robotic/873_large.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Character Modeling", "3D Digital Art / Texturing & Surfacing / Hand-Painted Textures", "3D Digital Art / Rendering / Photorealistic Rendering"],
+      "colorPalette": ["warm", "earthy", "vibrant", "muted"],
+      "subjectMatter": ["armor", "mechanical", "sci-fi"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0057",
+    "title": "Combat Drone Head Close-Up",
+    "subtitle": "Close-up concept painting of an angular black and white combat drone head with antenna array",
+    "imageUrl": "assets/img/Robotic/876_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast", "dark"],
+      "subjectMatter": ["mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0058",
+    "title": "Mech Deployment in Ruined City",
+    "subtitle": "Atmospheric scene of massive bipedal mechs being deployed in a bombed-out urban warzone",
+    "imageUrl": "assets/img/Robotic/883082_637485489610268_1079255850_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["muted", "cool", "neutral", "dark"],
+      "subjectMatter": ["mechanical", "cityscape", "sci-fi", "landscape"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "ROBO-0059",
+    "title": "Heavy Sci-Fi Helmet Portrait — Vertical",
+    "subtitle": "Extreme close-up portrait of a massive angular sci-fi mech helmet with spotlight visor sensors",
+    "imageUrl": "assets/img/Robotic/899_max-1.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["earthy", "muted", "neutral", "dark"],
+      "subjectMatter": ["mechanical", "armor", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0060",
+    "title": "Heavy Sci-Fi Helmet Portrait — Wide",
+    "subtitle": "Widescreen close-up of the same angular sci-fi mech helmet with glowing visor sensors",
+    "imageUrl": "assets/img/Robotic/899_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["earthy", "muted", "neutral", "dark"],
+      "subjectMatter": ["mechanical", "armor", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0061",
+    "title": "Praying Robot Swordsman",
+    "subtitle": "Greyscale concept of an elegant bipedal robot in a prayer pose holding a large blade",
+    "imageUrl": "assets/img/Robotic/913855_533250163398096_1400918478_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "monochromatic", "muted", "cool"],
+      "subjectMatter": ["mechanical", "character", "weapon", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0062",
+    "title": "Green Battle Mech — 3D",
+    "subtitle": "Weathered military-green armed bipedal mech with battle damage, rendered in 3D",
+    "imageUrl": "assets/img/Robotic/919080_10151525246972954_1793290908_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Hard Surface Modeling", "3D Digital Art / Texturing & Surfacing / PBR Texturing", "3D Digital Art / Rendering / Photorealistic Rendering"],
+      "colorPalette": ["muted", "cool", "neutral"],
+      "subjectMatter": ["mechanical", "sci-fi", "armor"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0063",
+    "title": "Dark Sci-Fi Warship Concept",
+    "subtitle": "Greyscale 3D concept of a heavy organic-shaped sci-fi warship or tank hull",
+    "imageUrl": "assets/img/Robotic/921556_10151381351596500_773507791_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Industrial Design", "Game Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Hard Surface Modeling", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic", "dark", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["photorealistic", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0064",
+    "title": "Cyber Valkyrie — 3D Character",
+    "subtitle": "Full-body 3D rendered female sci-fi character in white and gold exosuit with orange energy trim",
+    "imageUrl": "assets/img/Robotic/933_large.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Character Modeling", "3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Texturing & Surfacing / PBR Texturing"],
+      "colorPalette": ["warm", "vibrant", "complementary", "high-contrast"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0065",
+    "title": "Red Thunder Light Fighter",
+    "subtitle": "Annotated sci-fi spacecraft concept sheet for the Red Thunder light fighter with orthographic views",
+    "imageUrl": "assets/img/Robotic/946856_465680356857780_1752150550_n.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Industrial Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["cool", "warm", "complementary", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["graphic", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0066",
+    "title": "Starship Assembly Bay",
+    "subtitle": "Massive sci-fi spacecraft being assembled by workers in an enormous industrial hangar",
+    "imageUrl": "assets/img/Robotic/952_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["muted", "neutral", "cool"],
+      "subjectMatter": ["vehicle", "mechanical", "interior", "sci-fi", "architecture"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0067",
+    "title": "Robot Predator Head — Dark",
+    "subtitle": "Close-up digital painting of a menacing battle robot skull with a glowing red eye on pure black",
+    "imageUrl": "assets/img/Robotic/962_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "monochromatic", "high-contrast"],
+      "subjectMatter": ["mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0068",
+    "title": "Cyber Samurai with Teal Blade",
+    "subtitle": "Rear-view of a cybernetic warrior in traditional robes holding a glowing teal energy sword",
+    "imageUrl": "assets/img/Robotic/965145_533246986731747_556435920_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "neon", "complementary", "muted"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor", "weapon"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "ROBO-0069",
+    "title": "Armored Soldier in Darkness",
+    "subtitle": "Dramatic monochrome digital painting of a heavily armored soldier holding a large weapon in near-total darkness",
+    "imageUrl": "assets/img/Robotic/976000_632808513405184_1638114892_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "monochromatic", "neutral"],
+      "subjectMatter": ["character", "figure", "armor", "weapon", "sci-fi"],
+      "techniqueVisible": ["painterly", "atmospheric", "loose"]
+    }
+  },
+  {
+    "id": "ROBO-0070",
+    "title": "Mech in Misty Forest — Thumbnail Studies",
+    "subtitle": "Two greyscale thumbnail compositions of battle mechs in atmospheric foggy forest environments",
+    "imageUrl": "assets/img/Robotic/976748_10151668510476675_550472945_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["mechanical", "landscape", "sci-fi", "nature"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "graphic"]
+    }
+  }
+]

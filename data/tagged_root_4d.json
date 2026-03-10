@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0301",
+    "title": "Loomis Head Planes Study",
+    "subtitle": "Traditional pencil sketch of a geometric planar head breakdown using the Loomis method",
+    "imageUrl": "assets/img/2761829610b91758e63c4601688f0055.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "monochromatic"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0302",
+    "title": "Calvin and Hobbes Fan Art — Wagon Ride",
+    "subtitle": "Painted fan illustration of Calvin and Hobbes in dynamic motion with warm orange-brown tones",
+    "imageUrl": "assets/img/345aadce1103b2a92353baeb2dfde610.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "muted", "analogous"],
+      "subjectMatter": ["figure", "animal"],
+      "techniqueVisible": ["painterly", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0303",
+    "title": "Sci-Fi Character Concept — Tactical Operative",
+    "subtitle": "Professional concept art character sheet of a masked sci-fi soldier in muted industrial tones",
+    "imageUrl": "assets/img/386_max.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0304",
+    "title": "3D Character Study — French Bulldog",
+    "subtitle": "Photorealistic 3D render of a French Bulldog character with soft studio lighting",
+    "imageUrl": "assets/img/425_max.jpg",
+    "metadata": {
+      "industry": ["Animation", "Game Art"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Organic Modeling", "3D Digital Art / Rendering / Photorealistic Rendering"],
+      "colorPalette": ["neutral", "cool", "muted"],
+      "subjectMatter": ["animal"],
+      "techniqueVisible": ["detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0305",
+    "title": "CANTI Robot Pencil Sketch — FLCL Fan Art",
+    "subtitle": "Pencil sketch of the CANTI robot from FLCL with visible construction lines and hatching",
+    "imageUrl": "assets/img/445875_crw7f7dawtuvibkz_jwq46h6l.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["figure", "mechanical"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0306",
+    "title": "BMW Headlight Design Sketch",
+    "subtitle": "High-contrast automotive design sketch of a BMW headlight detail with precise marker rendering",
+    "imageUrl": "assets/img/47340f417cbacb915510c29d66e4be5d.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "high-contrast", "monochromatic"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0307",
+    "title": "Steven Universe — Garnet Character Sheet",
+    "subtitle": "Official-style character art of Garnet from Steven Universe with flat digital coloring and bold silhouette",
+    "imageUrl": "assets/img/474-4749835_steven-universe-wiki-garnet-steven-universe-characters-hd.png",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["vibrant", "complementary", "warm"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0308",
+    "title": "Great Southern Denim — Letterpress Badge Design",
+    "subtitle": "Intricate letterpress-style badge design with ornamental typography in navy blue ink",
+    "imageUrl": "assets/img/4a065728760747.55d1418298bc2-600x450.jpg",
+    "metadata": {
+      "industry": ["Graphic Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Poster Design", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["cool", "monochromatic", "high-contrast"],
+      "subjectMatter": ["abstract"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0309",
+    "title": "Calvin et Hobbes Book Cover — Volume 5",
+    "subtitle": "Classic Calvin and Hobbes book cover illustration with bold complementary orange and green",
+    "imageUrl": "assets/img/513PLY5gF_L._SX380_BO1%2C204%2C203%2C200_.webp",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["figure", "animal"],
+      "techniqueVisible": ["linework-heavy", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0310",
+    "title": "Snoopy — Seated with Heart",
+    "subtitle": "Simple black and white line art of Snoopy seated with a floating heart on white background",
+    "imageUrl": "assets/img/51jSF+UQ5UL._AC_SL1122_.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0311",
+    "title": "Anime Character Studies — Dynamic Poses",
+    "subtitle": "Multiple anime-style female character sketches in dynamic action poses on cool blue-tinted paper",
+    "imageUrl": "assets/img/5232_10204430688961114_3227755521000817331_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["cool", "neutral", "high-contrast"],
+      "subjectMatter": ["figure", "portrait"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0312",
+    "title": "Steven Universe — Sugilite Character Art",
+    "subtitle": "Official-style full-body character art of Sugilite from Steven Universe in monochromatic purple",
+    "imageUrl": "assets/img/529-5293806_steven-universe-characters-sugilite-hd-png-download.png",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["cool", "monochromatic", "vibrant"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0313",
+    "title": "Sci-Fi Military Vehicle Concept Sketch",
+    "subtitle": "Detailed pen sketch of a massive sci-fi military vehicle with scale figures and Japanese annotations",
+    "imageUrl": "assets/img/5625_1659940717609640_314409992702277390_n.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0314",
+    "title": "3D Bird Character — Color Study",
+    "subtitle": "Stylized 3D render of a plump golden-yellow bird character with soft ambient lighting",
+    "imageUrl": "assets/img/565_max.jpg",
+    "metadata": {
+      "industry": ["Animation", "Game Art"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Character Modeling", "3D Digital Art / Rendering / Stylized Rendering"],
+      "colorPalette": ["warm", "vibrant", "muted"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0315",
+    "title": "Vehicle Form Studies — Aerodynamic Sketches",
+    "subtitle": "Industrial design pen and marker sketches exploring aerodynamic vehicle forms with cool blue accents",
+    "imageUrl": "assets/img/577246_2966076326698_433440317_n.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0316",
+    "title": "Astro Boy — Classic Anime Character Art",
+    "subtitle": "Classic Astro Boy character art with bold outlines and flat cel-style coloring in a dynamic action pose",
+    "imageUrl": "assets/img/58b5bb78477f7b3ac07b9639f9765fae.jpg",
+    "metadata": {
+      "industry": ["Animation", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0317",
+    "title": "Felix the Cat — Simplified Head Graphic",
+    "subtitle": "Bold black and white Felix the Cat head icon with high-contrast negative space design",
+    "imageUrl": "assets/img/617EtbsPzwL._SL1500_.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Graphic Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Mixed 2D Techniques / Flat Design"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["portrait", "animal"],
+      "techniqueVisible": ["graphic", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0318",
+    "title": "Snoopy — Standing Profile Line Art",
+    "subtitle": "Clean black and white line art of Snoopy in a classic standing profile pose",
+    "imageUrl": "assets/img/61JRVkLScCL._AC_SX466_.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0319",
+    "title": "Snoopy Joe Cool — Standing with Attitude",
+    "subtitle": "Line art of Snoopy as Joe Cool wearing sunglasses in a relaxed standing pose",
+    "imageUrl": "assets/img/61NEYU1MqbL._AC_SY679_.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0320",
+    "title": "Snoopy Red Baron — Pilot Costume",
+    "subtitle": "Minimal line drawing of Snoopy as the Red Baron with goggles and scarf",
+    "imageUrl": "assets/img/656-6568750_snoopy-png-clipart-image-red-baron-snoopy-drawing.png",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["linework-heavy"]
+    }
+  }
+]

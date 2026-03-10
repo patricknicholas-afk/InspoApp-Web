@@ -1,0 +1,613 @@
+[
+  {
+    "id": "VEH-0001",
+    "title": "Sci-Fi Racer No. 7 — Color Render",
+    "subtitle": "Low-slung futuristic racing craft in red and silver with back-view orthographic inset, marker and ink render",
+    "imageUrl": "assets/img/Vehicles/05b99278ee694bc7551282f386680847.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Car Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "high-contrast", "neutral"],
+      "subjectMatter": ["vehicle", "sci-fi", "mechanical"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0002",
+    "title": "Urban Supercar — Marker and Pencil Sketch",
+    "subtitle": "Sports car silhouette overlaid with abstract city skyline in pink and red, marker plus white pencil rendering",
+    "imageUrl": "assets/img/Vehicles/0a8df0fc871bcd2e5ed1b10de527a59e.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "muted", "high-contrast"],
+      "subjectMatter": ["vehicle", "cityscape", "abstract"],
+      "techniqueVisible": ["loose", "sketchy", "painterly"]
+    }
+  },
+  {
+    "id": "VEH-0003",
+    "title": "Sci-Fi Drones Battling — Ross Tran",
+    "subtitle": "Two mechanical drone craft connected by energy beam mid-air, atmospheric white environment with small figure for scale",
+    "imageUrl": "assets/img/Vehicles/123_large.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "VEH-0004",
+    "title": "Mercedes Ener-G Force Concept Sketch",
+    "subtitle": "Off-road SUV concept in burnt orange with teal accent wheels, dynamic 3/4 rear sketch on desert atmosphere",
+    "imageUrl": "assets/img/Vehicles/135326304025503image.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["painterly", "stylized", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0005",
+    "title": "Lamborghini SUV Concept — Front 3/4",
+    "subtitle": "Aggressive Lamborghini-badged SUV in orange-red gradient, clean studio render style on white ground",
+    "imageUrl": "assets/img/Vehicles/136116127397087image.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "vibrant", "high-contrast"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0006",
+    "title": "Lamborghini SUV Concept — Rear 3/4",
+    "subtitle": "Same Lamborghini SUV concept from rear three-quarter angle, orange gradient body, expressive brush work",
+    "imageUrl": "assets/img/Vehicles/136116134269233image.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "vibrant", "high-contrast"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["painterly", "stylized", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0007",
+    "title": "Audi Concept Coupe Sketch — Front 3/4",
+    "subtitle": "Futuristic Audi coupe in teal-grey with orange trim, front three-quarter view on pale ground",
+    "imageUrl": "assets/img/Vehicles/136554066562041image.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["cool", "complementary", "muted"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0008",
+    "title": "Supercar Orthographic Sketches — Three Views",
+    "subtitle": "Three-view orthographic sketch sheet of a wedge-shaped supercar in blue pencil with colour accent, top/front/3/4",
+    "imageUrl": "assets/img/Vehicles/136554067110146image.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0009",
+    "title": "Red Compact SUV Concept — Side Profile",
+    "subtitle": "Bold red crossover concept in pure side profile, clean digital speed render on white by Zamkovenko",
+    "imageUrl": "assets/img/Vehicles/136554137658759image.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "vibrant", "high-contrast"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0010",
+    "title": "BMW X4 Concept — Rear 3/4 Sketch",
+    "subtitle": "BMW X4 crossover coupe in electric blue, rear three-quarter studio sketch with red taillight accents",
+    "imageUrl": "assets/img/Vehicles/136554194821040image.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["cool", "vibrant", "complementary"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0011",
+    "title": "Hyper Racing Car Concept — Dynamic Low Angle",
+    "subtitle": "Extreme Le Mans-style racing car in silver and orange, low wide angle with atmospheric speed motion behind",
+    "imageUrl": "assets/img/Vehicles/14f5707c0c57fe41d1556ece975a71b0.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["neutral", "complementary", "dark"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["painterly", "atmospheric", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0012",
+    "title": "Lamborghini Aventador — Engine Bay Photo",
+    "subtitle": "Real-world photograph of the Aventador LP 700-4 Roadster engine bay in deep blue carbon fibre at press reveal",
+    "imageUrl": "assets/img/Vehicles/2014-Lamborghini-Aventador-LP-700-4-Roadster-engine-bay.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["cool", "dark", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["photorealistic", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0013",
+    "title": "Lamborghini Aventador Roadster — Reveal Top Shot",
+    "subtitle": "Overhead shot of blue Aventador roadster with open roof at press event, showing interior and angular bodywork",
+    "imageUrl": "assets/img/Vehicles/2014-Lamborghini-Aventador-LP-700-4-Roadster-top.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["cool", "dark", "neutral"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["photorealistic", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0014",
+    "title": "Jet Moto Redesign — Class 1 Red Bull Racer",
+    "subtitle": "Futuristic hovering moto-racer in Red Bull livery, highly detailed concept render with sponsor decals",
+    "imageUrl": "assets/img/Vehicles/261e01e924d6daf4007f36506fd0bb24.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "high-contrast", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0015",
+    "title": "Jet Moto Redesign — Sketch and Render Pair",
+    "subtitle": "Side-by-side pencil sketch and greyscale render of a futuristic hoverbike, Jet Moto game redesign",
+    "imageUrl": "assets/img/Vehicles/2b65c7d397dbba57639bc5474ed2d664.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0016",
+    "title": "Sci-Fi Vehicle Concept Thumbnails — Nine Views",
+    "subtitle": "Nine thumbnail sketches of varied sci-fi vehicle forms including tanks, racers and spacecraft with teal and neon accents",
+    "imageUrl": "assets/img/Vehicles/376_large.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["neutral", "cool", "neon"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "loose", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0017",
+    "title": "Star Conflict — Vulture Light Fighter Sheet",
+    "subtitle": "Red sci-fi fighter craft with orthographic breakdown and annotations, technical illustration for Star Conflict game",
+    "imageUrl": "assets/img/Vehicles/3def794b35fac23cbbdeefd3521dc5d3.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["warm", "neutral", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi", "weapon"],
+      "techniqueVisible": ["detailed", "graphic", "linework-heavy"]
+    }
+  },
+  {
+    "id": "VEH-0018",
+    "title": "Jet Moto Redesign — Class 1 Greyscale Render",
+    "subtitle": "Detailed greyscale render of futuristic hovering moto-racer with small pilot figure for scale comparison",
+    "imageUrl": "assets/img/Vehicles/4066128244fcc1794c3c440fe88b93f7.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0019",
+    "title": "Sci-Fi Battlecruiser No. 52 — Painted Concept",
+    "subtitle": "Large military spacecraft in olive and copper with race number 52, small scale figure below, traditional painting style",
+    "imageUrl": "assets/img/Vehicles/4669f46d68ba78d9753aa5a4f6a20b2f.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["earthy", "warm", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "VEH-0020",
+    "title": "Sci-Fi Military Aircraft Lineup — Three Types",
+    "subtitle": "Three futuristic fighter and transport aircraft with orthographic breakdowns, Parallax Arts Studio concept sheet",
+    "imageUrl": "assets/img/Vehicles/545672329fa80308d7a8543391b5d965.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0021",
+    "title": "Sci-Fi Racer No. 52 — Pencil Construction Sketch",
+    "subtitle": "Loose pencil construction sketch of a large racing spacecraft, back-view orthographic inset in upper right",
+    "imageUrl": "assets/img/Vehicles/5b67ca8de7f6fc620188eb9ae5a41570.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0022",
+    "title": "Futuristic Speedster — Aquarelle Rendering",
+    "subtitle": "Long low-profile racing car rendered in vivid purple watercolour wash with expressive drips and gestural mark-making",
+    "imageUrl": "assets/img/Vehicles/5b8c8935b54be099e72faa6809cfd4b8.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["cool", "vibrant", "high-contrast"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["loose", "painterly", "textured"]
+    }
+  },
+  {
+    "id": "VEH-0023",
+    "title": "Jet Moto — Greyscale Hover-Bike Turntable",
+    "subtitle": "Four turntable views of a futuristic hover-bike in charcoal grey digital sketch, Jet Moto redesign series",
+    "imageUrl": "assets/img/Vehicles/6be69a1a077d7fd4a57cb6012ce93830.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "dark"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "stylized", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0024",
+    "title": "Jet Moto — Lucky Strike Class 2 Racer",
+    "subtitle": "High-polish render of Lucky Strike-sponsored hovering moto-racer with race markings and sponsor logos",
+    "imageUrl": "assets/img/Vehicles/7ef8ced3d5aa102c892ce0a65e5dfa7b.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "high-contrast", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["photorealistic", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0025",
+    "title": "Skoda Superb — Production Design Illustration",
+    "subtitle": "Clean rear three-quarter design illustration of a production Skoda sedan in teal-blue with flat cel-shaded quality",
+    "imageUrl": "assets/img/Vehicles/892116_549418028414322_1071700311_o.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Flat Design"],
+      "colorPalette": ["cool", "muted", "complementary"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["graphic", "cel-shaded", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0026",
+    "title": "Jet Moto — Open-Frame Hover Racer Sketch",
+    "subtitle": "Sketch and render pair of an exposed-frame futuristic hover vehicle from side and front angles, Jet Moto redesign",
+    "imageUrl": "assets/img/Vehicles/8da99ef3efbfcb1ba42b9c6acbd29e40.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0027",
+    "title": "Lamborghini Embolado Superleggera Concept",
+    "subtitle": "Dark matte-carbon 3D render of the fan-made Lamborghini Embolado concept on studio grey background",
+    "imageUrl": "assets/img/Vehicles/Lamborghini-Embolado-Concept-lamborghini-4300041-1024-768.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design", "Concept Art"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["photorealistic", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0028",
+    "title": "Sean Yoo — Sci-Fi Spacecraft with Astronaut",
+    "subtitle": "Large U-shaped spacecraft in polished silver with suited astronaut figure for scale, Sean Yoo concept design",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-1.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "cool", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "VEH-0029",
+    "title": "Sean Yoo — Quadruped Mech Walker",
+    "subtitle": "Massive grey quadruped mechanical walker with tiny figure for scale, organic-meets-machine aesthetic",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-10.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "VEH-0030",
+    "title": "Sean Yoo — Biomechanical Suit Characters",
+    "subtitle": "Two biomechanical humanoid suit designs side by side, translucent aqua and chrome grey variants",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-12.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["figure", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0031",
+    "title": "Sean Yoo — Organic Racing Car Top-Down",
+    "subtitle": "Fluid organic-form racing car viewed from above with suited pilot figure alongside, silver chrome finish",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-13.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Car Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "cool", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "VEH-0032",
+    "title": "Sean Yoo — Futuristic Formula Racer with Driver",
+    "subtitle": "Low ultra-wide futuristic formula racer with suited driver standing alongside on reflective white surface",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-14.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Car Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "high-contrast", "neutral"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0033",
+    "title": "Sean Yoo — Future Race Car in Pit Lane",
+    "subtitle": "Gritty sci-fi race car being serviced in atmospheric pit environment, red livery with mist and mechanic figures",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-15.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Environment Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["warm", "neutral", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi", "interior"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0034",
+    "title": "Sean Yoo — Six-Wheel Military Rover",
+    "subtitle": "Heavy six-wheeled armoured scientific rover with rear-mounted cannon, small hazmat crew figures for scale",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-2.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "VEH-0035",
+    "title": "Sean Yoo — Hover-Bike Silhouette Thumbnails",
+    "subtitle": "Six silhouette thumbnail explorations of hover-bike forms on grey ground, Jet Moto redesign ideation sheet",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-7.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "dark"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "loose", "graphic"]
+    }
+  },
+  {
+    "id": "VEH-0036",
+    "title": "Sean Yoo — Military Sci-Fi Vehicle Sketch Sheet",
+    "subtitle": "Large layout of armoured hover transports and ground vehicles in pencil sketch with tonal shading, worldbuilding sheet",
+    "imageUrl": "assets/img/Vehicles/Sean-Yoo-Transportation-9.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "dark"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0037",
+    "title": "Futuristic Sports Car — Top-Down Speedpainting",
+    "subtitle": "Bird's-eye speedpainting of an organic-nosed concept supercar in red and olive, top-down perspective",
+    "imageUrl": "assets/img/Vehicles/ab45ca47a7aa097cafcbd9489689e6c1.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "complementary", "vibrant"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["painterly", "stylized", "loose"]
+    }
+  },
+  {
+    "id": "VEH-0038",
+    "title": "Sci-Fi Armoured Tank — Bandai-Namco Concept Sheet",
+    "subtitle": "Heavy four-wheeled armoured vehicle with turret, fully annotated orthographic and detail breakdowns, Bandai-Namco",
+    "imageUrl": "assets/img/Vehicles/dd496b974b21f73ff2f46d221056adf5.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "dark"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "linework-heavy"]
+    }
+  },
+  {
+    "id": "VEH-0039",
+    "title": "Jet Moto — Alternative Form Thumbnails",
+    "subtitle": "Six alternative hover-bike silhouette thumbnails in dark grey on mid-grey ground, Jet Moto redesign series",
+    "imageUrl": "assets/img/Vehicles/f579606e68068a7fd7e8458dcf8e0a1e.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["sketchy", "loose", "graphic"]
+    }
+  },
+  {
+    "id": "VEH-0040",
+    "title": "Sci-Fi Mineral Platform and Railgun Tower Sheet",
+    "subtitle": "Student concept sheet: moody sci-fi industrial tower painted render plus annotated railgun delivery tower breakdown",
+    "imageUrl": "assets/img/Vehicles/gallery_student_aed_pg2_38.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["architecture", "sci-fi", "mechanical"],
+      "techniqueVisible": ["painterly", "sketchy", "atmospheric"]
+    }
+  },
+  {
+    "id": "VEH-0041",
+    "title": "Forever War — Desert Hover Assault Convoy",
+    "subtitle": "Two sci-fi hover assault vehicles racing across desert with dust clouds and distant spires, dramatic environment painting",
+    "imageUrl": "assets/img/Vehicles/gallery_student_aed_pg2_44.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["earthy", "neutral", "warm"],
+      "subjectMatter": ["vehicle", "landscape", "sci-fi"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0042",
+    "title": "Sci-Fi Desert Battle Tank — Front View",
+    "subtitle": "Heavy armoured multi-gun battle tank ploughing through desert sand with distant city silhouette on horizon",
+    "imageUrl": "assets/img/Vehicles/gallery_student_aed_pg2_47.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["earthy", "cool", "neutral"],
+      "subjectMatter": ["vehicle", "landscape", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "VEH-0043",
+    "title": "Sci-Fi APC Desert Battle — Student Concept",
+    "subtitle": "Student concept painting of heavily armed sci-fi APC with multiple cannon turrets charging through dune terrain",
+    "imageUrl": "assets/img/Vehicles/gallery_student_aed_pg2_48.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["earthy", "cool", "neutral"],
+      "subjectMatter": ["vehicle", "landscape", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "VEH-0044",
+    "title": "Greenrock Mineral Sample — Reference Photo",
+    "subtitle": "Close-up photograph of a greenish mineral rock sample on grey background with scale marker",
+    "imageUrl": "assets/img/Vehicles/greenrock_635x250_1364579337.jpg",
+    "metadata": {
+      "industry": ["Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["earthy", "muted", "neutral"],
+      "subjectMatter": ["still-life", "nature"],
+      "techniqueVisible": ["photorealistic", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0045",
+    "title": "Lamborghini Aventador Roadster — Official Top View",
+    "subtitle": "Official product photograph of the silver Aventador Roadster from above on white, interior and roof panel visible",
+    "imageUrl": "assets/img/Vehicles/lamborghiniaventadorroadsterofficial-05.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "cool", "muted"],
+      "subjectMatter": ["vehicle", "interior"],
+      "techniqueVisible": ["photorealistic", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0046",
+    "title": "Lamborghini Aventador Roadster — Side Overhead",
+    "subtitle": "High overhead side angle of the silver Aventador Roadster against black ground, emphasising angular bodywork geometry",
+    "imageUrl": "assets/img/Vehicles/lamborghiniaventadorroadsterofficial-07.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "dark", "high-contrast"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["photorealistic", "detailed"]
+    }
+  },
+  {
+    "id": "VEH-0047",
+    "title": "Lamborghini Veneno — Overhead Studio Shot",
+    "subtitle": "Top-down studio photograph of the silver and red Lamborghini Veneno hypercar, angular stealth-fighter surfacing",
+    "imageUrl": "assets/img/Vehicles/veneno top 1.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "high-contrast", "muted"],
+      "subjectMatter": ["vehicle"],
+      "techniqueVisible": ["photorealistic", "detailed"]
+    }
+  }
+]

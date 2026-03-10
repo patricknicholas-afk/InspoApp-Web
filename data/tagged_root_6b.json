@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0421",
+    "title": "Crossed-Arms Streetwear Character",
+    "subtitle": "Stylized character design with bold outlines and flat color in a Gorillaz-inspired streetwear aesthetic",
+    "imageUrl": "assets/img/images-1.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["vibrant", "complementary"],
+      "subjectMatter": ["figure", "portrait"],
+      "techniqueVisible": ["linework-heavy", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0422",
+    "title": "Calvin and Hobbes — Flexing Duo",
+    "subtitle": "Classic Calvin and Hobbes comic strip art of the duo flexing with expressive linework",
+    "imageUrl": "assets/img/images-10.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "warm"],
+      "subjectMatter": ["figure", "animal"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0423",
+    "title": "Calvin Character Design Reference Sheet",
+    "subtitle": "Side-by-side character sheet comparing Calvin and Stupendous Man costumes with annotations",
+    "imageUrl": "assets/img/images-11.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["warm"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0424",
+    "title": "Two Characters Laughing — Painterly Digital",
+    "subtitle": "Loose gestural digital painting of two stylized characters laughing in warm red-grey tones",
+    "imageUrl": "assets/img/images-2.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "muted"],
+      "subjectMatter": ["portrait", "figure"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0425",
+    "title": "Noodle — Gorillaz Character Illustration",
+    "subtitle": "Jamie Hewlett's Noodle character on vibrant red background with bold outlines and flat color",
+    "imageUrl": "assets/img/images-3.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Music & Entertainment"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["vibrant", "warm", "complementary"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0426",
+    "title": "Profile Portrait — Watercolour Wash",
+    "subtitle": "Dark atmospheric profile portrait with loose watercolor-style washes and ink-black background",
+    "imageUrl": "assets/img/images-4.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Fine Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "high-contrast", "muted"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0427",
+    "title": "Caricature Portrait — Male Smoker",
+    "subtitle": "Bold caricature with exaggerated facial proportions and warm/cool split lighting against vivid blue",
+    "imageUrl": "assets/img/images-5.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Fine Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["complementary", "vibrant"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0428",
+    "title": "Felix the Cat — Vintage Cel Still",
+    "subtitle": "Vintage animation cel close-up of Felix the Cat with classic rubber hose style and circular eyes",
+    "imageUrl": "assets/img/images-6.jpeg",
+    "metadata": {
+      "industry": ["Animation", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "warm"],
+      "subjectMatter": ["animal", "portrait"],
+      "techniqueVisible": ["linework-heavy", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0429",
+    "title": "Felix the Cat — Dizzy Eyes",
+    "subtitle": "Black-and-white animation frame of Felix with spiral dizzy eyes conveying emotion through pure shape language",
+    "imageUrl": "assets/img/images-7.jpeg",
+    "metadata": {
+      "industry": ["Animation", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["monochromatic", "high-contrast"],
+      "subjectMatter": ["animal", "portrait"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0430",
+    "title": "Felix the Cat — Ink Poster Style",
+    "subtitle": "High-contrast black ink illustration of Felix in an energetic pose with tongue out and spiral eyes",
+    "imageUrl": "assets/img/images-8.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Graphic Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Mixed 2D Techniques / Poster Design"],
+      "colorPalette": ["monochromatic", "high-contrast"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0431",
+    "title": "Felix the Cat — Classic Pose Silhouette",
+    "subtitle": "Classic full-body Felix the Cat pose pointing upward with iconic rubber hose animation silhouette",
+    "imageUrl": "assets/img/images-9.jpeg",
+    "metadata": {
+      "industry": ["Animation", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["monochromatic", "high-contrast"],
+      "subjectMatter": ["animal", "figure"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0432",
+    "title": "Punk Girl with Fire and Bottles — Red Ink",
+    "subtitle": "Dynamic full-body figure in single-color red line art with bold hatching and action props",
+    "imageUrl": "assets/img/images.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["monochromatic", "warm", "high-contrast"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0433",
+    "title": "Snoopy — Three Lying Poses",
+    "subtitle": "Three size-graduated Snoopy figures in identical lying pose with clean vector-adjacent outlines",
+    "imageUrl": "assets/img/images.png",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["monochromatic", "high-contrast"],
+      "subjectMatter": ["animal", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0434",
+    "title": "Jamie Hewlett — Woman Exhaling Smoke",
+    "subtitle": "Jamie Hewlett panel of a woman looking upward exhaling smoke against a saturated cyan-blue field",
+    "imageUrl": "assets/img/jamie-hewlett.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "high-contrast"],
+      "subjectMatter": ["portrait", "figure"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0435",
+    "title": "Gorillaz — 2D and Noodle Double Portrait",
+    "subtitle": "Art book spread showing two Gorillaz members as large portrait busts against dark red textured background",
+    "imageUrl": "assets/img/jamie_hewlett_40_int_open001_086_087_41112_2006171122_id_1309450.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Music & Entertainment"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["warm", "high-contrast", "vibrant"],
+      "subjectMatter": ["portrait", "character"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0436",
+    "title": "Jimmy Neutron — Boy and Girl 3D Scene",
+    "subtitle": "3D CGI animation still of two Jimmy Neutron characters in a stylized night outdoor scene",
+    "imageUrl": "assets/img/jimmy.jpeg",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Character Modeling", "3D Digital Art / Rendering / Stylized Rendering"],
+      "colorPalette": ["cool", "vibrant"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0437",
+    "title": "Jimmy Neutron — Kitchen Fridge Scene",
+    "subtitle": "3D CGI character full-body shot of Jimmy Neutron in a detailed domestic kitchen interior",
+    "imageUrl": "assets/img/jimmy2.jpeg",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Character Modeling", "3D Digital Art / Rendering / Stylized Rendering"],
+      "colorPalette": ["warm", "vibrant"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0438",
+    "title": "Niko — CandyLand Archer Character Design",
+    "subtitle": "Clean production character design sheet of a young archer character in Disney/DreamWorks style",
+    "imageUrl": "assets/img/just-niko-721x1024.jpg",
+    "metadata": {
+      "industry": ["Animation", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0439",
+    "title": "Cyborg Figure — Sci-Fi Matte Concept",
+    "subtitle": "Highly rendered sci-fi concept of a partially mechanical humanoid figure in cool cyan atmospheric lighting",
+    "imageUrl": "assets/img/kug0n4cqsjmtqw5lxjq4.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "muted", "high-contrast"],
+      "subjectMatter": ["figure", "mechanical"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0440",
+    "title": "Armoured Female Character — Monochrome Sketch",
+    "subtitle": "Full-body greyscale armored female character sketch with selective magenta accent on weapons",
+    "imageUrl": "assets/img/marc-brunet-characterdesignda.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["loose", "linework-heavy", "detailed"]
+    }
+  }
+]

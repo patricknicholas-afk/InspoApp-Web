@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0361",
+    "title": "Watercolor Paper Texture",
+    "subtitle": "A close-up scan of smooth cold-press watercolor paper showing subtle surface grain and tooth.",
+    "imageUrl": "assets/img/Texture.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Fine Art", "Education"],
+      "mediumTags": ["Traditional / Mixed Media / Surface Texture Study"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["abstract"],
+      "techniqueVisible": ["detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0362",
+    "title": "Gumball and Darwin Fireworks",
+    "subtitle": "Gumball and Darwin from The Amazing World of Gumball leap in front of a colorful fireworks display.",
+    "imageUrl": "assets/img/The-Amazing-World-of-Gumball-Gumball-and-Darwin.png",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Mixed 2D Techniques / Flat Design"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["character", "figure"],
+      "techniqueVisible": ["graphic", "stylized", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0363",
+    "title": "Character and Creature Sketch Sheet",
+    "subtitle": "A greyscale digital sketch sheet exploring multiple character faces, figures, and a dragon head in loose painterly strokes.",
+    "imageUrl": "assets/img/TheWhiteInpso12.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["character", "creature", "portrait"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0364",
+    "title": "Sci-Fi Mech Silhouette Lineup B",
+    "subtitle": "A numbered concept sheet presenting ten varied mechanical robot and vehicle silhouettes rendered in greyscale ink wash.",
+    "imageUrl": "assets/img/TheWhiteInpso6.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["mechanical", "vehicle", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0365",
+    "title": "Armoured Warrior Character Studies",
+    "subtitle": "Three greyscale concept sketches of heavily armoured sci-fi and samurai hybrid warrior characters rendered with energetic brushwork.",
+    "imageUrl": "assets/img/TheWhiteInspo1.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["character", "figure", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0366",
+    "title": "Alien Lizard Warrior Character",
+    "subtitle": "A fully rendered digital illustration of a green-skinned alien female warrior in ornate golden armour with a long tail.",
+    "imageUrl": "assets/img/TheWhiteInspo10.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Illustration"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "analogous", "vibrant"],
+      "subjectMatter": ["character", "creature", "figure", "sci-fi"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0367",
+    "title": "Bone Armour Demon Warrior",
+    "subtitle": "A full-body concept of a horned female demon warrior clad in white bone-like armour with red ribbon accents, painted over a grey background.",
+    "imageUrl": "assets/img/TheWhiteInspo11.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "muted", "high-contrast"],
+      "subjectMatter": ["character", "creature", "figure"],
+      "techniqueVisible": ["painterly", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0368",
+    "title": "Heavy Gear Troopers Sketch Sheet",
+    "subtitle": "Multiple greyscale concept sketches of heavily equipped military characters including soldiers and a small cloaked figure.",
+    "imageUrl": "assets/img/TheWhiteInspo2.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["character", "figure", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0369",
+    "title": "Cyborg Soldier Action Poses",
+    "subtitle": "A greyscale sketch sheet of five cyborg and armoured soldier figures captured in dynamic combat and idle action poses.",
+    "imageUrl": "assets/img/TheWhiteInspo3.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["character", "figure", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0370",
+    "title": "Power Armour Multi-Angle Study",
+    "subtitle": "Four greyscale views of bulky mechanical power armour suits shown from different angles and in varying combat stances.",
+    "imageUrl": "assets/img/TheWhiteInspo4.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["mechanical", "character", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0371",
+    "title": "Walker Mech Construction Sketches",
+    "subtitle": "Four views of spider-leg and biped walking tank mechs progressing from loose structural line drawings to tonal greyscale renders.",
+    "imageUrl": "assets/img/TheWhiteInspo5.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["mechanical", "vehicle", "sci-fi"],
+      "techniqueVisible": ["loose", "linework-heavy", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0372",
+    "title": "Mech Trooper Silhouette Lineup A",
+    "subtitle": "A numbered roster of approximately twenty armed bipedal mech designs shown in dynamic poses using bold ink-wash values.",
+    "imageUrl": "assets/img/TheWhiteInspo6.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["mechanical", "character", "sci-fi"],
+      "techniqueVisible": ["painterly", "graphic", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0373",
+    "title": "Compact Mech Design Variations",
+    "subtitle": "Twenty numbered thumbnail silhouettes of small stocky mech units exploring a wide range of proportions and forms.",
+    "imageUrl": "assets/img/TheWhiteInspo7.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0374",
+    "title": "Quadruped and Biped Mech Studies",
+    "subtitle": "Seven greyscale concept sketches of four-legged and two-legged military mechs shown from varying angles with tonal ink-wash rendering.",
+    "imageUrl": "assets/img/TheWhiteInspo8.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["mechanical", "vehicle", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0375",
+    "title": "Mixed Mech and Creature Concept Sheet",
+    "subtitle": "Six numbered concept sketches mixing humanoid mech soldiers, a beetle-like creature vehicle, and angular geometric robot forms.",
+    "imageUrl": "assets/img/TheWhiteInspo9.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["mechanical", "creature", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0376",
+    "title": "Gumball and Darwin The Silence Song",
+    "subtitle": "A split-screen frame from The Amazing World of Gumball showing Anais and Gumball with wide expressive eyes against a suburban backdrop.",
+    "imageUrl": "assets/img/The_Amazing_World_of_Gumball_-_Out_of_Sync_%28The_Silence_Song%29.webp",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Mixed 2D Techniques / Flat Design"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["character", "portrait"],
+      "techniqueVisible": ["graphic", "stylized", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0377",
+    "title": "Tintin Motion Capture Scene",
+    "subtitle": "A photorealistic CG render of Tintin and Captain Haddock from the Adventures of Tintin film, set against a warm Mediterranean exterior.",
+    "imageUrl": "assets/img/Tin Tin.jpg",
+    "metadata": {
+      "industry": ["Animation", "Comics & Manga"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Animation & Rigging / Character Animation"],
+      "colorPalette": ["warm", "analogous", "vibrant"],
+      "subjectMatter": ["character", "figure", "portrait"],
+      "techniqueVisible": ["detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0378",
+    "title": "Gorillaz Band Portrait",
+    "subtitle": "Jamie Hewlett's four Gorillaz band members stand together in a moody group portrait rendered in bold graphic ink and flat colour.",
+    "imageUrl": "assets/img/Unknown-1.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Music & Entertainment", "Comics & Manga"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["cool", "muted", "complementary"],
+      "subjectMatter": ["character", "figure", "portrait"],
+      "techniqueVisible": ["graphic", "linework-heavy", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0379",
+    "title": "Jamie Hewlett Taschen Cover Portrait",
+    "subtitle": "The cover of the Jamie Hewlett Taschen monograph featuring a bold ink portrait of a young woman on a high-contrast red background.",
+    "imageUrl": "assets/img/Unknown.jpeg",
+    "metadata": {
+      "industry": ["Illustration", "Graphic Design", "Comics & Manga"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["warm", "high-contrast", "complementary"],
+      "subjectMatter": ["portrait", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0380",
+    "title": "Felix the Cat Icon",
+    "subtitle": "A stark black-and-white graphic icon of Felix the Cat's grinning face with X-shaped eyes rendered as flat vector shapes.",
+    "imageUrl": "assets/img/VQRGqkF.jpg",
+    "metadata": {
+      "industry": ["Animation", "Graphic Design", "Illustration"],
+      "mediumTags": ["Digital 2D / Mixed 2D Techniques / Flat Design", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["monochromatic", "high-contrast", "neutral"],
+      "subjectMatter": ["character", "portrait", "animal"],
+      "techniqueVisible": ["graphic", "stylized", "linework-heavy"]
+    }
+  }
+]

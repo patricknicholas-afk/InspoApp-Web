@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0181",
+    "title": "Spaceship Concept — Sky",
+    "subtitle": "Multi-view orthographic vehicle design sheet for Galaxy Legend 2",
+    "imageUrl": "assets/img/12778741_1046415202096585_2928373414095964083_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["cool", "neutral", "high-contrast"],
+      "subjectMatter": ["vehicle", "sci-fi"],
+      "techniqueVisible": ["detailed", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0182",
+    "title": "Steven Universe — Crystal Gems",
+    "subtitle": "Official character lineup art from the Cartoon Network animated series",
+    "imageUrl": "assets/img/128-1281194_steven-universe-characters-hd-png-download.png",
+    "metadata": {
+      "industry": ["Animation", "TV & Broadcast"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["vibrant", "complementary"],
+      "subjectMatter": ["character", "figure"],
+      "techniqueVisible": ["linework-heavy", "flat color", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0183",
+    "title": "Your Lie in April — Duet",
+    "subtitle": "Romantic anime fan art of pianist and angel violinist in a luminous scene",
+    "imageUrl": "assets/img/12841202_1136882223051034_81307536922651095_o.jpg",
+    "metadata": {
+      "industry": ["Fan Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "high-contrast", "analogous"],
+      "subjectMatter": ["figure", "portrait"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0184",
+    "title": "Male Torso Anatomy Tutorial — Back",
+    "subtitle": "Step-by-step digital painting breakdown of back muscle groups and lighting",
+    "imageUrl": "assets/img/12971035_10154035661523290_1494700035656084468_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "warm", "muted"],
+      "subjectMatter": ["figure"],
+      "techniqueVisible": ["detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0185",
+    "title": "Dragon Shaman",
+    "subtitle": "Fantastical creature-human hybrid character in bold warm tones on white",
+    "imageUrl": "assets/img/12a66f81723e6704019859e8ef952726.png",
+    "metadata": {
+      "industry": ["Illustration", "Game Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["warm", "high-contrast", "vibrant"],
+      "subjectMatter": ["figure", "creature"],
+      "techniqueVisible": ["linework-heavy", "loose", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0186",
+    "title": "Armored Toad Warrior",
+    "subtitle": "Dark, heavily textured creature portrait with reptilian scales and glowing eye",
+    "imageUrl": "assets/img/13064519_10156889129020437_2344656507132393166_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "neutral", "high-contrast"],
+      "subjectMatter": ["creature", "portrait"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0187",
+    "title": "Tender Metal — Robot and Pilot",
+    "subtitle": "Stylised character and mech design sheet by Ricardo Caria, 2016",
+    "imageUrl": "assets/img/13071945_10153724003597869_4727812337682776747_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art", "Animation"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["warm", "cool", "high-contrast", "complementary"],
+      "subjectMatter": ["character", "mechanical"],
+      "techniqueVisible": ["detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0188",
+    "title": "Berserker Unleashed",
+    "subtitle": "Dramatic battle-worn warrior wielding an oversized blade against a bloody sky",
+    "imageUrl": "assets/img/13072629_1320010254682200_7412385861015091035_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comic Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "high-contrast"],
+      "subjectMatter": ["character", "figure", "fantasy"],
+      "techniqueVisible": ["painterly", "linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0189",
+    "title": "VW Motorsport — Concept Racer",
+    "subtitle": "Futuristic Volkswagen Gran Turismo racing car rendered from two angles",
+    "imageUrl": "assets/img/1424516_1030141807042652_7759042713521032492_n.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "cool", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["detailed", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0190",
+    "title": "Warrior in Yellow Coat",
+    "subtitle": "Full-body sci-fi warrior concept with dual blades and richly detailed attire",
+    "imageUrl": "assets/img/14249807_1391764267519950_2587640294207814179_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["warm", "cool", "complementary", "muted"],
+      "subjectMatter": ["character", "figure"],
+      "techniqueVisible": ["loose", "linework-heavy", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0191",
+    "title": "Dual-Sword Fighter Sketch",
+    "subtitle": "Energetic ballpoint pen gesture sketch of a dynamic armoured swordsman",
+    "imageUrl": "assets/img/1425732_10154458891083047_6643775988400016376_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Game Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "cool", "muted"],
+      "subjectMatter": ["character", "figure"],
+      "techniqueVisible": ["loose", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0192",
+    "title": "Sci-Fi Soldier — Red Helmet",
+    "subtitle": "Full-body concept of a futuristic armoured trooper with assault rifle",
+    "imageUrl": "assets/img/14352224_1391764417519935_5590370111180316844_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["character", "figure", "sci-fi"],
+      "techniqueVisible": ["loose", "painterly", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0193",
+    "title": "Cyan Operative",
+    "subtitle": "Full-body sci-fi alien character concept with vibrant blue skin and pink armour",
+    "imageUrl": "assets/img/14362578_1391764340853276_8080984164377693044_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "vibrant", "complementary"],
+      "subjectMatter": ["character", "figure", "sci-fi"],
+      "techniqueVisible": ["loose", "painterly", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0194",
+    "title": "Elemental Creature — Fire and Ice",
+    "subtitle": "Creature design combining fire crown with teal crystal accents on a neutral ground",
+    "imageUrl": "assets/img/14372103_1391764404186603_7524780558426922346_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "cool", "complementary", "muted"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["loose", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0195",
+    "title": "Biomechanical Android",
+    "subtitle": "Monochromatic concept of a slender robot with elongated limbs and downcast pose",
+    "imageUrl": "assets/img/14379633_10153763496566555_2443352634611709001_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["character", "mechanical", "sci-fi"],
+      "techniqueVisible": ["loose", "painterly", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0196",
+    "title": "Elf Portrait — Purple Hair",
+    "subtitle": "Warm, painterly bust portrait of a fantasy elf with expressive brushwork background",
+    "imageUrl": "assets/img/14448790_1656965371281830_4347449150903581851_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Game Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "analogous", "muted"],
+      "subjectMatter": ["portrait", "character", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0197",
+    "title": "Anatomy Study Sheet — Torso and Back",
+    "subtitle": "Pencil sketchbook page with labelled muscle groups and figure construction notes",
+    "imageUrl": "assets/img/14500354_1944372222456558_4445860039276263758_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "cool", "muted"],
+      "subjectMatter": ["figure"],
+      "techniqueVisible": ["loose", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0198",
+    "title": "Mech Encounter on an Alien Shore",
+    "subtitle": "A lone soldier approaches a grounded mech across a soft-lit extraterrestrial landscape",
+    "imageUrl": "assets/img/14556680_10153981426972308_8981396285807062570_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "cool", "muted", "analogous"],
+      "subjectMatter": ["landscape", "figure", "mechanical"],
+      "techniqueVisible": ["painterly", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0199",
+    "title": "Rainbow Stag",
+    "subtitle": "Vibrant watercolour-style digital deer dissolving into multicoloured light and autumn leaves",
+    "imageUrl": "assets/img/14632928_10154811958328109_719100104852694983_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Fine Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["vibrant", "analogous", "complementary"],
+      "subjectMatter": ["animal", "abstract"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0200",
+    "title": "Power Armour — Dynamic Pose",
+    "subtitle": "Painterly speedpainting of a sci-fi armoured figure with glowing reactor in motion",
+    "imageUrl": "assets/img/14700917_1447207068626713_5819215279674139053_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Speedpainting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "cool", "muted", "high-contrast"],
+      "subjectMatter": ["character", "figure", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  }
+]

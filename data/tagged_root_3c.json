@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0201",
+    "title": "Leonardo Sketch to Colour",
+    "subtitle": "Side-by-side pencil sketch and fully rendered digital painting of Leonardo from Teenage Mutant Ninja Turtles in a dramatic moonlit pose.",
+    "imageUrl": "assets/img/14753231_10157633278665597_8065917847234281588_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga", "Concept Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Digital Painting", "Digital 2D / Illustration & Painting / Character Illustration", "Traditional / Pencil / Sketch"],
+      "colorPalette": ["cool", "high-contrast", "muted"],
+      "subjectMatter": ["character", "figure"],
+      "techniqueVisible": ["painterly", "detailed", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0202",
+    "title": "Grizzled Top Hat Portrait",
+    "subtitle": "Expressive pencil sketch of a weathered, cigar-smoking older man in a top hat with a moody atmospheric background.",
+    "imageUrl": "assets/img/14853006_351701981843018_3577010020823173055_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art"],
+      "mediumTags": ["Traditional / Pencil / Sketch", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "monochromatic", "muted"],
+      "subjectMatter": ["portrait", "character"],
+      "techniqueVisible": ["linework-heavy", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0203",
+    "title": "Salvator — Cherry Blossom Fantasy",
+    "subtitle": "Dreamy anime-style digital illustration of two figures reaching toward each other amid flowing pink cherry blossom petals.",
+    "imageUrl": "assets/img/14853097_310788575972650_5721771832588388953_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Animation", "Comics & Manga"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Comic/Manga Art", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "analogous", "vibrant"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0204",
+    "title": "Eastern Dragon Graphite Study",
+    "subtitle": "Highly detailed graphite pencil drawing of a coiling Eastern dragon surrounded by clouds and flowing energy.",
+    "imageUrl": "assets/img/14859782_1253960804660358_8682363328325529429_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Fine Art"],
+      "mediumTags": ["Traditional / Pencil / Detailed Drawing", "Traditional / Ink / Line Drawing"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature"],
+      "techniqueVisible": ["detailed", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0205",
+    "title": "Chromatic Wolf Spirit",
+    "subtitle": "Vibrant digital painting of a running wolf-like creature dissolving into an explosion of multicoloured feathers and paint splashes.",
+    "imageUrl": "assets/img/14883623_10154810314773109_4627122547817831853_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Fine Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Digital Painting", "Digital 2D / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["vibrant", "complementary", "warm"],
+      "subjectMatter": ["creature", "animal", "abstract"],
+      "techniqueVisible": ["painterly", "loose", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0206",
+    "title": "Sky Whale at Sunset",
+    "subtitle": "Digital concept painting of a humpback whale soaring through a dramatic orange and purple cloud-filled sky above a rural road.",
+    "imageUrl": "assets/img/14884446_1325878714210857_4422389587859210825_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Animation"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["warm", "complementary", "vibrant"],
+      "subjectMatter": ["landscape", "creature", "animal"],
+      "techniqueVisible": ["painterly", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0207",
+    "title": "Vegeta — Ink Wash Portrait",
+    "subtitle": "Dramatic ink wash digital painting of Vegeta in profile with crossed arms against a minimal grey background.",
+    "imageUrl": "assets/img/14889891_10154671195968988_231749168102617542_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Digital Painting", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["portrait", "figure", "character"],
+      "techniqueVisible": ["painterly", "loose", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0208",
+    "title": "Dragon Confrontation — 3D Render",
+    "subtitle": "Photorealistic 3D rendered scene of a small figure on a cliff edge facing a massive textured Eastern dragon emerging from mist.",
+    "imageUrl": "assets/img/14902893_1253960754660363_8511459841026927389_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Animation"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Modeling & Sculpting / Creature Modeling", "Digital 2D / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["creature", "landscape", "architecture"],
+      "techniqueVisible": ["detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0209",
+    "title": "Stone Dragon Head Sculpture",
+    "subtitle": "Monochromatic 3D rendered close-up of a colossal stone-textured Eastern dragon head resting on a surface, dwarfing a tiny human figure.",
+    "imageUrl": "assets/img/14917265_1253960374660401_4624840562689931185_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / 3D Sculpting", "3D Digital Art / Rendering / Photorealistic Rendering"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["creature"],
+      "techniqueVisible": ["detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0210",
+    "title": "Wolverine — Loose Action Splash",
+    "subtitle": "Energetic loose digital painting of Wolverine mid-lunge with claws extended, accented by vivid magenta paint splatters.",
+    "imageUrl": "assets/img/14939550_10157690614660483_8352857135670447096_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Comics & Manga"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["warm", "muted", "high-contrast"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["loose", "painterly", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0211",
+    "title": "Dragon in the Mountain Valley",
+    "subtitle": "Epic digital concept painting of a colourful serpentine dragon rising from a misty mountain lake while a rider on horseback watches from a ridge.",
+    "imageUrl": "assets/img/14940112_1369975676376435_2494997037987160102_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Art"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["cool", "analogous", "vibrant"],
+      "subjectMatter": ["creature", "landscape"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0212",
+    "title": "Neon Combatant Figure Study",
+    "subtitle": "Dark atmospheric digital figure study of a female character in a skin-tight suit with glowing neon-pink accents in a fighting stance.",
+    "imageUrl": "assets/img/14956482_1121128534609056_9200292698536134409_n.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Illustration"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "high-contrast", "muted"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["loose", "stylized", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0213",
+    "title": "Male Portrait Head Angle Studies",
+    "subtitle": "Eight-panel digital sketch study sheet exploring varied three-quarter and side angles of a male face with strong planar construction.",
+    "imageUrl": "assets/img/14976424_1853219558241628_1368554756105666476_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art", "Education"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Digital Illustration", "Traditional / Pencil / Sketch"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0214",
+    "title": "Urban Heroines Character Lineup",
+    "subtitle": "Vibrant character design sheet featuring four diverse female characters in streetwear-meets-sci-fi outfits with varied weapons and attitudes.",
+    "imageUrl": "assets/img/14976477_10154493616378311_8245708666952562849_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Comics & Manga", "Illustration"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Illustration & Painting / Concept Art"],
+      "colorPalette": ["vibrant", "complementary", "warm"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["linework-heavy", "graphic", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0215",
+    "title": "Sci-Fi Fighter Jet Concept Sketches",
+    "subtitle": "Multi-view greyscale concept sketches of a futuristic sci-fi fighter aircraft shown from three-quarter, top, and side perspectives.",
+    "imageUrl": "assets/img/14976795_10154717615092679_5138433653532826451_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Illustration"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Technical Illustration", "Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0216",
+    "title": "Green Mech Suit — Orisa Fan Art",
+    "subtitle": "Stylized digital illustration of a bulky green-and-yellow powered exo-suit character rendered with clean cel-shaded colouring.",
+    "imageUrl": "assets/img/15025390_1166374593400072_5476536980394833542_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Illustration"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "analogous", "vibrant"],
+      "subjectMatter": ["character", "mechanical", "sci-fi"],
+      "techniqueVisible": ["stylized", "graphic", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0217",
+    "title": "McLaren Race Car Overhead Sketch",
+    "subtitle": "Bold marker-style overhead-angle sketch of a McLaren race car with dramatic gestural hatching and a graphic red accent stripe.",
+    "imageUrl": "assets/img/15069141_1287373114669304_961072425472281184_o.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Concept Art", "Illustration"],
+      "mediumTags": ["Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "Traditional / Marker / Industrial Sketch"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["loose", "linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0218",
+    "title": "Sci-Fi Power Armour Turnaround",
+    "subtitle": "Three-view turnaround (front, back, side) character design sheet of a sleek teal-and-white sci-fi power armour suit.",
+    "imageUrl": "assets/img/15110352_1306248766082941_1187212720699464693_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Illustration"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Concept Art", "Digital 2D / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "analogous", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "sci-fi"],
+      "techniqueVisible": ["graphic", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0219",
+    "title": "McLaren Concept — Two-View Sketches",
+    "subtitle": "Dynamic top-down and three-quarter marker sketches of two McLaren concept race car designs with bold black cross-hatching.",
+    "imageUrl": "assets/img/15110528_1286115978128351_1140441130451727338_o.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Concept Art", "Industrial Design"],
+      "mediumTags": ["Digital 2D / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "Traditional / Marker / Industrial Sketch"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["loose", "linework-heavy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0220",
+    "title": "Armoured Gunner — WIP Character",
+    "subtitle": "Work-in-progress digital character illustration of a heavily armed young female soldier in detailed mech armour against a red background.",
+    "imageUrl": "assets/img/15110531_10153902673795248_4123505777996153293_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Art", "Illustration", "Comics & Manga"],
+      "mediumTags": ["Digital 2D / Illustration & Painting / Character Illustration", "Digital 2D / Illustration & Painting / Concept Art"],
+      "colorPalette": ["warm", "muted", "high-contrast"],
+      "subjectMatter": ["character", "figure", "mechanical"],
+      "techniqueVisible": ["linework-heavy", "detailed", "stylized"]
+    }
+  }
+]

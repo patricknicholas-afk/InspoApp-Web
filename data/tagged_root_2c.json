@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0121",
+    "title": "Figure Study — Arms Raised",
+    "subtitle": "Charcoal and white pencil figure study on toned paper",
+    "imageUrl": "assets/img/12307320_10204681372905686_4497419878241598612_o.jpg",
+    "metadata": {
+      "industry": ["Figure Drawing", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "muted", "monochromatic"],
+      "subjectMatter": ["figure", "portrait"],
+      "techniqueVisible": ["sketchy", "loose", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0122",
+    "title": "Star Wars VII — Minimalist Poster",
+    "subtitle": "Flat design fan poster with silhouetted spacecraft",
+    "imageUrl": "assets/img/12307997_10208033009167918_3793675322477944048_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Flat Design", "2D Digital Art / Illustration & Painting / Vector Art"],
+      "colorPalette": ["complementary", "muted", "warm"],
+      "subjectMatter": ["vehicle", "sci-fi", "abstract"],
+      "techniqueVisible": ["graphic", "minimal", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0123",
+    "title": "Sci-Fi Freighter — Vehicle Concept",
+    "subtitle": "Detailed spaceship concept with line sketch inset",
+    "imageUrl": "assets/img/12308206_10153261074186765_298297464339435503_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["muted", "cool", "neutral"],
+      "subjectMatter": ["vehicle", "mechanical", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0124",
+    "title": "Raptor Creature — Digital Painting",
+    "subtitle": "Atmospheric digital painting of a fantastical bird of prey",
+    "imageUrl": "assets/img/12309600_984674881606403_8697290843906553903_o-1.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["muted", "cool", "neutral"],
+      "subjectMatter": ["creature", "portrait"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROOT-0125",
+    "title": "Dragon Slayer — Fantasy Character",
+    "subtitle": "Warrior standing atop a slain dragon, sepia tonal sketch",
+    "imageUrl": "assets/img/12309882_859625254148838_2573547951251440769_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "muted", "earthy"],
+      "subjectMatter": ["character", "creature", "figure", "weapon", "fantasy"],
+      "techniqueVisible": ["loose", "sketchy", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROOT-0126",
+    "title": "Winter Forest at Sunset",
+    "subtitle": "Digital illustration of a child and dog in a snow-covered forest",
+    "imageUrl": "assets/img/12309944_10153304979171309_6687993886416513084_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Illustration", "2D Digital Art / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["cool", "complementary", "vibrant"],
+      "subjectMatter": ["landscape", "nature", "figure"],
+      "techniqueVisible": ["painterly", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0127",
+    "title": "Race Car Design Progression",
+    "subtitle": "Three-view concept design sheet for a futuristic racing vehicle",
+    "imageUrl": "assets/img/12356756_1026116590778507_5044972180680213017_o.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Concept Art", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["high-contrast", "neutral", "complementary"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["detailed", "graphic", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0128",
+    "title": "Armored Swordsman — Gestural Study",
+    "subtitle": "Loose expressionistic digital painting of a samurai-style warrior",
+    "imageUrl": "assets/img/12362907_902405999808248_1610189837902505835_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "muted", "neutral"],
+      "subjectMatter": ["character", "figure", "armor", "weapon", "fantasy"],
+      "techniqueVisible": ["loose", "painterly", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0129",
+    "title": "Warriors at the Gate — Cinematic Scene",
+    "subtitle": "Monochrome comic-style group composition with armored characters",
+    "imageUrl": "assets/img/12362940_1142096449134629_5634573201758278646_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["monochromatic", "dark", "high-contrast"],
+      "subjectMatter": ["character", "figure", "landscape", "fantasy"],
+      "techniqueVisible": ["stylized", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROOT-0130",
+    "title": "Tennis Player — Figurative Portrait",
+    "subtitle": "Vibrant close-up digital painting of an athletic figure",
+    "imageUrl": "assets/img/12366049_928498847205142_6654120701985955130_o.jpg",
+    "metadata": {
+      "industry": ["Digital Painting", "Portraits", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["vibrant", "complementary", "warm"],
+      "subjectMatter": ["portrait", "figure"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0131",
+    "title": "Tropical Street Scene — Plein Air Sketch",
+    "subtitle": "Loose digital sketch of a street with trees and vehicle",
+    "imageUrl": "assets/img/12370756_10207237169960102_1658563221761997199_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Illustration", "2D Digital Art / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["vibrant", "warm", "complementary"],
+      "subjectMatter": ["landscape", "architecture", "nature"],
+      "techniqueVisible": ["sketchy", "loose", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROOT-0132",
+    "title": "Hand Studies — Reference Sheet",
+    "subtitle": "Comprehensive sheet of hand poses in various styles and media",
+    "imageUrl": "assets/img/12370887_915631405194065_3283729572659532007_o.jpg",
+    "metadata": {
+      "industry": ["Figure Drawing", "Illustration", "Animation"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Illustration", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "monochromatic"],
+      "subjectMatter": ["figure", "portrait"],
+      "techniqueVisible": ["sketchy", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0133",
+    "title": "Ivan — Character Design Progression",
+    "subtitle": "Step-by-step cartoon character design from sketch to final color",
+    "imageUrl": "assets/img/12371011_10208034026510507_1129827648384118289_o.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Animation", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["character", "figure", "portrait"],
+      "techniqueVisible": ["stylized", "graphic", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0134",
+    "title": "Cyborg Warrior — Ink Sketch",
+    "subtitle": "Dense ink linework sketch of a mechanical humanoid figure",
+    "imageUrl": "assets/img/12373322_10208177437063158_9053073801394129265_n.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["monochromatic", "dark", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "sci-fi", "armor"],
+      "techniqueVisible": ["linework-heavy", "detailed", "sketchy"]
+    }
+  },
+  {
+    "id": "ROOT-0135",
+    "title": "Warlock — Game Character Concept",
+    "subtitle": "Clean concept art of a magical armored character with energy orb",
+    "imageUrl": "assets/img/12374775_1084055171626941_1560139899199263991_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "pastel"],
+      "subjectMatter": ["character", "armor", "fantasy"],
+      "techniqueVisible": ["loose", "stylized", "sketchy"]
+    }
+  },
+  {
+    "id": "ROOT-0136",
+    "title": "Demonic Figure — Pencil Study",
+    "subtitle": "Highly detailed graphite sketch of a fantastical creature/demon",
+    "imageUrl": "assets/img/12375306_946484608769616_5440204187934731231_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art", "Figure Drawing"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "muted", "monochromatic"],
+      "subjectMatter": ["creature", "character", "figure", "fantasy"],
+      "techniqueVisible": ["detailed", "linework-heavy", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0137",
+    "title": "Bat-Winged Creature — Ink Drawing",
+    "subtitle": "Expressive sketchbook ink drawing of a winged beast with chained skull",
+    "imageUrl": "assets/img/12376289_10208177440303239_1926438942313791415_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["monochromatic", "dark", "high-contrast"],
+      "subjectMatter": ["creature", "character", "fantasy"],
+      "techniqueVisible": ["linework-heavy", "sketchy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0138",
+    "title": "Cyborg Soldier — Pen Sketch",
+    "subtitle": "Sketchbook ink drawing of an armored figure with mechanical arm",
+    "imageUrl": "assets/img/12376711_10208177438503194_3900721256059172988_n.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["monochromatic", "neutral", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "sci-fi", "armor"],
+      "techniqueVisible": ["linework-heavy", "sketchy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0139",
+    "title": "Eye Construction Study",
+    "subtitle": "Step-by-step graphite study demonstrating eye drawing stages",
+    "imageUrl": "assets/img/12391914_10208338336805528_4192009601023739273_n.jpg",
+    "metadata": {
+      "industry": ["Figure Drawing", "Illustration", "Portraits"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["monochromatic", "neutral", "muted"],
+      "subjectMatter": ["portrait", "figure"],
+      "techniqueVisible": ["detailed", "sketchy", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0140",
+    "title": "FFZero1 — Interior Concept Render",
+    "subtitle": "Faraday Future top-down concept design render of a futuristic cockpit",
+    "imageUrl": "assets/img/12400817_1040682059321960_1320284361611016036_n.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "high-contrast", "muted"],
+      "subjectMatter": ["vehicle", "mechanical", "interior", "sci-fi"],
+      "techniqueVisible": ["detailed", "graphic", "stylized"]
+    }
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0241",
+    "title": "Gunship Hover — Dark Mech Vehicle",
+    "subtitle": "Dark sci-fi gunship hovering over foggy terrain with detailed hard surface panelling",
+    "imageUrl": "assets/img/15288459_1319084198112450_9111522584104259080_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["vehicle", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0242",
+    "title": "Treehouse on Water — Fantasy Environment",
+    "subtitle": "Whimsical fantasy environment of treehouses built over calm water with lily pads and lush foliage",
+    "imageUrl": "assets/img/15288486_1555933997756900_8690322552060532252_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["cool", "analogous", "muted"],
+      "subjectMatter": ["landscape", "architecture"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0243",
+    "title": "Sci-Fi Fighter Jet — Aerial Combat",
+    "subtitle": "Detailed sci-fi fighter aircraft in flight above clouds with silver and red livery",
+    "imageUrl": "assets/img/15326093_10154791280167679_2071493217688531677_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["cool", "vibrant", "complementary"],
+      "subjectMatter": ["vehicle", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0244",
+    "title": "Hand Studies — Multiple Poses",
+    "subtitle": "Six rendered hand studies in varying poses with warm flesh tones on a neutral grey ground",
+    "imageUrl": "assets/img/15493843_1318211764905096_2671043443761761268_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "muted", "warm"],
+      "subjectMatter": ["figure"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0245",
+    "title": "Figure Construction Sketches — Male Anatomy",
+    "subtitle": "Three dynamic male figure constructions with visible construction lines and directional arrows",
+    "imageUrl": "assets/img/15540942_10154942883454903_4081709232547242570_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["figure"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0246",
+    "title": "Alien Creature Design Sheet — Digital Sketches",
+    "subtitle": "Four varied alien creature sketches in greyscale with loose gestural marks and directional hatching",
+    "imageUrl": "assets/img/15578190_561379090720000_181290368271227271_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["creature"],
+      "techniqueVisible": ["loose", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0247",
+    "title": "Full Figure Study Page — Male Anatomy",
+    "subtitle": "Dense sketchbook page of male figure studies at various scales including full body and torso close-ups",
+    "imageUrl": "assets/img/15585013_10154942883864903_1235174701405852992_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "warm", "muted"],
+      "subjectMatter": ["figure"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0248",
+    "title": "Dragon and Beast Head Design Sheet",
+    "subtitle": "Four creature head and full-body sketches including roaring dragon heads and a leaping sea monster",
+    "imageUrl": "assets/img/15585229_561379097386666_8790671957081539564_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature"],
+      "techniqueVisible": ["loose", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0249",
+    "title": "Portrait Construction Study Collection",
+    "subtitle": "Collection of Loomis-method head construction studies alongside rendered portrait sketches at various angles",
+    "imageUrl": "assets/img/15585444_10154942883379903_2211056344351010746_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "warm", "muted"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0250",
+    "title": "Avian Creature Design Sheet",
+    "subtitle": "Five avian-hybrid creature designs including a full-body raptor and multiple head studies with beaks and crests",
+    "imageUrl": "assets/img/15591312_561379094053333_7191150570007977996_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "animal"],
+      "techniqueVisible": ["loose", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0251",
+    "title": "Male Anatomy Construction — Front and Three-Quarter",
+    "subtitle": "Two large male torso constructions with directional arrows indicating form flow on cool grey-toned paper",
+    "imageUrl": "assets/img/15591350_10154942883359903_6251708007856473676_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["figure"],
+      "techniqueVisible": ["linework-heavy", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0252",
+    "title": "Anatomy Study Page with Labels — Dynamic Figure",
+    "subtitle": "Dense sketch page with a dynamic running male figure annotated with muscle-group labels alongside diagrams",
+    "imageUrl": "assets/img/15625740_10154942883554903_449339306712711766_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["figure"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0253",
+    "title": "Alien Warrior — Full Character Render",
+    "subtitle": "Fully rendered alien humanoid warrior with organic armour, glowing orange crest, and bioluminescent teal accents",
+    "imageUrl": "assets/img/15626260_10211688339313137_7082224794500977495_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "neutral", "high-contrast"],
+      "subjectMatter": ["figure", "creature"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0254",
+    "title": "Portrait Sketch Collection — Diverse Heads",
+    "subtitle": "Eight portrait sketches on warm toned paper showing diverse characters with construction arrows",
+    "imageUrl": "assets/img/15675799_10154942883584903_1572589751162400426_o.jpg",
+    "metadata": {
+      "industry": ["Education", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Illustration", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "muted", "neutral"],
+      "subjectMatter": ["portrait"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0255",
+    "title": "Imperial Shuttle Concept — Star Wars Environment",
+    "subtitle": "Monumental concept art of an Imperial-style shuttle with a stormtrooper figure for scale in misty environment",
+    "imageUrl": "assets/img/15723689_1441298772577458_7974120180875866197_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["vehicle", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0256",
+    "title": "Retro Concept Car — Front-Down View",
+    "subtitle": "Traditional marker rendering of a futuristic 1960s Cadillac concept car from a high front-down perspective",
+    "imageUrl": "assets/img/167526634_4122054301185534_2578862523665199020_n.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0257",
+    "title": "Retro Concept Car — Teal Low Angle",
+    "subtitle": "Traditional marker rendering of a sleek Imperial concept car in saturated teal against a near-black background",
+    "imageUrl": "assets/img/167549325_4122051404519157_8510390539856505363_n.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["cool", "vibrant", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROOT-0258",
+    "title": "Classic American Car Rendering — Red Background",
+    "subtitle": "Traditional airbrush rendering of a full-sized classic American car against a vivid red background",
+    "imageUrl": "assets/img/167995790_4121733397884291_4243586661973340233_n.jpg",
+    "metadata": {
+      "industry": ["Automotive Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["warm", "complementary", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["painterly", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0259",
+    "title": "Mech Robot Sketch — Blue Ink on Paper",
+    "subtitle": "Blue ballpoint pen mech robot character sketch on white paper with visible construction lines",
+    "imageUrl": "assets/img/16992221_10155135933568216_8738669859625639855_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["cool", "monochromatic"],
+      "subjectMatter": ["mechanical", "character"],
+      "techniqueVisible": ["linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0260",
+    "title": "Female Warrior Character — Concept Sketch",
+    "subtitle": "Full-body female warrior in mixed post-apocalyptic armour holding a blade, greyscale digital paint sketch",
+    "imageUrl": "assets/img/17017137_1594508803912161_7075516864980495721_o.jpg",
+    "metadata": {
+      "industry": ["Game Art", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["figure", "character"],
+      "techniqueVisible": ["painterly", "loose"]
+    }
+  }
+]

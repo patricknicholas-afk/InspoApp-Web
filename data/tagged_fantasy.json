@@ -1,0 +1,340 @@
+[
+  {
+    "id": "FAN-0001",
+    "title": "Dark Knight Versus Bone Dragon",
+    "subtitle": "Armoured warrior in black engraved plate diving onto a skeletal dragon creature, high-contrast ink-wash atmosphere",
+    "imageUrl": "assets/img/Fantasy/008_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "muted", "high-contrast"],
+      "subjectMatter": ["character", "creature", "fantasy", "armor"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "FAN-0002",
+    "title": "Winged Warlord on Throne — Legend of the Cryptids",
+    "subtitle": "Horned armoured warlord seated on a stone plinth with dark bat wings spread, gold and skull motifs, moody lighting",
+    "imageUrl": "assets/img/Fantasy/036_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "muted", "earthy"],
+      "subjectMatter": ["character", "fantasy", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0003",
+    "title": "Child and Dog Facing Cloud Giant",
+    "subtitle": "Boy with stick and small dog face a massive creature formed in storm clouds, vivid blue sky, painterly and hopeful",
+    "imageUrl": "assets/img/Fantasy/1009426_540275612676976_1525357948_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "vibrant", "high-contrast"],
+      "subjectMatter": ["figure", "creature", "landscape", "fantasy"],
+      "techniqueVisible": ["painterly", "atmospheric", "loose"]
+    }
+  },
+  {
+    "id": "FAN-0004",
+    "title": "Fantasy Beast Head — Feathered Dragon",
+    "subtitle": "Feathered serpent-dragon head bust in warm earth tones with sharp teeth and curling tail feathers, detailed texture study",
+    "imageUrl": "assets/img/Fantasy/1072588_607944262563224_1894421787_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "earthy", "muted"],
+      "subjectMatter": ["creature", "fantasy", "portrait"],
+      "techniqueVisible": ["painterly", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "FAN-0005",
+    "title": "Ice Dragon Bust — Cracked Stone Skin",
+    "subtitle": "Close portrait of a grey stone-skinned dragon head with glowing amber eye and gold-lava fissures, dramatic upward gaze",
+    "imageUrl": "assets/img/Fantasy/1078709_569369999786112_525251903_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "muted", "complementary"],
+      "subjectMatter": ["creature", "fantasy", "portrait"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "FAN-0006",
+    "title": "White Horned Dragon — Rune Scales",
+    "subtitle": "Elegant white dragon head and neck with ivory spiral horn, teal eye droplets and golden runic inscriptions on scales",
+    "imageUrl": "assets/img/Fantasy/1091156_569370079786104_1582117310_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "muted", "monochromatic"],
+      "subjectMatter": ["creature", "fantasy", "portrait"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "FAN-0007",
+    "title": "Purple Feathered Sorceress",
+    "subtitle": "Masked ethereal female figure in flowing purple feathered robes channelling arcane energy, pastel purple atmospheric background",
+    "imageUrl": "assets/img/Fantasy/306_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "pastel", "muted"],
+      "subjectMatter": ["character", "fantasy", "figure"],
+      "techniqueVisible": ["painterly", "atmospheric", "loose"]
+    }
+  },
+  {
+    "id": "FAN-0008",
+    "title": "Fantasy Chasm — Glowing Portal and Winged Guardian",
+    "subtitle": "Dramatic vertical environment with a winged figure on a ledge, teal portal light above, gold and green atmospheric depth",
+    "imageUrl": "assets/img/Fantasy/473_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["dark", "complementary", "high-contrast"],
+      "subjectMatter": ["architecture", "landscape", "fantasy", "character"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "FAN-0009",
+    "title": "Fire Dragon in Storm Clouds",
+    "subtitle": "Massive orange and black dragon with glowing maw banking through storm clouds, vibrant warm-cool colour contrast",
+    "imageUrl": "assets/img/Fantasy/523_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["creature", "fantasy", "landscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0010",
+    "title": "Three Armoured Warriors — Red Cape Trio",
+    "subtitle": "Three battle-worn warriors in ornate mixed armour with flowing red capes, front-on character lineup on pale ground",
+    "imageUrl": "assets/img/Fantasy/590_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "high-contrast", "warm"],
+      "subjectMatter": ["character", "figure", "fantasy", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "FAN-0011",
+    "title": "Angelic Warrior — Wings and Divine Sword",
+    "subtitle": "Female angel in golden armour soaring upward with wings spread and divine sword raised, warm sepia cloud atmosphere",
+    "imageUrl": "assets/img/Fantasy/59_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "warm", "muted"],
+      "subjectMatter": ["character", "fantasy", "figure", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0012",
+    "title": "Fantasy Forest — Cloaked Figure and Fae Spirit",
+    "subtitle": "Cloaked wanderer approaching a luminous fae spirit in a rich autumn forest, vibrant red-orange foliage and painterly depth",
+    "imageUrl": "assets/img/Fantasy/631_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Environment Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["landscape", "character", "fantasy", "nature"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "FAN-0013",
+    "title": "Dark Avian Demoness — Fire and Feathers",
+    "subtitle": "Tall dark demoness with feathered wings and red fire tendrils in a shadowy forest, cool-warm high-contrast dramatic lighting",
+    "imageUrl": "assets/img/Fantasy/633_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["dark", "complementary", "high-contrast"],
+      "subjectMatter": ["character", "fantasy", "figure", "creature"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "FAN-0014",
+    "title": "Dark Angel — Winged Armoured Warlord",
+    "subtitle": "Pale-haired winged warlord in heavy silver plate armour with skull buckler, dark wings, dramatic front-on pose",
+    "imageUrl": "assets/img/Fantasy/639_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["dark", "muted", "neutral"],
+      "subjectMatter": ["character", "fantasy", "figure", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0015",
+    "title": "Dragons Attack a City",
+    "subtitle": "Multiple dragons descending on a burning modern city, massive foreground creature looming over skyline in storm",
+    "imageUrl": "assets/img/Fantasy/673_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Environment Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["neutral", "muted", "dark"],
+      "subjectMatter": ["creature", "cityscape", "fantasy", "landscape"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "FAN-0016",
+    "title": "Winged Lion — Celestial Griffin",
+    "subtitle": "Regal lion with ornate feathered wings perched on a rocky crag, soft blue-green sky, delicate gold filigree armour",
+    "imageUrl": "assets/img/Fantasy/705_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "pastel", "warm"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "FAN-0017",
+    "title": "Dragon Rider — Armoured Knight on Serpent Dragon",
+    "subtitle": "Warrior in red-caped armour riding a massive feather-crested serpent dragon banking through cloudy skies",
+    "imageUrl": "assets/img/Fantasy/776_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["creature", "character", "fantasy", "landscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0018",
+    "title": "Battle Angel — Armour and Energy Bow",
+    "subtitle": "Female armoured angel in battle pose drawing an energy bow, white wings, warm golden light, vibrant pink and purple tones",
+    "imageUrl": "assets/img/Fantasy/795_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["character", "fantasy", "figure", "armor", "weapon"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0019",
+    "title": "Angelic Warrior — Spear and Shield Bearer",
+    "subtitle": "Tall silver-winged angelic being holding spear and shield, symmetrical frontal pose, cool muted painterly quality",
+    "imageUrl": "assets/img/Fantasy/827_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "neutral"],
+      "subjectMatter": ["character", "fantasy", "figure", "armor", "weapon"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "FAN-0020",
+    "title": "Dragon Head — ZBrush Sculpt",
+    "subtitle": "Greyscale ZBrush 3D sculpt of a roaring two-headed dragon with textured scales and open jaw, neutral grey background",
+    "imageUrl": "assets/img/Fantasy/831_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / 3D Sculpting", "3D Digital Art / Modeling & Sculpting / Creature Modeling"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["creature", "fantasy", "portrait"],
+      "techniqueVisible": ["detailed", "textured", "photorealistic"]
+    }
+  },
+  {
+    "id": "FAN-0021",
+    "title": "Oz River Fairy — Disney Concept Art",
+    "subtitle": "Winged reptilian river fairy creature from Oz the Great and Powerful, photorealistic 3D concept by Michael Kutsche",
+    "imageUrl": "assets/img/Fantasy/877_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Animation"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["warm", "muted", "earthy"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["photorealistic", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "FAN-0022",
+    "title": "Angel Warrior — Wings and Crossbow",
+    "subtitle": "Young female angel in ornate gold-trimmed armour holding a mechanical crossbow, large soft pink feathered wings",
+    "imageUrl": "assets/img/Fantasy/897_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["pastel", "warm", "neutral"],
+      "subjectMatter": ["character", "fantasy", "figure", "armor", "weapon"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "FAN-0023",
+    "title": "Dark Valkyrie — Armour and Energy Arrow",
+    "subtitle": "Red-haired dark female warrior in engraved plate armour drawing an energy arrow, dramatic pink-rose halo and flowing cloth",
+    "imageUrl": "assets/img/Fantasy/927_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "pastel", "high-contrast"],
+      "subjectMatter": ["character", "fantasy", "figure", "armor", "weapon"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0024",
+    "title": "Gabriel — Dark Winged Angel with Horn",
+    "subtitle": "Pale ethereal male angel named Gabriel with teal-black wings and white fur collar holding a ceremonial horn, moody grey tone",
+    "imageUrl": "assets/img/Fantasy/937_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "dark", "muted"],
+      "subjectMatter": ["character", "fantasy", "figure"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "FAN-0025",
+    "title": "Assassin's Creed III — Eagle and Hunter in Snow",
+    "subtitle": "Native American assassin receiving a bald eagle on his arm in a snowy winter forest, official Ubisoft concept painting",
+    "imageUrl": "assets/img/Fantasy/973_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "muted", "high-contrast"],
+      "subjectMatter": ["figure", "character", "landscape", "nature"],
+      "techniqueVisible": ["painterly", "atmospheric", "loose"]
+    }
+  },
+  {
+    "id": "FAN-0026",
+    "title": "Elven Warrior — Dark Forest Portrait",
+    "subtitle": "Dark-skinned elf with pointed ears and a crown, half-lit in teal shadow among dense foliage, loose impressionistic painting",
+    "imageUrl": "assets/img/Fantasy/elvenworrior.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["dark", "cool", "muted"],
+      "subjectMatter": ["character", "portrait", "fantasy"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric"]
+    }
+  }
+]

@@ -1,0 +1,457 @@
+[
+  {
+    "id": "ROBO-0071",
+    "title": "Halo Spartan Assault Key Art",
+    "subtitle": "Official key art for Halo: Spartan Assault featuring an armored Spartan in battle",
+    "imageUrl": "assets/img/Robotic/977137_10151504241093772_1587298764_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["cool", "muted", "high-contrast", "dark"],
+      "subjectMatter": ["character", "armor", "sci-fi", "figure"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0072",
+    "title": "Cyborg Head Studies",
+    "subtitle": "Monochromatic concept sketches of three cybernetic human heads with exposed mechanical components",
+    "imageUrl": "assets/img/Robotic/980343_10151487718346104_1728550016_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["character", "portrait", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "sketchy", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0073",
+    "title": "Heavy Armor Battle Suit",
+    "subtitle": "Fully rendered sci-fi heavy armor character holding a gatling-style weapon",
+    "imageUrl": "assets/img/Robotic/988_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "warm", "high-contrast"],
+      "subjectMatter": ["character", "armor", "mechanical", "sci-fi", "figure"],
+      "techniqueVisible": ["detailed", "painterly", "photorealistic", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0074",
+    "title": "Mech and Figure in Red and Grey",
+    "subtitle": "Dynamic composition of a figure resting atop fragmented mechanical wreckage in red and ivory tones",
+    "imageUrl": "assets/img/Robotic/994_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["complementary", "high-contrast", "warm", "cool"],
+      "subjectMatter": ["character", "mechanical", "figure", "sci-fi"],
+      "techniqueVisible": ["detailed", "stylized", "graphic", "linework-heavy"]
+    }
+  },
+  {
+    "id": "ROBO-0075",
+    "title": "A-17 Alien Mech Concept",
+    "subtitle": "Tall, slender alien-robot hybrid with glowing pink accents and organic tendrils",
+    "imageUrl": "assets/img/Robotic/A17_Final_JoasKleine.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["cool", "muted", "high-contrast", "dark"],
+      "subjectMatter": ["creature", "character", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0076",
+    "title": "Alpha NI Robot Head Close-Up",
+    "subtitle": "Dramatic close-up render of a white armored robot face with glowing blue and red accents",
+    "imageUrl": "assets/img/Robotic/AlphaNI-LowREs.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "dark", "high-contrast", "cool"],
+      "subjectMatter": ["mechanical", "portrait", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "photorealistic", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0077",
+    "title": "Joust — Teal and Yellow Mech Knight",
+    "subtitle": "Concept of a sleek bipedal mech with teal armor and glowing yellow energy cracks",
+    "imageUrl": "assets/img/Robotic/Joust.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "armor", "sci-fi", "figure"],
+      "techniqueVisible": ["painterly", "loose", "sketchy", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0078",
+    "title": "MASS-IV Heavy Tank Mech",
+    "subtitle": "Massive armored robot soldier with blue energy accents, painterly concept",
+    "imageUrl": "assets/img/Robotic/Mass-iv_Final3.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "dark", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "armor", "sci-fi", "figure"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0079",
+    "title": "StarCraft II Welcome Screen UI",
+    "subtitle": "In-game UI welcome screen featuring a Zerg creature background and Terran marine foreground",
+    "imageUrl": "assets/img/Robotic/Screen Shot 2013-04-27 at 11.55.53 AM.png",
+    "metadata": {
+      "industry": ["Game Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["warm", "dark", "high-contrast", "vibrant"],
+      "subjectMatter": ["character", "creature", "sci-fi", "architecture"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0080",
+    "title": "The Beast — Forest Mech Warrior",
+    "subtitle": "Dark armored creature-mech striding through a misty woodland",
+    "imageUrl": "assets/img/Robotic/The_beast_by_jamajurabaev.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["muted", "cool", "dark"],
+      "subjectMatter": ["creature", "character", "landscape", "sci-fi", "fantasy"],
+      "techniqueVisible": ["painterly", "atmospheric", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "ROBO-0081",
+    "title": "Dark Visor Mech — Cyan Glow",
+    "subtitle": "Low-key portrait of a faceted dark mech helmet with glowing cyan sensor lines",
+    "imageUrl": "assets/img/Robotic/a1f02fcdea09e13fc7f07e5a63e4dd92.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "cool", "monochromatic", "high-contrast"],
+      "subjectMatter": ["mechanical", "portrait", "sci-fi", "armor"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0082",
+    "title": "Flak Mech — Quadruped Walker",
+    "subtitle": "Heavy four-legged anti-aircraft mech with twin turrets, dark palette",
+    "imageUrl": "assets/img/Robotic/another_flak_mech_by_progv-d3kg8df.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["mechanical", "vehicle", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "sketchy", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0083",
+    "title": "Spider Tank — Steampunk Walker",
+    "subtitle": "Charming stylized spider-leg tank with warm earthy tones and decorative red band markings",
+    "imageUrl": "assets/img/Robotic/b4b0f0dc9bd3cdf7a54335502f3dc8a0.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["earthy", "warm", "muted", "neutral"],
+      "subjectMatter": ["mechanical", "vehicle", "sci-fi"],
+      "techniqueVisible": ["stylized", "textured", "detailed", "painterly"]
+    }
+  },
+  {
+    "id": "ROBO-0084",
+    "title": "Black Hawk Helicopter — Reference Photo",
+    "subtitle": "Photographic reference of a US Navy SH-60 Black Hawk helicopter in flight over water",
+    "imageUrl": "assets/img/Robotic/black-hawk-15.jpg",
+    "metadata": {
+      "industry": ["Industrial Design"],
+      "mediumTags": ["3D Digital Art / Rendering / Photorealistic Rendering"],
+      "colorPalette": ["cool", "muted", "neutral"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["photorealistic"]
+    }
+  },
+  {
+    "id": "ROBO-0085",
+    "title": "Robot Bust — Side Profile",
+    "subtitle": "Highly detailed 3D-rendered metallic robot bust in profile view against a black background",
+    "imageUrl": "assets/img/Robotic/david_lesperance_01.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Hard Surface Modeling", "3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Texturing & Surfacing / PBR Texturing"],
+      "colorPalette": ["neutral", "dark", "monochromatic", "high-contrast"],
+      "subjectMatter": ["mechanical", "portrait", "sci-fi", "armor"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0086",
+    "title": "Robot Bust — Front Profile",
+    "subtitle": "Front-facing 3D render of a menacing black and silver robot bust with multiple glowing red eyes",
+    "imageUrl": "assets/img/Robotic/david_lesperance_02.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / Hard Surface Modeling", "3D Digital Art / Rendering / Photorealistic Rendering", "3D Digital Art / Texturing & Surfacing / PBR Texturing"],
+      "colorPalette": ["dark", "neutral", "high-contrast", "monochromatic"],
+      "subjectMatter": ["mechanical", "portrait", "sci-fi", "armor"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0087",
+    "title": "Death's Mech — Glowing Face Armor",
+    "subtitle": "Close-up digital painting of a skull-like mech face with glowing red, blue, and green energy",
+    "imageUrl": "assets/img/Robotic/deaths1.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "cool", "high-contrast", "muted"],
+      "subjectMatter": ["mechanical", "portrait", "sci-fi", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0088",
+    "title": "Cybernetic Spine — Figure Study",
+    "subtitle": "Photo-manipulated image of a woman's bare back with glowing blue mechanical spine implant",
+    "imageUrl": "assets/img/Robotic/e476c84e6b6d4c011d1bea3da9bc09fa.jpg",
+    "metadata": {
+      "industry": ["Digital Painting", "Concept Art", "Illustration"],
+      "mediumTags": ["Hybrid 2D/3D / Hybrid Workflows / Overpaint", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["cool", "dark", "muted", "high-contrast"],
+      "subjectMatter": ["figure", "portrait", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0089",
+    "title": "UAF Army Giant Mech Walkers",
+    "subtitle": "Scale concept showing two massive boxy military mech walkers dwarfing a suited soldier",
+    "imageUrl": "assets/img/Robotic/gallery_student_intro_to_design_pg2_30.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["cool", "neutral", "muted"],
+      "subjectMatter": ["mechanical", "vehicle", "sci-fi", "figure"],
+      "techniqueVisible": ["detailed", "stylized", "painterly"]
+    }
+  },
+  {
+    "id": "ROBO-0090",
+    "title": "Ghost in the Shell — Silhouette Figure",
+    "subtitle": "Bold black silhouette illustration of a cybernetic female figure mid-fall with exposed mechanical internals",
+    "imageUrl": "assets/img/Robotic/ghost_in_a_shell_by_Perrozzino.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Character Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["monochromatic", "high-contrast", "neutral"],
+      "subjectMatter": ["character", "figure", "mechanical", "sci-fi"],
+      "techniqueVisible": ["graphic", "linework-heavy", "minimal", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0091",
+    "title": "Ruined Gate — Mech Combat Scene",
+    "subtitle": "Dramatic sci-fi environment painting of soldiers and mechs fighting through a crumbling archway",
+    "imageUrl": "assets/img/Robotic/illfill_03.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["warm", "high-contrast", "complementary", "dark"],
+      "subjectMatter": ["architecture", "character", "mechanical", "sci-fi", "landscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0092",
+    "title": "Mech Beast — Rain-Soaked Cityscape Battle",
+    "subtitle": "Energetic concept painting of a towering mech creature rampaging through a rain-drenched industrial city",
+    "imageUrl": "assets/img/Robotic/illfill_04.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Environment Illustration"],
+      "colorPalette": ["cool", "high-contrast", "dark", "muted"],
+      "subjectMatter": ["mechanical", "creature", "cityscape", "sci-fi", "architecture"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "ROBO-0093",
+    "title": "Mech Walker 181 — Snow Terrain",
+    "subtitle": "Large pod-bodied bipedal mech walker on a snowy landscape with tiny soldiers for scale",
+    "imageUrl": "assets/img/Robotic/joas_kleine_02.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Industrial Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["cool", "neutral", "muted", "high-contrast"],
+      "subjectMatter": ["mechanical", "vehicle", "landscape", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0094",
+    "title": "A-17 Alien Mech — Variant View",
+    "subtitle": "Alternate angle of the A-17 slender alien mech concept with glowing pink accents",
+    "imageUrl": "assets/img/Robotic/joas_kleine_03.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["cool", "muted", "dark", "high-contrast"],
+      "subjectMatter": ["creature", "character", "mechanical", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0095",
+    "title": "MASS-IV — Portrait Crop",
+    "subtitle": "Tighter portrait composition of the MASS-IV heavy mech with glowing blue highlights amid embers",
+    "imageUrl": "assets/img/Robotic/joas_kleine_04.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["dark", "cool", "muted", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "armor", "sci-fi"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0096",
+    "title": "Quadruped Heavy Assault Mech",
+    "subtitle": "Bulky four-legged combat mech with a stooped posture and a lone soldier for scale",
+    "imageUrl": "assets/img/Robotic/just_another_mech_by_progv-d4hg3g2.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["neutral", "dark", "muted"],
+      "subjectMatter": ["mechanical", "vehicle", "sci-fi"],
+      "techniqueVisible": ["painterly", "sketchy", "loose", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0097",
+    "title": "Transformers Marauder Bot",
+    "subtitle": "Concept of a red bulky Marauder Bot in a dusty desert environment",
+    "imageUrl": "assets/img/Robotic/marauder_bot_by_progv-d46f3mr.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "earthy", "high-contrast"],
+      "subjectMatter": ["mechanical", "character", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "loose", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0098",
+    "title": "Electric Scythe Mech — Blue Storm",
+    "subtitle": "Intense digital painting of a dark armored mech wielding lightning-charged blades in a blue stormy scene",
+    "imageUrl": "assets/img/Robotic/nicolas_thomas_01.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "vibrant", "dark", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "weapon", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0099",
+    "title": "Combat Suit — Misted Back View",
+    "subtitle": "Detailed sci-fi soldier suit seen from behind with orange accents on dark plating in white haze",
+    "imageUrl": "assets/img/Robotic/nivanh_02.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "muted", "cool", "high-contrast"],
+      "subjectMatter": ["character", "armor", "mechanical", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0100",
+    "title": "Tactical Helmet — Desert Soldier",
+    "subtitle": "Side-on view of a near-future desert soldier with a hi-tech black and orange tactical helmet",
+    "imageUrl": "assets/img/Robotic/nivanh_03.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "neutral", "muted", "high-contrast"],
+      "subjectMatter": ["character", "portrait", "armor", "mechanical", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "stylized", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0101",
+    "title": "Yellow Robot Head — Profile Study",
+    "subtitle": "Clean concept of a yellow and black robot head in profile with visible internal mechanics",
+    "imageUrl": "assets/img/Robotic/nivanh_04.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["warm", "neutral", "high-contrast", "muted"],
+      "subjectMatter": ["mechanical", "portrait", "sci-fi"],
+      "techniqueVisible": ["detailed", "painterly", "stylized", "textured"]
+    }
+  },
+  {
+    "id": "ROBO-0102",
+    "title": "Levitating Mech Soldier",
+    "subtitle": "Streamlined white and pink mech figure hovering in mid-air with a large shoulder-mounted weapon",
+    "imageUrl": "assets/img/Robotic/nivanh_07.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "muted", "cool", "high-contrast"],
+      "subjectMatter": ["character", "mechanical", "armor", "sci-fi", "figure"],
+      "techniqueVisible": ["painterly", "loose", "sketchy", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0103",
+    "title": "Chrome Robot Head — Looking Up",
+    "subtitle": "Moody close-up of a polished silver robot head tilted upward with a single glowing cyan accent",
+    "imageUrl": "assets/img/Robotic/robots.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neutral", "dark", "monochromatic", "high-contrast"],
+      "subjectMatter": ["mechanical", "portrait", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "ROBO-0104",
+    "title": "Bio-Mech Dragon in Sky Battle",
+    "subtitle": "Epic scene of a hybrid organic-mechanical dragon mech with multiple cannons fighting in a cloudy sky",
+    "imageUrl": "assets/img/Robotic/toshiaki_01.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["cool", "vibrant", "high-contrast", "complementary"],
+      "subjectMatter": ["creature", "mechanical", "vehicle", "landscape", "sci-fi", "fantasy"],
+      "techniqueVisible": ["detailed", "painterly", "stylized", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROBO-0105",
+    "title": "Gundam Squad — Red and Teal Mechs",
+    "subtitle": "Row of angular Gundam-style mechs in red, orange, and teal with energy beam effects",
+    "imageUrl": "assets/img/Robotic/toshiaki_04.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["vibrant", "complementary", "warm", "high-contrast"],
+      "subjectMatter": ["mechanical", "character", "sci-fi"],
+      "techniqueVisible": ["detailed", "stylized", "cel-shaded", "graphic"]
+    }
+  }
+]

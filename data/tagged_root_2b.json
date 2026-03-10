@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ROOT-0101",
+    "title": "Crimson Mech — Front & Back",
+    "subtitle": "Hard surface robot concept shown from two angles with red and black panel design",
+    "imageUrl": "assets/img/12239163_135455830149977_2807674309856922770_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["high-contrast", "dark", "complementary"],
+      "subjectMatter": ["mechanical", "sci-fi", "character"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0102",
+    "title": "Alien Mushroom World",
+    "subtitle": "Lone armored figure dwarfed by colossal alien fungi in a warm alien landscape",
+    "imageUrl": "assets/img/12239456_1242094562483548_4093688165228619259_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["warm", "earthy", "atmospheric"],
+      "subjectMatter": ["landscape", "sci-fi", "figure", "nature"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed", "loose"]
+    }
+  },
+  {
+    "id": "ROOT-0103",
+    "title": "Art Nouveau Portrait — Iris Garden",
+    "subtitle": "Elegant woman in a flowing gown surrounded by iris flowers and an ornamental arch",
+    "imageUrl": "assets/img/12239740_10154430993452575_639342584351022829_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Character Design", "Portraits"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["pastel", "muted", "monochromatic"],
+      "subjectMatter": ["portrait", "figure", "nature"],
+      "techniqueVisible": ["linework-heavy", "stylized", "detailed", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0104",
+    "title": "Lightning Ball — Dark Knight",
+    "subtitle": "Armored fantasy warrior conjuring lightning against a dark atmospheric background",
+    "imageUrl": "assets/img/12240976_1103933869637334_4204588293330411009_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "high-contrast", "warm"],
+      "subjectMatter": ["character", "armor", "fantasy"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "sketchy"]
+    }
+  },
+  {
+    "id": "ROOT-0105",
+    "title": "Rocky Coastline at Dusk",
+    "subtitle": "Dramatic digital plein air of jagged rocks and a lone sailboat bathed in red and teal light",
+    "imageUrl": "assets/img/12241084_10206214898345750_7670028484003677846_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["complementary", "high-contrast", "cool"],
+      "subjectMatter": ["landscape", "architecture"],
+      "techniqueVisible": ["painterly", "loose", "atmospheric", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0106",
+    "title": "Saber-Toothed Cat — Roaring Portrait",
+    "subtitle": "Expressive digital painting of a snarling saber-toothed feline with loose brushwork",
+    "imageUrl": "assets/img/12241094_10207660575653508_2215747377921868334_o.jpg",
+    "metadata": {
+      "industry": ["Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "earthy", "neutral"],
+      "subjectMatter": ["creature", "portrait"],
+      "techniqueVisible": ["painterly", "loose", "textured", "atmospheric"]
+    }
+  },
+  {
+    "id": "ROOT-0107",
+    "title": "G-Kick Jeronimo — Anthro Street Fighter",
+    "subtitle": "Full-body character sheet of an anthropomorphic fox in post-apocalyptic street gear",
+    "imageUrl": "assets/img/12241787_10153549096793311_459011215857134178_n.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Illustration", "Animation"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["muted", "neutral"],
+      "subjectMatter": ["character", "creature", "weapon"],
+      "techniqueVisible": ["linework-heavy", "stylized", "graphic", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0108",
+    "title": "Forest Bears — Enchanted Glade",
+    "subtitle": "Stylized bears in a luminous purple-pink forest clearing with soft atmospheric lighting",
+    "imageUrl": "assets/img/12244818_10208341117112168_8884557620852386404_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Animation", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "pastel", "atmospheric"],
+      "subjectMatter": ["landscape", "creature", "nature", "fantasy"],
+      "techniqueVisible": ["painterly", "stylized", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "ROOT-0109",
+    "title": "Kimono Warrior — Sozomaika",
+    "subtitle": "Commanding character in layered teal kimono against a bold red background",
+    "imageUrl": "assets/img/12247011_1659674960981877_17772091217712927_n.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["complementary", "vibrant", "high-contrast"],
+      "subjectMatter": ["character", "portrait", "figure"],
+      "techniqueVisible": ["painterly", "stylized", "detailed", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0110",
+    "title": "Hugo Lam Mech Suit — Orange Arm",
+    "subtitle": "Sci-fi character design featuring a dark mech suit with a single vivid orange mechanical arm",
+    "imageUrl": "assets/img/12247801_10153682628721069_4689543424689325757_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Character Design", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "high-contrast", "complementary"],
+      "subjectMatter": ["character", "mechanical", "sci-fi", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "photorealistic", "stylized"]
+    }
+  },
+  {
+    "id": "ROOT-0111",
+    "title": "Anatomical Study — Movements of the Waist",
+    "subtitle": "Multi-view technical figure drawing showing torso musculature in flexion, extension, and lateral motion",
+    "imageUrl": "assets/img/12248127_1674385616169649_2129224546438493831_o.jpg",
+    "metadata": {
+      "industry": ["Figure Drawing", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["figure", "portrait"],
+      "techniqueVisible": ["linework-heavy", "detailed", "sketchy", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0112",
+    "title": "Fullmetal Alchemist Fan Art — Edward & Alphonse",
+    "subtitle": "Dynamic manga-inspired illustration of Edward in mid-action with Alphonse armor looming behind",
+    "imageUrl": "assets/img/12248151_963030867125203_3798933565597714766_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Character Design", "Animation"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Comic/Manga Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "high-contrast", "earthy"],
+      "subjectMatter": ["character", "figure", "armor"],
+      "techniqueVisible": ["painterly", "loose", "stylized", "sketchy"]
+    }
+  },
+  {
+    "id": "ROOT-0113",
+    "title": "Classic Muscle Car Sketch — Bill Porter",
+    "subtitle": "Traditional charcoal rendering of a front-quarter view of a classic American muscle car",
+    "imageUrl": "assets/img/12249704_854404084672686_1622954236631349307_n.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["sketchy", "detailed", "loose", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0114",
+    "title": "Viking Fjord at Golden Hour",
+    "subtitle": "Wide landscape of a Viking longship sailing through a dramatic snow-capped fjord at dusk",
+    "imageUrl": "assets/img/12265782_10206214898385751_6586526609825357264_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Environment Illustration", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["warm", "cool", "complementary", "atmospheric"],
+      "subjectMatter": ["landscape", "vehicle", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0115",
+    "title": "Renault Concept — Sketch to Render",
+    "subtitle": "Two-stage automotive design sheet showing a pencil sketch alongside a finished digital render",
+    "imageUrl": "assets/img/12278642_10153288269607055_2173653590219694895_n.jpg",
+    "metadata": {
+      "industry": ["Car Design", "Industrial Design", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Mixed 2D Techniques / Digital Airbrushing"],
+      "colorPalette": ["neutral", "high-contrast", "dark"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["sketchy", "detailed", "photorealistic", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0116",
+    "title": "Beast Within — Venom Girl",
+    "subtitle": "Vibrant pop-art illustration of a pink-haired girl dancing with a symbiote creature on teal",
+    "imageUrl": "assets/img/12279105_1643894062549613_4042695256226711855_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Character Design", "Animation"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["vibrant", "complementary", "high-contrast", "neon"],
+      "subjectMatter": ["character", "creature", "figure"],
+      "techniqueVisible": ["painterly", "stylized", "loose", "textured"]
+    }
+  },
+  {
+    "id": "ROOT-0117",
+    "title": "The Falconer — Alpine Summit",
+    "subtitle": "Epic fantasy figure with a falcon on a vast snow-covered mountain at alpenglow",
+    "imageUrl": "assets/img/12291269_10207173602886152_6301809697975238723_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Environment Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Matte Painting"],
+      "colorPalette": ["cool", "pastel", "atmospheric", "warm"],
+      "subjectMatter": ["landscape", "figure", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "photorealistic"]
+    }
+  },
+  {
+    "id": "ROOT-0118",
+    "title": "Fantasy Party — Stained Glass Medallion",
+    "subtitle": "Group of four fantasy characters arranged within an ornate circular stained-glass motif",
+    "imageUrl": "assets/img/12291818_10207794923291814_2431961287326286832_o.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Game Design", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["vibrant", "complementary", "dark"],
+      "subjectMatter": ["character", "creature", "fantasy"],
+      "techniqueVisible": ["stylized", "detailed", "painterly", "graphic"]
+    }
+  },
+  {
+    "id": "ROOT-0119",
+    "title": "Dragon and Girl — Ink Watercolor",
+    "subtitle": "Delicate watercolor and ink illustration of a girl embracing a coiling dragon in a tree",
+    "imageUrl": "assets/img/12295450_907942122589048_8313477013314050174_n.jpg",
+    "metadata": {
+      "industry": ["Illustration", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Line Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["muted", "pastel", "neutral"],
+      "subjectMatter": ["creature", "character", "figure", "fantasy"],
+      "techniqueVisible": ["linework-heavy", "loose", "textured", "minimal"]
+    }
+  },
+  {
+    "id": "ROOT-0120",
+    "title": "Tracked Motorcycle — 1939 Reference Photo",
+    "subtitle": "Black and white historical photograph of a 1939 tracked motorcycle with onlookers",
+    "imageUrl": "assets/img/12304359_994094563993581_1569438868318065601_o.jpg",
+    "metadata": {
+      "industry": ["Industrial Design", "Car Design"],
+      "mediumTags": ["2D Digital Art / Mixed 2D Techniques / Photobashing"],
+      "colorPalette": ["monochromatic", "neutral", "high-contrast"],
+      "subjectMatter": ["vehicle", "mechanical"],
+      "techniqueVisible": ["photorealistic", "textured", "detailed"]
+    }
+  }
+]

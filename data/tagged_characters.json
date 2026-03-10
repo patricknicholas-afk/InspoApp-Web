@@ -1,0 +1,756 @@
+[
+  {
+    "id": "CHAR-0001",
+    "title": "Divine Emissary",
+    "subtitle": "Cosmic superhero with glowing halo and ornate armour crossing bladed arms",
+    "imageUrl": "assets/img/Characters/000_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "high-contrast", "dark", "vibrant"],
+      "subjectMatter": ["character", "figure", "sci-fi", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0002",
+    "title": "Deep Sea Horror",
+    "subtitle": "Large biomechanical sea monster with iridescent spines and scaled flesh",
+    "imageUrl": "assets/img/Characters/061_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["muted", "cool", "dark"],
+      "subjectMatter": ["creature", "fantasy", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "textured", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0003",
+    "title": "Steampunk Mercenary Girl",
+    "subtitle": "Seated female character with spiked pack and mechanical spider legs on white ground",
+    "imageUrl": "assets/img/Characters/070_large.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "earthy", "muted"],
+      "subjectMatter": ["character", "figure", "mechanical"],
+      "techniqueVisible": ["loose", "sketchy", "painterly"]
+    }
+  },
+  {
+    "id": "CHAR-0004",
+    "title": "Anthropomorphic Fox Busts",
+    "subtitle": "Three stylised fox warrior busts in steampunk gear with orange and teal accents",
+    "imageUrl": "assets/img/Characters/1073265_10201592356909618_816284181_o.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "muted", "complementary"],
+      "subjectMatter": ["character", "portrait", "fantasy"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0005",
+    "title": "Cyberpunk Street Rider",
+    "subtitle": "Female sci-fi character on wheeled board with bionic arm in foggy urban street",
+    "imageUrl": "assets/img/Characters/117_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["muted", "cool", "neutral"],
+      "subjectMatter": ["character", "figure", "sci-fi", "cityscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0006",
+    "title": "Hooded Warrior Speedpaint",
+    "subtitle": "Gestural digital speedpaint of a cloaked fighter with staff in stormy colours",
+    "imageUrl": "assets/img/Characters/11_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Digital Painting", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Mixed 2D Techniques / Speedpainting"],
+      "colorPalette": ["muted", "earthy", "dark"],
+      "subjectMatter": ["character", "figure", "fantasy"],
+      "techniqueVisible": ["loose", "painterly", "sketchy"]
+    }
+  },
+  {
+    "id": "CHAR-0007",
+    "title": "Realistic Gyarados Sculpt",
+    "subtitle": "Front and back 3D render of a realistically redesigned serpentine Gyarados",
+    "imageUrl": "assets/img/Characters/122_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Game Design", "Concept Art"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / 3D Sculpting", "3D Digital Art / Rendering / Photorealistic Rendering"],
+      "colorPalette": ["cool", "neutral", "dark"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["photorealistic", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "CHAR-0008",
+    "title": "Pico the Mechanic",
+    "subtitle": "Multi-pose character sheet of a chibi mech-winged boy in action stances",
+    "imageUrl": "assets/img/Characters/164_large.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Illustration", "Animation", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Comic/Manga Art"],
+      "colorPalette": ["neutral", "muted", "cool"],
+      "subjectMatter": ["character", "figure", "mechanical", "sci-fi"],
+      "techniqueVisible": ["loose", "stylized", "sketchy", "linework-heavy"]
+    }
+  },
+  {
+    "id": "CHAR-0009",
+    "title": "Mystic Warrior Ascendant",
+    "subtitle": "Dynamic figure of a monk warrior floating with robe, beads, and dark energy swirl",
+    "imageUrl": "assets/img/Characters/278_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["high-contrast", "neutral", "dark"],
+      "subjectMatter": ["character", "figure", "fantasy"],
+      "techniqueVisible": ["detailed", "painterly", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0010",
+    "title": "Dragon Rider Aerial",
+    "subtitle": "Tiny rider atop a massive stone-scaled dragon soaring through mountain smoke",
+    "imageUrl": "assets/img/Characters/301_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["muted", "neutral", "earthy"],
+      "subjectMatter": ["creature", "character", "landscape", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0011",
+    "title": "Elemental Ice Wraith",
+    "subtitle": "Blue crystalline spirit rising from burning ruins with an ice dragon skull below",
+    "imageUrl": "assets/img/Characters/314_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "high-contrast", "complementary"],
+      "subjectMatter": ["character", "creature", "fantasy", "landscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0012",
+    "title": "Reptilian Alien Warrior",
+    "subtitle": "Bipedal blue reptile alien standing with dual golden blades on white ground",
+    "imageUrl": "assets/img/Characters/338_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "neutral"],
+      "subjectMatter": ["character", "creature", "sci-fi", "figure"],
+      "techniqueVisible": ["painterly", "stylized", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0013",
+    "title": "Steampunk Diver",
+    "subtitle": "Rotund character in antique brass diving suit with purple helmet and backpack",
+    "imageUrl": "assets/img/Characters/347_large.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "earthy", "muted"],
+      "subjectMatter": ["character", "figure", "mechanical"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "CHAR-0014",
+    "title": "Steampunk Character Lineup",
+    "subtitle": "Five stylised steampunk characters including a gunslinger, mechasuit pilot, and strongman",
+    "imageUrl": "assets/img/Characters/396_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration", "Animation"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "muted", "earthy"],
+      "subjectMatter": ["character", "figure", "mechanical", "fantasy"],
+      "techniqueVisible": ["stylized", "loose", "painterly"]
+    }
+  },
+  {
+    "id": "CHAR-0015",
+    "title": "Black and Yellow Cyber Assassin",
+    "subtitle": "Sleek female cyborg in yellow and black latex suit holding a blade with laser eye",
+    "imageUrl": "assets/img/Characters/438_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["high-contrast", "dark", "warm", "complementary"],
+      "subjectMatter": ["character", "figure", "sci-fi"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "CHAR-0016",
+    "title": "Ice Demon Lord",
+    "subtitle": "Towering horned demon warrior clad in dark armour with jagged ice crystal wings and blade",
+    "imageUrl": "assets/img/Characters/530_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "dark", "high-contrast"],
+      "subjectMatter": ["character", "creature", "fantasy", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0017",
+    "title": "Cyberpunk Samurai",
+    "subtitle": "Young male with neon mohawk holding a katana in a glowing neon alleyway",
+    "imageUrl": "assets/img/Characters/540_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["neon", "dark", "complementary", "vibrant"],
+      "subjectMatter": ["character", "figure", "sci-fi", "cityscape"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0018",
+    "title": "Creature and Character Sketch Sheet",
+    "subtitle": "Monochrome pencil sketch page of alien creatures, robots, and monstrous heads",
+    "imageUrl": "assets/img/Characters/560_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "character", "sci-fi", "fantasy", "mechanical"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0019",
+    "title": "Tactical Grunt Variants",
+    "subtitle": "Four grayscale concept variations of a heavily armoured sci-fi infantry soldier",
+    "imageUrl": "assets/img/Characters/566_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor"],
+      "techniqueVisible": ["stylized", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0020",
+    "title": "Surreal Figure on Boat Headdress",
+    "subtitle": "Monochromatic fantasy goddess figure balancing on a boat-shaped headdress with wire threads",
+    "imageUrl": "assets/img/Characters/621897_388450567884388_1910151443_o.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["neutral", "monochromatic", "muted"],
+      "subjectMatter": ["character", "figure", "fantasy", "abstract"],
+      "techniqueVisible": ["detailed", "minimal", "graphic"]
+    }
+  },
+  {
+    "id": "CHAR-0021",
+    "title": "Giant Turtle in Waterfall Landscape",
+    "subtitle": "Panoramic fantasy environment featuring an enormous sea turtle wading through turquoise waterfalls",
+    "imageUrl": "assets/img/Characters/655_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration", "Environment Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "vibrant", "monochromatic"],
+      "subjectMatter": ["creature", "landscape", "nature", "fantasy"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0022",
+    "title": "Tydus Torso Exploration — Shadow Set",
+    "subtitle": "Three dark fantasy character torso concepts labelled Shadow Trigger, Destroyer, and Spectre",
+    "imageUrl": "assets/img/Characters/665_large.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["dark", "muted", "cool"],
+      "subjectMatter": ["character", "fantasy", "armor"],
+      "techniqueVisible": ["loose", "stylized", "painterly", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0023",
+    "title": "Mech Titan and Android Companion",
+    "subtitle": "Ink and wash sketch of a massive war mech beside a delicate android female figure",
+    "imageUrl": "assets/img/Characters/68_tid_02=.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "cool", "monochromatic"],
+      "subjectMatter": ["character", "mechanical", "figure", "sci-fi"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0024",
+    "title": "Sci-Fi Vehicle and Mech Sketches",
+    "subtitle": "Technical sketch page of giant mechs, armoured vehicle, and sci-fi tower structures",
+    "imageUrl": "assets/img/Characters/68_tid_03 - Copy.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Technical Illustration", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["mechanical", "vehicle", "architecture", "sci-fi"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0025",
+    "title": "Horned Beast Ink Drawing",
+    "subtitle": "Densely detailed pen-and-ink drawing of a massive bull-horned armoured monster creature",
+    "imageUrl": "assets/img/Characters/68_tid_04=.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Illustration", "Character Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Line Art"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["linework-heavy", "detailed", "textured"]
+    }
+  },
+  {
+    "id": "CHAR-0026",
+    "title": "Deity and Temple Sketch Study",
+    "subtitle": "Pencil sketch page with a Buddhist-inspired landscape thumbnail and a charging deity figure",
+    "imageUrl": "assets/img/Characters/68_tid_06=.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["character", "creature", "figure", "landscape", "fantasy"],
+      "techniqueVisible": ["sketchy", "linework-heavy", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0027",
+    "title": "Barbarian Warlord Pencil Study",
+    "subtitle": "Detailed pencil sketch of a hulking bald warrior in ornate plate armour with huge axe",
+    "imageUrl": "assets/img/Characters/68_tid_07=.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration", "Figure Drawing"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["character", "figure", "fantasy", "armor"],
+      "techniqueVisible": ["sketchy", "detailed", "linework-heavy"]
+    }
+  },
+  {
+    "id": "CHAR-0028",
+    "title": "Fantasy Figure Trio Sketch",
+    "subtitle": "Pencil composition of three fantasy figures — a muscular male, a floating nude form, and a female bust",
+    "imageUrl": "assets/img/Characters/68_tid_16=.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Figure Drawing", "Illustration", "Concept Art"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Character Illustration", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["character", "figure", "portrait", "fantasy"],
+      "techniqueVisible": ["sketchy", "loose", "linework-heavy"]
+    }
+  },
+  {
+    "id": "CHAR-0029",
+    "title": "Spider-Dinosaur and Dragon Head Sketches",
+    "subtitle": "Pencil sketches of a hybrid spider-sauropod creature and a roaring dragon head",
+    "imageUrl": "assets/img/Characters/68_tid_19=.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["sketchy", "detailed", "linework-heavy"]
+    }
+  },
+  {
+    "id": "CHAR-0030",
+    "title": "Tydus Character Variants — Colour Set",
+    "subtitle": "Four sci-fi/fantasy torso character concepts: Babylon, Eclipse, Pulse, and Pulse V2",
+    "imageUrl": "assets/img/Characters/713_large.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["muted", "cool", "dark", "complementary"],
+      "subjectMatter": ["character", "fantasy", "sci-fi", "armor"],
+      "techniqueVisible": ["loose", "stylized", "painterly"]
+    }
+  },
+  {
+    "id": "CHAR-0031",
+    "title": "Sci-Fi Female Soldier",
+    "subtitle": "Female soldier in tactical armour holding a large futuristic gun on a bold red background",
+    "imageUrl": "assets/img/Characters/765_large.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "high-contrast", "dark"],
+      "subjectMatter": ["character", "figure", "sci-fi", "weapon"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0032",
+    "title": "Fantasy Creature and Character Sheet",
+    "subtitle": "Diverse concept sheet with a Viking warrior, dragon, honey badger creature, and wolf mount",
+    "imageUrl": "assets/img/Characters/781_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["warm", "vibrant", "complementary"],
+      "subjectMatter": ["character", "creature", "fantasy"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0033",
+    "title": "Fire Demon Eruption",
+    "subtitle": "Incandescent fire demon bursting from a cavern maw with glowing magma core",
+    "imageUrl": "assets/img/Characters/802_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "high-contrast", "dark", "vibrant"],
+      "subjectMatter": ["creature", "character", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0034",
+    "title": "Creature Figure Study",
+    "subtitle": "Painterly close-up of a pale humanoid creature with a bestial face and bloody wound",
+    "imageUrl": "assets/img/Characters/804_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Figure Drawing"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "muted", "dark"],
+      "subjectMatter": ["creature", "figure", "fantasy"],
+      "techniqueVisible": ["painterly", "loose", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0035",
+    "title": "Tactical Panel Armour Concept",
+    "subtitle": "Side-by-side grayscale annotated character concept of Trooper and Pilot armour types",
+    "imageUrl": "assets/img/Characters/830_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor"],
+      "techniqueVisible": ["detailed", "graphic", "stylized"]
+    }
+  },
+  {
+    "id": "CHAR-0036",
+    "title": "Spotted Blue Creature",
+    "subtitle": "Cute round blue creature with dark spots and stubby claws on white background",
+    "imageUrl": "assets/img/Characters/833_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["cool", "muted", "neutral"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0037",
+    "title": "Armoured Angel Levitating",
+    "subtitle": "Sci-fi armoured deity floating with a glowing halo and flowing red cape in clouds",
+    "imageUrl": "assets/img/Characters/847_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "high-contrast", "complementary", "vibrant"],
+      "subjectMatter": ["character", "figure", "sci-fi", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0038",
+    "title": "Ethereal Female Portrait",
+    "subtitle": "Minimalist digital painting of a blonde woman in profile with loose brushwork",
+    "imageUrl": "assets/img/Characters/883430_511034475619665_530688531_o.jpg",
+    "metadata": {
+      "industry": ["Digital Painting", "Illustration", "Portraits"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Digital Illustration"],
+      "colorPalette": ["neutral", "muted", "pastel"],
+      "subjectMatter": ["portrait", "figure"],
+      "techniqueVisible": ["painterly", "loose", "minimal"]
+    }
+  },
+  {
+    "id": "CHAR-0039",
+    "title": "Alien Head Study Sheet",
+    "subtitle": "Seven grayscale painted heads of alien and creature designs varying from bird-like to insectoid",
+    "imageUrl": "assets/img/Characters/917_max.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "portrait", "sci-fi", "fantasy"],
+      "techniqueVisible": ["painterly", "stylized", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0040",
+    "title": "Red Panda Archer",
+    "subtitle": "Anthropomorphic red panda ranger in fantasy armour drawing a bow in a magical forest",
+    "imageUrl": "assets/img/Characters/922407_568872046502574_50401740_o.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["warm", "cool", "complementary", "vibrant"],
+      "subjectMatter": ["character", "creature", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0041",
+    "title": "Bioluminescent Deep Sea Fish",
+    "subtitle": "Dark underwater scene of a glowing skeletal deep sea predator fish",
+    "imageUrl": "assets/img/Characters/961_max.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "cool", "high-contrast", "neon"],
+      "subjectMatter": ["creature", "nature"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0042",
+    "title": "Sci-Fi Character Portrait Trio",
+    "subtitle": "Three painted character busts: Egyptian-style warrior, cloaked alien rogue, and cybernetic officer",
+    "imageUrl": "assets/img/Characters/981816_560239560684840_1343760004_o.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Portraits"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["muted", "neutral", "cool"],
+      "subjectMatter": ["character", "portrait", "sci-fi", "fantasy"],
+      "techniqueVisible": ["painterly", "stylized", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0043",
+    "title": "Bird-Skull Hybrid Character",
+    "subtitle": "Stylised standing creature with a bird-skull head and feathered plumage in muted tones",
+    "imageUrl": "assets/img/Characters/999182_552989894765007_788125454_n.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "muted", "earthy"],
+      "subjectMatter": ["character", "creature", "figure", "fantasy"],
+      "techniqueVisible": ["painterly", "stylized", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0044",
+    "title": "Bird of Prey Portrait",
+    "subtitle": "Painted bust of a realistic bird of prey with striking teal eyes and black-and-white plumage",
+    "imageUrl": "assets/img/Characters/birdofprey3.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration", "Portraits"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Digital Painting", "2D Digital Art / Illustration & Painting / Concept Art"],
+      "colorPalette": ["neutral", "dark", "high-contrast"],
+      "subjectMatter": ["portrait", "nature"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0045",
+    "title": "Brute Creature Sketch",
+    "subtitle": "Loose pencil sketch of a hulking brute monster with claws and grotesque proportions",
+    "imageUrl": "assets/img/Characters/brute_sketch1.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "fantasy"],
+      "techniqueVisible": ["sketchy", "loose", "linework-heavy"]
+    }
+  },
+  {
+    "id": "CHAR-0046",
+    "title": "Brute Creature Colour Render",
+    "subtitle": "Finished colour painting of a bulky dark-armoured brute character",
+    "imageUrl": "assets/img/Characters/brute_v1.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "neutral", "muted"],
+      "subjectMatter": ["character", "creature", "figure", "fantasy", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "stylized"]
+    }
+  },
+  {
+    "id": "CHAR-0047",
+    "title": "Armoured Knight with Red Plume",
+    "subtitle": "Loose digital painting of a plate-armoured knight holding a spear with red-plumed helmet",
+    "imageUrl": "assets/img/Characters/Cool.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "muted", "complementary"],
+      "subjectMatter": ["character", "figure", "fantasy", "armor"],
+      "techniqueVisible": ["loose", "painterly", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0048",
+    "title": "Alien Interview",
+    "subtitle": "Moodily lit alien creature holding a gun in a dark interior scene",
+    "imageUrl": "assets/img/Characters/alien interview.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "muted", "cool"],
+      "subjectMatter": ["creature", "character", "sci-fi", "interior"],
+      "techniqueVisible": ["painterly", "atmospheric", "detailed"]
+    }
+  },
+  {
+    "id": "CHAR-0049",
+    "title": "Alien Avian Creatures",
+    "subtitle": "Two tall alien bird-dinosaur creatures with red and blue plumage on a misty rocky landscape",
+    "imageUrl": "assets/img/Characters/deols.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Creature Design"],
+      "colorPalette": ["warm", "cool", "complementary", "muted"],
+      "subjectMatter": ["creature", "landscape", "sci-fi", "fantasy"],
+      "techniqueVisible": ["painterly", "atmospheric", "stylized"]
+    }
+  },
+  {
+    "id": "CHAR-0050",
+    "title": "ZBrush Creature Head Study 1",
+    "subtitle": "Three views of ZBrush-sculpted alien and predator-style creature skulls in grey clay render",
+    "imageUrl": "assets/img/Characters/fzd_zbrush_week02_11.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / 3D Sculpting", "3D Digital Art / Modeling & Sculpting / Organic Modeling"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "portrait", "sci-fi", "fantasy"],
+      "techniqueVisible": ["detailed", "textured", "photorealistic"]
+    }
+  },
+  {
+    "id": "CHAR-0051",
+    "title": "ZBrush Creature Head Study 2",
+    "subtitle": "Six turnaround views of an organic alien creature head sculpted in ZBrush",
+    "imageUrl": "assets/img/Characters/fzd_zbrush_week02_12.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["3D Digital Art / Modeling & Sculpting / 3D Sculpting", "3D Digital Art / Modeling & Sculpting / Organic Modeling"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["creature", "portrait", "sci-fi", "fantasy"],
+      "techniqueVisible": ["detailed", "textured", "photorealistic"]
+    }
+  },
+  {
+    "id": "CHAR-0052",
+    "title": "Joust — Knight at Rest",
+    "subtitle": "Loose painterly knight standing amid crossed lances with a banner at his feet",
+    "imageUrl": "assets/img/Characters/JoustLunchHR.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "muted", "neutral"],
+      "subjectMatter": ["character", "figure", "fantasy", "armor"],
+      "techniqueVisible": ["loose", "painterly", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0053",
+    "title": "The Joust — Knight in Action",
+    "subtitle": "Dynamic armoured knight in red and silver swinging a greatsword with flowing fabric",
+    "imageUrl": "assets/img/Characters/The Joust 2 HR.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["cool", "complementary", "high-contrast"],
+      "subjectMatter": ["character", "figure", "fantasy", "armor", "weapon"],
+      "techniqueVisible": ["loose", "painterly", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0054",
+    "title": "Dark Fantasy Sorceress",
+    "subtitle": "Full figure of an elegant dark sorceress in black horned armour surrounded by smoke tendrils",
+    "imageUrl": "assets/img/Characters/Savess.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["dark", "neutral", "monochromatic"],
+      "subjectMatter": ["character", "figure", "fantasy", "armor"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric"]
+    }
+  },
+  {
+    "id": "CHAR-0055",
+    "title": "Soul Fury — Dark Winged Goddess",
+    "subtitle": "Ethereal female figure with dark feathered wings and glowing blue light in ecstatic pose",
+    "imageUrl": "assets/img/Characters/Soul Fury Itteration2 (2).jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Digital Painting", "Illustration"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Digital Painting"],
+      "colorPalette": ["high-contrast", "cool", "dark"],
+      "subjectMatter": ["character", "figure", "fantasy"],
+      "techniqueVisible": ["painterly", "detailed", "atmospheric", "loose"]
+    }
+  },
+  {
+    "id": "CHAR-0056",
+    "title": "Fantasy Sword Concepts — Level 4",
+    "subtitle": "Four ornate fantasy swords with material swatches and colour palettes on dark background",
+    "imageUrl": "assets/img/Characters/SwordsLvL4_v7.jpg",
+    "metadata": {
+      "industry": ["Concept Art", "Game Design", "Digital Painting"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Mixed 2D Techniques / Prop/Weapon/Vehicle Design"],
+      "colorPalette": ["dark", "vibrant", "complementary"],
+      "subjectMatter": ["weapon", "fantasy"],
+      "techniqueVisible": ["detailed", "graphic", "painterly"]
+    }
+  },
+  {
+    "id": "CHAR-0057",
+    "title": "Grunt Helmet Designs",
+    "subtitle": "Grid of greyscale concept helmet designs for an armoured infantry grunt character",
+    "imageUrl": "assets/img/Characters/aaGrunt20_Helms.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Technical Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["character", "mechanical", "sci-fi", "armor"],
+      "techniqueVisible": ["stylized", "graphic", "minimal"]
+    }
+  },
+  {
+    "id": "CHAR-0058",
+    "title": "Grunt Armour Variations",
+    "subtitle": "Four full-body colour variations of a sci-fi infantry grunt in progressively heavier armour",
+    "imageUrl": "assets/img/Characters/aagrunt20Variations_v4.jpg",
+    "metadata": {
+      "industry": ["Character Design", "Concept Art", "Game Design"],
+      "mediumTags": ["2D Digital Art / Illustration & Painting / Concept Art", "2D Digital Art / Illustration & Painting / Character Illustration"],
+      "colorPalette": ["neutral", "monochromatic"],
+      "subjectMatter": ["character", "figure", "sci-fi", "armor"],
+      "techniqueVisible": ["stylized", "graphic", "detailed"]
+    }
+  }
+]
