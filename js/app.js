@@ -3688,9 +3688,9 @@ function renderSearch() {
             onclick="if(isSearchArrowActive()) executeChipSearch()" aria-label="Search">&#x2192;</button>
         </div>
       </div>
+      <div class="chip-search-hint-container" id="chip-search-hint"></div>
       <div class="chips-row" id="chips-row"></div>
       <div class="suggestions-row" id="suggestions-row"></div>
-      <div class="chip-search-hint-container" id="chip-search-hint"></div>
       <div id="explore-sections">
         ${sections
           .filter(s => s.id !== 'explore-skill' && s.id !== 'explore-technique')

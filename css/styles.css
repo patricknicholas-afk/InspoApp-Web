@@ -3608,6 +3608,12 @@ button {
 
 /* Hint container */
 .chip-search-hint-container {
+  margin-top: 4px;
+}
+@media (max-width: 767px) {
+  .chip-search-hint-container {
+    display: none !important;
+  }
 }
 .selected-chip {
   display: inline-flex;
