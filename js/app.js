@@ -3691,6 +3691,7 @@ function renderSearch() {
         </div>
       </div>
       <div class="chips-row" id="chips-row"></div>
+      <div class="suggestions-row" id="suggestions-row"></div>
       <div class="chip-search-hint-container" id="chip-search-hint"></div>
       <div id="explore-sections">
         ${sections
@@ -3768,6 +3769,7 @@ function executeChipSearch() {
 
 function renderChipsRow(query) {
   const row = document.getElementById('chips-row');
+  const suggestionsRow = document.getElementById('suggestions-row');
   const hintContainer = document.getElementById('chip-search-hint');
   if (!row) return;
 
@@ -3795,11 +3797,8 @@ function renderChipsRow(query) {
     ).join('');
   }
 
-  if (!selectedHtml && !suggestionsHtml) {
-    row.innerHTML = '';
-  } else {
-    row.innerHTML = selectedHtml + suggestionsHtml;
-  }
+  row.innerHTML = selectedHtml;
+  if (suggestionsRow) suggestionsRow.innerHTML = suggestionsHtml;
 
   // Hint below the row
   if (hintContainer) {
