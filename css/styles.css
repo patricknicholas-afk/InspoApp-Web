@@ -3537,6 +3537,24 @@ button {
 }
 .chips-row:empty { display: none; }
 
+.clear-all-chips {
+  font-family: var(--font-system);
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  color: var(--color-secondary);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--sp-6) 0;
+  margin-left: auto;
+  white-space: nowrap;
+  line-height: 1;
+}
+.clear-all-chips:hover {
+  color: var(--color-primary);
+}
+
 .suggestions-row {
   display: flex;
   flex-wrap: wrap;

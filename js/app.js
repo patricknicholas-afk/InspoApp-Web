@@ -3775,12 +3775,16 @@ function renderChipsRow(query) {
 
   // Build selected chips
   const xSvg = '<span class="selected-chip__x"><svg viewBox="0 0 10 10"><line x1="2" y1="2" x2="8" y2="8"/><line x1="8" y1="2" x2="2" y2="8"/></svg></span>';
-  const selectedHtml = searchChips.map(c =>
+  const chipsHtml = searchChips.map(c =>
     `<button class="selected-chip pressable"
        onclick="removeSearchChip('${c.id.replace(/'/g, "\\'")}')">
        ${c.display} ${xSvg}
      </button>`
   ).join('');
+  const clearAllHtml = searchChips.length > 0
+    ? '<button class="clear-all-chips pressable" onclick="clearChipSearch()">Clear all</button>'
+    : '';
+  const selectedHtml = chipsHtml + clearAllHtml;
 
   // Build suggestion chips (only if 2+ chars typed and under limit)
   let suggestionsHtml = '';
@@ -3903,7 +3907,9 @@ function renderSearchResults(data) {
     `<button class="search-results__chip pressable" onclick="removeResultsChip('${c.id.replace(/'/g, "\\'")}')">
        ${c.display} ${xSvg}
      </button>`
-  ).join('');
+  ).join('') + (chips.length > 0
+    ? '<button class="clear-all-chips pressable" onclick="clearAllResultsChips()">Clear all</button>'
+    : '');
 
   const totalResults = exerciseResults.length + inspoResults.length;
 
@@ -4254,6 +4260,12 @@ function removeResultsChip(chipId) {
 
   // Re-render the search results page with updated chips
   renderSearchResults(current.data);
+}
+
+function clearAllResultsChips() {
+  searchChips = [];
+  chipSearchExecuted = false;
+  goBack();
 }
 
 /**
