@@ -3445,7 +3445,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   line-height: 1;
   text-transform: uppercase;
   background: var(--color-chip-bg);
@@ -3555,7 +3555,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   line-height: 1;
   text-transform: uppercase;
   background: var(--color-chip-bg);
@@ -3586,7 +3586,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
@@ -3713,7 +3713,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   line-height: 1;
   text-transform: uppercase;
   background: var(--color-chip-bg);
@@ -3783,7 +3783,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   line-height: 1;
   text-transform: uppercase;
   cursor: pointer;
@@ -3851,7 +3851,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
@@ -3891,7 +3891,7 @@ button {
   border-radius: var(--r-chip);
   font-family: var(--font-system);
   font-size: 12px;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-demi);
   line-height: 1;
   text-transform: uppercase;
   background: var(--color-chip-bg);
