@@ -5,6 +5,113 @@ Format: `[YYYY-MM-DD]` · `Added` / `Changed` / `Fixed` / `Removed`
 
 ---
 
+## [2026-03-09 — 2026-03-11] — Sessions 4-6 · Checkpoint: Design System, Navigation, Page Gates & Browse Overhaul
+
+> **Milestone checkpoint** — Complete design system migration, hamburger nav for mobile, unauthenticated page gates for all main pages, and Browse page overhaul with search gate and inspiration carousels.
+
+### Design System — Global Token Migration
+
+#### Added
+- **Font-weight tokens** — `--fw-regular` (400), `--fw-medium` (500), `--fw-demi` (600), `--fw-bold` (700), `--fw-heavy` (800/900) applied site-wide
+- **Spacing tokens** — `--sp-xs` through `--sp-xxl`, `--grid-margin` responsive (16px mobile, 24px tablet, 32px desktop)
+- **Chip tokens** — `--color-chip-bg`, `--color-chip-fg`, `--r-chip` (4px) unifying suggestion/selected/metadata chips
+- **Avenir Next LT Pro** full weight family (`@font-face` for Regular, Medium, DemiBold, Bold, Heavy)
+
+#### Changed
+- **All hardcoded CSS values migrated** — colours, font sizes, weights, spacing, radii now use design tokens
+- **Typography hierarchy standardised** — nav titles (demi), section headings (heavy), body copy (medium), account/preferences (demi with 1% letter-spacing)
+- **Chip border-radius** — all chip variants changed from `999px` pill to `4px` square
+- **Global `<button>` reset** — `border-radius: 4px` at base level; circular overrides for avatars, dots, action icons
+
+---
+
+### Navigation — Hamburger Menu + Icon Migration
+
+#### Added
+- **Hamburger nav** (`#hamburger-nav`) for unauthenticated mobile users (<768px) — floating dark drawer with Login button, page links, and "Create Account" CTA
+- **`toggleHamburgerMenu()` / `closeHamburgerMenu()`** — drawer open/close with overlay backdrop
+- **Heroicons migration** — all nav and UI icons replaced with Heroicons outline variants (24px consistent)
+
+#### Changed
+- **Bottom nav hidden** on unauthenticated hero pages; hamburger nav shown instead
+- **Hero top nav** — hidden on mobile (<768px), visible on tablet/desktop with transparent background
+- **Nav font weight** — standardised to demi (600) across all navigation elements
+- **Bottom nav icons** — For You and Home changed from filled to outline SVGs
+
+---
+
+### Unauthenticated Page Gates
+
+#### Added
+- **Home gate** — full-screen hero carousel with inspiration imagery, "Create Like the Masters" headline, email capture CTA
+- **Saved/Catalogue gate** — redesigned with centered title, body copy, dark hero banner, "Create Account" CTA
+- **Exercises gate** — dark hero with pricing tiers and exercise preview carousel
+- **Browse gate** — dark hero with search bar, autocomplete chips, guided search (see Browse section below)
+
+#### Changed
+- **All gate pages** share consistent dark hero pattern with `hero-top-nav` inline navigation
+- **Mobile gate pages** show hamburger nav instead of bottom nav
+- **Rename site-wide** — "For You" renamed to "Inspo", "Assignments" renamed to "Exercises" across all nav, pages, and copy
+
+---
+
+### Browse Page — Complete Overhaul
+
+#### Added
+- **`renderSearchGate()`** — unauthenticated Browse gate with dark hero, centered title/body, search bar with autocomplete
+- **`renderBrowseCarousels()`** — authenticated Browse shows 3 L1 category carousels (Concept Design, Illustration, etc.) with horizontal scroll cards and "View All" buttons
+- **`openBrowseCarouselModal()` / `browseViewAll()`** — carousel card taps open inspo modal; "View All" navigates to pre-filtered search results
+- **`getL1Chips(limit)`** — returns top L1 categories by frequency from inspiration metadata
+
+#### Changed
+- **`renderSearch()` gate check** — `if (!currentUser) { renderSearchGate(); return; }` routes unauthenticated users to gate
+- **Authenticated browse** — replaced static explore sections with dynamic category carousels
+
+---
+
+### Browse Gate Search — Unified Container & Responsive Chips
+
+#### Added
+- **`.search-gate__search-wrapper`** — unified container wrapping search bar, chips-row, and suggestions-row inside the hero
+- **`.search-gate__search-row`** — flex row containing search bar + inline "Clear all" CTA
+- **Single-line horizontal scroll** — `.search-gate__hero .chips-row` uses `flex-wrap: nowrap; overflow-x: auto; max-height: 44px` preventing hero expansion
+- **Hidden scrollbar** — `scrollbar-width: none` (Firefox) + `::-webkit-scrollbar { display: none }` (Chrome/Safari)
+- **Responsive wrapper width** — `max-width: 90%` on mobile, `70%` on tablet/desktop
+- **Inline suggestion routing** — on gate, all suggestions go to `chips-row` (not separate `suggestions-row`), eliminating layout shift
+
+#### Changed
+- **Chips moved inside hero** — previously in a separate `.search-gate__chips` strip below the hero; now inside `.search-gate__content` within the hero
+- **Clear all** — moved from appended to search bar to inline sibling in `.search-gate__search-row`
+- **Hint text suppressed** — "Select one or more chips..." hidden on gate via `isGate` detection
+- **Dark input overrides** — search input gets `rgba(255,255,255,0.1)` background, white text, white placeholder, white arrow
+
+#### Fixed
+- **Layout shift eliminated** — hero height stays constant (535px desktop, 609px mobile) regardless of chip state: empty, typed suggestions, selected chips + inline suggestions
+- **Chip overflow on mobile** — `flex-wrap: wrap` was causing chips to wrap to 3 lines, expanding hero by 56px; fixed with `nowrap` + horizontal scroll
+- **Suggestions-row expansion** — separate suggestions-row was adding 56px when suggestions appeared; fixed by routing all gate suggestions to chips-row
+- **Wrapper width on mobile** — `max-width: 70%` produced only 262px at 375px viewport, forcing aggressive wrapping; changed to `90%` on mobile
+
+---
+
+### Inspiration Cards — UI Polish
+
+#### Changed
+- **For You card titles removed** — cleaner visual with tags only
+- **Tag styling refined** — semi-transparent black background, bold weight
+- **Hero banner title** — reduced to medium italic weight
+- **Home banner CTAs** — aligned to bold 14px standard across all hero panels
+
+---
+
+### CSS / JS Versioning
+
+| File | Start → End |
+|------|-------------|
+| `css/styles.css` | v=313 → v=388 |
+| `js/app.js` | v=244 → v=319 |
+
+---
+
 ## [2026-03-08] — Session 3 · Checkpoint: For You Feed & Metadata Tagging
 
 > **Milestone checkpoint** — Full inspiration metadata tagging, searchable content, and polished For You feed experience for both authenticated and unauthenticated users.
