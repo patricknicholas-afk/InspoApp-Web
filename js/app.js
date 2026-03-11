@@ -10,7 +10,7 @@ const NAV_STACK = [];
 let bookmarks = new Set(); // hydrated from localStorage below
 let navBack = false; // true when navigating backward (triggers reverse slide animation)
 let currentUser = null; // { name, email, photoInitials, photoColor }
-let currentSavedTab = 'inspiration'; // persists active tab across re-renders of the saved page
+let currentCatalogueTab = 'inspiration'; // persists active tab across re-renders of the saved page
 
 // -- SVG Icons (Heroicons) ------------------------------------
 const ICONS = {
@@ -219,7 +219,7 @@ function renderAuth() {
       </button>
       <div class="auth-nav__links">
         <button class="auth-nav__link pressable" onclick="navigateTo('page-home', renderHome)">Home</button>
-        <button class="auth-nav__link pressable" onclick="navigateTo('page-foryou', renderForYou)">For You</button>
+        <button class="auth-nav__link pressable" onclick="navigateTo('page-inspo', renderForYou)">Inspo</button>
       </div>
     </div>
     <div class="auth-brand">
@@ -270,14 +270,25 @@ async function signInWithGoogle() {
   btn.disabled = true;
   btn.innerHTML = `<div class="google-btn__spinner"></div><span class="google-btn__text">Signing in\u2026</span>`;
   try {
-    // Emulator demo: sign in as Alex Chen (no real Google OAuth in emulator)
+    // Try Firebase emulator first (no real Google OAuth in local dev)
     await fbAuth.signInWithEmailAndPassword('alex.beginner@test.drawingapp.com', 'testpass123');
     // onAuthStateChanged will call bootAuthenticatedApp() — nothing else needed here
   } catch (err) {
-    console.error('Google sign-in error:', err);
-    btn.disabled = false;
-    btn.innerHTML = `<svg class="google-btn__icon" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 01-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"/><path d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 009 18z" fill="#34A853"/><path d="M3.964 10.706A5.41 5.41 0 013.682 9c0-.593.102-1.17.282-1.706V4.962H.957A8.996 8.996 0 000 9c0 1.452.348 2.827.957 4.038l3.007-2.332z" fill="#FBBC05"/><path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 00.957 4.962L3.964 6.294C4.672 4.169 6.656 3.58 9 3.58z" fill="#EA4335"/></svg><span class="google-btn__text">Continue with Google</span>`;
-    showAuthError('Sign-in failed. Try an email below.');
+    // Emulator unavailable — use a demo session so the prototype always works
+    console.warn('Firebase emulator unavailable, using demo session:', err.message);
+    currentUser = {
+      uid: 'demo-user',
+      name: 'Alex Chen',
+      email: 'alex.beginner@test.drawingapp.com',
+      photoInitials: 'AC',
+      photoColor: '#5e5ce6'
+    };
+    if (!_authBootDone) {
+      _authBootDone = true;
+      await loadData();
+    } else {
+      await bootAuthenticatedApp();
+    }
   }
 }
 
@@ -519,7 +530,7 @@ function cleanupPageState() {
   closeInspoModal();
   closeHamburgerMenu();
   // Remove For You overlay elements (sidebar + CTA) appended to body
-  document.querySelectorAll('.foryou-sidebar, .foryou-create-account').forEach(n => n.remove());
+  document.querySelectorAll('.inspo-sidebar, .inspo-create-account').forEach(n => n.remove());
 }
 
 function navigateTo(pageId, renderFn, data) {
@@ -670,7 +681,7 @@ function getSkeleton(pageId) {
           ${[1,2,3,4,5,6].map(() => row(60, 60)).join('')}
         </div>`;
 
-    case 'page-bookmarks':
+    case 'page-catalogue':
       return `
         ${navBar}
         <div class="skel-pad" style="padding:16px;gap:12px">
@@ -678,11 +689,11 @@ function getSkeleton(pageId) {
           ${[1,2,3].map(() => row(56, 56)).join('')}
         </div>`;
 
-    case 'page-foryou':
+    case 'page-inspo':
       return `
-        <div class="foryou-feed">
-          <div class="foryou-card">
-            <div class="foryou-card__container">
+        <div class="inspo-feed">
+          <div class="inspo-card">
+            <div class="inspo-card__container">
               <div class="skel" style="width:100%;height:100%;border-radius:0;position:absolute;inset:0"></div>
             </div>
           </div>
@@ -802,20 +813,20 @@ function handleBottomNav(tab) {
   stopVideo();
   clearForYouTimers();
   // Remove For You overlay elements when switching tabs
-  document.querySelectorAll('.foryou-sidebar, .foryou-create-account').forEach(n => n.remove());
+  document.querySelectorAll('.inspo-sidebar, .inspo-create-account').forEach(n => n.remove());
   NAV_STACK.length = 0;
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
 
   switch (tab) {
-    case 'foryou':
-      navigateTo('page-foryou', renderForYou);
+    case 'inspo':
+      navigateTo('page-inspo', renderForYou);
       return;
     case 'home':
       renderHome();
       document.getElementById('page-home').classList.add('active');
       updateBottomNavActive('page-home');
       break;
-    case 'assignments':
+    case 'exercises':
       if (!currentUser) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         document.getElementById('page-exercises').classList.add('active');
@@ -828,14 +839,14 @@ function handleBottomNav(tab) {
       searchChips = [];
       navigateTo('page-search', renderSearch);
       return;
-    case 'bookmarks':
+    case 'catalogue':
       if (!currentUser) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        document.getElementById('page-bookmarks').classList.add('active');
-        renderSavedGate();
+        document.getElementById('page-catalogue').classList.add('active');
+        renderCatalogueGate();
         return;
       }
-      navigateTo('page-bookmarks', renderBookmarks);
+      navigateTo('page-catalogue', renderCatalogue);
       return;
   }
   window.scrollTo(0, 0);
@@ -847,16 +858,16 @@ function updateBottomNavActive(pageId) {
   if (!nav) return;
   const mapping = {
     'page-auth':        '',            // no active tab on auth page
-    'page-foryou':      'foryou',
+    'page-inspo':      'inspo',
     'page-home':        'home',
-    'page-exercises':   'assignments',
+    'page-exercises':   'exercises',
     'page-search':      'search',
     'page-search-results': 'search',
     'page-inspo-all':   'search',
     'page-exercises-all': 'search',
-    'page-bookmarks':   'bookmarks',
-    'page-detail':      'assignments',
-    'page-video':       'assignments',
+    'page-catalogue':   'catalogue',
+    'page-detail':      'exercises',
+    'page-video':       'exercises',
     'page-account':     '',
     'page-preferences': '',
   };
@@ -864,13 +875,13 @@ function updateBottomNavActive(pageId) {
   nav.querySelectorAll('.bottom-nav__item').forEach(item => {
     item.classList.toggle('active', activeTab !== '' && item.dataset.page === activeTab);
   });
-  // Hide bottom nav: unauth mobile (hamburger replaces it), unauth home always, unauth foryou at tablet+
+  // Hide bottom nav: unauth mobile (hamburger replaces it), unauth home/saved always, unauth foryou at tablet+
   const isMobileUnauth = !currentUser && window.innerWidth < 768;
-  const hideNav = isMobileUnauth || (!currentUser && (pageId === 'page-home' || (pageId === 'page-foryou' && window.innerWidth >= 768)));
+  const hideNav = isMobileUnauth || (!currentUser && (pageId === 'page-home' || pageId === 'page-catalogue' || pageId === 'page-exercises' || pageId === 'page-search' || (pageId === 'page-inspo' && window.innerWidth >= 768)));
   nav.style.display = hideNav ? 'none' : '';
 
   // Dark nav only for unauthenticated users on foryou — authenticated always uses light nav
-  const isDarkNav = !currentUser && pageId === 'page-foryou';
+  const isDarkNav = !currentUser && pageId === 'page-inspo';
   nav.classList.toggle('bottom-nav--dark', isDarkNav);
 
   // Show global avatar on all pages when authenticated, except:
@@ -895,11 +906,11 @@ function renderHamburgerNavItems(activeTab) {
   const container = document.getElementById('hamburger-nav-items');
   if (!container) return;
   const items = [
-    { tab: 'foryou',     icon: ICONS.rocketLaunch, label: 'For You' },
+    { tab: 'inspo', icon: ICONS.rocketLaunch, label: 'Inspo' },
     { tab: 'home',        icon: ICONS.home,         label: 'Home' },
     { tab: 'search',      icon: ICONS.search,       label: 'Browse' },
-    { tab: 'bookmarks',   icon: ICONS.bookmark,     label: 'Saved' },
-    { tab: 'assignments', icon: ICONS.book,          label: 'Assignments' },
+    { tab: 'catalogue',   icon: ICONS.bookmark,     label: 'Catalogue' },
+    { tab: 'exercises', icon: ICONS.book,          label: 'Exercises' },
   ];
   container.innerHTML = items.map(it => `
     <button class="hamburger-nav__item pressable${it.tab === activeTab ? ' active' : ''}"
@@ -957,24 +968,24 @@ function updateHamburgerNav(pageId) {
   }
   nav.style.display = '';
 
-  // Login button only visible on homepage
+  // Login button visible on homepage and saved gate
   const loginBtn = nav.querySelector('.hamburger-nav__login');
   if (loginBtn) {
-    loginBtn.style.display = pageId === 'page-home' ? '' : 'none';
+    loginBtn.style.display = (pageId === 'page-home' || pageId === 'page-catalogue' || pageId === 'page-exercises' || pageId === 'page-search') ? '' : 'none';
   }
 
   // Map pageId to active tab
   const mapping = {
-    'page-foryou': 'foryou', 'page-home': 'home',
-    'page-exercises': 'assignments', 'page-search': 'search',
+    'page-inspo': 'inspo', 'page-home': 'home',
+    'page-exercises': 'exercises', 'page-search': 'search',
     'page-search-results': 'search', 'page-inspo-all': 'search',
-    'page-exercises-all': 'search', 'page-bookmarks': 'bookmarks',
-    'page-detail': 'assignments', 'page-video': 'assignments',
+    'page-exercises-all': 'search', 'page-catalogue': 'catalogue',
+    'page-detail': 'exercises', 'page-video': 'exercises',
   };
   renderHamburgerNavItems(mapping[pageId] || '');
 
   // Dark variant for pages with dark hero backgrounds
-  const darkPages = new Set(['page-foryou', 'page-home']);
+  const darkPages = new Set(['page-inspo', 'page-home', 'page-catalogue', 'page-exercises', 'page-search']);
   nav.classList.toggle('hamburger-nav--dark', darkPages.has(pageId));
 }
 
@@ -997,7 +1008,7 @@ let forYouState = { timer: null, settleTimer: null, currentIndex: 0 };
 function startForYouAutoScroll() {
   clearForYouTimers();
   forYouState.currentIndex = 0;
-  const page = document.getElementById('page-foryou');
+  const page = document.getElementById('page-inspo');
   if (!page) return;
   page.addEventListener('scroll', onForYouScroll, { passive: true });
   forYouState.timer = setTimeout(advanceForYou, 5000);
@@ -1008,7 +1019,7 @@ function onForYouScroll() {
   clearTimeout(forYouState.timer);
   clearTimeout(forYouState.settleTimer);
   forYouState.settleTimer = setTimeout(() => {
-    const page = document.getElementById('page-foryou');
+    const page = document.getElementById('page-inspo');
     if (!page || !page.classList.contains('active')) return;
     forYouState.currentIndex = Math.round(page.scrollTop / page.clientHeight);
     forYouState.timer = setTimeout(advanceForYou, 5000);
@@ -1016,9 +1027,9 @@ function onForYouScroll() {
 }
 
 function advanceForYou() {
-  const page = document.getElementById('page-foryou');
+  const page = document.getElementById('page-inspo');
   if (!page || !page.classList.contains('active')) return;
-  const total = page.querySelectorAll('.foryou-card').length;
+  const total = page.querySelectorAll('.inspo-card').length;
   const next = forYouState.currentIndex + 1;
   if (next >= total) return; // stop at last card
   forYouState.currentIndex = next;
@@ -1030,7 +1041,7 @@ function clearForYouTimers() {
   clearTimeout(forYouState.timer);
   clearTimeout(forYouState.settleTimer);
   forYouState.currentIndex = 0;
-  const page = document.getElementById('page-foryou');
+  const page = document.getElementById('page-inspo');
   if (page) page.removeEventListener('scroll', onForYouScroll);
 }
 
@@ -1080,7 +1091,7 @@ function toggleForYouBookmark(exId, exTitle, catTitle, catId, duration, type) {
     if (btn) btn.classList.remove('fy-action--saved');
   } else {
     // Resolve imageUrl from INSPO_BY_ID so saved items always carry their image
-    // (renderBookmarks falls back to this when FY_TAG_CARDS hasn't been rebuilt yet)
+    // (renderCatalogue falls back to this when FY_TAG_CARDS hasn't been rebuilt yet)
     const inspoRef = (!isAssignment && INSPO_BY_ID) ? INSPO_BY_ID.get(exId) : null;
     const imageUrl = inspoRef?.imageUrl || null;
     saved.unshift({ id: exId, title: exTitle, category: catTitle, catId, duration, type, imageUrl, savedAt: Date.now() });
@@ -1091,8 +1102,8 @@ function toggleForYouBookmark(exId, exTitle, catTitle, catId, duration, type) {
   invalidateSavedCaches();
 
   // Live-refresh the saved page if it's currently open
-  if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
-    renderBookmarks();
+  if (document.getElementById('page-catalogue')?.classList.contains('active')) {
+    renderCatalogue();
   }
 }
 
@@ -1151,10 +1162,10 @@ function pickTagsForCard(cardIndex) {
 }
 
 function renderForYou() {
-  const el = document.getElementById('page-foryou');
+  const el = document.getElementById('page-inspo');
 
   // Dark background only for unauthenticated users
-  el.classList.toggle('foryou-page--dark', !currentUser);
+  el.classList.toggle('inspo-page--dark', !currentUser);
 
   // Flatten all exercises across all categories
   const allItems = [];
@@ -1220,32 +1231,32 @@ function renderForYou() {
 
   // Sidebar nav for unauthenticated users (visible at tablet+ via CSS)
   const sidebarHtml = !currentUser ? `
-    <nav class="foryou-sidebar">
-      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('foryou')">
+    <nav class="inspo-sidebar">
+      <button class="inspo-sidebar__link pressable" onclick="handleBottomNav('inspo')">
         ${ICONS.rocketLaunch}
-        <span>For You</span>
+        <span>Inspo</span>
       </button>
-      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('home')">
+      <button class="inspo-sidebar__link pressable" onclick="handleBottomNav('home')">
         ${ICONS.home}
         <span>Home</span>
       </button>
-      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('search')">
+      <button class="inspo-sidebar__link pressable" onclick="handleBottomNav('search')">
         ${ICONS.search}
         <span>Browse</span>
       </button>
-      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('bookmarks')">
+      <button class="inspo-sidebar__link pressable" onclick="handleBottomNav('catalogue')">
         ${ICONS.bookmark}
-        <span>Saved</span>
+        <span>Catalogue</span>
       </button>
-      <button class="foryou-sidebar__link pressable" onclick="handleBottomNav('assignments')">
+      <button class="inspo-sidebar__link pressable" onclick="handleBottomNav('exercises')">
         ${ICONS.book}
         <span>Exercises</span>
       </button>
-      <button class="foryou-sidebar__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+      <button class="inspo-sidebar__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
     </nav>` : '';
 
   // Remove any previous For You overlay elements (sidebar + CTA)
-  document.querySelectorAll('.foryou-sidebar, .foryou-create-account').forEach(n => n.remove());
+  document.querySelectorAll('.inspo-sidebar, .inspo-create-account').forEach(n => n.remove());
 
   // Append sidebar and CTA to body (outside scroll container) so position:fixed works
   if (!currentUser) {
@@ -1254,12 +1265,12 @@ function renderForYou() {
     if (sidebarEl.firstElementChild) document.body.appendChild(sidebarEl.firstElementChild);
 
     const ctaEl = document.createElement('div');
-    ctaEl.innerHTML = `<button class="foryou-create-account pressable" onclick="navigateTo('page-auth', renderAuth)">Create Account</button>`;
+    ctaEl.innerHTML = `<button class="inspo-create-account pressable" onclick="navigateTo('page-auth', renderAuth)">Create Account</button>`;
     if (ctaEl.firstElementChild) document.body.appendChild(ctaEl.firstElementChild);
   }
 
   el.innerHTML = `
-    <div class="foryou-feed">
+    <div class="inspo-feed">
       ${combined.map((item, i) => {
 
         // ── Tag-variant (inspiration) card ───────────────────
@@ -1271,22 +1282,22 @@ function renderForYou() {
           const cardTitle = (card.title || '').replace(/'/g, "\\'");
           const cardSection = (card.section || 'Inspiration').replace(/'/g, "\\'");
           return `
-          <div class="foryou-card foryou-card--tag-variant pressable"
+          <div class="inspo-card inspo-card--tag-variant pressable"
                style="--card-bg:${palettes[i % palettes.length]}"
                onclick="openInspoModal('${card.imageUrl}')">
-            <div class="foryou-card__container">
-              <div class="foryou-card__media"
+            <div class="inspo-card__container">
+              <div class="inspo-card__media"
                    style="background-image:url('${safeImgUrl(card.imageUrl)}');background-size:cover;background-position:center top;"></div>
-              <div class="foryou-card__tag-overlay">
+              <div class="inspo-card__tag-overlay">
                 <div></div>
-                <div class="foryou-card__tags">
-                  ${tags.map(t => `<span class="foryou-card__tag">${toTitleCase(t)}</span>`).join('')}
+                <div class="inspo-card__tags">
+                  ${tags.map(t => `<span class="inspo-card__tag">${toTitleCase(t)}</span>`).join('')}
                 </div>
               </div>
-              ${isAuthed ? `<div class="foryou-card__actions">
+              ${isAuthed ? `<div class="inspo-card__actions">
                 <button
                   id="fy-like-${card.id}"
-                  class="foryou-card__action-btn pressable${tagLiked ? ' fy-action--liked' : ''}"
+                  class="inspo-card__action-btn pressable${tagLiked ? ' fy-action--liked' : ''}"
                   onclick="event.stopPropagation(); toggleForYouLike('${card.id}', '${cardTitle}', '${cardSection}', 'TAG')"
                   aria-label="Like">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1295,7 +1306,7 @@ function renderForYou() {
                 </button>
                 <button
                   id="fy-bm-${card.id}"
-                  class="foryou-card__action-btn pressable${tagSaved ? ' fy-action--saved' : ''}"
+                  class="inspo-card__action-btn pressable${tagSaved ? ' fy-action--saved' : ''}"
                   onclick="event.stopPropagation(); toggleForYouBookmark('${card.id}', '${cardTitle}', '${cardSection}', '', '', 'inspiration')"
                   aria-label="Save">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1318,20 +1329,20 @@ function renderForYou() {
         const exTitle  = ex.title.replace(/'/g, "\\'");
         const catTitle = cat.title.replace(/'/g, "\\'");
         return `
-        <div class="foryou-card pressable"
+        <div class="inspo-card pressable"
              style="--card-bg:${palettes[i % palettes.length]}"
              onclick="navigateTo('page-video', renderVideoPlayer, { exerciseId: '${ex.id}', categoryId: '${cat.id}' })">
-          <div class="foryou-card__container">
-            <div class="foryou-card__media" style="${fyMediaStyle}"></div>
-            <div class="foryou-card__overlay">
-              <div class="foryou-card__eyebrow">${cat.title}</div>
-              <div class="foryou-card__title">${ex.title}</div>
-              <div class="foryou-card__meta">${ex.duration}&nbsp;&nbsp;·&nbsp;&nbsp;${ex.categoryTag}</div>
+          <div class="inspo-card__container">
+            <div class="inspo-card__media" style="${fyMediaStyle}"></div>
+            <div class="inspo-card__overlay">
+              <div class="inspo-card__eyebrow">${cat.title}</div>
+              <div class="inspo-card__title">${ex.title}</div>
+              <div class="inspo-card__meta">${ex.duration}&nbsp;&nbsp;·&nbsp;&nbsp;${ex.categoryTag}</div>
             </div>
-            ${isAuthed ? `<div class="foryou-card__actions">
+            ${isAuthed ? `<div class="inspo-card__actions">
               <button
                 id="fy-like-${ex.id}"
-                class="foryou-card__action-btn pressable${isLiked ? ' fy-action--liked' : ''}"
+                class="inspo-card__action-btn pressable${isLiked ? ' fy-action--liked' : ''}"
                 onclick="event.stopPropagation(); toggleForYouLike('${ex.id}', '${exTitle}', '${catTitle}', '${ex.categoryTag}')"
                 aria-label="Like">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1340,7 +1351,7 @@ function renderForYou() {
               </button>
               <button
                 id="fy-bm-${ex.id}"
-                class="foryou-card__action-btn pressable${isSaved ? ' fy-action--saved' : ''}"
+                class="inspo-card__action-btn pressable${isSaved ? ' fy-action--saved' : ''}"
                 onclick="event.stopPropagation(); toggleForYouBookmark('${ex.id}', '${exTitle}', '${catTitle}', '${cat.id}', '${ex.duration}', 'assignment')"
                 aria-label="Save">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1420,6 +1431,63 @@ const HERO_SLIDES = [
 ];
 
 // -- Authenticated Dashboard ----------------------------------
+
+/** 5-slide hero carousel shown at the top of the authenticated home page.
+ *  imageUrl is intentionally null — images will be provided and added later.
+ *  action should deep-link to the relevant Exercise Detail Page URL. */
+const AUTH_HERO_SLIDES = [
+  {
+    bg: 'linear-gradient(160deg, #1c1c1e 0%, #2c2c2e 100%)',
+    title: 'Technical Warm-Ups',
+    subtitle: 'Intentionally selecting movements and motions that are directly related to the amount of control you have over your drawing utensil. Let\'s build a good warm-up foundation.',
+    cta: 'Start Exercise',
+    action: "navigateTo('page-exercises', renderExerciseList)"
+  },
+  {
+    bg: 'linear-gradient(160deg, #1a1a2e 0%, #16213e 100%)',
+    title: 'Line Control & Weight',
+    subtitle: 'Being able to control your lines, from the first mark to the last gives sketches the energy and emotion you always wanted to achieve.',
+    cta: 'Start Exercise',
+    action: "navigateTo('page-exercises', renderExerciseList)"
+  },
+  {
+    bg: 'linear-gradient(160deg, #0d2b1d 0%, #1a3d2b 100%)',
+    title: 'Circles & Ellipses',
+    subtitle: 'Freehanded circles and ellipses can be one of the most challenging tasks in drawing and ellipses are more frequent in everyday life than you\'d imagine.',
+    cta: 'Start Exercise',
+    action: "navigateTo('page-exercises', renderExerciseList)"
+  },
+  {
+    bg: 'linear-gradient(160deg, #1a0d1a 0%, #2d1040 100%)',
+    title: 'Perspective & Horizon Lines',
+    subtitle: 'Through a series of simple exercises you will gain the ability to create the point of view for any scene and build visual depth for your subject matter.',
+    cta: 'Start Exercise',
+    action: "navigateTo('page-exercises', renderExerciseList)"
+  },
+  {
+    bg: 'linear-gradient(160deg, #1e1209 0%, #3a2010 100%)',
+    title: 'Facial Proportions & Angles',
+    subtitle: 'There are a number of different methods to quickly capture the general facial proportions to gain a level of realism.',
+    cta: 'Start Exercise',
+    action: "navigateTo('page-exercises', renderExerciseList)"
+  }
+];
+
+const SCIFI_CARDS = [
+  { id: 'ROBO-0030', title: 'Alien Warship in Clouds',       img: 'assets/img/Robotic/468317_10151381351501500_1926628378_o.jpg' },
+  { id: 'ROBO-0043', title: 'Alien Spacecraft Hangar',        img: 'assets/img/Robotic/711_max.jpg' },
+  { id: 'ROBO-0012', title: 'Stealth Warship Concept',        img: 'assets/img/Robotic/218_max.jpg' },
+  { id: 'ROBO-0013', title: 'Gunship Turntable Sketches',     img: 'assets/img/Robotic/245_max.jpg' },
+  { id: 'ROBO-0020', title: 'G9 Kaizer Kraft Gunship',        img: 'assets/img/Robotic/335268_435888909796467_1614448021_o.jpg' },
+  { id: 'ROBO-0047', title: 'Medivac Dropship',               img: 'assets/img/Robotic/768_max.jpg' },
+  { id: 'ROBO-0054', title: 'Spacecraft in Neon Blue Hangar', img: 'assets/img/Robotic/859_max.jpg' },
+  { id: 'ROBO-0055', title: 'Monochrome Spacecraft Sketch',   img: 'assets/img/Robotic/861_max.jpg' },
+  { id: 'ROBO-0063', title: 'Dark Sci-Fi Warship Concept',    img: 'assets/img/Robotic/921556_10151381351596500_773507791_o.jpg' },
+  { id: 'ROBO-0066', title: 'Starship Assembly Bay',          img: 'assets/img/Robotic/952_max.jpg' },
+  { id: 'ROBO-0082', title: 'Flak Mech — Quadruped Walker',   img: 'assets/img/Robotic/another_flak_mech_by_progv-d3kg8df.jpg' },
+  { id: 'ROBO-0089', title: 'UAF Army Giant Mech Walkers',    img: 'assets/img/Robotic/gallery_student_intro_to_design_pg2_30.jpg' },
+];
+
 const PRODUCTS_WE_LOVE = [
   { title: 'Staedtler Mars Lumograph', body: 'Professional drawing pencils for precise lines and shading', color: '#e8e4dc' },
   { title: 'Strathmore 400 Series',    body: 'Premium drawing paper with a smooth, consistent surface', color: '#dce4e8' },
@@ -1431,6 +1499,18 @@ const PRODUCTS_WE_LOVE = [
 
 function getCompletedExercises() {
   try { return JSON.parse(localStorage.getItem('da_completed') || '[]'); } catch { return []; }
+}
+
+// Opens the shared inspo lightbox seeded with the Sci-Fi carousel items
+function openScifiModal(index) {
+  window._inspoResults = SCIFI_CARDS.map(c => ({
+    id:            c.id,
+    title:         c.title,
+    subtitle:      'Sci-Fi Inspiration',
+    imageUrl:      c.img,
+    _sectionTitle: 'Sci-Fi Inspiration'
+  }));
+  openInspoModal(index);
 }
 
 function renderAuthHome() {
@@ -1476,58 +1556,90 @@ function renderAuthHome() {
   const savedThree = savedExercises.slice(0, 3);
   const completedThree = getCompletedExercises().slice(0, 3);
 
-  const exerciseListItem = (title, meta, onclick) => `
-    <div class="dash-ex-item pressable" onclick="${onclick}">
+  const exerciseListItem = (title, meta, onclick, extraClass = '', showCta = false) => `
+    <div class="dash-ex-item${extraClass ? ' ' + extraClass : ''} pressable" onclick="${onclick}">
       <div class="dash-ex-item__content">
         <div class="dash-ex-item__title">${title}</div>
         <div class="dash-ex-item__meta">${meta}</div>
       </div>
-      <svg class="dash-ex-item__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      ${showCta
+        ? `<button class="dash-ex-item__cta pressable" onclick="event.stopPropagation(); ${onclick}">Start Now</button>`
+        : `<svg class="dash-ex-item__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>`}
     </div>`;
 
   const savedPanel = savedThree.length > 0
     ? savedThree.map(({ ex, cat }) =>
         exerciseListItem(ex.title, `${cat.title} · ${ex.duration}`,
           `navigateTo('page-video', renderVideoPlayer, { exerciseId: '${ex.id}', categoryId: '${cat.id}' })`))
-        .join('') + (savedExercises.length > 3 ? `<button class="dash-view-all pressable" onclick="handleBottomNav('bookmarks')">View all ${savedExercises.length} saved</button>` : '')
-    : `<div class="dash-empty"><p>No saved exercises yet.</p><button class="dash-empty__cta pressable" onclick="handleBottomNav('assignments')">Browse Assignments</button></div>`;
+        .join('') + (savedExercises.length > 3 ? `<button class="dash-view-all pressable" onclick="handleBottomNav('catalogue')">View all ${savedExercises.length} saved</button>` : '')
+    : `<div class="dash-empty"><p>No saved exercises yet.</p><button class="dash-empty__cta pressable" onclick="handleBottomNav('exercises')">Browse</button></div>`;
+
+  // Suggested exercises for the "Start" empty state — first 5 from APP_DATA
+  const suggestedFive = [];
+  if (APP_DATA && APP_DATA.categories) {
+    outer: for (const cat of APP_DATA.categories) {
+      for (const ex of cat.exercises) {
+        suggestedFive.push({ ex, cat });
+        if (suggestedFive.length >= 5) break outer;
+      }
+    }
+  }
 
   const completedPanel = completedThree.length > 0
     ? completedThree.map(item =>
         exerciseListItem(item.title, item.meta || item.category || '',
           `navigateTo('page-exercises', renderExerciseList)`))
         .join('')
-    : `<div class="dash-empty"><p>No completed exercises yet.</p><button class="dash-empty__cta pressable" onclick="handleBottomNav('assignments')">Start an Exercise</button></div>`;
+    : suggestedFive.map(({ ex, cat }) =>
+        exerciseListItem(
+          ex.title,
+          `${cat.title} · ${ex.duration}`,
+          `navigateTo('page-video', renderVideoPlayer, { exerciseId: '${ex.id}', categoryId: '${cat.id}' })`,
+          'dash-ex-item--suggest',
+          true
+        )).join('');
 
   el.innerHTML = `
     ${authBar}
     <div class="dash">
 
-      <!-- Section 1: What are we working on today? -->
-      <section class="dash-section">
-        <div class="dash-today">
-          <div class="dash-today__text">
-            <div class="dash-today__title">What are we working on today?</div>
-            <div class="dash-today__subtitle">Pick up where you left off or try something new.</div>
+      <!-- Section 1: Hero Carousel -->
+      <section class="dash-section dash-section--flush">
+        <div class="dash-hero">
+          <div class="home-hero-carousel__track-wrap" id="dash-hero-track-wrap">
+            <div class="home-hero-carousel__track" id="dash-hero-track">
+              ${AUTH_HERO_SLIDES.map((slide, i) => `
+                <div class="hero-slide" style="background:${slide.bg}">
+                  <div class="hero-slide__content">
+                    <div class="hero-slide__title">${slide.title}</div>
+                    <div class="hero-slide__subtitle">${slide.subtitle}</div>
+                    <button class="hero-slide__cta pressable" onclick="${slide.action}">${slide.cta}</button>
+                  </div>
+                </div>`).join('')}
+            </div>
           </div>
-          <div class="dash-today__actions">
-            <button class="dash-today__primary pressable" onclick="handleBottomNav('assignments')">Continue</button>
-            <button class="dash-today__secondary pressable" onclick="handleBottomNav('foryou')">Want suggestions?</button>
+          <div class="hero-dots">
+            ${AUTH_HERO_SLIDES.map((_, i) => `
+              <button class="hero-dot dash-hero-dot${i === 0 ? ' hero-dot--active' : ''}"
+                      data-index="${i}" aria-label="Slide ${i + 1}"></button>`).join('')}
           </div>
         </div>
       </section>
 
-      <!-- Section 2: Find Inspiration -->
-      <section class="dash-section dash-section--flush">
-        <div class="dash-inspo-banner pressable" onclick="handleBottomNav('foryou')">
-          <div class="dash-inspo-banner__content">
-            <div class="dash-inspo-banner__eyebrow">For You</div>
-            <div class="dash-inspo-banner__title">Find Inspiration</div>
-            <div class="dash-inspo-banner__sub">Discover art, exercises and ideas curated to your taste</div>
-            <span class="dash-inspo-banner__cta">Explore Feed
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-            </span>
-          </div>
+      <!-- Section 2: Sci-Fi Inspiration Carousel -->
+      <section class="dash-section">
+        <div class="dash-section__header">
+          <span class="dash-section__title">Sci-Fi Inspiration</span>
+          <button class="dash-section__link pressable" onclick="handleBottomNav('inspo')">View More</button>
+        </div>
+        <div class="dash-scifi-scroll">
+          ${SCIFI_CARDS.map((card, i) => `
+            <div class="dash-scifi-card pressable" onclick="openScifiModal(${i})"
+                 style="background-image:url('${safeImgUrl(card.img)}')">
+              <button class="dash-scifi-card__bookmark pressable" onclick="event.stopPropagation()" aria-label="Save ${card.title}">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>`).join('')}
         </div>
       </section>
 
@@ -1535,18 +1647,19 @@ function renderAuthHome() {
       <section class="dash-section">
         <div class="dash-slider" id="dash-slider">
           <div class="dash-slider__track" id="dash-slider-track">
-            <!-- Panel A: Completed -->
+            <!-- Panel A: Completed / Start -->
             <div class="dash-slider__panel">
               <div class="dash-panel-header">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                Completed Exercises
+                ${completedThree.length > 0
+                  ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                     Completed Exercises`
+                  : `Start an Exercise`}
               </div>
               ${completedPanel}
             </div>
             <!-- Panel B: Saved -->
             <div class="dash-slider__panel">
               <div class="dash-panel-header">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
                 Saved Exercises
               </div>
               ${savedPanel}
@@ -1591,6 +1704,7 @@ function renderAuthHome() {
   `;
 
   initDashSlider();
+  initDashHeroCarousel();
 }
 
 function dashSliderGoTo(index) {
@@ -1614,6 +1728,64 @@ function initDashSlider() {
       dashSliderGoTo(currentIndex);
     }
   }, { passive: true });
+}
+
+function initDashHeroCarousel() {
+  const track = document.getElementById('dash-hero-track');
+  const wrap  = document.getElementById('dash-hero-track-wrap');
+  const dots  = document.querySelectorAll('.dash-hero-dot');
+  if (!track || !wrap) return;
+
+  const total = AUTH_HERO_SLIDES.length;
+  let current = 0;
+  let autoTimer = null;
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let isDragging = false;
+
+  function goTo(index, animate = true) {
+    current = ((index % total) + total) % total;
+    track.style.transition = animate ? 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)' : 'none';
+    track.style.transform  = `translateX(${-current * 100}%)`;
+    dots.forEach((dot, i) => dot.classList.toggle('hero-dot--active', i === current));
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoTimer = setTimeout(() => { goTo(current + 1); startAuto(); }, 5000);
+  }
+  function stopAuto() { if (autoTimer) { clearTimeout(autoTimer); autoTimer = null; } }
+
+  // Dot click
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => { stopAuto(); goTo(parseInt(dot.dataset.index)); startAuto(); });
+  });
+
+  // Touch swipe
+  track.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    isDragging = false;
+    stopAuto();
+  }, { passive: true });
+  track.addEventListener('touchmove', e => {
+    const dx = Math.abs(e.touches[0].clientX - touchStartX);
+    const dy = Math.abs(e.touches[0].clientY - touchStartY);
+    if (dx > dy && dx > 8) isDragging = true;
+  }, { passive: true });
+  track.addEventListener('touchend', e => {
+    if (!isDragging) { startAuto(); return; }
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) goTo(dx < 0 ? current + 1 : current - 1);
+    startAuto();
+  }, { passive: true });
+
+  // Pause on hover (desktop)
+  wrap.addEventListener('mouseenter', stopAuto);
+  wrap.addEventListener('mouseleave', startAuto);
+
+  goTo(0, false);
+  startAuto();
 }
 
 // -- Home Page (unauthenticated) ------------------------------
@@ -1651,11 +1823,11 @@ function renderHome() {
             })()}
             <nav class="hero-top-nav">
               <div class="hero-top-nav__center">
-                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('foryou')">For You</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('inspo')">Inspo</button>
                 <button class="hero-top-nav__link pressable" onclick="handleBottomNav('home')">Home</button>
                 <button class="hero-top-nav__link pressable" onclick="handleBottomNav('search')">Browse</button>
-                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('bookmarks')">Saved</button>
-                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('assignments')">Exercises</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('catalogue')">Catalogue</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('exercises')">Exercises</button>
               </div>
               <button class="hero-top-nav__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
             </nav>
@@ -1721,7 +1893,7 @@ function renderHome() {
                   </ul>
                 </div>
               </div>
-              <button class="selfdriven-block__cta pressable" onclick="handleBottomNav('assignments')">Learn More</button>
+              <button class="selfdriven-block__cta pressable" onclick="handleBottomNav('exercises')">Learn More</button>
             </div>
           </div>
           <div class="panel-scroll-hint" aria-hidden="true">
@@ -1738,8 +1910,8 @@ function renderHome() {
               <div class="passion-block__title">Discover Your Passion</div>
               <div class="passion-block__subtitle">Find the subjects that move you — explore, experiment, and create without limits</div>
               <div class="passion-block__ctas">
-                <button class="passion-block__cta passion-block__cta--primary pressable" onclick="${currentUser ? "handleBottomNav('assignments')" : "navigateTo('page-auth', renderAuth)"}">Get Started</button>
-                <button class="passion-block__cta passion-block__cta--secondary pressable" onclick="handleBottomNav('foryou')">Explore Inspiration</button>
+                <button class="passion-block__cta passion-block__cta--primary pressable" onclick="${currentUser ? "handleBottomNav('exercises')" : "navigateTo('page-auth', renderAuth)"}">Get Started</button>
+                <button class="passion-block__cta passion-block__cta--secondary pressable" onclick="handleBottomNav('inspo')">Explore Inspiration</button>
               </div>
             </div>
           </div>
@@ -2025,7 +2197,7 @@ function renderGenerateWidget() {
   return `
     <div class="gen-widget">
       <div class="gen-widget__header">
-        <div class="gen-widget__title">Generate Assignments</div>
+        <div class="gen-widget__title">Generate Exercises</div>
         <div class="gen-widget__subtitle">AI-powered personalised lesson plan</div>
       </div>
       <div class="gen-widget__session">
@@ -2207,8 +2379,8 @@ function saveGenPlan() {
   localStorage.setItem(SAVED_PLANS_KEY, JSON.stringify(saved));
   const btn = document.getElementById('gen-save-btn');
   if (btn) { btn.textContent = '✓ Saved'; btn.disabled = true; }
-  if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
-    renderBookmarks();
+  if (document.getElementById('page-catalogue')?.classList.contains('active')) {
+    renderCatalogue();
   }
 }
 
@@ -2575,57 +2747,262 @@ function toggleBookmark(exId) {
   });
 
   // Refresh bookmarks page if active
-  if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
-    renderBookmarks();
+  if (document.getElementById('page-catalogue')?.classList.contains('active')) {
+    renderCatalogue();
   }
 }
 
 // -- Auth Gate Pages -------------------------------------------
-function renderSavedGate() {
-  const el = document.getElementById('page-bookmarks');
+function renderCatalogueGate() {
+  const el = document.getElementById('page-catalogue');
+
+  // Column-specific images by INSPO_DATA category tag
+  // Col 1: 2D line art / detailed / sketch
+  const col1 = [
+    'assets/img/Characters/1073265_10201592356909618_816284181_o.jpg',
+    'assets/img/Characters/278_max.jpg',
+    'assets/img/Characters/314_max.jpg',
+    'assets/img/Characters/347_large.jpg',
+    'assets/img/Characters/530_max.jpg',
+    'assets/img/Characters/655_max.jpg',
+    'assets/img/Characters/68_tid_04=.jpg',
+    'assets/img/Characters/68_tid_07=.jpg',
+  ];
+  // Col 2: Sci-Fi / architecture / environment / matte painting
+  const col2 = [
+    'assets/img/Characters/000_max.jpg',
+    'assets/img/Characters/061_max.jpg',
+    'assets/img/Characters/117_max.jpg',
+    'assets/img/Characters/164_large.jpg',
+    'assets/img/Characters/338_max.jpg',
+    'assets/img/Characters/438_max.jpg',
+    'assets/img/Characters/540_max.jpg',
+    'assets/img/Characters/560_max.jpg',
+  ];
+  // Col 3: 3D sculpt / creature / organic modeling
+  const col3 = [
+    'assets/img/Characters/122_max.jpg',
+    'assets/img/Characters/fzd_zbrush_week02_11.jpg',
+    'assets/img/Characters/fzd_zbrush_week02_12.jpg',
+    'assets/img/Fantasy/831_max.jpg',
+    'assets/img/Robotic/048_max.jpg',
+    'assets/img/Robotic/269_max.jpg',
+    'assets/img/Robotic/315_max.jpg',
+    'assets/img/Robotic/723_large.jpg',
+  ];
+
+  const makeTrack = (images) =>
+    [...images, ...images].map(src =>
+      `<div class="saved-gate__card"><img src="${src}" alt="" loading="lazy"/></div>`
+    ).join('');
+
   el.innerHTML = `
-    <div class="gate-page">
-      <div class="gate-page__inner">
-        <div class="gate-page__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 4h14v17l-7-4-7 4V4z"/>
-          </svg>
+    <div class="saved-gate">
+      <nav class="hero-top-nav">
+        <div class="hero-top-nav__center">
+          <button class="hero-top-nav__link pressable" onclick="handleBottomNav('inspo')">Inspo</button>
+          <button class="hero-top-nav__link pressable" onclick="handleBottomNav('home')">Home</button>
+          <button class="hero-top-nav__link pressable" onclick="handleBottomNav('search')">Browse</button>
+          <button class="hero-top-nav__link pressable" onclick="handleBottomNav('catalogue')">Catalogue</button>
+          <button class="hero-top-nav__link pressable" onclick="handleBottomNav('exercises')">Exercises</button>
         </div>
-        <h2 class="gate-page__title">Save exercises you love</h2>
-        <p class="gate-page__body">Create a free account to build your personal library and pick up right where you left off.</p>
-        <button class="gate-page__cta pressable" onclick="navigateTo('page-auth', renderAuth)">Create Account</button>
-        <button class="gate-page__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+        <button class="hero-top-nav__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+      </nav>
+      <div class="saved-gate__bg">
+        <div class="saved-gate__col">
+          <div class="saved-gate__track">${makeTrack(col1)}</div>
+        </div>
+        <div class="saved-gate__col">
+          <div class="saved-gate__track saved-gate__track--up">${makeTrack(col2)}</div>
+        </div>
+        <div class="saved-gate__col saved-gate__col--hide-mobile">
+          <div class="saved-gate__track saved-gate__track--fast">${makeTrack(col3)}</div>
+        </div>
+      </div>
+      <div class="saved-gate__overlay"></div>
+      <div class="saved-gate__content">
+        <h1 class="saved-gate__headline">Creative blocks don't exist here.</h1>
+        <p class="saved-gate__sub">Realize your vision. Join for free.</p>
+        <p class="saved-gate__body">An unlimited catalogue of inspiration and content at your fingertips. Pursue the dream, build the vision.</p>
+        <div class="hero-slide__email-row saved-gate__email-row">
+          <input class="hero-slide__email-input" type="email" id="catalogue-gate-email"
+            placeholder="Email address" autocomplete="email" aria-label="Email address"
+            onkeydown="if(event.key==='Enter') handleCatalogueGateSignup()"/>
+          <button class="hero-slide__email-cta pressable" onclick="handleCatalogueGateSignup()">Join Free Today</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 1: Catalogue — duplicated from home page as starting point -->
+    <div class="home-panel home-panel--catalogue">
+      <div class="catalogue-block">
+        <div class="catalogue-block__content">
+          <h2 class="catalogue-block__title">1000+ IMAGES FROM THE CREATIVE INDUSTRY.</h2>
+          <p class="catalogue-block__body">In a world filled with noise, genAI, distractions, you can be sure this creative catalogue of inspiration has been saved and curated since 2008. Websites that hosted some of this art no longer exist.</p>
+        </div>
       </div>
     </div>`;
-  updateBottomNavActive('page-bookmarks');
-  updateBottomNavVisibility('page-bookmarks');
+  updateBottomNavActive('page-catalogue');
+  updateBottomNavVisibility('page-catalogue');
+}
+
+function handleCatalogueGateSignup() {
+  const email = document.getElementById('catalogue-gate-email')?.value.trim();
+  navigateTo('page-auth', renderAuth);
+  if (email) {
+    setTimeout(() => {
+      const authEmail = document.getElementById('auth-email');
+      if (authEmail) authEmail.value = email;
+    }, 100);
+  }
 }
 
 function renderAssignmentsGate() {
   const el = document.getElementById('page-exercises');
   el.innerHTML = `
-    <div class="gate-page">
-      <div class="gate-page__inner">
-        <div class="gate-page__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h7v12H4zM13 6h7v12h-7z"/>
-          </svg>
+    <div id="exercises-panels" class="home-panels">
+      <div id="exercises-panels-track" class="home-panels__track">
+
+        <!-- Panel 0: Full-screen hero banner -->
+        <div class="home-panel home-panel--hero">
+          <div class="home-hero-carousel">
+            <div class="hero-slide" style="background: #111;">
+              <div class="hero-slide__content">
+                <div class="hero-slide__title">Structure your practice.</div>
+                <div class="hero-slide__subtitle">Guided exercises built for the self-driven artist.</div>
+                <div class="hero-slide__email-row">
+                  <input type="email" class="hero-slide__email-input" id="exercises-gate-email" placeholder="enter email address" autocomplete="email" aria-label="Email address" onkeydown="if(event.key==='Enter') handleExercisesGateSignup()"/>
+                  <button class="hero-slide__email-cta pressable" onclick="handleExercisesGateSignup()">Join Free Today</button>
+                </div>
+              </div>
+            </div>
+            <nav class="hero-top-nav">
+              <div class="hero-top-nav__center">
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('inspo')">Inspo</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('home')">Home</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('search')">Browse</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('catalogue')">Catalogue</button>
+                <button class="hero-top-nav__link pressable" onclick="handleBottomNav('exercises')">Exercises</button>
+              </div>
+              <button class="hero-top-nav__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+            </nav>
+          </div>
+          <div class="panel-scroll-hint" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Scroll</span>
+          </div>
         </div>
-        <h2 class="gate-page__title">Your assignments live here</h2>
-        <p class="gate-page__body">Create a free account to get a structured plan, track your progress, and unlock guided drawing exercises.</p>
-        <button class="gate-page__cta pressable" onclick="navigateTo('page-auth', renderAuth)">Create Account</button>
-        <button class="gate-page__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+
+        <!-- Panel 1: Pricing / Sign-up -->
+        <div class="home-panel home-panel--exercises-pricing">
+          <div class="selfdriven-topbar">
+            <p class="selfdriven-topbar__text">Your practice, structured. <strong>All for free, or upgrade.</strong></p>
+            <button class="selfdriven-topbar__cta pressable" onclick="navigateTo('page-auth', renderAuth)">Join for $5/mo.</button>
+          </div>
+          <div class="exercises-pricing-block">
+            <div class="exercises-pricing-block__header">
+              <h2 class="exercises-pricing-block__title">Curated warm-ups and exercises used by industry experts</h2>
+              <p class="exercises-pricing-block__body">Gain insights into the small habits and daily practices that take between 5 and 10 minutes to dramatically improve technical abilities.</p>
+            </div>
+            <div class="pricing-cards">
+
+              <!-- Card 1: Pro -->
+              <div class="pricing-card pricing-card--pro">
+                <div class="pricing-card__badge">MOST POPULAR</div>
+                <div class="pricing-card__price-row">
+                  <span class="pricing-card__price">$5</span><span class="pricing-card__period">/mo</span>
+                </div>
+                <p class="pricing-card__desc">Everything you need to build a daily creative practice with full guided structure.</p>
+                <ul class="pricing-card__bullets">
+                  <li>Unlimited access to all exercises &amp; warm-ups</li>
+                  <li>Progress tracking &amp; personal streaks</li>
+                  <li>Download exercises for offline use</li>
+                </ul>
+                <button class="pricing-card__cta pressable" onclick="navigateTo('page-auth', renderAuth)">Sign Up Now</button>
+              </div>
+
+              <!-- Card 2: Free -->
+              <div class="pricing-card pricing-card--free">
+                <div class="pricing-card__name">Basic</div>
+                <div class="pricing-card__price-row">
+                  <span class="pricing-card__price pricing-card__price--free">Free</span>
+                </div>
+                <p class="pricing-card__desc">Start building your practice with a curated starter set of exercises at no cost.</p>
+                <ul class="pricing-card__bullets">
+                  <li>Access to starter exercises</li>
+                  <li>Browse the full inspiration catalogue</li>
+                  <li>Save favorites &amp; build your library</li>
+                </ul>
+                <button class="pricing-card__cta pricing-card__cta--outline pressable" onclick="navigateTo('page-auth', renderAuth)">Create Account</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>`;
   updateBottomNavActive('page-exercises');
   updateBottomNavVisibility('page-exercises');
+  initExercisesPanels();
+}
+
+function handleExercisesGateSignup() {
+  const email = document.getElementById('exercises-gate-email')?.value.trim();
+  navigateTo('page-auth', renderAuth);
+}
+
+function initExercisesPanels() {
+  const container = document.getElementById('exercises-panels');
+  const track = document.getElementById('exercises-panels-track');
+  const pageEl = document.getElementById('page-exercises');
+  if (!container || !track || !pageEl) return;
+
+  const TOTAL = track.querySelectorAll('.home-panel').length;
+  let current = 0;
+  let isTransitioning = false;
+
+  pageEl.style.overflowY = 'hidden';
+
+  function goToPanel(idx, animate = true) {
+    if (isTransitioning) return;
+    const next = Math.max(0, Math.min(TOTAL - 1, idx));
+    if (next === current && animate) return;
+    isTransitioning = true;
+    current = next;
+    track.style.transition = animate ? 'transform 0.8s cubic-bezier(0.76, 0, 0.24, 1)' : 'none';
+    track.style.transform = `translateY(${-current * 100}vh)`;
+    container.querySelectorAll('.panel-scroll-hint').forEach((el, i) => {
+      el.style.opacity = (i === current && current < TOTAL - 1) ? '1' : '0';
+    });
+    setTimeout(() => { isTransitioning = false; }, 850);
+  }
+
+  container.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    if (isTransitioning) return;
+    if (e.deltaY > 15 && current < TOTAL - 1) goToPanel(current + 1);
+    else if (e.deltaY < -15 && current > 0) goToPanel(current - 1);
+  }, { passive: false });
+
+  let touchStartY = 0;
+  container.addEventListener('touchstart', (e) => { touchStartY = e.touches[0].clientY; }, { passive: true });
+  container.addEventListener('touchend', (e) => {
+    if (isTransitioning) return;
+    const dy = touchStartY - e.changedTouches[0].clientY;
+    if (Math.abs(dy) < 50) return;
+    if (dy > 0 && current < TOTAL - 1) goToPanel(current + 1);
+    else if (dy < 0 && current > 0) goToPanel(current - 1);
+  }, { passive: true });
+
+  goToPanel(0, false);
 }
 
 // -- Inspiration image modal (see openInspoModal / closeInspoModal below search results) --
 
 // -- Saved / Bookmarks Page ------------------------------------
-function renderBookmarks() {
-  const el = document.getElementById('page-bookmarks');
+function renderCatalogue() {
+  const el = document.getElementById('page-catalogue');
 
   // ── Section A: Saved Inspiration ─────────────────────────────────────────
   // Source: da_saved_inspiration — tag-variant cards bookmarked from For You
@@ -2656,17 +3033,17 @@ function renderBookmarks() {
     <div class="saved-nav">
       <div class="saved-nav__title-row">
         <div class="grid-container">
-          <span class="saved-nav__title">Saved</span>
+          <span class="saved-nav__title">Catalogue</span>
         </div>
       </div>
       <div class="saved-nav__tabs-row">
         <div class="settings-tabs__inner" role="tablist">
           <button class="settings-tab pressable" data-tab="inspiration"
-                  role="tab" onclick="switchSavedTab('inspiration')">Inspiration</button>
-          <button class="settings-tab pressable" data-tab="assignments"
-                  role="tab" onclick="switchSavedTab('assignments')">Exercises</button>
+                  role="tab" onclick="switchCatalogueTab('inspiration')">Inspiration</button>
+          <button class="settings-tab pressable" data-tab="exercises"
+                  role="tab" onclick="switchCatalogueTab('exercises')">Exercises</button>
           <button class="settings-tab pressable" data-tab="plans"
-                  role="tab" onclick="switchSavedTab('plans')">Plans</button>
+                  role="tab" onclick="switchCatalogueTab('plans')">Plans</button>
         </div>
       </div>
     </div>`;
@@ -2682,10 +3059,10 @@ function renderBookmarks() {
         </div>
         <div class="saved-empty__title">Nothing saved yet</div>
         <div class="saved-empty__subtitle">Bookmark inspiration from your feed, or save exercises to watch later.</div>
-        <button class="saved-empty__btn pressable" onclick="handleBottomNav('foryou')">Explore Feed</button>
+        <button class="saved-empty__btn pressable" onclick="handleBottomNav('inspo')">Explore Feed</button>
       </div>
     `;
-    switchSavedTab(currentSavedTab);
+    switchCatalogueTab(currentCatalogueTab);
     return;
   }
 
@@ -2725,8 +3102,8 @@ function renderBookmarks() {
     </div>` : `
     <div class="saved-section">
       <div class="saved-section__empty">
-        <span>Bookmark tag cards from your For You feed to save inspiration here.</span>
-        <button class="saved-section__empty-btn pressable" onclick="handleBottomNav('foryou')">Go to Feed</button>
+        <span>Bookmark tag cards from your Inspo feed to save inspiration here.</span>
+        <button class="saved-section__empty-btn pressable" onclick="handleBottomNav('inspo')">Go to Feed</button>
       </div>
     </div>`;
 
@@ -2759,7 +3136,7 @@ function renderBookmarks() {
     <div class="saved-section">
       <div class="saved-section__empty">
         <span>Bookmark exercise cards from your feed to save them here.</span>
-        <button class="saved-section__empty-btn pressable" onclick="handleBottomNav('assignments')">Browse Exercises</button>
+        <button class="saved-section__empty-btn pressable" onclick="handleBottomNav('exercises')">Browse Exercises</button>
       </div>
     </div>`;
 
@@ -2802,7 +3179,7 @@ function renderBookmarks() {
     <div class="saved-section">
       <div class="saved-section__empty">
         <span>Generate a lesson plan from the Exercises page and save it here.</span>
-        <button class="saved-section__empty-btn pressable" onclick="handleBottomNav('assignments')">Go to Exercises</button>
+        <button class="saved-section__empty-btn pressable" onclick="handleBottomNav('exercises')">Go to Exercises</button>
       </div>
     </div>`;
 
@@ -2811,7 +3188,7 @@ function renderBookmarks() {
       <div class="saved-panel" data-panel="inspiration" data-count="${savedInspo.length}">
         ${inspoSection}
       </div>
-      <div class="saved-panel" data-panel="assignments" data-count="${mergedAssign.length}">
+      <div class="saved-panel" data-panel="exercises" data-count="${mergedAssign.length}">
         ${exercisesSection}
       </div>
       <div class="saved-panel" data-panel="plans" data-count="${savedPlans.length}">
@@ -2821,7 +3198,7 @@ function renderBookmarks() {
   `;
 
   // Restore (or set) active tab — runs after innerHTML is written
-  switchSavedTab(currentSavedTab);
+  switchCatalogueTab(currentCatalogueTab);
 
   // Event delegation for saved page actions (avoids inline onclick with interpolated strings)
   el.addEventListener('click', function _savedDelegate(e) {
@@ -2831,7 +3208,7 @@ function renderBookmarks() {
       const id = removeInspo.dataset.id;
       const saved = getSavedInspo().filter(s => s.id !== id);
       localStorage.setItem(SAVED_INSPO_KEY, JSON.stringify(saved));
-      renderBookmarks();
+      renderCatalogue();
       return;
     }
 
@@ -2845,7 +3222,7 @@ function renderBookmarks() {
     if (removeEx) {
       e.stopPropagation();
       toggleBookmark(removeEx.dataset.id);
-      renderBookmarks();
+      renderCatalogue();
       return;
     }
 
@@ -2856,7 +3233,7 @@ function renderBookmarks() {
       if (catId) {
         navigateTo('page-video', renderVideoPlayer, { exerciseId: exId, categoryId: catId });
       } else {
-        handleBottomNav('assignments');
+        handleBottomNav('exercises');
       }
     }
   });
@@ -2874,7 +3251,7 @@ function toggleSavedPlanExpand(headerEl) {
 function removeSavedPlan(planId) {
   const plans = getSavedPlans().filter(p => p.id !== planId);
   localStorage.setItem(SAVED_PLANS_KEY, JSON.stringify(plans));
-  renderBookmarks();
+  renderCatalogue();
 }
 
 // -- Exercise Detail Page --------------------------------------
@@ -3027,9 +3404,9 @@ function renderVideoPlayer(data) {
 
   const navBarIcons = `
     <div class="video-nav-bar__icons">
-      <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('foryou')">
+      <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('inspo')">
         ${ICONS.rocketLaunch}
-        <span>For You</span>
+        <span>Inspo</span>
       </div>
       <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('home')">
         ${ICONS.home}
@@ -3039,13 +3416,13 @@ function renderVideoPlayer(data) {
         ${ICONS.search}
         <span>Browse</span>
       </div>
-      <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('bookmarks')">
+      <div class="video-nav-bar__item pressable" onclick="stopVideo(); handleBottomNav('catalogue')">
         ${ICONS.bookmark}
-        <span>Saved</span>
+        <span>Catalogue</span>
       </div>
-      <div class="video-nav-bar__item active pressable" onclick="stopVideo(); handleBottomNav('assignments')">
+      <div class="video-nav-bar__item active pressable" onclick="stopVideo(); handleBottomNav('exercises')">
         ${ICONS.book}
-        <span>Assignments</span>
+        <span>Exercises</span>
       </div>
     </div>
   `;
@@ -3874,8 +4251,126 @@ function getRecommendedTopics(excludeIds = new Set(), limit = 8) {
     .slice(0, limit);
 }
 
-function renderSearch() {
+// ── Browse Carousels (authenticated) ─────────────────────────────
+function renderBrowseCarousels() {
+  const l1Categories = getL1Chips(3);
+  if (!l1Categories.length || !Array.isArray(INSPO_DATA)) return '';
+
+  window._browseCarouselItems = [];
+
+  return l1Categories.map(cat => {
+    const items = INSPO_DATA
+      .filter(item => {
+        const parsed = item._mediumParsed || parseMediumLevels(item.metadata?.mediumTags);
+        return (parsed.L1 || []).some(v => v.toLowerCase().trim() === cat.id) && item.imageUrl;
+      })
+      .slice(0, 20);
+    if (!items.length) return '';
+
+    const startIdx = window._browseCarouselItems.length;
+    window._browseCarouselItems.push(...items);
+
+    const cards = items.map((item, i) => `
+      <div class="browse-carousel__card dash-scifi-card pressable"
+           style="background-image:url('${safeImgUrl(item.imageUrl)}')"
+           onclick="openBrowseCarouselModal(${startIdx + i})">
+        <div class="browse-carousel__card-label">${(item.title || '').replace(/'/g, "&#39;")}</div>
+      </div>`).join('');
+
+    return `
+      <section class="dash-section browse-carousel-section">
+        <div class="dash-section__header">
+          <span class="dash-section__title">${cat.display}</span>
+          <button class="dash-section__link pressable"
+            onclick="browseViewAll('${cat.id}', '${cat.display.replace(/'/g, "&#39;")}')">View All</button>
+        </div>
+        <div class="browse-carousel__scroll dash-scifi-scroll">${cards}</div>
+      </section>`;
+  }).join('');
+}
+
+function openBrowseCarouselModal(idx) {
+  window._inspoResults = window._browseCarouselItems || [];
+  openInspoModal(idx);
+}
+
+function browseViewAll(id, display) {
+  searchChips = [{ id, display }];
+  chipMode = 'free';
+  navigateTo('page-search-results', renderSearchResults, { chips: [{ id, display }], query: '' });
+}
+
+// ── Search Gate (unauthenticated Browse) ──────────────────────────
+function renderSearchGate() {
   const el = document.getElementById('page-search');
+  el.style.overflowY = 'auto';
+  exploreFilters = new Map();
+  chipSearchExecuted = false;
+  const allExercises = APP_DATA.categories.flatMap(c => c.exercises);
+  const sections = APP_DATA.exploreSections || [];
+  keywordIndex = buildKeywordIndex(allExercises, sections);
+
+  el.innerHTML = `
+    <div class="search-gate-page">
+
+      <!-- Hero: title, body, search, and chips all in one centered section -->
+      <div class="search-gate__hero">
+        <nav class="hero-top-nav">
+          <div class="hero-top-nav__center">
+            <button class="hero-top-nav__link pressable" onclick="handleBottomNav('inspo')">Inspo</button>
+            <button class="hero-top-nav__link pressable" onclick="handleBottomNav('home')">Home</button>
+            <button class="hero-top-nav__link pressable hero-top-nav__link--active" onclick="handleBottomNav('search')">Browse</button>
+            <button class="hero-top-nav__link pressable" onclick="handleBottomNav('catalogue')">Catalogue</button>
+            <button class="hero-top-nav__link pressable" onclick="handleBottomNav('exercises')">Exercises</button>
+          </div>
+          <button class="hero-top-nav__login pressable" onclick="navigateTo('page-auth', renderAuth)">Login</button>
+        </nav>
+        <div class="search-gate__content">
+          <h1 class="search-gate__title">Browse &amp; Explore Our<br>Human-Made Catalogue</h1>
+          <p class="search-gate__body">Discover inspiring creative professional and personal work by career type, technique, art style, or genre.</p>
+          <div class="search-gate__search-wrapper">
+            <div class="search-gate__search-row">
+              <div class="explore-search-bar search-gate__search">
+                <div class="search-bar-inner">
+                  <input type="text" class="search-input" placeholder="Search exercises, techniques, styles..."
+                    id="explore-search-input" oninput="onExploreAutocomplete(this.value)"
+                    onkeydown="if(event.key==='Enter' && isSearchArrowActive()) executeChipSearch()">
+                  <button class="search-bar__arrow" id="search-arrow"
+                    onclick="if(isSearchArrowActive()) executeChipSearch()" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                </div>
+              </div>
+            </div>
+            <div class="chip-search-hint-container" id="chip-search-hint"></div>
+            <div class="chips-row" id="chips-row"></div>
+            <div class="suggestions-row" id="suggestions-row"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousels + guided search -->
+      <div class="grid-container">
+        <div id="explore-sections">
+          ${renderBrowseCarousels()}
+        </div>
+        <div id="explore-results"></div>
+        <div class="guided-search-bottom">
+          <div id="guided-section-row"></div>
+        </div>
+      </div>
+
+    </div>`;
+
+  updateBottomNavActive('page-search');
+  updateBottomNavVisibility('page-search');
+  renderChipsRow();
+  renderGuidedSection();
+}
+
+function renderSearch() {
+  if (!currentUser) { renderSearchGate(); return; }
+
+  const el = document.getElementById('page-search');
+  el.style.overflowY = '';
   exploreFilters = new Map();
   // Don't reset searchChips here — preserve state when navigating back from results
   chipSearchExecuted = false;
@@ -3899,16 +4394,14 @@ function renderSearch() {
             id="explore-search-input" oninput="onExploreAutocomplete(this.value)"
             onkeydown="if(event.key==='Enter' && isSearchArrowActive()) executeChipSearch()">
           <button class="search-bar__arrow" id="search-arrow"
-            onclick="if(isSearchArrowActive()) executeChipSearch()" aria-label="Search">&#x2192;</button>
+            onclick="if(isSearchArrowActive()) executeChipSearch()" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </div>
       </div>
       <div class="chip-search-hint-container" id="chip-search-hint"></div>
       <div class="chips-row" id="chips-row"></div>
       <div class="suggestions-row" id="suggestions-row"></div>
       <div id="explore-sections">
-        ${sections
-          .filter(s => s.id !== 'explore-skill' && s.id !== 'explore-technique')
-          .map(section => renderExploreSection(section)).join('')}
+        ${renderBrowseCarousels()}
       </div>
       <div id="explore-results"></div>
       <div class="guided-search-bottom">
@@ -4011,7 +4504,8 @@ function renderChipsRow(query) {
   if (chipMode === 'guided') {
     // Chips and controls live in the bottom guided section — clear the top row
     row.innerHTML = '';
-    searchBar?.querySelector('.clear-all-chips')?.remove();
+    document.querySelector('.explore-search-bar .clear-all-chips')?.remove();
+    document.querySelector('.search-gate__chips .clear-all-chips')?.remove();
     if (hintContainer) hintContainer.innerHTML = '';
     if (suggestionsRow) suggestionsRow.innerHTML = '';
     return;
@@ -4033,30 +4527,46 @@ function renderChipsRow(query) {
       const matches = keywordIndex
         .filter(kw => kw.id.startsWith(q) && !selectedIds.has(kw.id))
         .slice(0, 10);
-      suggestionsRow.innerHTML = matches.length
-        ? `<div class="autocomplete-chips-row">${matches.map(kw =>
+      const suggestionHtml = matches.length
+        ? matches.map((kw, i) =>
             `<button class="chip suggestion-chip pressable"
+               style="animation-delay:${(i * 0.05).toFixed(2)}s"
                onclick="addSearchChip('${kw.id.replace(/'/g, "\\'")}','${kw.display.replace(/'/g, "\\'")}')">${kw.display}</button>`
-          ).join('')}</div>`
+          ).join('')
         : '';
+      const isGate = !!document.querySelector('.search-gate__search-wrapper');
+      if (searchChips.length > 0 || isGate) {
+        // Inline mode: put suggestions directly into chips-row (gate always uses this to avoid layout shift)
+        row.innerHTML += suggestionHtml;
+        suggestionsRow.innerHTML = '';
+      } else {
+        // Authenticated page, no chips yet: show suggestions in the row below
+        suggestionsRow.innerHTML = suggestionHtml
+          ? `<div class="autocomplete-chips-row">${suggestionHtml}</div>`
+          : '';
+      }
     } else {
       suggestionsRow.innerHTML = '';
     }
   }
 
-  // Clear all button
-  searchBar?.querySelector('.clear-all-chips')?.remove();
-  if (searchBar && searchChips.length > 0) {
+  // Clear all button — inline with search bar on gate, appended to search bar on auth
+  document.querySelector('.search-gate__search-row .clear-all-chips')?.remove();
+  document.querySelector('.explore-search-bar .clear-all-chips')?.remove();
+  if (searchChips.length > 0) {
     const clearBtn = document.createElement('button');
     clearBtn.className = 'clear-all-chips pressable';
     clearBtn.textContent = 'Clear all';
     clearBtn.onclick = clearChipSearch;
-    searchBar.appendChild(clearBtn);
+    const searchRow = document.querySelector('.search-gate__search-row');
+    const target = searchRow ?? searchBar;
+    if (target) target.appendChild(clearBtn);
   }
 
-  // Hint
+  // Hint — suppressed on unauthenticated gate
+  const isGate = !!document.querySelector('.search-gate__search-wrapper');
   if (hintContainer) {
-    hintContainer.innerHTML = (searchChips.length > 0 && !chipSearchExecuted)
+    hintContainer.innerHTML = (!isGate && searchChips.length > 0 && !chipSearchExecuted)
       ? '<div class="chip-search-hint">Select one or more chips and click search to get results</div>'
       : '';
   }
@@ -4477,8 +4987,8 @@ function toggleInspoSave(id, title, subtitle, sectionTitle, btnEl, imageUrl) {
   localStorage.setItem(SAVED_INSPO_KEY, JSON.stringify(saved));
   invalidateSavedCaches();
 
-  if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
-    renderBookmarks();
+  if (document.getElementById('page-catalogue')?.classList.contains('active')) {
+    renderCatalogue();
   }
 }
 
@@ -4568,8 +5078,8 @@ function openInspoModal(index) {
       cardBtn.classList.toggle('search-results__inspo-bookmark--saved', nowSaved);
       cardBtn.innerHTML = nowSaved ? ICONS.bookmarkFill : ICONS.bookmark;
     }
-    if (document.getElementById('page-bookmarks')?.classList.contains('active')) {
-      renderBookmarks();
+    if (document.getElementById('page-catalogue')?.classList.contains('active')) {
+      renderCatalogue();
     }
   };
 
@@ -4925,9 +5435,9 @@ function updateExploreResults() {
 }
 
 // -- Saved page tab switch (in-page panel swap, no nav stack) ---------
-function switchSavedTab(tab) {
-  currentSavedTab = tab;
-  document.querySelectorAll('#page-bookmarks .settings-tab').forEach(btn => {
+function switchCatalogueTab(tab) {
+  currentCatalogueTab = tab;
+  document.querySelectorAll('#page-catalogue .settings-tab').forEach(btn => {
     btn.classList.toggle('settings-tab--active', btn.dataset.tab === tab);
   });
   document.querySelectorAll('.saved-panel').forEach(panel => {
